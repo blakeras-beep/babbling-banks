@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Babbling Banks - What Episode Is This?</title>
+    <meta
+      name="description"
+      content="Find any toddler TV episode from a chaotic description. Works with Bluey, Curious George, Sesame Street, Daniel Tiger, Ms Rachel and more."
+    />
+    <link rel="canonical" href="https://babblingbanks.com/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2E9B9B" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Babbling Banks" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://babblingbanks.com/" />
+    <meta property="og:title" content="Babbling Banks - What Episode Is This?" />
+    <meta
+      property="og:description"
+      content="Find any toddler TV episode from a chaotic description. Works with Bluey, Curious George, Sesame Street, Daniel Tiger, Ms Rachel and more."
+    />
+    <meta property="og:image" content="https://babblingbanks.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Babbling Banks - What Episode Is This?" />
+    <meta
+      name="twitter:description"
+      content="Find any toddler TV episode from a chaotic description."
+    />
+    <meta name="twitter:image" content="https://babblingbanks.com/og-image.png" />
+
+    <style>
+      /* Critical CSS: paint the right background before the app loads. */
+      html {
+        background-color: #fafbfc;
+      }
+      @media (prefers-color-scheme: dark) {
+        html:not([data-theme='light']) {
+          background-color: #0f0f0f;
+        }
+      }
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+    </style>
+    <script>
+      // Apply the saved theme before React renders to avoid a flash.
+      try {
+        var saved = JSON.parse(localStorage.getItem('babbling-banks:theme'));
+        if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Babbling Banks needs JavaScript to search episodes.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

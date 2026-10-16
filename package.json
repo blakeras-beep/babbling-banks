@@ -1,0 +1,42 @@
+{
+  "name": "babbling-banks",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Find any toddler TV episode from a chaotic description.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate-catalog": "node scripts/validate-catalog.mjs",
+    "generate-catalog": "node scripts/generate-catalog.mjs",
+    "check": "npm run lint && npm run validate-catalog && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "@eslint/js": "^9.17.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
