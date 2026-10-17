@@ -236,7 +236,12 @@ if (!process.env.ANTHROPIC_API_KEY && !process.env.ANTHROPIC_AUTH_TOKEN) {
   process.exit(1);
 }
 
-const client = new Anthropic();
+// User-level keys (sk-ant-usr-…) are not tied to a workspace and need its id on every request.
+const client = new Anthropic(
+  process.env.ANTHROPIC_WORKSPACE_ID
+    ? { defaultHeaders: { 'anthropic-workspace-id': process.env.ANTHROPIC_WORKSPACE_ID } }
+    : {}
+);
 
 // ---------------------------------------------------------------------------
 // Structured output schemas
