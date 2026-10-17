@@ -224,8 +224,8 @@
       // Real decodes from the app's own search (src/lib/search.js), top result each time.
       const DECODES = [
         {
-          at: 0.3,
-          end: 6.6,
+          at: 2.2,
+          end: 8.0,
           q: 'the one where the dog freezes dad',
           m: ['dog', 'freezes', 'dad'],
           title: 'Magic Xylophone',
@@ -237,8 +237,8 @@
           slow: true,
         },
         {
-          at: 6.6,
-          end: 9.5,
+          at: 8.0,
+          end: 11.0,
           q: 'the monkey on the bike',
           m: ['monkey', 'bike'],
           title: 'Curious George Rides a Bike',
@@ -249,8 +249,8 @@
           piece: 'Aqua Wash',
         },
         {
-          at: 9.5,
-          end: 12.4,
+          at: 11.0,
+          end: 13.9,
           q: 'the pig jumps in muddy puddles',
           m: ['pig', 'jumps', 'muddy'],
           title: 'Muddy Puddles',
@@ -261,8 +261,8 @@
           piece: 'Garden Colors',
         },
         {
-          at: 12.4,
-          end: 15.4,
+          at: 13.9,
+          end: 16.9,
           q: 'the garbage truck at the beach',
           m: ['garbage', 'truck', 'beach'],
           title: 'Beach Day',
@@ -273,7 +273,7 @@
           piece: 'Blue and Umber',
         },
       ];
-      const END = 15.4;
+      const END = 16.9;
 
       function quoteHTML(d) {
         const words = d.q.split(' ');
@@ -371,10 +371,10 @@
         set(card, { x: -exit * 1100, y: lerp(120, 0, c), r: lerp(4, 1, c), o: Math.min(1, c * 2) });
 
         // Lines on paper below.
-        const l1 = prog(t, 4.6, 5.2) * (1 - prog(t, 7.6, 8.0));
-        set($('#line1'), { y: lerp(30, 0, prog(t, 4.6, 5.2)), o: l1 });
-        const l2 = prog(t, 8.2, 8.8) * (1 - prog(t, END - 0.5, END));
-        set($('#line2'), { y: lerp(30, 0, prog(t, 8.2, 8.8)), o: l2 });
+        const l1 = prog(t, 6.0, 6.6) * (1 - prog(t, 9.0, 9.4));
+        set($('#line1'), { y: lerp(30, 0, prog(t, 6.0, 6.6)), o: l1 });
+        const l2 = prog(t, 9.6, 10.2) * (1 - prog(t, END - 0.5, END));
+        set($('#line2'), { y: lerp(30, 0, prog(t, 9.6, 10.2)), o: l2 });
 
         // End: Blue and Yellow hung whole, the headline strip, the CTA.
         const ea = prog(t, END, END + 0.7),
@@ -419,18 +419,18 @@
       boot({
         width: 1080,
         height: 1920,
-        duration: 24,
+        duration: 25,
         render,
         sfx,
         // Clips live in vo/ and music/ (both gitignored); missing ones are skipped.
         music: { file: 'music/cant-stop.wav', offset: 8.5 },
         vo: [
-          { t: 0.4, file: 'vo/ad-0.wav' },
-          { t: 6.7, file: 'vo/ad-1.wav' },
-          { t: 9.5, file: 'vo/ad-2.wav' },
+          { t: 0.2, file: 'vo/ad-0.wav' },
+          { t: 8.3, file: 'vo/ad-1.wav' },
+          { t: 10.75, file: 'vo/ad-2.wav' },
           { t: 13.5, file: 'vo/ad-3.wav' },
-          { t: 16.6, file: 'vo/ad-4.wav' },
-          { t: 20.2, file: 'vo/ad-5.wav' },
+          { t: 17.3, file: 'vo/ad-4.wav' },
+          { t: 20.9, file: 'vo/ad-5.wav' },
         ],
       });
     </script>

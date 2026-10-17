@@ -648,10 +648,36 @@
       const QUERY = 'the one where the dog freezes dad';
       const STEPS = [
         ['#s1', 5.6, 16],
-        ['#s2', 16, 25],
-        ['#s3', 25, 32.4],
-        ['#s4', 32.4, 45],
+        ['#s2', 16, 25.2],
+        ['#s3', 25.2, 34.6],
+        ['#s4', 34.6, 45],
       ];
+      // The phone's animation runs on its own clock, warped so each tap lands just after the
+      // voiceover says it: [video time, animation time] keypoints. Step text uses video time.
+      const WARP = [
+        [0, 0],
+        [16, 16],
+        [18.2, 16.6],
+        [24.6, 23.0],
+        [25.2, 25.0],
+        [27.6, 25.6],
+        [30.9, 28.6],
+        [34.6, 32.4],
+        [36.2, 33.9],
+        [37.3, 37.2],
+        [40.9, 40.2],
+        [45, 45],
+        [52, 52],
+      ];
+      const interp = (x, pts, a, b) => {
+        for (let i = 1; i < pts.length; i++)
+          if (x <= pts[i][a] || i === pts.length - 1) {
+            const [p, q] = [pts[i - 1], pts[i]];
+            return p[b] + ((x - p[a]) / (q[a] - p[a])) * (q[b] - p[b]);
+          }
+      };
+      const warp = (tv) => interp(tv, WARP, 0, 1);
+      const unwarp = (ta) => interp(ta, WARP, 1, 0);
       const TAPS = [
         [7.0, '#field'],
         [16.6, '#findBtn'],
@@ -670,7 +696,8 @@
         return [(r.left + r.width / 2 - p.left) / k, (r.top + r.height / 2 - p.top) / k];
       }
 
-      function render(t) {
+      function render(tv) {
+        const t = warp(tv);
         // ---- intro (0 – 5.6) ----
         const inA = prog(t, 0.1, 1.0),
           inH = prog(t, 0.6, 1.3, ease.back),
@@ -692,13 +719,14 @@
         set($('#mark'), { o: inF * (1 - outF) });
         for (const [sel, a, b] of STEPS) {
           const el = $(sel),
-            i = prog(t, a + 0.15, a + 0.85),
-            o = prog(t, b - 0.5, b, ease.inOut);
+            i = prog(tv, a + 0.15, a + 0.85),
+            o = prog(tv, b - 0.5, b, ease.inOut);
           set(el, { x: lerp(60, 0, i) - o * 40, o: i * (1 - o) });
           const head = $('.head', el),
-            ih = prog(t, a + 0.3, a + 1.0, ease.back);
+            ih = prog(tv, a + 0.3, a + 1.0, ease.back);
           head.style.transform = `rotate(${lerp(-6, -2.5, ih)}deg) scale(${lerp(0.94, 1, ih)})`;
-          $('.cline', el).style.clipPath = `inset(0 ${(1 - prog(t, a + 1.0, a + 1.8)) * 100}% 0 0)`;
+          $('.cline', el).style.clipPath =
+            `inset(0 ${(1 - prog(tv, a + 1.0, a + 1.8)) * 100}% 0 0)`;
         }
 
         // ---- phone: home ----
@@ -775,12 +803,12 @@
         // Clips live in vo/ and music/ (both gitignored); missing ones are skipped.
         music: { file: 'music/cant-stop.wav', offset: 2.0 },
         vo: [
-          { t: 0.6, file: 'vo/explainer-0.wav' },
-          { t: 5.9, file: 'vo/explainer-1.wav' },
-          { t: 16.2, file: 'vo/explainer-2.wav' },
-          { t: 24.9, file: 'vo/explainer-3.wav' },
-          { t: 33.0, file: 'vo/explainer-4.wav' },
-          { t: 45.6, file: 'vo/explainer-5.wav' },
+          { t: 0.8, file: 'vo/explainer-0.wav' },
+          { t: 5.8, file: 'vo/explainer-1.wav' },
+          { t: 16.1, file: 'vo/explainer-2.wav' },
+          { t: 25.2, file: 'vo/explainer-3.wav' },
+          { t: 35.0, file: 'vo/explainer-4.wav' },
+          { t: 46.0, file: 'vo/explainer-5.wav' },
         ],
         render,
         sfx: [
@@ -805,7 +833,7 @@
           { t: 45.2, kind: 'whoosh' },
           { t: 46.3, kind: 'tape' },
           { t: 47.0, kind: 'tape' },
-        ],
+        ].map((e) => ({ ...e, t: unwarp(e.t) })),
       });
     </script>
   </body>

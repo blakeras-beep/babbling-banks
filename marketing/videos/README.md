@@ -14,7 +14,7 @@ Every decode shown is the app's real top result for that query (`src/lib/search.
 Each page lists its music and voiceover cues (`VIDEO.music`, `VIDEO.vo`). The renderer mixes them with the foley from `audio.mjs` and ducks the music under the voice.
 
 - `music/cant-stop.wav` and `vo/*.wav` are local only (gitignored), and so is `out/`, because the renders contain the song. Missing files are skipped: with no song, `audio.mjs` synthesizes an original funk-rock groove instead.
-- The voiceover is Higgsfield `seed_audio`, voice "Dylan". Trim each clip's long pauses before dropping it in `vo/` (see the cue times in each page).
+- The voiceover is Higgsfield `text2speech_v2` (ElevenLabs), voice "Juno". Drop the clips in `vo/` untouched; each page's cue times are set from the clips' word timings, and the explainer's `WARP` keypoints move each tap to just after the line that describes it.
 
 ## Edit and re-render
 
