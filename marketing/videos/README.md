@@ -2,10 +2,11 @@
 
 Two animated videos built from brand v1.5 (`brand/babbling-banks-brand-v1.5/`): Banks' art, tape strips, lemon match swipes, the ink crayon arrow, and the brand fonts.
 
-| File                | What                                                                | Size        | Length |
-| ------------------- | ------------------------------------------------------------------- | ----------- | ------ |
-| `out/explainer.mp4` | How-to: say it, tap Find it, "or maybe…", open and keep it          | 1920 × 1080 | 52 s   |
-| `out/ad.mp4`        | Customer ad: four real decodes, then "Find it at babblingbanks.com" | 1080 × 1920 | 24 s   |
+| File                | What                                                                                 | Size        | Length |
+| ------------------- | ------------------------------------------------------------------------------------ | ----------- | ------ |
+| `out/explainer.mp4` | How-to: say it, tap Find it, "or maybe…", open and keep it                           | 1920 × 1080 | 52 s   |
+| `out/ad.mp4`        | Customer ad: four real decodes, then "Find it at babblingbanks.com"                  | 1080 × 1920 | 25 s   |
+| `out/art.mp4`       | "A new voice in the art world": a gallery walk, the reviews, his art on every screen | 1920 × 1080 | 36 s   |
 
 Every decode shown is the app's real top result for that query (`src/lib/search.js`).
 
