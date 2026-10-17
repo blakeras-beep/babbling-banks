@@ -113,7 +113,7 @@ describe('generateFollowUps', () => {
   });
 
   it('asks when several episodes score alike', () => {
-    const questions = generateFollowUps(searchEpisodes('elmo potty'));
+    const questions = generateFollowUps(searchEpisodes('cookie monster'));
     expect(questions.length).toBeGreaterThan(0);
   });
 
