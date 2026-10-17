@@ -46,16 +46,6 @@
   --art-404-filter:none;
   --crayon-line-filter:none;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --color-primary:#eef1ec; --color-on-primary:#111613; --color-primary-hover:#d9ddd6;
-  --color-surface:#111613; --color-surface-sunk:#1b211d; --color-text:#eef1ec; --color-text-muted:#9aa39c;
-  --color-crayon-cobalt:#8fa6f2; --color-success:#6fcf97; --color-warning:#f0b860; --color-danger:#ff8a80;
-  --color-scrim:rgba(0,0,0,.6);
-  --art-home:url("assets/art/night-01-1600.jpg"); --art-results:url("assets/art/night-01-1600.jpg");
-  --art-empty:url("assets/art/night-01-1600.jpg"); --art-detail:url("assets/art/night-01-1600.jpg");
-  --art-404-filter:invert(1) hue-rotate(180deg);
-  --crayon-line-filter:brightness(1.6) saturate(.8);
-}}
 :root[data-theme="dark"]{
   --color-primary:#eef1ec; --color-on-primary:#111613; --color-primary-hover:#d9ddd6;
   --color-surface:#111613; --color-surface-sunk:#1b211d; --color-text:#eef1ec; --color-text-muted:#9aa39c;

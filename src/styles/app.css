@@ -16,11 +16,6 @@
   --col: 560px;
   --crayon-arrow-filter: none;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --crayon-arrow-filter: invert(1) hue-rotate(180deg);
-  }
-}
 :root[data-theme='dark'] {
   --crayon-arrow-filter: invert(1) hue-rotate(180deg);
 }

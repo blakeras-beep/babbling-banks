@@ -1,29 +1,22 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { readStorage, writeStorage, STORAGE_KEYS } from './storage.js';
 
+/**
+ * Light ("day") is the standard theme. "night" is opt-in from the toggle and
+ * remembered on the device; the system color-scheme preference is not read.
+ */
 const ThemeContext = createContext({
-  theme: 'system',
+  theme: 'light',
   resolvedTheme: 'light',
   setTheme() {},
   toggleTheme() {},
 });
 
-const prefersDark = () =>
-  typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: dark)').matches;
-
 export function ThemeProvider({ children }) {
-  const [theme, setThemeState] = useState(() => readStorage(STORAGE_KEYS.theme, 'system'));
-  const [systemDark, setSystemDark] = useState(prefersDark);
+  const [theme, setThemeState] = useState(() => readStorage(STORAGE_KEYS.theme, 'light'));
 
-  useEffect(() => {
-    const media = window.matchMedia?.('(prefers-color-scheme: dark)');
-    if (!media) return undefined;
-    const onChange = (event) => setSystemDark(event.matches);
-    media.addEventListener('change', onChange);
-    return () => media.removeEventListener('change', onChange);
-  }, []);
-
-  const resolvedTheme = theme === 'system' ? (systemDark ? 'dark' : 'light') : theme;
+  // Anything other than an explicit "dark" (including the old "system" value) is light.
+  const resolvedTheme = theme === 'dark' ? 'dark' : 'light';
 
   useEffect(() => {
     document.documentElement.dataset.theme = resolvedTheme;

@@ -23,7 +23,7 @@ Live at **[babblingbanks.com](https://babblingbanks.com)**.
 - **Favorites that work without an account.** Favorites are saved on your device
   instantly. Sign in to sync them across devices; device favorites are merged into
   your account automatically.
-- **Dark mode** ("night") that follows your system setting, with a switch bottom-left.
+- **Night mode.** Light is the standard; the "night" switch bottom-left turns on the dark theme and the choice is remembered on your device.
 - **Art by Banks.** Every picture in the app was made by the toddler it is named for; the
   credit on each screen links to the collection at `/art`.
 - **Installable.** Add it to your phone's home screen like an app.
