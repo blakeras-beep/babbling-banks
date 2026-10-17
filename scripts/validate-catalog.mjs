@@ -35,6 +35,21 @@ const KNOWN_KEYS = new Set([
   ...OPTIONAL,
 ]);
 
+const BANNED_WORDS = [
+  'elevate',
+  'seamless',
+  'unlock',
+  'empower',
+  'journey',
+  'magic',
+  'magical',
+  'smart',
+  'AI-powered',
+  'mommy',
+  'mama',
+  'engaging',
+];
+
 const problems = [];
 const report = (file, message) => problems.push(`${file}: ${message}`);
 
@@ -47,6 +62,11 @@ for (const [id, show] of Object.entries(shows)) {
   }
   if (!/^#[0-9a-fA-F]{6}$/.test(show.color ?? ''))
     report('shows.json', `show "${id}" has an invalid color`);
+  // Show copy the app renders follows the brand's banned-word list (DESIGN.md, Voice & Tone).
+  for (const key of ['name', 'description']) {
+    const hit = BANNED_WORDS.find((word) => new RegExp(`\\b${word}\\b`, 'i').test(show[key] ?? ''));
+    if (hit) report('shows.json', `show "${id}" ${key} uses the banned word "${hit}"`);
+  }
 }
 
 const files = fs
@@ -129,6 +149,14 @@ for (const file of files) {
     return undefined;
   });
   total += episodes.length;
+}
+
+// The meta description states the episode count; keep it true as the catalog grows.
+const stated = `${total.toLocaleString('en-US')} episodes`;
+for (const file of ['index.html']) {
+  const text = fs.readFileSync(path.join(here, '..', file), 'utf8');
+  if (!text.includes(stated))
+    report(file, `meta description must say "${stated}" (update it when the catalog changes)`);
 }
 
 if (problems.length) {

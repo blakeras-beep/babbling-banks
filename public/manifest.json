@@ -1,7 +1,7 @@
 {
   "name": "Babbling Banks",
   "short_name": "Babbling Banks",
-  "description": "Find any toddler TV episode from whatever the kid said",
+  "description": "Find the toddler TV episode from whatever the kid said",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F5F6F2",

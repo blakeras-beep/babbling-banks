@@ -15,6 +15,17 @@ const SEARCH_URLS = {
   YouTube: (q) => `https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`,
 };
 
+/**
+ * Label for the watch button. "Play this one" only when the link opens the
+ * video itself; a platform search page gets "Open on <platform>".
+ */
+export function getWatchLabel(episode, show) {
+  if (episode.platform === 'YouTube' && episode.videoId) return 'Play this one';
+  if (episode.platformUrl) return 'Play this one';
+  const platform = episode.platform || show?.platform;
+  return platform ? `Open on ${platform}` : 'Find where to watch';
+}
+
 export function getWatchUrl(episode, show) {
   if (episode.platform === 'YouTube' && episode.videoId) {
     return `https://www.youtube.com/watch?v=${episode.videoId}`;

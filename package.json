@@ -2,7 +2,7 @@
   "name": "babbling-banks",
   "version": "2.0.0",
   "private": true,
-  "description": "Find any toddler TV episode from a chaotic description.",
+  "description": "Find the toddler TV episode from whatever the kid said.",
   "type": "module",
   "engines": {
     "node": ">=20"

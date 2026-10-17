@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { getEpisodesForShow, getShow } from '../data/index.js';
 import { searchEpisodes } from '../lib/search.js';
@@ -14,7 +14,6 @@ import NotFoundPage from './NotFoundPage.jsx';
 export default function ShowPage() {
   const { showId } = useParams();
   const show = getShow(showId);
-  const [season, setSeason] = useState('all');
   const [filter, setFilter] = useState('');
   useDocumentTitle(show?.name ?? 'Show not found');
   useArtCredit('several');
@@ -24,6 +23,14 @@ export default function ShowPage() {
     () => [...new Set(episodes.map((e) => e.season))].sort((a, b) => a - b),
     [episodes]
   );
+  // Open on the first season; "All" is a tap away and keeps the page short.
+  const firstSeason = seasons.length > 1 ? String(seasons[0]) : 'all';
+  const [season, setSeason] = useState(firstSeason);
+  // The same route element serves every show, so reset when the show changes.
+  useEffect(() => {
+    setSeason(firstSeason);
+    setFilter('');
+  }, [showId, firstSeason]);
 
   if (!show) return <NotFoundPage message="That show wandered off. Happens to the best of us." />;
 
@@ -92,10 +99,11 @@ export default function ShowPage() {
                   role="tab"
                   key={number}
                   aria-selected={season === String(number)}
+                  aria-label={`Season ${number}`}
                   className="example-link"
                   onClick={() => setSeason(String(number))}
                 >
-                  Season {number}
+                  S{number}
                 </button>
               ))}
             </div>

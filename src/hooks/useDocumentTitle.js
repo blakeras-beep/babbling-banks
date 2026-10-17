@@ -4,9 +4,9 @@ const BASE = 'Babbling Banks';
 
 export function useDocumentTitle(title) {
   useEffect(() => {
-    document.title = title ? `${title} · ${BASE}` : `${BASE} - What Episode Is This?`;
+    document.title = title ? `${title} · ${BASE}` : `${BASE}. Find it from whatever they said.`;
     return () => {
-      document.title = `${BASE} - What Episode Is This?`;
+      document.title = `${BASE}. Find it from whatever they said.`;
     };
   }, [title]);
 }

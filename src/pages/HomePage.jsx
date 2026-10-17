@@ -114,9 +114,9 @@ export default function HomePage() {
         <div className="col">
           <div className="tape tape--headline headline-strip">
             <h1 className="headline-strip__text">
-              Toddler in.
+              Find it from
               <br />
-              Episode out.
+              whatever they said.
             </h1>
           </div>
           <p className="lead">
@@ -198,7 +198,7 @@ export default function HomePage() {
               <p className="found-label">found it</p>
             </div>
             <section aria-live="polite">
-              <ResultCard episode={top.episode} matches={top.matches} query={query} />
+              <ResultCard episode={top.episode} query={query} />
             </section>
           </>
         )}
@@ -235,18 +235,18 @@ export default function HomePage() {
 
         {hasResults && !editing && (
           <div className="results__more">
-            {rest.length > visible && (
-              <button
-                type="button"
-                className="btn-secondary"
-                onClick={() => setVisible((v) => v + PAGE_SIZE)}
-              >
-                Show more
-              </button>
-            )}
             <button type="button" className="btn-secondary" onClick={sayItAnotherWay}>
               Not it? Add a clue
             </button>
+            {rest.length > visible && (
+              <button
+                type="button"
+                className="text-action"
+                onClick={() => setVisible((v) => v + PAGE_SIZE)}
+              >
+                {Math.min(rest.length - visible, PAGE_SIZE)} more
+              </button>
+            )}
           </div>
         )}
 

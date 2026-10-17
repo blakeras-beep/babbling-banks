@@ -144,7 +144,7 @@ Rules: sentence case everywhere; real quotation marks around the kid's words, wi
 
 ## Layout
 
-- **Mobile (default, 375 px):** single column, 18 px side margins. **≥600 px:** 48 px side margins, content column max 560 px, left-aligned; the art band stays full-bleed across the top. No wide layout in v1.
+- **Mobile (default, 375 px):** single column, 18 px side margins. **≥600 px:** 48 px side margins, content column max 560 px, centered. Field pieces stay full-bleed across the top, so the art frames the column on both sides; object pieces hang whole, centered over the column, at most 440 px tall. No wide layout in v1.
 - **Spacing:** 8 pt scale.
 - **Home rhythm:** header 56 → art band (Blue and Yellow hung whole: full width, natural height, about 282 px at 375) → headline strip overlapping the band's bottom by 62 → 20 → lead → 20 → search field → 6 → cobalt crayon underline → 22 → primary button → 22 → "try one" → example searches → credit.
 - **Results rhythm:** header → art band behind the top 430 px → quote strip → arrow row (84 px: arrow + "found it" label) → result card → 26 → "or maybe…" → rows → credit.
@@ -177,9 +177,9 @@ None. Tape sits flat on paper or art; layering comes from overlap and rotation, 
 
 **Search field** · straight tape strip, 56 px min height, `input` type, placeholder in `text-muted` ("the dog pool one", 18 characters max), mic button right (48 px target). The cobalt crayon line sits 6 px below and defines the field against the paper. Focus: 2 px ink outline offset 3 px. Error: the line is replaced by a 3 px `danger` rule and helper text below in `danger` caption. Long queries wrap; Enter submits.
 
-**Primary button** · solid `primary` ink block, `button` type in `on-primary`, 18 × 34 px padding, rotated 1.5°, 56 px min height. Hover: fill `#34333A`. Pressed: rotate to 0°, translate 2 px down. Focus: 2 px ink outline offset 3 px. Disabled: `surface-sunk` fill, `text-muted`. Loading: "Decoding…". One per view. Reason: a solid block reads as tappable; a crayon swipe did not.
+**Primary button** · solid `primary` ink block, `button` type in `on-primary`, 18 × 34 px padding, rotated 1.5°, 56 px min height. Hover: fill `#34333A`. Pressed: rotate to 0°, translate 2 px down. Focus: 2 px ink outline offset 3 px. Disabled: `surface-sunk` fill, `text-muted`. Loading: "Decoding…". One per view. The label says what the link does: "Play this one" only when it opens the video itself (a YouTube video, an episode with its own URL); "Open on Disney+" (the show's platform) when it opens a platform search page. Reason: a solid block reads as tappable; a crayon swipe did not.
 
-**Secondary button** · straight tape strip with a 2 px ink outline, `label` type: "Not it? Add a clue".
+**Secondary button** · straight tape strip with a 2 px ink outline, `label` type: "Not it? Add a clue". One per view; a second action beside it ("8 more" on results) is a text action in `label` type with no outline.
 
 **Example search** · the kid's words in real quotes, `label` type in `crayon-cobalt`, no container, no icon, 44 px min tap height, stacked. 24 characters max. Introduced by the playful label "try one".
 
@@ -197,6 +197,12 @@ None. Tape sits flat on paper or art; layering comes from overlap and rotation, 
 **Error** · inline under the field in `danger` caption with a WarningCircle icon. No modal.
 
 **Credit** · "Art by Banks · <piece title>", `credit` type in `text-muted`, bottom-right of the page content, 16 px from the right and 12 px from the bottom. Once per page. The title is the piece that screen shows, from `assets/art/collection.json` (home "Blue and Yellow", results "Mint and Blue", dark screens "Emerald Texture", and so on); a page showing several pieces uses plain "Art by Banks". It links to the art page (no underline until hover); the art page itself carries no credit, because the whole page is one. Keep the title under 20 characters so the line stays short; every current title fits.
+
+**Theme toggle** · "night" / "day" as a text button at the bottom-left of the credit row, `caption` type in `text-muted`, in a 48 px target flush with the gutter. It overrides `prefers-color-scheme` and is remembered on the device.
+
+**Season tabs** (show page) · "All", then one tab per season labelled with the code prefix ("S1", "S2"; the accessible name is "Season 1"), `label` type in cobalt, the selected one in ink and underlined, in a single row that scrolls rather than wraps. The page opens on the first season.
+
+**Pager** (episode detail) · previous and next episode as text actions with a caret, the word "previous" or "next" in `caption` `text-muted` above the title so a lone link still reads.
 
 **Wall label** · on the art page, under each piece: the title in `playful` 13 px ink, the medium below it in Atkinson 11 `text-muted` ("finger paint, foil stars"), 6 px below the piece.
 
@@ -272,10 +278,11 @@ Playful and silly, aimed at the grown-up. The joke is the shared chaos of a tiny
 | "found it" | "Match found!" |
 | "Not it? Add a clue" | "Refine search" |
 
-- **Home headline:** "Toddler in. Episode out." is the current line. A fresh review flagged the "X in. Y out." pattern as a common AI slogan shape; keep it until a better line is written, and test alternatives in the toddler's own words (for example a real quote like "the one with the pool").
+- **Home headline:** "Find it from whatever they said." It replaced "Toddler in. Episode out." after review flagged the "X in. Y out." slogan shape. The title tag and share titles carry the same line. Still worth testing a line in the toddler's own words (a real quote like "the one with the pool").
 - **Banned:** elevate, seamless, unlock, empower, journey, magic/magical, smart, AI-powered, mommy/mama (say parents or grown-ups), baby-talk spellings, screen-time judgment.
 - **Punctuation:** no exclamation marks in UI. Em dashes at most one per ~150 words, never in headlines.
-- **CTAs:** verb + outcome, 2–4 words: "Find it", "Play this one", "Share the decode".
+- **CTAs:** verb + outcome, 2–4 words, and never promise more than the link does: "Find it", "Play this one" (opens the video), "Open on Disney+" (opens a platform search), "Share the decode", "Report it on GitHub".
+- **The banned list applies to data too.** Show names and descriptions in `shows.json` are copy the app renders; `npm run validate-catalog` checks them. Episode synopses quote their sources and are exempt.
 
 ## Applications
 
@@ -283,7 +290,7 @@ Playful and silly, aimed at the grown-up. The joke is the shared chaos of a tiny
 
 **Results:** as in Layout and the Translation pair.
 
-**Episode detail:** header with back caret → art band 120 px (`ripple-01`) → result card overlapping the band's bottom by 48 px (title, caption row, thumbnail) → 26 → primary "Play this one" → 24 → body description → an action row of two icon + label text buttons, "Keep it" (Heart) and "Share the decode" (ShareNetwork), `label` type, 48 px targets → 32 → "songs in this one" label → song rows → 32 → "what they said" label over the kid's quote strip (−2°, with swipes) → credit.
+**Episode detail:** header with back caret → art band 120 px (`ripple-01`) → result card overlapping the band's bottom by 48 px (title, caption row, thumbnail) → 26 → primary "Play this one" or "Open on <platform>" → 24 → body description → an action row of two icon + label text buttons, "Keep it" (Heart) and "Share the decode" (ShareNetwork), `label` type, 48 px targets → 32 → "songs in this one" label → song rows → 32 → "what they said" label over the kid's quote strip (−2°, with swipes) → credit.
 
 **Song row** · 52 px tall, song name in `label` ink left, timestamp in `code` ink right-aligned (not a link), cobalt crayon line between rows only (10 px, 85% width).
 
@@ -297,7 +304,7 @@ Playful and silly, aimed at the grown-up. The joke is the shared chaos of a tiny
 
 **Art page ("Art by Banks", where the credit links):** header → headline strip "Art by Banks." (−2.5°, no band above it) → body "Every picture here was made by Banks, the toddler this app is named for. Crayon, finger paint, tape, stars. We just cleaned them up." → every piece in `collection.json`, shown whole (no cropping, each keeps its own proportions), two columns at 375 with 14 px column gap and 20 px row gap, straight (no tilt), each with a wall label. Alt text is "<title>, by Banks". No credit line on this page.
 
-**Loading:** header → the kid's quote strip (−2°, "You said") → spot strip with `leaf-01`, "Thinking about it." and the playful label "decoding…" in cobalt. The primary button, if visible, reads "Decoding…".
+**Loading:** header → the kid's quote strip (−2°, "You said") → spot strip with `leaf-01` and "Thinking about it." One label for the state; the primary button, if visible, reads "Decoding…".
 
 **Offline:** header → spot strip with `cone-01`, "No internet.", "We need it to look things up. Your repeat offenders still work." and a secondary button "Try again" → credit.
 
@@ -311,9 +318,11 @@ Playful and silly, aimed at the grown-up. The joke is the shared chaos of a tiny
 - The list row, header and search field are standard patterns by necessity; a fresh review still reads them as kit parts (overall 5/10 "generic" after v1.1, down from 6/10). The art and copy carry the brand; the UI designer can push components further toward crayon.
 - The masters are cleaned-up versions of photos of the originals, not flat scans. If a piece ever needs to print larger than its print size, rescan the original.
 - Cutout PNGs are about 1.2 MB each; serve them as WebP or AVIF in production.
-- Rights: confirm thumbnail and show-name use against each platform's terms; confirm COPPA posture before any kid-facing feature. Not legal advice.
+- Rights: show names and platform names appear as link labels ("Open on Disney+", "on Paramount+"); confirm thumbnail, show-name and platform-name use against each platform's terms; confirm COPPA posture before any kid-facing feature. Not legal advice.
 
 ## Changelog
+
+- 2026-10-17: v1.5.1, review fixes. Home headline is now "Find it from whatever they said." (title tag and share titles too). The primary button on detail says what the link does ("Open on Disney+" for a platform search). The desktop column is centered. Added the theme toggle, season tabs and pager as components; "n more" on results is a text action, not a second outlined button. Loading keeps one label. Characters, places and themes on detail wrap inline. The result card no longer repeats the quote under the thumbnail. Show copy in `shows.json` follows the banned-word list and the validator checks it; "Ms Rachel (Songs for Littles)" is the show's one name. `screens/*.html` carry the new headline; `examples/*.jpg` still show the old one.
 
 - 2026-10-17: v1.5. Adopted three moves from the Fridge branch: the credit names the piece ("Art by Banks · Mint and Blue"), the art page shows every piece whole with a wall label (title and medium), and every piece is a field (may crop) or an object (shown whole only). Home now shows Blue and Yellow whole instead of cropped, and the 404 shows Black and Blue whole. Added `assets/art/collection.json`.
 
