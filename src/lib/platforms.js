@@ -2,10 +2,10 @@ import episodeImages from '../data/episode-images.json';
 
 /**
  * Where-to-watch links. Episodes may carry their own `platformUrl`; otherwise
- * we build a search link on the platform the show streams on.
+ * we build a search link on the platform the show streams on. Disney+ has no
+ * search URL that takes a query, so its episodes fall back to the show's page.
  */
 const SEARCH_URLS = {
-  'Disney+': (q) => `https://www.disneyplus.com/search/${encodeURIComponent(q)}`,
   Hulu: (q) => `https://www.hulu.com/search?q=${encodeURIComponent(q)}`,
   Netflix: (q) => `https://www.netflix.com/search?q=${encodeURIComponent(q)}`,
   'Paramount+': (q) => `https://www.paramountplus.com/search/?q=${encodeURIComponent(q)}`,
@@ -21,7 +21,7 @@ const SEARCH_URLS = {
  */
 export function getWatchLabel(episode, show) {
   if (episode.platform === 'YouTube' && episode.videoId) return 'Play this one';
-  if (episode.platformUrl) return 'Play this one';
+  if (episode.platformUrl && episode.platformUrl !== show?.platformUrl) return 'Play this one';
   const platform = episode.platform || show?.platform;
   return platform ? `Open on ${platform}` : 'Find where to watch';
 }
