@@ -49,6 +49,10 @@ come from Wikipedia, TheTVDB, TVmaze and fan wikis (via web search), and Claude 
 descriptions and aliases from those summaries. Counts are stories: shows with
 two stories per episode (Curious George, Daniel Tiger, Mickey, PAW Patrol) list each one.
 
+Episode pictures come from [TMDB](https://www.themoviedb.org/): `npm run fetch-episode-images`
+matches each episode to its TMDB still (by title, then by number) and falls back to the
+show's backdrop. This product uses the TMDB API but is not endorsed or certified by TMDB.
+
 AI-generated entries are flagged on the episode page. Corrections are very welcome:
 open an issue or a pull request that edits the JSON under `src/data/episodes/`.
 
@@ -79,19 +83,20 @@ The same two variables must be set in Vercel for the production site
 
 ## Scripts
 
-| Command                     | What it does                                                 |
-| --------------------------- | ------------------------------------------------------------ |
-| `npm run dev`               | Start the dev server with hot reload                         |
-| `npm run build`             | Production build into `dist/`                                |
-| `npm run preview`           | Serve the production build locally                           |
-| `npm test`                  | Run the unit tests (search engine, catalog)                  |
-| `npm run lint`              | ESLint                                                       |
-| `npm run format`            | Prettier (write)                                             |
-| `npm run validate-catalog`  | Check every episode file against the catalog schema          |
-| `npm run generate-catalog`  | Add a show to the catalog with Claude (needs an API key)     |
-| `npm run generate-og-image` | Re-render the 1200 × 630 share card to `public/og-image.png` |
-| `npm run screenshots`       | Screenshot every screen (375 and 1440, light and dark)       |
-| `npm run check`             | Everything CI runs: lint, validate, test, build              |
+| Command                        | What it does                                                                                 |
+| ------------------------------ | -------------------------------------------------------------------------------------------- |
+| `npm run dev`                  | Start the dev server with hot reload                                                         |
+| `npm run build`                | Production build into `dist/`                                                                |
+| `npm run preview`              | Serve the production build locally                                                           |
+| `npm test`                     | Run the unit tests (search engine, catalog)                                                  |
+| `npm run lint`                 | ESLint                                                                                       |
+| `npm run format`               | Prettier (write)                                                                             |
+| `npm run validate-catalog`     | Check every episode file against the catalog schema                                          |
+| `npm run generate-catalog`     | Add a show to the catalog with Claude (needs an API key)                                     |
+| `npm run fetch-episode-images` | Backfill episode thumbnails from TMDB into `src/data/episode-images.json` (needs a TMDB key) |
+| `npm run generate-og-image`    | Re-render the 1200 × 630 share card to `public/og-image.png`                                 |
+| `npm run screenshots`          | Screenshot every screen (375 and 1440, light and dark)                                       |
+| `npm run check`                | Everything CI runs: lint, validate, test, build                                              |
 
 ## Project structure
 
@@ -107,6 +112,7 @@ The same two variables must be set in Vercel for the production site
 ├── scripts/
 │   ├── generate-catalog.mjs   # Add a show to the catalog using the Claude API
 │   ├── validate-catalog.mjs   # Schema + consistency checks for the catalog
+│   ├── fetch-episode-images.mjs # Backfill thumbnails from TMDB (matching logic in lib/)
 │   ├── generate-og-image.mjs  # Render the share card with the brand fonts and art
 │   └── screenshot-screens.mjs # Screenshot every screen for review against the kit
 ├── supabase/schema.sql        # Database tables and row-level-security policies
@@ -128,6 +134,7 @@ The same two variables must be set in Vercel for the production site
 │   │   ├── shows.json         # Show metadata
 │   │   ├── episodes/*.json    # One file per show
 │   │   ├── art-collection.json# Banks' pieces: titles, media, modes, focus points
+│   │   ├── episode-images.json# Episode stills and show backdrops from TMDB
 │   │   └── index.js           # Assembles the catalog
 │   └── styles/                # tokens.css (from the kit), reset (global.css), components (app.css)
 └── .github/workflows/ci.yml   # Lint, validate, test, build on every push and PR

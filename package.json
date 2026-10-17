@@ -18,6 +18,7 @@
     "test:watch": "vitest",
     "validate-catalog": "node scripts/validate-catalog.mjs",
     "generate-catalog": "node scripts/generate-catalog.mjs",
+    "fetch-episode-images": "node scripts/fetch-episode-images.mjs",
     "generate-og-image": "node scripts/generate-og-image.mjs",
     "screenshots": "node scripts/screenshot-screens.mjs",
     "check": "npm run lint && npm run validate-catalog && npm run test && npm run build"
