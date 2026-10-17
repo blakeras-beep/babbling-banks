@@ -1,34 +1,120 @@
 /* Babbling Banks video kit: brand v1.5 tokens, fonts and the tape/crayon parts. */
-@font-face { font-family: Puff; src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/DynaPuff-600.woff2); font-weight: 600; }
-@font-face { font-family: Dela; src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/DelaGothicOne-400.woff2); }
-@font-face { font-family: Atk; src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/AtkinsonHyperlegibleNext-400.woff2); font-weight: 400; }
-@font-face { font-family: Atk; src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/AtkinsonHyperlegibleNext-700.woff2); font-weight: 700; }
-@font-face { font-family: Mono; src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/IBMPlexMono-500.woff2); font-weight: 500; }
+@font-face {
+  font-family: Puff;
+  src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/DynaPuff-600.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Dela;
+  src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/DelaGothicOne-400.woff2);
+}
+@font-face {
+  font-family: Atk;
+  src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/AtkinsonHyperlegibleNext-400.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Atk;
+  src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/AtkinsonHyperlegibleNext-700.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Mono;
+  src: url(../../brand/babbling-banks-brand-v1.5/assets/fonts/IBMPlexMono-500.woff2);
+  font-weight: 500;
+}
 
 :root {
-  --paper: #f5f6f2; --tape: #ffffff; --sunk: #e8eae4; --ink: #1d1c1f;
-  --muted: #5e615a; --cobalt: #3550b8; --lemon: #eee45e;
+  --paper: #f5f6f2;
+  --tape: #ffffff;
+  --sunk: #e8eae4;
+  --ink: #1d1c1f;
+  --muted: #5e615a;
+  --cobalt: #3550b8;
+  --lemon: #eee45e;
   --art: ../../brand/babbling-banks-brand-v1.5/assets/art;
 }
-* { box-sizing: border-box; }
-html, body { margin: 0; background: #0e0e10; overflow: hidden; }
-p, h1, h2 { margin: 0; font-weight: 400; }
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  background: #0e0e10;
+  overflow: hidden;
+}
+p,
+h1,
+h2 {
+  margin: 0;
+  font-weight: 400;
+}
 
-#stage { position: absolute; left: 0; top: 0; overflow: hidden; background: var(--paper); color: var(--ink);
-  font-family: Atk; transform-origin: 0 0; }
-.abs { position: absolute !important; }
-.tape { background: var(--tape); position: relative; }
+#stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Atk;
+  transform-origin: 0 0;
+}
+.abs {
+  position: absolute !important;
+}
+.tape {
+  background: var(--tape);
+  position: relative;
+}
 
 /* Lemon crayon swipe behind a matched word; the swipe's clip is animated. */
-.sw { position: relative; display: inline-block; z-index: 0; }
-.sw > i { position: absolute; left: -0.18em; right: -0.18em; top: 0.12em; bottom: -0.08em; z-index: -1;
-  background: url(../../brand/babbling-banks-brand-v1.5/assets/art/crayon-swipe-lemon.png) center / 100% 100% no-repeat;
-  clip-path: inset(0 100% 0 0); }
-.sw.b > i { background-image: url(../../brand/babbling-banks-brand-v1.5/assets/art/crayon-swipe-lemon-2.png); }
-.nw { white-space: nowrap; }
+.sw {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+.sw > i {
+  position: absolute;
+  left: -0.18em;
+  right: -0.18em;
+  top: 0.12em;
+  bottom: -0.08em;
+  z-index: -1;
+  background: url(../../brand/babbling-banks-brand-v1.5/assets/art/crayon-swipe-lemon.png) center /
+    100% 100% no-repeat;
+  clip-path: inset(0 100% 0 0);
+}
+.sw.b > i {
+  background-image: url(../../brand/babbling-banks-brand-v1.5/assets/art/crayon-swipe-lemon-2.png);
+}
+.nw {
+  white-space: nowrap;
+}
 
-.cline { display: block; background: url(../../brand/babbling-banks-brand-v1.5/assets/art/crayon-line-cobalt.png) left center / 100% 100% no-repeat; }
-.found { font-family: Puff; font-weight: 600; color: var(--cobalt); background: var(--tape); }
-.mono { font-family: Mono; font-weight: 500; }
-.show { color: var(--cobalt); }
-.caret { display: inline-block; width: 0.08em; height: 1em; background: var(--ink); vertical-align: -0.12em; margin-left: 2px; }
+.cline {
+  display: block;
+  background: url(../../brand/babbling-banks-brand-v1.5/assets/art/crayon-line-cobalt.png) left
+    center / 100% 100% no-repeat;
+}
+.found {
+  font-family: Puff;
+  font-weight: 600;
+  color: var(--cobalt);
+  background: var(--tape);
+}
+.mono {
+  font-family: Mono;
+  font-weight: 500;
+}
+.show {
+  color: var(--cobalt);
+}
+.caret {
+  display: inline-block;
+  width: 0.08em;
+  height: 1em;
+  background: var(--ink);
+  vertical-align: -0.12em;
+  margin-left: 2px;
+}

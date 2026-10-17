@@ -1,295 +1,802 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>How it works</title>
-<link rel="stylesheet" href="shared.css">
-<style>
-  /* ---- frame: left art panel, phone over it, step text on paper ---- */
-  .panel { left: 0; top: 0; width: 820px; height: 1080px; overflow: hidden; }
-  .panel img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 35%; display: block; }
-  .mark { left: 1040px; top: 70px; height: 46px; }
-  .credit { right: 40px; bottom: 30px; font: 400 22px/1 Atk; color: var(--muted); }
+  <head>
+    <meta charset="utf-8" />
+    <title>How it works</title>
+    <link rel="stylesheet" href="shared.css" />
+    <style>
+      /* ---- frame: left art panel, phone over it, step text on paper ---- */
+      .panel {
+        left: 0;
+        top: 0;
+        width: 820px;
+        height: 1080px;
+        overflow: hidden;
+      }
+      .panel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 40% 35%;
+        display: block;
+      }
+      .mark {
+        left: 1040px;
+        top: 70px;
+        height: 46px;
+      }
+      .credit {
+        right: 40px;
+        bottom: 30px;
+        font: 400 22px/1 Atk;
+        color: var(--muted);
+      }
 
-  .phone-wrap { left: 176px; top: 52px; width: 375px; height: 780px; transform-origin: 0 0; }
-  .phone { position: absolute; inset: 0; transform: scale(1.25); transform-origin: 0 0; width: 375px; height: 780px;
-    border-radius: 30px; overflow: hidden; background: var(--paper); outline: 10px solid var(--ink); }
+      .phone-wrap {
+        left: 176px;
+        top: 52px;
+        width: 375px;
+        height: 780px;
+        transform-origin: 0 0;
+      }
+      .phone {
+        position: absolute;
+        inset: 0;
+        transform: scale(1.25);
+        transform-origin: 0 0;
+        width: 375px;
+        height: 780px;
+        border-radius: 30px;
+        overflow: hidden;
+        background: var(--paper);
+        outline: 10px solid var(--ink);
+      }
 
-  /* ---- step text ---- */
-  .step { left: 1040px; top: 250px; width: 800px; }
-  .step .count { font: 600 36px/1.1 Puff; }
-  .step .head { display: inline-block; margin-top: 26px; padding: 22px 30px 26px; font: 400 76px/0.98 Dela;
-    letter-spacing: -0.01em; transform: rotate(-2.5deg); transform-origin: 0 50%; }
-  .step .lead { margin-top: 44px; font: 700 34px/1.4 Atk; max-width: 720px; }
-  .step .lead q { quotes: "\201C" "\201D"; }
-  .step .cline { margin-top: 30px; width: 520px; height: 18px; }
+      /* ---- step text ---- */
+      .step {
+        left: 1040px;
+        top: 250px;
+        width: 800px;
+      }
+      .step .count {
+        font: 600 36px/1.1 Puff;
+      }
+      .step .head {
+        display: inline-block;
+        margin-top: 26px;
+        padding: 22px 30px 26px;
+        font: 400 76px/0.98 Dela;
+        letter-spacing: -0.01em;
+        transform: rotate(-2.5deg);
+        transform-origin: 0 50%;
+      }
+      .step .lead {
+        margin-top: 44px;
+        font: 700 34px/1.4 Atk;
+        max-width: 720px;
+      }
+      .step .lead q {
+        quotes: '\201C' '\201D';
+      }
+      .step .cline {
+        margin-top: 30px;
+        width: 520px;
+        height: 18px;
+      }
 
-  /* ---- intro / outro ---- */
-  .intro-art { left: 510px; top: 60px; width: 900px; }
-  .intro-art img { width: 100%; display: block; }
-  .intro-head { left: 400px; top: 640px; padding: 26px 40px 30px; font: 400 104px/0.98 Dela; letter-spacing: -0.01em; }
-  .intro-lead { left: 450px; top: 940px; font: 700 34px/1 Atk; }
-  .out-art { left: 0; top: 0; width: 46%; height: 100%; overflow: hidden; }
-  .out-art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block; }
-  .out-mark { left: 1010px; top: 250px; width: 700px; }
-  .out-head { left: 990px; top: 470px; padding: 22px 32px 26px; font: 400 72px/0.98 Dela; letter-spacing: -0.01em; }
-  .out-btn { left: 1010px; top: 720px; padding: 26px 46px; background: var(--ink); color: var(--paper); font: 400 40px/1 Dela; }
+      /* ---- intro / outro ---- */
+      .intro-art {
+        left: 510px;
+        top: 60px;
+        width: 900px;
+      }
+      .intro-art img {
+        width: 100%;
+        display: block;
+      }
+      .intro-head {
+        left: 400px;
+        top: 640px;
+        padding: 26px 40px 30px;
+        font: 400 104px/0.98 Dela;
+        letter-spacing: -0.01em;
+      }
+      .intro-lead {
+        left: 450px;
+        top: 940px;
+        font: 700 34px/1 Atk;
+      }
+      .out-art {
+        left: 0;
+        top: 0;
+        width: 46%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .out-art img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 45%;
+        display: block;
+      }
+      .out-mark {
+        left: 1010px;
+        top: 250px;
+        width: 700px;
+      }
+      .out-head {
+        left: 990px;
+        top: 470px;
+        padding: 22px 32px 26px;
+        font: 400 72px/0.98 Dela;
+        letter-spacing: -0.01em;
+      }
+      .out-btn {
+        left: 1010px;
+        top: 720px;
+        padding: 26px 46px;
+        background: var(--ink);
+        color: var(--paper);
+        font: 400 40px/1 Dela;
+      }
 
-  /* ---- app screens, at 375 px, as in brand/screens ---- */
-  .scr { position: absolute; inset: 0; background: var(--paper); overflow: hidden; }
-  .hd { height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; position: relative; z-index: 3; background: var(--paper); }
-  .hd img { height: 24px; }
-  .hd .l { display: flex; align-items: center; gap: 6px; }
-  .band img { width: 100%; height: auto; display: block; }
-  .home .head { margin: -62px 14px 0; padding: 16px 18px 18px; transform: rotate(-2.5deg); z-index: 2; font: 400 38px/0.98 Dela; letter-spacing: -0.4px; }
-  .body { padding: 0 18px; position: relative; }
-  .home .lead { font: 700 16px/1.4 Atk; margin-top: 20px; max-width: 300px; }
-  .field { margin-top: 20px; min-height: 56px; padding: 16px 56px 16px 16px; font: 700 22px/1.1 Atk; color: var(--ink); }
-  .field .ph { color: var(--muted); }
-  .field .mic { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 26px; height: 26px; }
-  .field + .cline { margin: 6px 0 0 -4px; height: 14px; }
-  .btn { position: relative; display: inline-block; margin-top: 22px; font: 400 22px/1 Dela; color: var(--paper); background: var(--ink); padding: 18px 34px; transform: rotate(1.5deg); }
-  .try { margin-top: 22px; font: 600 18px/1.1 Puff; }
-  .chips span { font: 700 17px/1 Atk; min-height: 44px; display: flex; align-items: center; color: var(--cobalt); }
-  .scr .credit { right: 16px; bottom: 12px; font: 400 11px/1 Atk; position: absolute; }
+      /* ---- app screens, at 375 px, as in brand/screens ---- */
+      .scr {
+        position: absolute;
+        inset: 0;
+        background: var(--paper);
+        overflow: hidden;
+      }
+      .hd {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 18px;
+        position: relative;
+        z-index: 3;
+        background: var(--paper);
+      }
+      .hd img {
+        height: 24px;
+      }
+      .hd .l {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .band img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .home .head {
+        margin: -62px 14px 0;
+        padding: 16px 18px 18px;
+        transform: rotate(-2.5deg);
+        z-index: 2;
+        font: 400 38px/0.98 Dela;
+        letter-spacing: -0.4px;
+      }
+      .body {
+        padding: 0 18px;
+        position: relative;
+      }
+      .home .lead {
+        font: 700 16px/1.4 Atk;
+        margin-top: 20px;
+        max-width: 300px;
+      }
+      .field {
+        margin-top: 20px;
+        min-height: 56px;
+        padding: 16px 56px 16px 16px;
+        font: 700 22px/1.1 Atk;
+        color: var(--ink);
+      }
+      .field .ph {
+        color: var(--muted);
+      }
+      .field .mic {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 26px;
+      }
+      .field + .cline {
+        margin: 6px 0 0 -4px;
+        height: 14px;
+      }
+      .btn {
+        position: relative;
+        display: inline-block;
+        margin-top: 22px;
+        font: 400 22px/1 Dela;
+        color: var(--paper);
+        background: var(--ink);
+        padding: 18px 34px;
+        transform: rotate(1.5deg);
+      }
+      .try {
+        margin-top: 22px;
+        font: 600 18px/1.1 Puff;
+      }
+      .chips span {
+        font: 700 17px/1 Atk;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        color: var(--cobalt);
+      }
+      .scr .credit {
+        right: 16px;
+        bottom: 12px;
+        font: 400 11px/1 Atk;
+        position: absolute;
+      }
 
-  .results .bg { position: absolute; left: 0; right: 0; top: 0; height: 270px; overflow: hidden; }
-  .results .bg img { width: 100%; height: 100%; object-fit: cover; object-position: 35% 40%; }
-  .rb { position: relative; z-index: 2; padding: 12px 18px 0; }
-  .quote { padding: 16px 16px 18px; transform: rotate(-2deg); font: 400 26px/1.15 Dela; letter-spacing: -0.3px; margin-top: 6px; }
-  .arrowrow { display: flex; align-items: flex-end; gap: 6px; height: 84px; margin: 4px 0 2px 34px; }
-  .arrowrow img { width: 86px; height: 82px; }
-  .arrowrow .found { font-size: 18px; line-height: 1; padding: 7px 10px; margin-bottom: 18px; transform: rotate(-4deg); }
-  .card { padding: 22px 18px 20px; transform: rotate(1deg); }
-  .card h2 { font: 400 30px/1 Dela; }
-  .meta { margin-top: 12px; display: flex; gap: 10px; align-items: center; font: 700 13px/1 Atk; }
-  .meta .mono { font-size: 13px; }
-  .also { margin-top: 26px; font: 600 18px/1.1 Puff; }
-  .row { display: flex; align-items: center; gap: 12px; padding: 14px 0 10px; font: 400 17px/1.1 Dela; }
-  .row small { display: block; font: 700 13px Atk; margin-top: 4px; color: var(--muted); }
-  .row .hv { margin-left: auto; width: 24px; height: 24px; }
-  .rows .cline { height: 10px; width: 85%; }
-  .btn2 { display: inline-block; margin-top: 22px; padding: 12px 18px; background: var(--tape); outline: 2px solid var(--ink); font: 700 17px/1.25 Atk; }
+      .results .bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 270px;
+        overflow: hidden;
+      }
+      .results .bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 35% 40%;
+      }
+      .rb {
+        position: relative;
+        z-index: 2;
+        padding: 12px 18px 0;
+      }
+      .quote {
+        padding: 16px 16px 18px;
+        transform: rotate(-2deg);
+        font: 400 26px/1.15 Dela;
+        letter-spacing: -0.3px;
+        margin-top: 6px;
+      }
+      .arrowrow {
+        display: flex;
+        align-items: flex-end;
+        gap: 6px;
+        height: 84px;
+        margin: 4px 0 2px 34px;
+      }
+      .arrowrow img {
+        width: 86px;
+        height: 82px;
+      }
+      .arrowrow .found {
+        font-size: 18px;
+        line-height: 1;
+        padding: 7px 10px;
+        margin-bottom: 18px;
+        transform: rotate(-4deg);
+      }
+      .card {
+        padding: 22px 18px 20px;
+        transform: rotate(1deg);
+      }
+      .card h2 {
+        font: 400 30px/1 Dela;
+      }
+      .meta {
+        margin-top: 12px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font: 700 13px/1 Atk;
+      }
+      .meta .mono {
+        font-size: 13px;
+      }
+      .also {
+        margin-top: 26px;
+        font: 600 18px/1.1 Puff;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 0 10px;
+        font: 400 17px/1.1 Dela;
+      }
+      .row small {
+        display: block;
+        font: 700 13px Atk;
+        margin-top: 4px;
+        color: var(--muted);
+      }
+      .row .hv {
+        margin-left: auto;
+        width: 24px;
+        height: 24px;
+      }
+      .rows .cline {
+        height: 10px;
+        width: 85%;
+      }
+      .btn2 {
+        display: inline-block;
+        margin-top: 22px;
+        padding: 12px 18px;
+        background: var(--tape);
+        outline: 2px solid var(--ink);
+        font: 700 17px/1.25 Atk;
+      }
 
-  .detail .band { height: 120px; overflow: hidden; }
-  .detail .band img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 15%; }
-  .detail .card { margin: -48px 18px 0; z-index: 2; }
-  .detail .btn { margin-top: 26px; }
-  .detail .desc { margin-top: 24px; font: 400 16px/1.5 Atk; }
-  .actions { display: flex; gap: 24px; margin-top: 10px; }
-  .actions span { display: flex; align-items: center; gap: 8px; min-height: 48px; font: 700 17px/1.25 Atk; }
-  .actions svg { width: 24px; height: 24px; }
-  .said { margin-top: 26px; font: 600 18px/1.1 Puff; }
-  .detail .quote { margin-top: 12px; }
+      .detail .band {
+        height: 120px;
+        overflow: hidden;
+      }
+      .detail .band img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 40% 15%;
+      }
+      .detail .card {
+        margin: -48px 18px 0;
+        z-index: 2;
+      }
+      .detail .btn {
+        margin-top: 26px;
+      }
+      .detail .desc {
+        margin-top: 24px;
+        font: 400 16px/1.5 Atk;
+      }
+      .actions {
+        display: flex;
+        gap: 24px;
+        margin-top: 10px;
+      }
+      .actions span {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 48px;
+        font: 700 17px/1.25 Atk;
+      }
+      .actions svg {
+        width: 24px;
+        height: 24px;
+      }
+      .said {
+        margin-top: 26px;
+        font: 600 18px/1.1 Puff;
+      }
+      .detail .quote {
+        margin-top: 12px;
+      }
 
-  .tap { position: absolute; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%;
-    border: 3px solid var(--ink); opacity: 0; z-index: 20; pointer-events: none; }
-</style>
-</head>
-<body>
-<div id="stage">
-  <!-- intro -->
-  <div class="abs intro-art" id="introArt"><img src="../../brand/babbling-banks-brand-v1.5/assets/art/tape-resist-01-1600.jpg" alt=""></div>
-  <p class="abs tape intro-head" id="introHead">Find it from<br>whatever they said.</p>
-  <p class="abs intro-lead" id="introLead">How it works, in four taps.</p>
-
-  <!-- steps -->
-  <div class="abs panel" id="panel"><img src="../../brand/babbling-banks-brand-v1.5/assets/art/finger-01-1600.jpg" alt=""></div>
-  <img class="abs mark" id="mark" src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg" alt="babbling banks">
-
-  <div class="abs step" id="s1"><p class="count">1 of 4</p><p class="tape head">Say it how they said it.</p>
-    <p class="lead">Type their words into the search, or tap the mic and repeat them. Mumbles, sound effects, all of it.</p><span class="cline"></span></div>
-  <div class="abs step" id="s2"><p class="count">2 of 4</p><p class="tape head">Tap Find it.</p>
-    <p class="lead">We match the words that count. The lemon crayon shows you which ones did.</p><span class="cline"></span></div>
-  <div class="abs step" id="s3"><p class="count">3 of 4</p><p class="tape head">Not it? Keep going.</p>
-    <p class="lead">Close calls wait under <q>or maybe…</q> Still stuck? Add a clue, like the show or who was in it.</p><span class="cline"></span></div>
-  <div class="abs step" id="s4"><p class="count">4 of 4</p><p class="tape head">Open it. Keep it.</p>
-    <p class="lead">Open the episode on the app that has it. Keep it in repeat offenders, because they will ask again.</p><span class="cline"></span></div>
-
-  <div class="abs phone-wrap" id="phoneWrap"><div class="phone" id="phone">
-    <!-- home -->
-    <div class="scr home" id="home">
-      <div class="hd"><img src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg" alt=""><svg class="heart" width="24" height="24" viewBox="0 0 256 256"><use href="#i-heart"/></svg></div>
-      <div class="band"><img src="../../brand/babbling-banks-brand-v1.5/assets/art/tape-resist-01-1600.jpg" alt=""></div>
-      <div class="tape head">Find it from<br>whatever they said.</div>
-      <div class="body">
-        <p class="lead">Say it exactly how they said it. Mumbles, sound effects, all of it.</p>
-        <div class="tape field" id="field"><span id="fieldText"></span><svg class="mic" viewBox="0 0 256 256"><use href="#i-mic"/></svg></div><span class="cline"></span>
-        <span class="btn" id="findBtn">Find it</span>
-        <p class="try">try one</p>
-        <div class="chips"><span>“freeze dad”</span><span>“wheels on the bus”</span></div>
+      .tap {
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        margin: -23px 0 0 -23px;
+        border-radius: 50%;
+        border: 3px solid var(--ink);
+        opacity: 0;
+        z-index: 20;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <!-- intro -->
+      <div class="abs intro-art" id="introArt">
+        <img
+          src="../../brand/babbling-banks-brand-v1.5/assets/art/tape-resist-01-1600.jpg"
+          alt=""
+        />
       </div>
-      <span class="credit">Art by Banks · Blue and Yellow</span>
-    </div>
+      <p class="abs tape intro-head" id="introHead">Find it from<br />whatever they said.</p>
+      <p class="abs intro-lead" id="introLead">How it works, in four taps.</p>
 
-    <!-- results -->
-    <div class="scr results" id="results">
-      <div class="hd"><img src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg" alt=""><svg width="24" height="24" viewBox="0 0 256 256"><use href="#i-heart"/></svg></div>
-      <div id="rScroll" style="position:relative">
-        <div class="bg"><img src="../../brand/babbling-banks-brand-v1.5/assets/art/swirl-01-1600.jpg" alt=""></div>
-        <div class="rb">
-          <div class="tape quote" id="rQuote">“the one where the <span class="sw"><i></i>dog</span> <span class="sw b"><i></i>freezes</span> <span class="nw"><span class="sw"><i></i>dad</span>”</span></div>
-          <div class="arrowrow"><img id="rArrow" src="../../brand/babbling-banks-brand-v1.5/assets/art/crayon-arrow-ink.png" alt=""><p class="found" id="rFound">found it</p></div>
-          <div class="tape card" id="rCard"><h2>Magic Xylophone</h2><div class="meta"><span class="show">Bluey</span><span class="mono">S1E01</span><span>· Disney+</span></div></div>
-          <div id="rMore">
-            <p class="also">or maybe…</p>
-            <div class="rows">
-              <div class="row"><div>Pups and the Big Freeze<small>PAW Patrol · S2E08a</small></div><svg class="hv" viewBox="0 0 256 256"><use href="#i-heart"/></svg></div><span class="cline"></span>
-              <div class="row"><div>Granddad Dog’s Garage<small>Peppa Pig · S2E17</small></div><svg class="hv" viewBox="0 0 256 256"><use href="#i-heart"/></svg></div>
+      <!-- steps -->
+      <div class="abs panel" id="panel">
+        <img src="../../brand/babbling-banks-brand-v1.5/assets/art/finger-01-1600.jpg" alt="" />
+      </div>
+      <img
+        class="abs mark"
+        id="mark"
+        src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg"
+        alt="babbling banks"
+      />
+
+      <div class="abs step" id="s1">
+        <p class="count">1 of 4</p>
+        <p class="tape head">Say it how they said it.</p>
+        <p class="lead">
+          Type their words into the search, or tap the mic and repeat them. Mumbles, sound effects,
+          all of it.
+        </p>
+        <span class="cline"></span>
+      </div>
+      <div class="abs step" id="s2">
+        <p class="count">2 of 4</p>
+        <p class="tape head">Tap Find it.</p>
+        <p class="lead">
+          We match the words that count. The lemon crayon shows you which ones did.
+        </p>
+        <span class="cline"></span>
+      </div>
+      <div class="abs step" id="s3">
+        <p class="count">3 of 4</p>
+        <p class="tape head">Not it? Keep going.</p>
+        <p class="lead">
+          Close calls wait under <q>or maybe…</q> Still stuck? Add a clue, like the show or who was
+          in it.
+        </p>
+        <span class="cline"></span>
+      </div>
+      <div class="abs step" id="s4">
+        <p class="count">4 of 4</p>
+        <p class="tape head">Open it. Keep it.</p>
+        <p class="lead">
+          Open the episode on the app that has it. Keep it in repeat offenders, because they will
+          ask again.
+        </p>
+        <span class="cline"></span>
+      </div>
+
+      <div class="abs phone-wrap" id="phoneWrap">
+        <div class="phone" id="phone">
+          <!-- home -->
+          <div class="scr home" id="home">
+            <div class="hd">
+              <img
+                src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg"
+                alt=""
+              /><svg class="heart" width="24" height="24" viewBox="0 0 256 256">
+                <use href="#i-heart" />
+              </svg>
             </div>
-            <span class="btn2" id="clueBtn">Not it? Add a clue</span>
+            <div class="band">
+              <img
+                src="../../brand/babbling-banks-brand-v1.5/assets/art/tape-resist-01-1600.jpg"
+                alt=""
+              />
+            </div>
+            <div class="tape head">Find it from<br />whatever they said.</div>
+            <div class="body">
+              <p class="lead">
+                Say it exactly how they said it. Mumbles, sound effects, all of it.
+              </p>
+              <div class="tape field" id="field">
+                <span id="fieldText"></span
+                ><svg class="mic" viewBox="0 0 256 256"><use href="#i-mic" /></svg>
+              </div>
+              <span class="cline"></span>
+              <span class="btn" id="findBtn">Find it</span>
+              <p class="try">try one</p>
+              <div class="chips"><span>“freeze dad”</span><span>“wheels on the bus”</span></div>
+            </div>
+            <span class="credit">Art by Banks · Blue and Yellow</span>
           </div>
+
+          <!-- results -->
+          <div class="scr results" id="results">
+            <div class="hd">
+              <img
+                src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg"
+                alt=""
+              /><svg width="24" height="24" viewBox="0 0 256 256"><use href="#i-heart" /></svg>
+            </div>
+            <div id="rScroll" style="position: relative">
+              <div class="bg">
+                <img
+                  src="../../brand/babbling-banks-brand-v1.5/assets/art/swirl-01-1600.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="rb">
+                <div class="tape quote" id="rQuote">
+                  “the one where the <span class="sw"><i></i>dog</span>
+                  <span class="sw b"><i></i>freezes</span>
+                  <span class="nw"
+                    ><span class="sw"><i></i>dad</span>”</span
+                  >
+                </div>
+                <div class="arrowrow">
+                  <img
+                    id="rArrow"
+                    src="../../brand/babbling-banks-brand-v1.5/assets/art/crayon-arrow-ink.png"
+                    alt=""
+                  />
+                  <p class="found" id="rFound">found it</p>
+                </div>
+                <div class="tape card" id="rCard">
+                  <h2>Magic Xylophone</h2>
+                  <div class="meta">
+                    <span class="show">Bluey</span><span class="mono">S1E01</span
+                    ><span>· Disney+</span>
+                  </div>
+                </div>
+                <div id="rMore">
+                  <p class="also">or maybe…</p>
+                  <div class="rows">
+                    <div class="row">
+                      <div>Pups and the Big Freeze<small>PAW Patrol · S2E08a</small></div>
+                      <svg class="hv" viewBox="0 0 256 256"><use href="#i-heart" /></svg>
+                    </div>
+                    <span class="cline"></span>
+                    <div class="row">
+                      <div>Granddad Dog’s Garage<small>Peppa Pig · S2E17</small></div>
+                      <svg class="hv" viewBox="0 0 256 256"><use href="#i-heart" /></svg>
+                    </div>
+                  </div>
+                  <span class="btn2" id="clueBtn">Not it? Add a clue</span>
+                </div>
+              </div>
+            </div>
+            <span class="credit">Art by Banks · Mint and Blue</span>
+          </div>
+
+          <!-- detail -->
+          <div class="scr detail" id="detail">
+            <div class="hd">
+              <span class="l"
+                ><svg width="24" height="24" viewBox="0 0 256 256"><use href="#i-caret" /></svg
+                ><img
+                  src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg"
+                  alt="" /></span
+              ><svg width="24" height="24" viewBox="0 0 256 256"><use href="#i-heart" /></svg>
+            </div>
+            <div class="band">
+              <img
+                src="../../brand/babbling-banks-brand-v1.5/assets/art/ripple-01-1600.jpg"
+                alt=""
+              />
+            </div>
+            <div class="tape card">
+              <h2>Magic Xylophone</h2>
+              <div class="meta">
+                <span class="show">Bluey</span><span class="mono">S1E01</span><span>· Disney+</span>
+              </div>
+            </div>
+            <div class="body">
+              <span class="btn" id="openBtn">Open on Disney+</span>
+              <p class="desc">
+                Bandit uses Bluey as a pretend piano, in which Bingo begs to have a turn.
+              </p>
+              <div class="actions">
+                <span id="keepBtn"
+                  ><svg viewBox="0 0 256 256"><use id="keepIcon" href="#i-heart" /></svg
+                  ><b id="keepLabel" style="font-weight: 700">Keep it</b></span
+                >
+                <span
+                  ><svg viewBox="0 0 256 256"><use href="#i-share" /></svg>Share the decode</span
+                >
+              </div>
+              <p class="said">what they said</p>
+              <div class="tape quote">
+                “the one where the <span class="sw"><i style="clip-path: none"></i>dog</span>
+                <span class="sw b"><i style="clip-path: none"></i>freezes</span>
+                <span class="nw"
+                  ><span class="sw"><i style="clip-path: none"></i>dad</span>”</span
+                >
+              </div>
+            </div>
+            <span class="credit">Art by Banks · Aqua Wash</span>
+          </div>
+          <div class="tap" id="tap"></div>
         </div>
       </div>
-      <span class="credit">Art by Banks · Mint and Blue</span>
-    </div>
 
-    <!-- detail -->
-    <div class="scr detail" id="detail">
-      <div class="hd"><span class="l"><svg width="24" height="24" viewBox="0 0 256 256"><use href="#i-caret"/></svg><img src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg" alt=""></span><svg width="24" height="24" viewBox="0 0 256 256"><use href="#i-heart"/></svg></div>
-      <div class="band"><img src="../../brand/babbling-banks-brand-v1.5/assets/art/ripple-01-1600.jpg" alt=""></div>
-      <div class="tape card"><h2>Magic Xylophone</h2><div class="meta"><span class="show">Bluey</span><span class="mono">S1E01</span><span>· Disney+</span></div></div>
-      <div class="body">
-        <span class="btn" id="openBtn">Open on Disney+</span>
-        <p class="desc">Bandit uses Bluey as a pretend piano, in which Bingo begs to have a turn.</p>
-        <div class="actions">
-          <span id="keepBtn"><svg viewBox="0 0 256 256"><use id="keepIcon" href="#i-heart"/></svg><b id="keepLabel" style="font-weight:700">Keep it</b></span>
-          <span><svg viewBox="0 0 256 256"><use href="#i-share"/></svg>Share the decode</span>
-        </div>
-        <p class="said">what they said</p>
-        <div class="tape quote">“the one where the <span class="sw"><i style="clip-path:none"></i>dog</span> <span class="sw b"><i style="clip-path:none"></i>freezes</span> <span class="nw"><span class="sw"><i style="clip-path:none"></i>dad</span>”</span></div>
+      <!-- outro -->
+      <div class="abs out-art" id="outArt">
+        <img src="../../brand/babbling-banks-brand-v1.5/assets/art/smear-01-1600.jpg" alt="" />
       </div>
-      <span class="credit">Art by Banks · Aqua Wash</span>
+      <img
+        class="abs out-mark"
+        id="outMark"
+        src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg"
+        alt="babbling banks"
+      />
+      <p class="abs tape out-head" id="outHead">Find it from<br />whatever they said.</p>
+      <p class="abs out-btn" id="outBtn">Find it at babblingbanks.com</p>
+
+      <p class="abs credit" id="credit">Art by Banks</p>
     </div>
-    <div class="tap" id="tap"></div>
-  </div></div>
 
-  <!-- outro -->
-  <div class="abs out-art" id="outArt"><img src="../../brand/babbling-banks-brand-v1.5/assets/art/smear-01-1600.jpg" alt=""></div>
-  <img class="abs out-mark" id="outMark" src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg" alt="babbling banks">
-  <p class="abs tape out-head" id="outHead">Find it from<br>whatever they said.</p>
-  <p class="abs out-btn" id="outBtn">Find it at babblingbanks.com</p>
+    <!-- Phosphor Bold -->
+    <svg width="0" height="0" style="position: absolute">
+      <defs>
+        <path
+          id="i-heart"
+          fill="currentColor"
+          d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Zm-5.49,142.36A328.690,328.690,0,0,1,128,210.16a328.69,328.69,0,0,1-44.51-31.8C61.82,159.770,36,131.42,36,102A42,42,0,0,1,78,60c17.8,0,32.7,9.4,38.89,24.54a12,12,0,0,0,22.22,0C145.3,69.4,160.2,60,178,60a42,42,0,0,1,42,42C220,131.42,194.18,159.77,172.51,178.36Z"
+        />
+        <path
+          id="i-heart-fill"
+          fill="currentColor"
+          d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Z"
+        />
+        <path
+          id="i-mic"
+          fill="currentColor"
+          d="M128,180a52.06,52.06,0,0,0,52-52V64A52,52,0,0,0,76,64v64A52.06,52.06,0,0,0,128,180ZM100,64a28,28,0,0,1,56,0v64a28,28,0,0,1-56,0Zm40,155.22V240a12,12,0,0,1-24,0V219.22A92.14,92.14,0,0,1,36,128a12,12,0,0,1,24,0,68,68,0,0,0,136,0,12,12,0,0,1,24,0A92.14,92.14,0,0,1,140,219.22Z"
+        />
+        <path
+          id="i-caret"
+          fill="currentColor"
+          d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"
+        />
+        <path
+          id="i-share"
+          fill="currentColor"
+          d="M176,156a43.78,43.78,0,0,0-29.31,11.25l-48-30.83a44.07,44.07,0,0,0,0-16.84l48-30.83A44,44,0,1,0,132,56a44.2,44.2,0,0,0,1.06,9.58l-48,30.83a44,44,0,1,0,0,63.18l48,30.83A44.2,44.2,0,0,0,132,200a44,44,0,1,0,44-44Zm0-120a20,20,0,1,1-20,20A20,20,0,0,1,176,36ZM64,148a20,20,0,1,1,20-20A20,20,0,0,1,64,148Zm112,72a20,20,0,1,1,20-20A20,20,0,0,1,176,220Z"
+        />
+      </defs>
+    </svg>
 
-  <p class="abs credit" id="credit">Art by Banks</p>
-</div>
+    <script type="module">
+      import { prog, lerp, ease, set, type, swipe, drawArrow, boot, $, $$ } from './engine.js';
 
-<!-- Phosphor Bold -->
-<svg width="0" height="0" style="position:absolute"><defs>
-  <path id="i-heart" fill="currentColor" d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Zm-5.49,142.36A328.690,328.690,0,0,1,128,210.16a328.69,328.69,0,0,1-44.51-31.8C61.82,159.770,36,131.42,36,102A42,42,0,0,1,78,60c17.8,0,32.7,9.4,38.89,24.54a12,12,0,0,0,22.22,0C145.3,69.4,160.2,60,178,60a42,42,0,0,1,42,42C220,131.42,194.18,159.77,172.51,178.36Z"/>
-  <path id="i-heart-fill" fill="currentColor" d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Z"/>
-  <path id="i-mic" fill="currentColor" d="M128,180a52.06,52.06,0,0,0,52-52V64A52,52,0,0,0,76,64v64A52.06,52.06,0,0,0,128,180ZM100,64a28,28,0,0,1,56,0v64a28,28,0,0,1-56,0Zm40,155.22V240a12,12,0,0,1-24,0V219.22A92.14,92.14,0,0,1,36,128a12,12,0,0,1,24,0,68,68,0,0,0,136,0,12,12,0,0,1,24,0A92.14,92.14,0,0,1,140,219.22Z"/>
-  <path id="i-caret" fill="currentColor" d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"/>
-  <path id="i-share" fill="currentColor" d="M176,156a43.78,43.78,0,0,0-29.31,11.25l-48-30.83a44.07,44.07,0,0,0,0-16.84l48-30.83A44,44,0,1,0,132,56a44.2,44.2,0,0,0,1.06,9.58l-48,30.83a44,44,0,1,0,0,63.18l48,30.83A44.2,44.2,0,0,0,132,200a44,44,0,1,0,44-44Zm0-120a20,20,0,1,1-20,20A20,20,0,0,1,176,36ZM64,148a20,20,0,1,1,20-20A20,20,0,0,1,64,148Zm112,72a20,20,0,1,1,20-20A20,20,0,0,1,176,220Z"/>
-</defs></svg>
+      const QUERY = 'the one where the dog freezes dad';
+      const STEPS = [
+        ['#s1', 5.6, 16],
+        ['#s2', 16, 25],
+        ['#s3', 25, 32.4],
+        ['#s4', 32.4, 45],
+      ];
+      const TAPS = [
+        [7.0, '#field'],
+        [16.6, '#findBtn'],
+        [28.6, '#clueBtn'],
+        [33.0, '#rCard'],
+        [37.2, '#keepBtn'],
+        [40.2, '#openBtn'],
+      ];
 
-<script type="module">
-import { prog, lerp, ease, set, type, swipe, drawArrow, boot, $, $$ } from './engine.js';
+      const phone = $('#phone');
+      /** Centre of `sel` in phone coordinates (375-wide), whatever the scale. */
+      function centre(sel) {
+        const p = phone.getBoundingClientRect(),
+          r = $(sel).getBoundingClientRect(),
+          k = p.width / 375;
+        return [(r.left + r.width / 2 - p.left) / k, (r.top + r.height / 2 - p.top) / k];
+      }
 
-const QUERY = 'the one where the dog freezes dad';
-const STEPS = [['#s1', 5.6, 16], ['#s2', 16, 25], ['#s3', 25, 32.4], ['#s4', 32.4, 45]];
-const TAPS = [[7.0, '#field'], [16.6, '#findBtn'], [28.6, '#clueBtn'], [33.0, '#rCard'], [37.2, '#keepBtn'], [40.2, '#openBtn']];
+      function render(t) {
+        // ---- intro (0 – 5.6) ----
+        const inA = prog(t, 0.1, 1.0),
+          inH = prog(t, 0.6, 1.3, ease.back),
+          inL = prog(t, 1.3, 1.9);
+        const outI = prog(t, 4.8, 5.6, ease.inOut);
+        set($('#introArt'), { y: lerp(30, 0, inA) - outI * 60, o: inA * (1 - outI) });
+        set($('#introHead'), {
+          x: lerp(-80, 0, inH),
+          r: -2.5,
+          o: Math.min(1, inH * 2) * (1 - outI),
+        });
+        set($('#introLead'), { y: lerp(16, 0, inL), o: inL * (1 - outI) });
 
-const phone = $('#phone');
-/** Centre of `sel` in phone coordinates (375-wide), whatever the scale. */
-function centre(sel) {
-  const p = phone.getBoundingClientRect(), r = $(sel).getBoundingClientRect(), k = p.width / 375;
-  return [(r.left + r.width / 2 - p.left) / k, (r.top + r.height / 2 - p.top) / k];
-}
+        // ---- step frame (5.6 – 45) ----
+        const inF = prog(t, 5.2, 6.2, ease.out),
+          outF = prog(t, 44.6, 45.6, ease.inOut);
+        set($('#panel'), { x: lerp(-820, 0, inF) - outF * 820 });
+        set($('#phoneWrap'), { y: lerp(1100, 0, prog(t, 5.5, 6.6, ease.out)) + outF * 1100 });
+        set($('#mark'), { o: inF * (1 - outF) });
+        for (const [sel, a, b] of STEPS) {
+          const el = $(sel),
+            i = prog(t, a + 0.15, a + 0.85),
+            o = prog(t, b - 0.5, b, ease.inOut);
+          set(el, { x: lerp(60, 0, i) - o * 40, o: i * (1 - o) });
+          const head = $('.head', el),
+            ih = prog(t, a + 0.3, a + 1.0, ease.back);
+          head.style.transform = `rotate(${lerp(-6, -2.5, ih)}deg) scale(${lerp(0.94, 1, ih)})`;
+          $('.cline', el).style.clipPath = `inset(0 ${(1 - prog(t, a + 1.0, a + 1.8)) * 100}% 0 0)`;
+        }
 
-function render(t) {
-  // ---- intro (0 – 5.6) ----
-  const inA = prog(t, 0.1, 1.0), inH = prog(t, 0.6, 1.3, ease.back), inL = prog(t, 1.3, 1.9);
-  const outI = prog(t, 4.8, 5.6, ease.inOut);
-  set($('#introArt'), { y: lerp(30, 0, inA) - outI * 60, o: inA * (1 - outI) });
-  set($('#introHead'), { x: lerp(-80, 0, inH), r: -2.5, o: Math.min(1, inH * 2) * (1 - outI) });
-  set($('#introLead'), { y: lerp(16, 0, inL), o: inL * (1 - outI) });
+        // ---- phone: home ----
+        const n = type($('#fieldText'), QUERY, t, 7.6, 11.6);
+        if (t < 7.3) $('#fieldText').innerHTML = '<span class="ph">the dog pool one</span>';
+        const press = t >= 16.6 && t < 16.85;
+        $('#findBtn').textContent = t >= 16.75 ? 'Decoding…' : 'Find it';
+        $('#findBtn').style.transform = press ? 'rotate(0deg) translateY(2px)' : 'rotate(1.5deg)';
+        $('#findBtn').style.background = t >= 16.75 ? '#34333A' : '';
 
-  // ---- step frame (5.6 – 45) ----
-  const inF = prog(t, 5.2, 6.2, ease.out), outF = prog(t, 44.6, 45.6, ease.inOut);
-  set($('#panel'), { x: lerp(-820, 0, inF) - outF * 820 });
-  set($('#phoneWrap'), { y: lerp(1100, 0, prog(t, 5.5, 6.6, ease.out)) + outF * 1100 });
-  set($('#mark'), { o: inF * (1 - outF) });
-  for (const [sel, a, b] of STEPS) {
-    const el = $(sel), i = prog(t, a + 0.15, a + 0.85), o = prog(t, b - 0.5, b, ease.inOut);
-    set(el, { x: lerp(60, 0, i) - o * 40, o: i * (1 - o) });
-    const head = $('.head', el), ih = prog(t, a + 0.3, a + 1.0, ease.back);
-    head.style.transform = `rotate(${lerp(-6, -2.5, ih)}deg) scale(${lerp(0.94, 1, ih)})`;
-    $('.cline', el).style.clipPath = `inset(0 ${(1 - prog(t, a + 1.0, a + 1.8)) * 100}% 0 0)`;
-  }
+        // ---- phone: results (in at 17.6) ----
+        const toR = prog(t, 17.5, 18.1, ease.inOut);
+        const toD = prog(t, 33.3, 33.9, ease.inOut);
+        set($('#home'), { x: -375 * toR * 0.3, o: 1 - toR });
+        set($('#results'), { x: lerp(375, 0, toR) - toD * 375 * 0.3, o: toR * (1 - toD) });
+        set($('#detail'), { x: lerp(375, 0, toD), o: toD });
+        const q = prog(t, 18.1, 18.7, ease.back);
+        $('#rQuote').style.transform =
+          `rotate(${lerp(-6, -2, q)}deg) translateY(${lerp(-30, 0, q)}px)`;
+        $('#rQuote').style.opacity = Math.min(1, q * 3);
+        $$('#rQuote .sw').forEach((el, i) => swipe(el, prog(t, 19.0 + i * 0.45, 19.4 + i * 0.45)));
+        drawArrow($('#rArrow'), prog(t, 20.6, 21.2, ease.inOut));
+        const f = prog(t, 21.2, 21.6, ease.back);
+        $('#rFound').style.transform = `rotate(-4deg) scale(${f})`;
+        const c = prog(t, 21.6, 22.3, ease.back);
+        $('#rCard').style.transform = `rotate(${lerp(4, 1, c)}deg) translateY(${lerp(60, 0, c)}px)`;
+        $('#rCard').style.opacity = Math.min(1, c * 2);
+        // Scroll to "or maybe…" in step 3 and back for step 4.
+        const sc = prog(t, 25.6, 26.6, ease.inOut) - prog(t, 32.0, 32.8, ease.inOut);
+        $('#rScroll').style.transform = `translateY(${-190 * sc}px)`;
+        $('#rMore').style.opacity = prog(t, 22.0, 22.6);
+        $('#clueBtn').style.transform = t >= 28.6 && t < 28.85 ? 'translateY(2px)' : '';
 
-  // ---- phone: home ----
-  const n = type($('#fieldText'), QUERY, t, 7.6, 11.6);
-  if (t < 7.3) $('#fieldText').innerHTML = '<span class="ph">the dog pool one</span>';
-  const press = t >= 16.6 && t < 16.85;
-  $('#findBtn').textContent = t >= 16.75 ? 'Decoding…' : 'Find it';
-  $('#findBtn').style.transform = press ? 'rotate(0deg) translateY(2px)' : 'rotate(1.5deg)';
-  $('#findBtn').style.background = t >= 16.75 ? '#34333A' : '';
+        // ---- phone: detail ----
+        const kept = t >= 37.3;
+        $('#keepIcon').setAttribute('href', kept ? '#i-heart-fill' : '#i-heart');
+        $('#keepLabel').textContent = kept ? 'Kept' : 'Keep it';
+        const pop = prog(t, 37.3, 37.5) - prog(t, 37.5, 37.8);
+        $('#keepBtn svg').style.transform = `scale(${1 + pop * 0.35})`;
+        $('#openBtn').style.transform =
+          t >= 40.2 && t < 40.45 ? 'rotate(0deg) translateY(2px)' : 'rotate(1.5deg)';
 
-  // ---- phone: results (in at 17.6) ----
-  const toR = prog(t, 17.5, 18.1, ease.inOut);
-  const toD = prog(t, 33.3, 33.9, ease.inOut);
-  set($('#home'), { x: -375 * toR * 0.3, o: 1 - toR });
-  set($('#results'), { x: lerp(375, 0, toR) - toD * 375 * 0.3, o: toR * (1 - toD) });
-  set($('#detail'), { x: lerp(375, 0, toD), o: toD });
-  const q = prog(t, 18.1, 18.7, ease.back);
-  $('#rQuote').style.transform = `rotate(${lerp(-6, -2, q)}deg) translateY(${lerp(-30, 0, q)}px)`;
-  $('#rQuote').style.opacity = Math.min(1, q * 3);
-  $$('#rQuote .sw').forEach((el, i) => swipe(el, prog(t, 19.0 + i * 0.45, 19.4 + i * 0.45)));
-  drawArrow($('#rArrow'), prog(t, 20.6, 21.2, ease.inOut));
-  const f = prog(t, 21.2, 21.6, ease.back);
-  $('#rFound').style.transform = `rotate(-4deg) scale(${f})`;
-  const c = prog(t, 21.6, 22.3, ease.back);
-  $('#rCard').style.transform = `rotate(${lerp(4, 1, c)}deg) translateY(${lerp(60, 0, c)}px)`;
-  $('#rCard').style.opacity = Math.min(1, c * 2);
-  // Scroll to "or maybe…" in step 3 and back for step 4.
-  const sc = prog(t, 25.6, 26.6, ease.inOut) - prog(t, 32.0, 32.8, ease.inOut);
-  $('#rScroll').style.transform = `translateY(${-190 * sc}px)`;
-  $('#rMore').style.opacity = prog(t, 22.0, 22.6);
-  $('#clueBtn').style.transform = t >= 28.6 && t < 28.85 ? 'translateY(2px)' : '';
+        // ---- tap indicator ----
+        const tap = $('#tap');
+        tap.style.opacity = 0;
+        for (const [at, sel] of TAPS) {
+          if (t >= at - 0.25 && t < at + 0.45) {
+            const [x, y] = centre(sel),
+              p = (t - at + 0.25) / 0.7;
+            tap.style.left = x + 'px';
+            tap.style.top = y + 'px';
+            tap.style.opacity = p < 0.35 ? p / 0.35 : 1 - (p - 0.35) / 0.65;
+            tap.style.transform = `scale(${p < 0.35 ? lerp(1.4, 0.8, p / 0.35) : lerp(0.8, 1.5, (p - 0.35) / 0.65)})`;
+          }
+        }
 
-  // ---- phone: detail ----
-  const kept = t >= 37.3;
-  $('#keepIcon').setAttribute('href', kept ? '#i-heart-fill' : '#i-heart');
-  $('#keepLabel').textContent = kept ? 'Kept' : 'Keep it';
-  const pop = prog(t, 37.3, 37.5) - prog(t, 37.5, 37.8);
-  $('#keepBtn svg').style.transform = `scale(${1 + pop * 0.35})`;
-  $('#openBtn').style.transform = t >= 40.2 && t < 40.45 ? 'rotate(0deg) translateY(2px)' : 'rotate(1.5deg)';
+        // ---- outro (45 – 52) ----
+        const oa = prog(t, 45.2, 46.2, ease.out),
+          om = prog(t, 45.8, 46.6),
+          oh = prog(t, 46.3, 47.0, ease.back),
+          ob = prog(t, 47.0, 47.6, ease.back);
+        set($('#outArt'), { x: lerp(-900, 0, oa) });
+        set($('#outMark'), { y: lerp(20, 0, om), o: om });
+        set($('#outHead'), { x: lerp(60, 0, oh), r: -2.5, o: Math.min(1, oh * 2) });
+        set($('#outBtn'), { y: lerp(40, 0, ob), r: 1.5, o: Math.min(1, ob * 2) });
+        $('#credit').style.opacity = Math.max(inF * (1 - outF), om);
+        $('#credit').style.right = '40px';
+      }
 
-  // ---- tap indicator ----
-  const tap = $('#tap');
-  tap.style.opacity = 0;
-  for (const [at, sel] of TAPS) {
-    if (t >= at - 0.25 && t < at + 0.45) {
-      const [x, y] = centre(sel), p = (t - at + 0.25) / 0.7;
-      tap.style.left = x + 'px'; tap.style.top = y + 'px';
-      tap.style.opacity = p < 0.35 ? p / 0.35 : 1 - (p - 0.35) / 0.65;
-      tap.style.transform = `scale(${p < 0.35 ? lerp(1.4, 0.8, p / 0.35) : lerp(0.8, 1.5, (p - 0.35) / 0.65)})`;
-    }
-  }
-
-  // ---- outro (45 – 52) ----
-  const oa = prog(t, 45.2, 46.2, ease.out), om = prog(t, 45.8, 46.6), oh = prog(t, 46.3, 47.0, ease.back), ob = prog(t, 47.0, 47.6, ease.back);
-  set($('#outArt'), { x: lerp(-900, 0, oa) });
-  set($('#outMark'), { y: lerp(20, 0, om), o: om });
-  set($('#outHead'), { x: lerp(60, 0, oh), r: -2.5, o: Math.min(1, oh * 2) });
-  set($('#outBtn'), { y: lerp(40, 0, ob), r: 1.5, o: Math.min(1, ob * 2) });
-  $('#credit').style.opacity = Math.max(inF * (1 - outF), om);
-  $('#credit').style.right = '40px';
-}
-
-boot({
-  width: 1920, height: 1080, duration: 52, render,
-  sfx: [
-    { t: 0.6, kind: 'tape' }, { t: 6.1, kind: 'whoosh' },
-    ...TAPS.map(([at]) => ({ t: at, kind: 'tap' })),
-    ...[...QUERY].map((ch, i) => ({ t: 7.6 + (i / QUERY.length) * 4, kind: ch === ' ' ? 'space' : 'key' })),
-    { t: 17.6, kind: 'whoosh' }, { t: 18.1, kind: 'tape' },
-    { t: 19.0, kind: 'crayon' }, { t: 19.45, kind: 'crayon' }, { t: 19.9, kind: 'crayon' },
-    { t: 20.6, kind: 'crayon' }, { t: 21.2, kind: 'pop' }, { t: 21.6, kind: 'tape' },
-    { t: 25.6, kind: 'whoosh' }, { t: 33.3, kind: 'whoosh' }, { t: 37.3, kind: 'pop' },
-    { t: 45.2, kind: 'whoosh' }, { t: 46.3, kind: 'tape' }, { t: 47.0, kind: 'tape' },
-  ],
-});
-</script>
-</body>
+      boot({
+        width: 1920,
+        height: 1080,
+        duration: 52,
+        render,
+        sfx: [
+          { t: 0.6, kind: 'tape' },
+          { t: 6.1, kind: 'whoosh' },
+          ...TAPS.map(([at]) => ({ t: at, kind: 'tap' })),
+          ...[...QUERY].map((ch, i) => ({
+            t: 7.6 + (i / QUERY.length) * 4,
+            kind: ch === ' ' ? 'space' : 'key',
+          })),
+          { t: 17.6, kind: 'whoosh' },
+          { t: 18.1, kind: 'tape' },
+          { t: 19.0, kind: 'crayon' },
+          { t: 19.45, kind: 'crayon' },
+          { t: 19.9, kind: 'crayon' },
+          { t: 20.6, kind: 'crayon' },
+          { t: 21.2, kind: 'pop' },
+          { t: 21.6, kind: 'tape' },
+          { t: 25.6, kind: 'whoosh' },
+          { t: 33.3, kind: 'whoosh' },
+          { t: 37.3, kind: 'pop' },
+          { t: 45.2, kind: 'whoosh' },
+          { t: 46.3, kind: 'tape' },
+          { t: 47.0, kind: 'tape' },
+        ],
+      });
+    </script>
+  </body>
 </html>

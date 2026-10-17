@@ -22,8 +22,16 @@ const opt = (k, d) => (args.includes(k) ? args[args.indexOf(k) + 1] : d);
 const fps = Number(opt('--fps', 30));
 const stills = opt('--stills', null);
 
-const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css',
-  '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2' };
+const TYPES = {
+  '.html': 'text/html',
+  '.js': 'text/javascript',
+  '.mjs': 'text/javascript',
+  '.css': 'text/css',
+  '.svg': 'image/svg+xml',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.woff2': 'font/woff2',
+};
 const server = createServer(async (req, res) => {
   try {
     const file = path.join(root, decodeURIComponent(new URL(req.url, 'http://x').pathname));
@@ -31,16 +39,28 @@ const server = createServer(async (req, res) => {
     const body = await readFile(file);
     res.writeHead(200, { 'content-type': TYPES[path.extname(file)] ?? 'application/octet-stream' });
     res.end(body);
-  } catch { res.writeHead(404); res.end(); }
+  } catch {
+    res.writeHead(404);
+    res.end();
+  }
 }).listen(0);
 const port = server.address().port;
 
 await mkdir(out, { recursive: true });
-const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || '/opt/pw-browsers/chromium' });
+const browser = await chromium.launch({
+  executablePath: process.env.CHROMIUM_PATH || '/opt/pw-browsers/chromium',
+});
 const page = await browser.newPage();
-await page.goto(`http://localhost:${port}/marketing/videos/${name}.html?render`, { waitUntil: 'networkidle' });
+await page.goto(`http://localhost:${port}/marketing/videos/${name}.html?render`, {
+  waitUntil: 'networkidle',
+});
 await page.evaluate(() => document.fonts.ready);
-const video = await page.evaluate(() => ({ width: VIDEO.width, height: VIDEO.height, duration: VIDEO.duration, sfx: VIDEO.sfx }));
+const video = await page.evaluate(() => ({
+  width: VIDEO.width,
+  height: VIDEO.height,
+  duration: VIDEO.duration,
+  sfx: VIDEO.sfx,
+}));
 await page.setViewportSize({ width: video.width, height: video.height });
 
 if (stills) {
@@ -53,9 +73,41 @@ if (stills) {
   const wav = path.join(out, `${name}.wav`);
   await writeSoundtrack(wav, video.duration, video.sfx, name);
   const mp4 = path.join(out, `${name}.mp4`);
-  const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-',
-    '-i', wav, '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '18', '-preset', 'medium', '-movflags', '+faststart',
-    '-c:a', 'aac', '-b:a', '160k', '-shortest', mp4], { stdio: ['pipe', 'inherit', 'inherit'] });
+  const ff = spawn(
+    'ffmpeg',
+    [
+      '-y',
+      '-loglevel',
+      'error',
+      '-f',
+      'image2pipe',
+      '-framerate',
+      String(fps),
+      '-c:v',
+      'mjpeg',
+      '-i',
+      '-',
+      '-i',
+      wav,
+      '-c:v',
+      'libx264',
+      '-pix_fmt',
+      'yuv420p',
+      '-crf',
+      '18',
+      '-preset',
+      'medium',
+      '-movflags',
+      '+faststart',
+      '-c:a',
+      'aac',
+      '-b:a',
+      '160k',
+      '-shortest',
+      mp4,
+    ],
+    { stdio: ['pipe', 'inherit', 'inherit'] }
+  );
   const frames = Math.round(video.duration * fps);
   for (let i = 0; i < frames; i++) {
     await page.evaluate((t) => seek(t), i / fps);
