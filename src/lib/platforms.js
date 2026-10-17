@@ -1,3 +1,5 @@
+import episodeImages from '../data/episode-images.json';
+
 /**
  * Where-to-watch links. Episodes may carry their own `platformUrl`; otherwise
  * we build a search link on the platform the show streams on.
@@ -43,15 +45,30 @@ export function formatEpisodeCode(episode) {
 }
 
 /**
- * Official thumbnail, 16:9. YouTube publishes one per video; the catalog
- * carries no images for the streaming shows, so those use the placeholder.
+ * Official thumbnail, 16:9. In order: an image on the episode itself, the
+ * YouTube thumbnail for videos, the episode still backfilled from TMDB
+ * (scripts/fetch-episode-images.mjs), then the show's TMDB backdrop so a show
+ * never goes without a picture. Null only when none of those exist.
  */
 export function getThumbnailUrl(episode) {
   if (episode.thumbnailUrl) return episode.thumbnailUrl;
   if (episode.platform === 'YouTube' && episode.videoId) {
     return `https://i.ytimg.com/vi/${episode.videoId}/hqdefault.jpg`;
   }
+  const still = episodeImages.episodes[episode.id]?.still;
+  if (still) return `${episodeImages.imageBase}w500${still}`;
+  const backdrop = episodeImages.shows[episode.show]?.backdrop;
+  if (backdrop) return `${episodeImages.imageBase}w780${backdrop}`;
   return null;
+}
+
+/** True when the picture is the show's backdrop rather than this episode's still. */
+export function isShowFallbackImage(episode) {
+  if (episode.thumbnailUrl || episode.videoId) return false;
+  return (
+    !episodeImages.episodes[episode.id]?.still &&
+    Boolean(episodeImages.shows[episode.show]?.backdrop)
+  );
 }
 
 export function formatDuration(minutes) {

@@ -2,16 +2,17 @@ import { Link, useNavigate } from 'react-router-dom';
 import { getShowName } from '../data/index.js';
 import { formatDuration, formatEpisodeCode, getThumbnailUrl } from '../lib/platforms.js';
 
-/** Official thumbnail, 16:9, no radius, no filters; surface-sunk placeholder otherwise. */
+/**
+ * Official thumbnail, 16:9, no radius, no filters. The surface-sunk box is the
+ * ground the image loads over; with no image at all the slot is left out
+ * rather than shown empty.
+ */
 export function Thumbnail({ episode }) {
   const url = getThumbnailUrl(episode);
+  if (!url) return null;
   return (
-    <div
-      className="thumb"
-      role={url ? undefined : 'img'}
-      aria-label={url ? undefined : 'Episode image'}
-    >
-      {url ? <img src={url} alt="" loading="lazy" decoding="async" /> : 'Episode image'}
+    <div className="thumb">
+      <img src={url} alt="" loading="lazy" decoding="async" />
     </div>
   );
 }
