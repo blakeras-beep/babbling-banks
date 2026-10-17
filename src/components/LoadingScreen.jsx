@@ -14,9 +14,7 @@ export default function LoadingScreen() {
   return (
     <div className="col">
       {query && <QuoteStrip text={query} caption="You said" />}
-      <SpotStrip pieceId={PIECE?.id} title="Thinking about it.">
-        <p className="spot-strip__dots">decoding…</p>
-      </SpotStrip>
+      <SpotStrip pieceId={PIECE?.id} title="Thinking about it." />
     </div>
   );
 }

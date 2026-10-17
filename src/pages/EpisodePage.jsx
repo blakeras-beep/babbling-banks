@@ -3,7 +3,7 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import { getEpisode, getEpisodesForShow, getShow } from '../data/index.js';
 import { getRelatedEpisodes, searchEpisodes } from '../lib/search.js';
 import { getMatchedWords } from '../lib/matchedWords.js';
-import { getWatchUrl } from '../lib/platforms.js';
+import { getWatchLabel, getWatchUrl } from '../lib/platforms.js';
 import { useDocumentTitle } from '../hooks/useDocumentTitle.js';
 import { useArtCredit } from '../lib/CreditContext.jsx';
 import { pieceFor } from '../lib/art.js';
@@ -80,6 +80,7 @@ export default function EpisodePage() {
   const next = position < siblings.length - 1 ? siblings[position + 1] : null;
   const related = getRelatedEpisodes(episode, 4);
   const watchUrl = getWatchUrl(episode, show);
+  const watchLabel = getWatchLabel(episode, show);
   const isAiGenerated = /ai generated/i.test(episode.source ?? '');
 
   return (
@@ -99,7 +100,7 @@ export default function EpisodePage() {
             rel="noopener noreferrer"
             className="btn-primary detail__play"
           >
-            Play this one
+            {watchLabel}
           </a>
         )}
 
@@ -113,7 +114,7 @@ export default function EpisodePage() {
         {episode.characters?.length > 0 && (
           <section>
             <h2 className="section-label">who&apos;s in it</h2>
-            <ul className="examples">
+            <ul className="examples examples--inline">
               {episode.characters.map((name) => (
                 <li key={name}>
                   <Link to={`/?q=${encodeURIComponent(name)}`} className="example-link">
@@ -128,7 +129,7 @@ export default function EpisodePage() {
         {episode.settings?.length > 0 && (
           <section>
             <h2 className="section-label">where it happens</h2>
-            <ul className="examples">
+            <ul className="examples examples--inline">
               {episode.settings.map((name) => (
                 <li key={name}>
                   <span className="example-link" style={{ color: 'var(--color-text)' }}>
@@ -143,7 +144,7 @@ export default function EpisodePage() {
         {episode.themes?.length > 0 && (
           <section>
             <h2 className="section-label">what it&apos;s about</h2>
-            <ul className="examples">
+            <ul className="examples examples--inline">
               {episode.themes.map((name) => (
                 <li key={name}>
                   <Link to={`/?q=${encodeURIComponent(name)}`} className="example-link">
@@ -207,7 +208,7 @@ export default function EpisodePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Let us know
+            Report it on GitHub
           </a>
           .
         </p>
@@ -217,12 +218,18 @@ export default function EpisodePage() {
             {previous && (
               <Link to={`/episode/${previous.id}`} className="text-action">
                 <Icon name="caretLeft" />
-                {previous.title}
+                <span>
+                  <span className="pager__label">previous</span>
+                  {previous.title}
+                </span>
               </Link>
             )}
             {next && (
               <Link to={`/episode/${next.id}`} className="text-action text-action--next">
-                {next.title}
+                <span>
+                  <span className="pager__label">next</span>
+                  {next.title}
+                </span>
                 <Icon name="caretRight" />
               </Link>
             )}

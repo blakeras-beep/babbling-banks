@@ -11,7 +11,7 @@ Live at **[babblingbanks.com](https://babblingbanks.com)**.
 ## Features
 
 - **Toddler-proof search.** Understands toddler-speak ("doggy", "daddy", "choo choo"),
-  misspellings ("xilaphone"), and vague descriptions. Every result says _why_ it matched.
+  misspellings ("xilaphone"), and vague descriptions. The words that matched get a crayon swipe.
 - **Voice input.** Tap the microphone and repeat what your toddler said.
 - **Follow-up questions.** When results are close, the app asks "Which show?" or
   "Who was in it?" to narrow things down.

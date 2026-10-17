@@ -46,6 +46,14 @@
   max-width: var(--col);
   margin-left: var(--gutter);
 }
+/* Wider than a phone the column sits centered, so field bands frame it on
+   both sides and object pieces hang whole above it. */
+@media (min-width: 600px) {
+  .col {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .icon {
   display: block;
@@ -122,8 +130,13 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+/* Theme toggle: caption type in a full 48 px target, flush with the gutter. */
 .credit-row__theme {
-  padding: 0;
+  font: var(--text-caption);
+  min-width: var(--tap-min);
+  justify-content: center;
+  padding: 0 12px 12px;
+  margin-left: -12px;
 }
 
 /* --------------------------------------------------------------------------
@@ -151,6 +164,7 @@
     width: auto;
     max-width: 100%;
     max-height: 440px;
+    margin: 0 auto;
   }
 }
 .art-band--night .art-band__img--whole {
@@ -229,10 +243,10 @@
 }
 /* Inline links in prose: vertical padding on an inline box grows the tap
    area to 48 px without moving the lines around it. */
-.body-text a,
-.source-note a,
-.notice a,
-.caption-row a {
+.body-text a:not([class]),
+.source-note a:not([class]),
+.notice a:not([class]),
+.caption-row a:not([class]) {
   padding: 16px 0;
 }
 
@@ -383,6 +397,12 @@
   flex-direction: column;
   margin-top: 6px;
 }
+/* Short items (characters, places, themes) wrap inline; each keeps its 44 px row. */
+.examples--inline {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
 .example-link {
   display: flex;
   align-items: center;
@@ -526,12 +546,6 @@
   height: 100%;
   object-fit: cover;
 }
-.result-card__reason {
-  margin-top: 12px;
-  font: var(--text-caption);
-  color: var(--tape-muted);
-}
-
 /* --------------------------------------------------------------------------
    Result rows, separated by cobalt crayon lines. Max four before "Show more".
    -------------------------------------------------------------------------- */
@@ -618,11 +632,6 @@
 }
 .spot-strip__body {
   font: 400 15px/1.45 var(--font-text);
-}
-.spot-strip__dots {
-  font: var(--text-playful);
-  color: var(--tape-cobalt);
-  margin-top: 10px;
 }
 .spot-strip .btn-secondary {
   margin-top: 16px;
@@ -761,6 +770,11 @@
   margin-left: auto;
   text-align: right;
 }
+.pager__label {
+  display: block;
+  font: var(--text-caption);
+  color: var(--color-text-muted);
+}
 
 /* --------------------------------------------------------------------------
    Art page: every piece whole, two columns, wall labels
@@ -796,7 +810,9 @@
    -------------------------------------------------------------------------- */
 .season-tabs {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
   gap: 0 8px;
   margin: 12px 0 0 -12px;
 }
