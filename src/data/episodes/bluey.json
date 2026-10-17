@@ -28,26 +28,24 @@
       "Emotions"
     ],
     "aliases": [
+      "magic xylophone",
       "magicxylophone",
       "xilophone",
-      "xylophone episode",
-      "frozen daddy",
-      "magic xylophone",
-      "dad game",
-      "bandit episode",
-      "stop moving",
-      "toy episode",
-      "xylophone game",
-      "freeze episode",
-      "ding ding freeze",
-      "freeze bandit",
-      "daddy episode",
-      "freeze game",
-      "freeze dad",
-      "xylophone",
-      "toy",
+      "zylophone",
       "zilophone",
-      "toy game"
+      "the one where bandit gets frozen",
+      "the one with the magic xylophone",
+      "freeze daddy",
+      "freeze dad",
+      "frozen daddy",
+      "ding ding freeze",
+      "xylophone freeze game",
+      "dad turns into a statue",
+      "bingo wants a turn",
+      "taking turns with the xylophone",
+      "bluey wont share the xylophone",
+      "bluey plays daddy like a piano",
+      "freeze bandit"
     ],
     "source": "Wikipedia"
   },
@@ -76,15 +74,19 @@
     ],
     "aliases": [
       "hospital",
-      "cat game",
-      "daddy episode",
-      "hosptal",
-      "hospitl",
-      "cat",
-      "playing with dad",
-      "dad game",
-      "cat episode",
-      "bandit episode"
+      "hosbital",
+      "hospittle",
+      "the one where bandit is in hospital",
+      "pretend hospital",
+      "bluey is the doctor",
+      "bingo is the nurse",
+      "the one where they operate on dad",
+      "cat stuck in daddys tummy",
+      "dad has a sore tummy",
+      "operation on daddy",
+      "playing doctors and nurses",
+      "nurse bingo",
+      "doctor bluey"
     ],
     "source": "Wikipedia"
   },
@@ -118,29 +120,19 @@
       "Imagination"
     ],
     "aliases": [
-      "bluey balloon",
-      "balloon dont drop",
-      "dont touch floor",
-      "balloon episode",
-      "ball game",
-      "keepyuppy",
-      "keep it up",
-      "playing with dad",
-      "balloon",
-      "bandit episode",
-      "ball episode",
-      "daddy episode",
       "keepy uppy",
-      "red balloon",
-      "balloon falling",
-      "ball",
+      "keepyuppy",
+      "keepie uppie",
+      "keepy uppie",
+      "the one with the balloon",
+      "the one where they keep the balloon in the air",
+      "last balloon",
+      "dont let the balloon touch the ground",
       "balloon game",
-      "dont let it fall",
-      "dad game",
-      "game episode",
-      "game game",
-      "keepy uppy balloon",
-      "game"
+      "balloon chase in the garden",
+      "bandit and the balloon",
+      "keep the balloon up",
+      "balloon pops"
     ],
     "source": "Wikipedia"
   },
@@ -170,15 +162,20 @@
       "Imagination"
     ],
     "aliases": [
-      "daddyrobot",
-      "daddy episode",
       "daddy robot",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "daddyrobot",
+      "daddy robbot",
+      "the one where dad is a robot",
+      "robot daddy",
+      "robot dad",
+      "the one where dad tidies the playroom",
+      "clean up robot",
+      "robot cleans up the toys",
+      "robot malfunctions",
+      "beep boop daddy",
+      "robot goes wrong",
+      "tidy up the playroom",
+      "bluey and bingo tidy up"
     ],
     "source": "Wikipedia"
   },
@@ -201,7 +198,8 @@
       "Park"
     ],
     "objects": [
-      "Game"
+      "Shadows",
+      "Picnic Blanket"
     ],
     "themes": [
       "Sports",
@@ -211,12 +209,19 @@
       "Imagination"
     ],
     "aliases": [
-      "coco episode",
-      "snickers episode",
-      "game game",
-      "game episode",
-      "game",
-      "shadowlands"
+      "shadowlands",
+      "shadow lands",
+      "shadowland",
+      "shadow lands game",
+      "the one where you can only step on shadows",
+      "step on the shadows",
+      "only walk in the shade",
+      "the sun is lava",
+      "coco takes a shortcut",
+      "snickers and coco",
+      "shadow game at the park",
+      "picnic in the park shadows",
+      "the one at the picnic"
     ],
     "source": "Wikipedia"
   },
@@ -247,18 +252,20 @@
       "Emotions"
     ],
     "aliases": [
-      "leaf game",
-      "dad game",
-      "daddy episode",
-      "theweekend",
-      "game game",
-      "leaf episode",
-      "leaf",
-      "playing with dad",
-      "game episode",
-      "game",
       "the weekend",
-      "bandit episode"
+      "weekend",
+      "theweekend",
+      "wekend",
+      "the one with the leaf insect",
+      "the one where bingo finds a leaf bug",
+      "leaf bug",
+      "walking leaf",
+      "stick insect",
+      "magic statue game",
+      "bingo the moving statue",
+      "bingo calls dad and he doesnt come",
+      "weekend at home with dad",
+      "saturday at home"
     ],
     "source": "Wikipedia"
   },
@@ -285,28 +292,29 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Barbecue",
+      "Salad",
+      "Leaves"
     ],
     "themes": [
       "Nature",
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "muffin episode",
-      "daddy episode",
-      "toys",
       "bbq",
-      "chilli episode",
-      "aunt trixie episode",
-      "toys game",
-      "mom game",
-      "uncle stripe episode",
-      "mommy episode",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "barbecue",
+      "barbeque",
+      "barby",
+      "the one with the barbecue",
+      "pretend barbecue",
+      "kids barbecue",
+      "bingo makes the salad",
+      "the one where bingo picks plants for salad",
+      "leaf salad",
+      "uncle stripe and aunt trixie come over",
+      "barbecue with muffin and socks",
+      "salad for the grown ups",
+      "cousins barbecue"
     ],
     "source": "Wikipedia"
   },
@@ -335,15 +343,20 @@
       "Sharing"
     ],
     "aliases": [
-      "bed episode",
       "fruitbat",
-      "dream game",
-      "sleep game",
-      "bed",
-      "bed game",
-      "bedtime episode",
-      "sleep episode",
-      "dream episode"
+      "fruit bat",
+      "fruit bats",
+      "froot bat",
+      "the one where bluey wants to be a fruit bat",
+      "bluey doesnt want to go to sleep",
+      "bluey wont go to bed",
+      "bedtime fruit bat",
+      "nocturnal",
+      "stay awake all night",
+      "flying fox",
+      "dream about being a bat",
+      "bat dream",
+      "the one where bluey flies at night"
     ],
     "source": "Wikipedia"
   },
@@ -372,16 +385,19 @@
       "Imagination"
     ],
     "aliases": [
-      "toy",
       "horsey ride",
-      "daddy episode",
-      "socks episode",
+      "horsy ride",
       "horseyride",
-      "toy episode",
-      "toy game",
-      "uncle stripe episode",
-      "playing with dad",
-      "dad game"
+      "horse ride",
+      "the one where the dads are horses",
+      "horse wedding",
+      "the one with the horse wedding",
+      "uncle stripe is a horse",
+      "bandit and stripe are horses",
+      "daddy horses",
+      "horsies getting married",
+      "socks chews bluey toy",
+      "giddy up"
     ],
     "source": "Wikipedia"
   },
@@ -414,21 +430,19 @@
       "Imagination"
     ],
     "aliases": [
-      "dad game",
-      "bed episode",
-      "daddy episode",
-      "bed game",
-      "bed",
       "hotel",
-      "game game",
-      "bedtime episode",
-      "run game",
-      "sleep episode",
-      "playing with dad",
-      "game episode",
-      "game",
-      "run episode",
-      "bandit episode"
+      "hotell",
+      "the one with the pretend hotel",
+      "bluey runs a hotel",
+      "hotel game",
+      "dad stays at the hotel",
+      "do not disturb",
+      "room service",
+      "bluey is bossy",
+      "bingo upset bluey is bossy",
+      "dad just wants to sleep",
+      "the one where they keep waking dad",
+      "hotel guest daddy"
     ],
     "source": "Wikipedia"
   },
@@ -459,11 +473,18 @@
     ],
     "aliases": [
       "bike",
-      "bicycle game",
-      "bicycle episode",
-      "bike episode",
-      "bike game",
-      "bicycle"
+      "bicycle",
+      "bycicle",
+      "bicycel",
+      "learning to ride a bike",
+      "the one where bluey learns to ride a bike",
+      "bluey falls off her bike",
+      "wobbly bike",
+      "dont give up",
+      "bluey keeps trying",
+      "the one with the bike",
+      "bike riding",
+      "try again on the bike"
     ],
     "source": "Wikipedia"
   },
@@ -496,13 +517,17 @@
     "aliases": [
       "bob bilby",
       "bobbilby",
-      "puppet",
-      "dad game",
-      "daddy episode",
-      "playing with dad",
-      "puppet game",
-      "puppet episode",
-      "bandit episode"
+      "bob bilbee",
+      "bob bilbie",
+      "the one with bob bilby",
+      "kindy puppet",
+      "bilby puppet",
+      "class puppet comes home",
+      "bob bilby scrapbook",
+      "taking photos of bob bilby",
+      "too much screen time",
+      "the puppet that goes home for the weekend",
+      "bob bilby weekend"
     ],
     "source": "Wikipedia"
   },
@@ -533,11 +558,18 @@
       "Imagination"
     ],
     "aliases": [
+      "spy game",
       "spygame",
-      "game game",
-      "game episode",
-      "game",
-      "spy game"
+      "spie game",
+      "spies",
+      "the one where they play spies",
+      "secret agents",
+      "spy mission at the park",
+      "bingo quits the spy game",
+      "bluey needs bingo",
+      "community barbecue spies",
+      "sneaky spies",
+      "spy team"
     ],
     "source": "Wikipedia"
   },
@@ -559,20 +591,24 @@
       "Restaurant"
     ],
     "objects": [
-      "Toys"
+      "Takeaway Food"
     ],
     "themes": [
       "Food"
     ],
     "aliases": [
-      "daddy episode",
       "takeaway",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "take away",
+      "takeout",
+      "take out",
+      "the one where they wait for takeaway",
+      "waiting at the restaurant",
+      "dad waiting for dinner",
+      "takeaway dinner",
+      "picking up dinner",
+      "waiting for food",
+      "restless at the restaurant",
+      "the one where the kids cant sit still"
     ],
     "source": "Wikipedia"
   },
@@ -604,14 +640,19 @@
       "Friendship"
     ],
     "aliases": [
-      "butterfly game",
-      "butterfly episode",
-      "sad episode",
       "butterflies",
       "butterfly",
-      "fly game",
-      "judo episode",
-      "fly episode"
+      "butterflys",
+      "butterfies",
+      "the one where they play butterflies",
+      "butterfly game",
+      "judo and bingo",
+      "judo is mean to bingo",
+      "bluey leaves bingo out",
+      "caterpillar to butterfly",
+      "life cycle of a butterfly",
+      "cocoon",
+      "bluey says sorry to bingo"
     ],
     "source": "Wikipedia"
   },
@@ -644,21 +685,19 @@
       "Teamwork"
     ],
     "aliases": [
-      "ball episode",
-      "playing with mom",
-      "bandit episode",
-      "playing with dad",
-      "chair episode",
-      "chair",
-      "chilli episode",
-      "ball",
-      "mom game",
-      "mommy episode",
-      "ball game",
-      "game episode",
-      "game",
-      "dad game",
-      "chair game"
+      "yoga ball",
+      "yogaball",
+      "yoga bal",
+      "the one with the yoga ball",
+      "dad is too rough",
+      "too rough daddy",
+      "rough play",
+      "bingo says ow",
+      "the one where bingo tells dad to be gentle",
+      "bingo stands up to dad",
+      "dad works from home",
+      "big bouncy ball chair",
+      "chilli helps bingo be brave"
     ],
     "source": "Wikipedia"
   },
@@ -694,18 +733,18 @@
       "Imagination"
     ],
     "aliases": [
-      "pretzel episode",
-      "calypso episode",
-      "fish episode",
-      "fish game",
-      "run game",
-      "fish",
-      "game game",
       "calypso",
-      "indy episode",
-      "game episode",
-      "game",
-      "run episode"
+      "calipso",
+      "callipso",
+      "the one with calypso",
+      "kindy teacher calypso",
+      "calypso teacher",
+      "a day at kindy",
+      "bluey at kindy",
+      "fish and chip shop",
+      "pretend fish and chips",
+      "indy the waitress",
+      "pretzel cant think what to play"
     ],
     "source": "Wikipedia"
   },
@@ -734,13 +773,18 @@
       "Imagination"
     ],
     "aliases": [
-      "thedoctor",
-      "toys",
-      "pat episode",
       "the doctor",
-      "toys game",
-      "honey episode",
-      "toys episode"
+      "the doctors",
+      "doctor game",
+      "the one where bingo is the doctor",
+      "doctor bingo",
+      "honey has to wait",
+      "honey waiting her turn",
+      "long queue at the doctors",
+      "honey gets a pretend injury",
+      "pretend doctors office",
+      "bluey is the receptionist",
+      "waiting room"
     ],
     "source": "Wikipedia"
   },
@@ -773,21 +817,18 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
-      "claw machine",
-      "theclaw",
-      "claw machine episode",
       "the claw",
-      "game game",
-      "chilli episode",
-      "claw machine game",
-      "mommy episode",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "claw machine",
+      "claw game",
+      "the one with the claw machine",
+      "cant win a prize",
+      "pretend claw machine",
+      "dad is the claw",
+      "claw machine at home",
+      "bandit claw",
+      "prize machine",
+      "bluey wants a toy from the claw machine",
+      "the claw grab"
     ],
     "source": "Wikipedia"
   },
@@ -809,7 +850,8 @@
       "Shop"
     ],
     "objects": [
-      "Toys"
+      "Coin",
+      "Tooth"
     ],
     "themes": [
       "Teamwork",
@@ -819,10 +861,17 @@
     ],
     "aliases": [
       "markets",
-      "toys",
-      "toys game",
-      "indy episode",
-      "toys episode"
+      "market",
+      "the markets",
+      "the one at the markets",
+      "tooth fairy",
+      "the one with the tooth fairy money",
+      "lost tooth",
+      "bluey spends her money",
+      "bluey and indy at the markets",
+      "market stalls",
+      "buying something with indy",
+      "spending tooth fairy money"
     ],
     "source": "Wikipedia"
   },
@@ -854,22 +903,19 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "puppet",
-      "dad game",
-      "daddy episode",
-      "bluemountains",
-      "playing with dad",
-      "sleep game",
       "blue mountains",
-      "chilli episode",
-      "bedtime episode",
-      "mom game",
-      "mommy episode",
-      "puppet game",
-      "sleep episode",
-      "puppet episode",
-      "bandit episode"
+      "bluemountains",
+      "blue mountain",
+      "the one where dad is the mountains",
+      "sleeping daddy mountains",
+      "hand puppets",
+      "finger puppets",
+      "two sisters and a fairy",
+      "the one with the fox",
+      "the fox",
+      "bandit wakes up as the fox",
+      "puppet story with mum",
+      "mountains made of daddy"
     ],
     "source": "Wikipedia"
   },
@@ -900,21 +946,20 @@
       "Imagination"
     ],
     "aliases": [
-      "pool game",
-      "playing with mom",
-      "dad game",
-      "swim episode",
-      "daddy episode",
-      "pool",
-      "thepool",
       "the pool",
-      "chilli episode",
-      "uncle stripe episode",
-      "mommy episode",
-      "playing with dad",
-      "swim game",
-      "pool episode",
-      "bandit episode"
+      "pool",
+      "swimming pool",
+      "the one where they forget the pool stuff",
+      "forgot the sunscreen",
+      "no floaties",
+      "floaties",
+      "rashie",
+      "rashies",
+      "uncle stripes pool",
+      "swimming at uncle stripes",
+      "mum brings the bag",
+      "forgot the swimming bag",
+      "hot day at the pool"
     ],
     "source": "Wikipedia"
   },
@@ -948,13 +993,17 @@
     ],
     "aliases": [
       "shops",
-      "mackenzie episode",
-      "table episode",
-      "table",
-      "game game",
-      "game episode",
-      "game",
-      "table game"
+      "shop",
+      "the one where they play shops",
+      "pretend shop",
+      "shop game",
+      "playing shopkeeper",
+      "shopkeeper",
+      "mackenzie gets frustrated",
+      "too many rules",
+      "bluey makes up rules",
+      "shops with mackenzie",
+      "who gets to be what"
     ],
     "source": "Wikipedia"
   },
@@ -984,19 +1033,18 @@
       "Learning"
     ],
     "aliases": [
-      "bandit episode",
-      "daddy episode",
-      "wagon game",
       "wagon ride",
       "wagonride",
-      "wagon episode",
-      "monkey",
-      "pat episode",
-      "monkey episode",
-      "monkey game",
-      "playing with dad",
-      "dad game",
-      "wagon"
+      "waggon ride",
+      "wagon",
+      "the one with the wagon",
+      "dad pulls the wagon",
+      "dad keeps stopping to talk",
+      "going to the monkey bars",
+      "the one where bluey wants to go to the monkey bars",
+      "bluey gets impatient",
+      "bingo plays by herself",
+      "pat talks to dad"
     ],
     "source": "Wikipedia"
   },
@@ -1026,20 +1074,20 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "dad game",
-      "daddy episode",
       "taxi",
-      "car episode",
-      "car",
-      "chilli episode",
-      "car game",
-      "mom game",
-      "run game",
-      "mommy episode",
-      "playing with dad",
-      "run episode",
-      "bandit episode"
+      "taxy",
+      "taxi game",
+      "the one where bluey drives a taxi",
+      "pretend taxi",
+      "bluey taxi driver",
+      "mum is the sat nav",
+      "sat nav",
+      "gps voice",
+      "dad runs to the airport",
+      "catch the plane",
+      "taxi breaks down",
+      "missed flight",
+      "airport taxi"
     ],
     "source": "Wikipedia"
   },
@@ -1067,15 +1115,18 @@
       "Family"
     ],
     "aliases": [
-      "cat game",
-      "playing with mom",
       "the beach",
-      "chilli episode",
-      "thebeach",
-      "cat",
-      "mom game",
-      "mommy episode",
-      "cat episode"
+      "beach",
+      "beech",
+      "the one at the beach",
+      "bluey walks alone",
+      "the one where bluey goes on a walk by herself",
+      "following mums footprints",
+      "footprints in the sand",
+      "bluey catches up with mum",
+      "brave walk on the beach",
+      "chilli goes for a walk",
+      "beach walk"
     ],
     "source": "Wikipedia"
   },
@@ -1096,7 +1147,8 @@
       "Park"
     ],
     "objects": [
-      "Toys"
+      "Hammock",
+      "Pirate Ship"
     ],
     "themes": [
       "Adventure",
@@ -1105,9 +1157,17 @@
     ],
     "aliases": [
       "pirates",
-      "toys game",
-      "toys",
-      "toys episode"
+      "pirate",
+      "pyrates",
+      "the one where they play pirates",
+      "pirate ship hammock",
+      "hammock swing",
+      "missy is scared",
+      "swallowed by a whale",
+      "inside the whale",
+      "rescue from the whale",
+      "pirate ship at the playground",
+      "rough seas"
     ],
     "source": "Wikipedia"
   },
@@ -1129,7 +1189,8 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Phone",
+      "Walking Stick"
     ],
     "themes": [
       "Music",
@@ -1137,14 +1198,19 @@
       "Emotions"
     ],
     "aliases": [
-      "nana episode",
-      "toys",
-      "toys game",
-      "dancing",
-      "dance game",
       "grannies",
-      "dance episode",
-      "toys episode"
+      "granny",
+      "grannys",
+      "the one where they dress up as grannies",
+      "can grannies floss",
+      "floss dance",
+      "the floss",
+      "nana learns to floss",
+      "nana floss",
+      "video call nana",
+      "janet and rita",
+      "bluey teaches nana the floss",
+      "granny dress up"
     ],
     "source": "Wikipedia"
   },
@@ -1168,7 +1234,8 @@
       "Park"
     ],
     "objects": [
-      "Toys"
+      "Water",
+      "Rocks"
     ],
     "themes": [
       "Growing Up",
@@ -1177,16 +1244,18 @@
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
-      "thecreek",
-      "mackenzie episode",
-      "toys",
-      "toys game",
       "the creek",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "creek",
+      "crick",
+      "creak",
+      "the one at the creek",
+      "bored of the playground",
+      "mackenzie at the creek",
+      "exploring the creek",
+      "nature walk",
+      "bush walk",
+      "the one where bluey tries new things",
+      "water at the creek"
     ],
     "source": "Wikipedia"
   },
@@ -1216,13 +1285,17 @@
     ],
     "aliases": [
       "fairies",
-      "daddy episode",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "fairy",
+      "fairys",
+      "the one with the fairies",
+      "fairy hunt",
+      "catch the fairies",
+      "invisible fairies",
+      "fairies in the house",
+      "dad outsmarts the fairies",
+      "bandit hurts bingos feelings",
+      "bingo upset with dad",
+      "fairy trap"
     ],
     "source": "Wikipedia"
   },
@@ -1251,14 +1324,18 @@
       "Family"
     ],
     "aliases": [
-      "dog game",
       "work",
-      "daddy episode",
-      "playing with dad",
-      "dog",
-      "dog episode",
-      "dad game",
-      "bandit episode"
+      "wurk",
+      "werk",
+      "playing work",
+      "pretend work",
+      "the one where they play work",
+      "going to work game",
+      "office game",
+      "pretend office",
+      "play office",
+      "bluey goes to work",
+      "bingo goes to work"
     ],
     "source": "Wikipedia"
   },
@@ -1280,7 +1357,7 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Trampoline"
     ],
     "themes": [
       "Family",
@@ -1289,15 +1366,18 @@
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
       "trampoline",
-      "game game",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "trampaline",
-      "bandit episode"
+      "trampoleen",
+      "trampolene",
+      "tramp",
+      "the one with the trampoline",
+      "breakfast on the trampoline",
+      "dad has to go to work",
+      "dont go to work daddy",
+      "keep dad on the trampoline",
+      "bouncing on the trampoline",
+      "trampoline game",
+      "bluey has to keep making up games"
     ],
     "source": "Wikipedia"
   },
@@ -1330,21 +1410,18 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "muffin episode",
-      "daddy episode",
-      "socks episode",
-      "car episode",
-      "thedump",
-      "car",
       "the dump",
-      "chilli episode",
-      "car game",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "dad game",
-      "bandit episode"
+      "dump",
+      "the tip",
+      "rubbish dump",
+      "the one where the kids are backpacks",
+      "kids pretend to be backpacks",
+      "mum and dad carry the kids",
+      "cousins backpacking in the backyard",
+      "muffin and socks backpacks",
+      "holiday in the backyard",
+      "carry me backpack",
+      "kids ride on mum and dads backs"
     ],
     "source": "Wikipedia"
   },
@@ -1366,7 +1443,7 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Bed"
     ],
     "themes": [
       "Sports",
@@ -1376,14 +1453,19 @@
       "Imagination"
     ],
     "aliases": [
-      "muffin episode",
-      "sleep game",
-      "game game",
-      "bedtime episode",
-      "sleep episode",
       "sleepover",
-      "game episode",
-      "game"
+      "sleep over",
+      "slepover",
+      "the one where muffin sleeps over",
+      "muffin sleepover",
+      "muffin is tired",
+      "sleepy muffin",
+      "grumpy muffin",
+      "muffin stops napping",
+      "no more naps",
+      "staying up late",
+      "muffin cant sleep",
+      "cousin sleepover"
     ],
     "source": "Wikipedia"
   },
@@ -1406,7 +1488,7 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Baby Doll"
     ],
     "themes": [
       "Sports",
@@ -1416,13 +1498,18 @@
       "Imagination"
     ],
     "aliases": [
-      "earlybaby",
       "early baby",
-      "game game",
-      "indy episode",
-      "rusty episode",
-      "game episode",
-      "game"
+      "earlybaby",
+      "early bubby",
+      "the one with the early baby",
+      "baby born early",
+      "pretend baby",
+      "rusty and indy",
+      "rusty army game",
+      "indy and rusty play together",
+      "two games collide",
+      "playgroup games",
+      "rusty and indy share their games"
     ],
     "source": "Wikipedia"
   },
@@ -1455,19 +1542,18 @@
       "Friendship"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
-      "game episode",
-      "mumsanddads",
-      "game game",
       "mums and dads",
-      "mom game",
-      "indy episode",
-      "rusty episode",
-      "playing with dad",
-      "mommy episode",
-      "game",
-      "dad game"
+      "moms and dads",
+      "mums n dads",
+      "mumsanddads",
+      "the one where they play mums and dads",
+      "mums and dads game",
+      "playing house",
+      "pretend family",
+      "who goes to work",
+      "mum goes to work",
+      "rusty and indy argue",
+      "rusty and indy fall out"
     ],
     "source": "Wikipedia"
   },
@@ -1501,21 +1587,18 @@
       "Imagination"
     ],
     "aliases": [
-      "toy",
-      "playing with mom",
-      "daddy episode",
-      "hide game",
-      "toy episode",
       "hide and seek",
-      "game game",
-      "toy game",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "game episode",
-      "game",
+      "hide n seek",
       "hideandseek",
-      "bandit episode"
+      "hide and go seek",
+      "the one where bluey forgets to look",
+      "bluey gets distracted by toys",
+      "bluey forgets the game",
+      "family hiding all over the house",
+      "dad hiding",
+      "counting to ten",
+      "hiding spots",
+      "the one where everyone hides"
     ],
     "source": "Wikipedia"
   },
@@ -1548,21 +1631,18 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
-      "car episode",
       "mount mumandad",
-      "mountmumandad",
-      "car",
-      "pat episode",
-      "game game",
-      "car game",
-      "mommy episode",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "mount mum and dad",
+      "mt mumandad",
+      "mount mumendad",
+      "mount mumundad",
+      "the one where mum and dad are a mountain",
+      "climbing mum and dad",
+      "mountain climbing on the couch",
+      "bingo packs a backpack",
+      "climbing equipment",
+      "race to the top",
+      "bluey races to the summit"
     ],
     "source": "Wikipedia"
   },
@@ -1590,16 +1670,17 @@
       "Bedtime"
     ],
     "aliases": [
-      "bed episode",
-      "daddy episode",
-      "kids",
-      "bed game",
-      "bed",
-      "bedtime episode",
-      "sleep episode",
-      "playing with dad",
-      "dad game",
-      "bandit episode"
+      "kidz",
+      "the one where dad is the kid",
+      "bluey is the mum",
+      "dad acts like a kid",
+      "naughty dad at the supermarket",
+      "supermarket",
+      "shopping trolley",
+      "dad fills the trolley",
+      "bluey tells dad off",
+      "role swap",
+      "parents and kids swap"
     ],
     "source": "Wikipedia"
   },
@@ -1633,23 +1714,19 @@
       "Bedtime"
     ],
     "aliases": [
-      "toy",
-      "playing with mom",
-      "bed episode",
-      "daddy episode",
-      "toy episode",
-      "bed game",
-      "bed",
-      "chilli episode",
       "chickenrat",
-      "bedtime episode",
-      "toy game",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "sleep episode",
-      "dad game",
-      "bandit episode"
+      "chicken rat",
+      "chikenrat",
+      "chickinrat",
+      "the one with the chickenrat",
+      "floppy",
+      "lost floppy",
+      "bingo loses floppy",
+      "where is floppy",
+      "retracing steps",
+      "dad is a chicken rat",
+      "half chicken half rat",
+      "lost bunny toy"
     ],
     "source": "Wikipedia"
   },
@@ -1681,21 +1758,18 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
-      "tree",
-      "build episode",
-      "rope game",
-      "tree game",
-      "tree episode",
-      "rope",
-      "rope episode",
-      "mommy episode",
-      "playing with dad",
-      "build game",
-      "dad game",
       "neighbours",
-      "bandit episode"
+      "neighbors",
+      "nabours",
+      "the one where they play neighbours",
+      "neighbour game",
+      "pretend houses",
+      "bingo moves in next door",
+      "annoying neighbour",
+      "difficult neighbour",
+      "bingo invades blueys space",
+      "new neighbours mum and dad",
+      "rope fence"
     ],
     "source": "Wikipedia"
   },
@@ -1725,14 +1799,18 @@
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
-      "table episode",
-      "table",
       "teasing",
-      "playing with dad",
-      "dad game",
-      "table game",
-      "bandit episode"
+      "teesing",
+      "the one about teasing",
+      "dad teases",
+      "bluey teases bingo",
+      "dad always teases us",
+      "dad makes fun of us",
+      "difference between teasing and playing",
+      "stop teasing",
+      "mean teasing",
+      "bandit pranks",
+      "teasing or playing"
     ],
     "source": "Wikipedia"
   },
@@ -1769,21 +1847,19 @@
       "Learning"
     ],
     "aliases": [
-      "stick episode",
-      "playing with mom",
-      "daddy episode",
-      "table episode",
-      "asparagus game",
-      "stick game",
-      "table",
-      "chilli episode",
       "asparagus",
-      "asparagus episode",
-      "mommy episode",
-      "playing with dad",
-      "stick",
-      "dad game",
-      "bandit episode"
+      "asparagas",
+      "asperagus",
+      "sparrow grass",
+      "the one with the magic asparagus",
+      "magic asparagus",
+      "magic asparagus wand",
+      "asparagus turns them into animals",
+      "table manners",
+      "dinner manners",
+      "bandit teaches manners",
+      "bluey controls everyone",
+      "eat your dinner nicely"
     ],
     "source": "Wikipedia"
   },
@@ -1815,16 +1891,20 @@
       "Perseverance"
     ],
     "aliases": [
-      "dad game",
-      "bed episode",
-      "daddy episode",
-      "bed game",
-      "bed",
-      "bedtime episode",
-      "sleep episode",
-      "playing with dad",
       "shaun",
-      "bandit episode"
+      "shawn",
+      "sean",
+      "shaun the emu",
+      "the one with shaun",
+      "dads hand is an emu",
+      "bandits hand emu",
+      "emu",
+      "pet emu",
+      "naughty emu",
+      "we want a pet",
+      "looking after shaun",
+      "walking the emu",
+      "bath for shaun"
     ],
     "source": "Wikipedia"
   },
@@ -1857,21 +1937,18 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "bed episode",
       "the adventure",
-      "daddy episode",
-      "bed game",
-      "bed",
-      "theadventure",
-      "chilli episode",
-      "bedtime episode",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "sleep episode",
-      "dad game",
-      "bandit episode"
+      "adventure",
+      "adventures",
+      "mum goes to a baby shower",
+      "the one where mum goes out for the night",
+      "dad does bedtime",
+      "bedtime with dad",
+      "bluey misses mum",
+      "missing mum",
+      "pretend baby shower",
+      "bluey cant sleep without mum",
+      "mum is out"
     ],
     "source": "Wikipedia"
   },
@@ -1907,16 +1984,20 @@
       "Nature"
     ],
     "aliases": [
-      "bird episode",
-      "cat game",
-      "bird game",
-      "car episode",
       "copycat",
-      "car",
-      "cat",
-      "car game",
-      "bird",
-      "cat episode"
+      "copy cat",
+      "copykat",
+      "the one with the budgie",
+      "injured budgie",
+      "budgie dies",
+      "the bird that dies",
+      "dead bird",
+      "the one where they find a hurt bird",
+      "taking the bird to the vet",
+      "bluey copies dad",
+      "bluey copies everything",
+      "sad budgie episode",
+      "pretend vet"
     ],
     "source": "Wikipedia"
   },
@@ -1938,18 +2019,25 @@
       "Zoo"
     ],
     "objects": [
-      "Toys"
+      "Zoo Map"
     ],
     "themes": [
       "Learning",
       "Family"
     ],
     "aliases": [
-      "toys",
-      "pat episode",
-      "toys game",
       "zoo",
-      "toys episode"
+      "the zoo",
+      "zu",
+      "zoo trip",
+      "the one at the zoo",
+      "visiting the zoo",
+      "family day at the zoo",
+      "zoo animals",
+      "bluey wants to see one animal",
+      "waiting to see the animal",
+      "patience at the zoo",
+      "looking at the animals"
     ],
     "source": "Wikipedia"
   },
@@ -1970,7 +2058,7 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Backpack"
     ],
     "themes": [
       "Family",
@@ -1978,10 +2066,18 @@
       "Imagination"
     ],
     "aliases": [
-      "toys",
-      "toys game",
       "backpackers",
-      "toys episode"
+      "backpacker",
+      "back packers",
+      "backpacking",
+      "the one where they play backpackers",
+      "backpacker game",
+      "imaginary holiday around the house",
+      "travel around the backyard",
+      "pretend travellers",
+      "bluey and bingo backpacking",
+      "adventure around the house",
+      "backpack holiday"
     ],
     "source": "Wikipedia"
   },
@@ -2002,7 +2098,7 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Costumes"
     ],
     "themes": [
       "Music",
@@ -2010,11 +2106,18 @@
       "Family"
     ],
     "aliases": [
-      "toys",
-      "toys game",
-      "theshow",
-      "toys episode",
-      "the show"
+      "the show",
+      "show",
+      "the one where they put on a show",
+      "putting on a show for mum",
+      "mothers day show",
+      "mums show",
+      "show for mum and dad",
+      "costumes and music",
+      "dress ups show",
+      "singing and dancing show",
+      "the concert",
+      "performance for mum"
     ],
     "source": "Wikipedia"
   },
@@ -2035,7 +2138,7 @@
       "Home"
     ],
     "objects": [
-      "Toy"
+      "Video"
     ],
     "themes": [
       "Adventure",
@@ -2043,11 +2146,20 @@
       "Creativity"
     ],
     "aliases": [
-      "toy",
-      "bumpyandthewiseoldwolfhound",
-      "toy episode",
-      "toy game",
-      "bumpy and the wise old wolfhound"
+      "bumpy and the wise old wolfhound",
+      "bumpy",
+      "wise old wolfhound",
+      "wise old wolf hound",
+      "wolfhound",
+      "wolf hound",
+      "barnicus",
+      "bumpy the dog",
+      "the one with barnicus",
+      "the one where bingo is in hospital",
+      "bingo sick in hospital",
+      "bluey makes a movie for bingo",
+      "video for bingo",
+      "bumpy story"
     ],
     "source": "Wikipedia"
   },
@@ -2069,7 +2181,7 @@
       "Camping"
     ],
     "objects": [
-      "Toys"
+      "Tent"
     ],
     "themes": [
       "Teamwork",
@@ -2079,14 +2191,19 @@
     ],
     "aliases": [
       "camping",
-      "bye bye friend",
-      "toys",
-      "jean luc episode",
-      "toys game",
-      "toys episode",
-      "camping friend",
+      "campin",
+      "the one with jean luc",
+      "jean luc",
+      "jean luke",
+      "jon luc",
       "french boy",
-      "jean luc"
+      "bluey and the french boy",
+      "friend who speaks french",
+      "camping trip",
+      "tent",
+      "the one where bluey makes a friend camping",
+      "jean luc goes home",
+      "friend with a different language"
     ],
     "source": "Wikipedia"
   },
@@ -2110,7 +2227,8 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Presents",
+      "Christmas Tree"
     ],
     "themes": [
       "Learning",
@@ -2118,20 +2236,19 @@
       "Sports"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
-      "socks episode",
       "verandah santa",
-      "chilli episode",
-      "game game",
+      "veranda santa",
+      "verander santa",
       "verandahsanta",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "bluey christmas episode",
+      "the one at christmas",
+      "christmas eve",
+      "santa game",
+      "socks bites bluey",
+      "socks is naughty",
+      "naughty list",
+      "being nice all year",
+      "bluey leaves socks out"
     ],
     "source": "Wikipedia"
   },
@@ -2154,7 +2271,8 @@
       "Camping"
     ],
     "objects": [
-      "Toys"
+      "Hot Chip",
+      "Restaurant Table"
     ],
     "themes": [
       "Family",
@@ -2164,18 +2282,22 @@
       "Creativity"
     ],
     "aliases": [
-      "daddy episode",
-      "dance game",
       "dance mode",
       "dancemode",
-      "toys",
-      "dance episode",
-      "toys game",
-      "dancing",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "dance mod",
+      "the one where bingo makes everyone dance",
+      "the one with the last chip",
+      "dad eats bingos chip",
+      "bingo gets dance mode",
+      "dance mode power",
+      "make daddy dance",
+      "everybody dance",
+      "dancing family game",
+      "bandit has to dance",
+      "bingo cant use her dance mode",
+      "family decides for bingo",
+      "last hot chip",
+      "dance mode activate"
     ],
     "source": "Wikipedia"
   },
@@ -2211,20 +2333,20 @@
       "Imagination"
     ],
     "aliases": [
-      "pizza",
-      "daddy episode",
-      "build episode",
-      "pizza game",
-      "pizza episode",
       "hammerbarn",
-      "pat episode",
-      "hammer episode",
-      "hammer",
-      "build game",
-      "playing with dad",
-      "hammer game",
-      "dad game",
-      "bandit episode"
+      "hammer barn",
+      "hammerbarn hardware store",
+      "hamerbarn",
+      "the one at the hardware store",
+      "the one where dad builds a pizza oven",
+      "the one with the pizza oven",
+      "pizza oven",
+      "dad wants a pizza oven like pat",
+      "hardware shop trip",
+      "family goes to hammerbarn",
+      "shopping for building stuff",
+      "bandit at the hardware store",
+      "pizza oven episode"
     ],
     "source": "Wikipedia"
   },
@@ -2247,7 +2369,8 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Feather Wand",
+      "Party Invitation"
     ],
     "themes": [
       "Learning",
@@ -2256,15 +2379,20 @@
       "Science"
     ],
     "aliases": [
-      "playing with mom",
       "featherwand",
-      "toys",
-      "chloe episode",
-      "chilli episode",
-      "toys game",
-      "mom game",
-      "mommy episode",
-      "toys episode"
+      "feather wand",
+      "fether wand",
+      "featherwhand",
+      "the one with the feather wand",
+      "the one where bingo isnt invited to the party",
+      "bingo not invited",
+      "chloes birthday party",
+      "bluey goes to chloes party",
+      "bingo left out of the party",
+      "bingo feels sad left behind",
+      "magic feather wand",
+      "bingo stays home with mum",
+      "party invitation sad bingo"
     ],
     "source": "Wikipedia"
   },
@@ -2287,7 +2415,8 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Squash Racquet",
+      "Squash Ball"
     ],
     "themes": [
       "Growing Up",
@@ -2297,14 +2426,18 @@
     ],
     "aliases": [
       "squash",
-      "daddy episode",
-      "game game",
-      "uncle stripe episode",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "squash game",
+      "squash court",
+      "the one where they play squash",
+      "the one with dad and uncle stripe playing squash",
+      "bluey and bingo control the dads",
+      "remote control daddy",
+      "squash racquet",
+      "dad versus uncle stripe",
+      "controlling dad and stripe",
+      "kids control the players",
+      "bandit and stripe squash match",
+      "squash ball"
     ],
     "source": "Wikipedia"
   },
@@ -2326,7 +2459,9 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Hairbrush",
+      "Comb",
+      "Hair Dryer"
     ],
     "themes": [
       "Growing Up",
@@ -2336,14 +2471,20 @@
       "Teamwork"
     ],
     "aliases": [
-      "daddy episode",
-      "game game",
       "hairdressers",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "hair dressers",
+      "hairdresser",
+      "hairdressor",
+      "the one where they play hairdressers",
+      "the one with the hairdresser game",
+      "bluey talks for bingo",
+      "bingo cant say what she means",
+      "daddys hair cut",
+      "doing daddys hair",
+      "pretend hair salon",
+      "bingo wants a turn to talk",
+      "let bingo talk",
+      "hair salon game"
     ],
     "source": "Wikipedia"
   },
@@ -2376,17 +2517,20 @@
       "Family"
     ],
     "aliases": [
-      "muffin episode",
-      "daddy episode",
       "stumpfest",
-      "tree",
-      "pat episode",
-      "tree game",
-      "tree episode",
-      "uncle stripe episode",
-      "playing with dad",
-      "dad game",
-      "bandit episode"
+      "stump fest",
+      "stumpfeast",
+      "stumfest",
+      "the one with the tree stumps",
+      "the one where the dads dig out stumps",
+      "dads remove tree stumps",
+      "bandit stripe and pat dig stumps",
+      "pulling out stumps in the backyard",
+      "stump removal party",
+      "dads digging in the yard",
+      "tree stump day",
+      "backyard stumps",
+      "muffin at stumpfest"
     ],
     "source": "Wikipedia"
   },
@@ -2417,15 +2561,19 @@
       "Food"
     ],
     "aliases": [
-      "playing with mom",
-      "funny one",
-      "table episode",
-      "favouritething",
-      "table",
       "favourite thing",
-      "mom game",
-      "mommy episode",
-      "table game"
+      "favorite thing",
+      "favouritething",
+      "favourite thing of the day",
+      "the one at the dinner table",
+      "the one where they share their favourite things",
+      "whats your favourite thing",
+      "best part of the day",
+      "dinner table talk",
+      "family dinner favourite things",
+      "everyone says their favourite part",
+      "heeler family dinner",
+      "favrite thing"
     ],
     "source": "Wikipedia"
   },
@@ -2447,7 +2595,8 @@
       "School"
     ],
     "objects": [
-      "Game"
+      "School Bag",
+      "Lunchbox"
     ],
     "themes": [
       "Sports",
@@ -2457,15 +2606,19 @@
       "Imagination"
     ],
     "aliases": [
-      "daddydropoff",
-      "daddy episode",
-      "game game",
       "daddy dropoff",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "daddy drop off",
+      "daddydropoff",
+      "dad drop off",
+      "the one where dad takes them to school",
+      "the one where bandit does the school run",
+      "daddy takes us to school",
+      "school drop off",
+      "making the morning fun",
+      "bluey and bingo going to school with dad",
+      "dad walks to school and kindy",
+      "kindy drop off",
+      "morning drop off game"
     ],
     "source": "Wikipedia"
   },
@@ -2499,18 +2652,19 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "bingo",
-      "table episode",
-      "table",
-      "chilli episode",
-      "chloe episode",
-      "game game",
-      "mom game",
-      "mommy episode",
-      "game episode",
-      "game",
-      "table game"
+      "bingo episode",
+      "bingo plays by herself",
+      "the one where bingo plays alone",
+      "the one where bluey is at chloes",
+      "bingo on her own",
+      "bingo learns to play alone",
+      "bluey goes to a play date",
+      "bingo misses bluey",
+      "bingo by herself",
+      "playing by yourself",
+      "bingo alone at home",
+      "bingo without bluey",
+      "no bluey today"
     ],
     "source": "Wikipedia"
   },
@@ -2533,7 +2687,8 @@
       "Beach"
     ],
     "objects": [
-      "Toys"
+      "Play Mat",
+      "Felt Tip Pens"
     ],
     "themes": [
       "Learning",
@@ -2541,15 +2696,20 @@
       "Imagination"
     ],
     "aliases": [
-      "bandit episode",
-      "daddy episode",
       "rug island",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "rugisland"
+      "rugisland",
+      "rug iland",
+      "rug islands",
+      "the one with the play mat island",
+      "the one where they make an island on the rug",
+      "play mat island",
+      "felt tip pens",
+      "drawing on the rug",
+      "desert island game",
+      "island in the backyard",
+      "bluey and bingo on rug island",
+      "pretend island",
+      "texta pens island"
     ],
     "source": "Wikipedia"
   },
@@ -2580,14 +2740,20 @@
       "Imagination"
     ],
     "aliases": [
-      "cat game",
       "charades",
-      "nana episode",
-      "game game",
-      "cat",
-      "game episode",
-      "game",
-      "cat episode"
+      "sharades",
+      "charaids",
+      "the one where they play charades",
+      "the one at nanas house",
+      "charades at nanas",
+      "acting out charades",
+      "bingo doesnt get charades",
+      "guessing game with cousins",
+      "muffin and socks charades",
+      "cousins play charades",
+      "pretend to be a cat charades",
+      "nana and the cousins",
+      "acting game"
     ],
     "source": "Wikipedia"
   },
@@ -2617,18 +2783,20 @@
       "Friendship"
     ],
     "aliases": [
-      "toy",
-      "stick episode",
-      "playing with mom",
-      "stickygecko",
-      "stick game",
-      "toy episode",
-      "chilli episode",
-      "toy game",
       "sticky gecko",
-      "mom game",
-      "mommy episode",
-      "stick"
+      "stickygecko",
+      "sticky geko",
+      "stiky gecko",
+      "the one with the sticky gecko",
+      "the one where the gecko is stuck on the ceiling",
+      "sticky gecko on the ceiling",
+      "gecko toy stuck",
+      "mum trying to get out the door",
+      "getting ready to leave",
+      "mum gets cross getting ready",
+      "chilli tries to leave the house",
+      "stretchy sticky toy",
+      "going to a play date"
     ],
     "source": "Wikipedia"
   },
@@ -2660,16 +2828,20 @@
       "Teamwork"
     ],
     "aliases": [
-      "bandit episode",
-      "daddy episode",
+      "dad baby",
       "dadbaby",
-      "car episode",
-      "car",
-      "pat episode",
-      "car game",
-      "playing with dad",
-      "dad game",
-      "dad baby"
+      "daddy baby",
+      "the one where dad has a baby",
+      "the one with the baby sling",
+      "baby sling",
+      "bandit pretends to be pregnant",
+      "dad is having a baby",
+      "daddy gives birth to bingo",
+      "bingo in the sling",
+      "pregnant daddy",
+      "daddy has a baby in his tummy",
+      "baby carrier",
+      "dad pretend birth"
     ],
     "source": "Wikipedia"
   },
@@ -2702,21 +2874,20 @@
       "Imagination"
     ],
     "aliases": [
-      "ball episode",
-      "playing with mom",
       "mum school",
-      "balloon game",
-      "train game",
-      "train",
+      "mom school",
       "mumschool",
-      "balloon episode",
-      "chilli episode",
-      "train episode",
-      "ball",
-      "mom game",
-      "mommy episode",
-      "ball game",
-      "balloon"
+      "mummy school",
+      "the one where bluey goes to mum school",
+      "the one with the balloon babies",
+      "balloon babies",
+      "looking after balloons",
+      "learning to be a mum",
+      "bluey is a mum",
+      "pretend mum training",
+      "chilli teaches mum school",
+      "balloon baby",
+      "how to be a mummy"
     ],
     "source": "Wikipedia"
   },
@@ -2747,20 +2918,20 @@
       "Imagination"
     ],
     "aliases": [
-      "cat game",
-      "daddy episode",
-      "car episode",
-      "train game",
-      "train",
-      "car",
-      "train episode",
       "trains",
-      "car game",
-      "cat",
-      "playing with dad",
-      "dad game",
-      "cat episode",
-      "bandit episode"
+      "train game",
+      "daddy train",
+      "the one with the pretend train",
+      "the one where dad is a train",
+      "bingo rides the train",
+      "bingo does her errands",
+      "naughty passenger bluey",
+      "bluey is a naughty passenger",
+      "train is delayed",
+      "bingos busy day",
+      "all aboard dad train",
+      "choo choo dad",
+      "train running late"
     ],
     "source": "Wikipedia"
   },
@@ -2783,7 +2954,7 @@
       "School"
     ],
     "objects": [
-      "Toys"
+      "Army Helmet"
     ],
     "themes": [
       "Science",
@@ -2791,12 +2962,20 @@
       "Friendship"
     ],
     "aliases": [
-      "toys",
-      "toys game",
       "army",
-      "rusty episode",
-      "jack episode",
-      "toys episode"
+      "army game",
+      "armie",
+      "the one where jack plays army",
+      "the one with jack and rusty",
+      "jacks first day at school",
+      "jack cant sit still",
+      "rusty teaches jack army",
+      "marching game",
+      "playing soldiers",
+      "new boy at school",
+      "jack and rusty",
+      "army marching",
+      "new kid jack"
     ],
     "source": "Wikipedia"
   },
@@ -2819,7 +2998,8 @@
       "Restaurant"
     ],
     "objects": [
-      "Toys"
+      "Menu",
+      "Candle"
     ],
     "themes": [
       "Family",
@@ -2827,17 +3007,20 @@
       "Imagination"
     ],
     "aliases": [
-      "resturant",
-      "fancyrestaurant",
-      "daddy episode",
       "fancy restaurant",
-      "restarant",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "fancyrestaurant",
+      "fancy resturant",
+      "fancy restarant",
+      "the one with the fancy restaurant",
+      "the one where they want mum and dad to kiss",
+      "make mum and dad kiss",
+      "teaching dad to be romantic",
+      "romantic dinner",
+      "bluey and bingo run a restaurant",
+      "waiter bingo",
+      "mum and dad date night",
+      "kiss kiss",
+      "pretend restaurant"
     ],
     "source": "Wikipedia"
   },
@@ -2861,7 +3044,7 @@
       "Park"
     ],
     "objects": [
-      "Game"
+      "Seesaw"
     ],
     "themes": [
       "Sports",
@@ -2871,16 +3054,19 @@
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
-      "playing with dad",
-      "pat episode",
-      "game game",
       "seesaw",
-      "pom pom episode",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "see saw",
+      "seasaw",
+      "the one with the seesaw",
+      "the one where pom pom is too small",
+      "pom pom too little",
+      "pom pom at the park",
+      "playground seesaw",
+      "too small to play",
+      "tiny pom pom",
+      "park playground",
+      "little pom pom seesaw",
+      "seesaw game"
     ],
     "source": "Wikipedia"
   },
@@ -2902,20 +3088,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Movie Ticket",
+      "Popcorn"
     ],
     "themes": [
       "Food"
     ],
     "aliases": [
       "movies",
-      "daddy episode",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "the movies",
+      "movie theatre",
+      "the one where they go to the movies",
+      "the one at the cinema",
+      "first time at the movies",
+      "bluey scared of the movie",
+      "scary part of the movie",
+      "going to the cinema",
+      "bluey worried about the scary bit",
+      "popcorn movie",
+      "picture theatre",
+      "movie theater"
     ],
     "source": "Wikipedia"
   },
@@ -2937,21 +3129,26 @@
       "Restaurant"
     ],
     "objects": [
-      "Toys"
+      "Parenting Book"
     ],
     "themes": [
       "Creativity",
       "Family"
     ],
     "aliases": [
-      "daddy episode",
-      "toys",
       "helicopter",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "helicopter parent",
+      "helicoptor",
+      "hellicopter",
+      "the one with the parenting book",
+      "the one where dad reads a parenting book",
+      "helicopter parenting",
+      "dad lets them choose",
+      "girls make their own choices",
+      "bandit reads a book about parenting",
+      "letting kids decide",
+      "dad stops helping",
+      "parenting book"
     ],
     "source": "Wikipedia"
   },
@@ -2974,18 +3171,25 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Library Book"
     ],
     "themes": [
       "Imagination"
     ],
     "aliases": [
-      "muffin episode",
       "library",
-      "toys",
-      "toys game",
-      "uncle stripe episode",
-      "toys episode"
+      "libary",
+      "liberry",
+      "the one with muffin and uncle stripe",
+      "the one where muffin is the most special kid",
+      "most special kid in the world",
+      "muffin thinks she is special",
+      "muffin wont follow the rules",
+      "library rules",
+      "playing library",
+      "shh library",
+      "special muffin",
+      "muffin breaks the rules"
     ],
     "source": "Wikipedia"
   },
@@ -3015,12 +3219,19 @@
       "Creativity"
     ],
     "aliases": [
-      "boat episode",
-      "mackenzie episode",
-      "boat",
-      "boat game",
       "barky boats",
-      "barkyboats"
+      "barkyboats",
+      "bark boats",
+      "barkey boats",
+      "the one with the bark boats",
+      "the one where bluey and mackenzie meet their buddies",
+      "older buddies",
+      "school buddies",
+      "bluey and mackenzie",
+      "boats down the stream",
+      "bark boat race",
+      "big kid buddies",
+      "floating bark boats"
     ],
     "source": "Wikipedia"
   },
@@ -3045,27 +3256,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Phone"
     ],
     "themes": [
       "Bedtime"
     ],
     "aliases": [
-      "doublebabysitter",
-      "frisky episode",
-      "playing with mom",
-      "daddy episode",
       "double babysitter",
-      "uncle rad episode",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "doublebabysitter",
+      "double babysiter",
+      "two babysitters",
+      "the one with two babysitters",
+      "the one with uncle rad and frisky",
+      "uncle rad and frisky",
+      "frisky and rad babysit",
+      "babysitters double booked",
+      "mum and dad go out",
+      "rad and frisky fall in love",
+      "godmother frisky",
+      "two babysitters at once",
+      "babysiter"
     ],
     "source": "Wikipedia"
   },
@@ -3095,21 +3305,19 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "dad game",
-      "daddy episode",
-      "playing with dad",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "badmood",
-      "mom game",
-      "run game",
-      "mommy episode",
       "bad mood",
-      "run episode",
-      "toys episode",
-      "bandit episode"
+      "badmood",
+      "the one where dad is bingos bad mood",
+      "the one where bingo is in a bad mood",
+      "bingo in a bad mood",
+      "mum calls bingo cheeky",
+      "cheeky bingo",
+      "bingo grumpy",
+      "daddy is the bad mood",
+      "grumpy bingo",
+      "bingo runs to dad",
+      "chasing the bad mood",
+      "bad mood dad"
     ],
     "source": "Wikipedia"
   },
@@ -3137,14 +3345,19 @@
       "Imagination"
     ],
     "aliases": [
-      "cat game",
-      "daddy episode",
       "octopus",
-      "chloe episode",
-      "cat",
-      "playing with dad",
-      "cat episode",
-      "dad game"
+      "octopus game",
+      "octopis",
+      "octapus",
+      "the one where dad is an octopus",
+      "the one where chloe plays octopus",
+      "chloe loves octopus",
+      "chloes dad tries octopus",
+      "octopus attack",
+      "daddy octopus",
+      "chloe and her dad",
+      "tickle octopus",
+      "octopus with chloe"
     ],
     "source": "Wikipedia"
   },
@@ -3176,32 +3389,23 @@
       "Imagination"
     ],
     "aliases": [
-      "cant sleep",
-      "bed episode",
-      "toy game",
-      "dream game",
-      "space dream",
-      "sleeping planets",
-      "floppy space",
-      "bed game",
       "sleepytime",
-      "toy",
-      "stuffed episode",
-      "bedtime episode",
-      "dream episode",
-      "solar system",
-      "sleep episode",
-      "bluey space",
-      "rope game",
+      "sleepy time",
+      "sleepytyme",
+      "the one where bingo dreams of space",
+      "the one with the solar system dream",
+      "bingo sleeps in her own bed",
+      "bingo space dream",
       "floppy bunny dream",
+      "mum is the sun",
+      "bingo floats through space",
+      "sleeping planets",
+      "solar system",
+      "cant sleep",
+      "bedtime episode",
       "bingo dream",
-      "toy episode",
-      "rope episode",
-      "bingo sleeps",
-      "sleep game",
-      "planets",
-      "bed",
-      "rope"
+      "bingo sleeps all night",
+      "floppy space"
     ],
     "source": "Wikipedia"
   },
@@ -3225,24 +3429,25 @@
       "Car"
     ],
     "objects": [
-      "Toys"
+      "Walking Stick"
     ],
     "themes": [
       "Family"
     ],
     "aliases": [
-      "playing with mom",
-      "grandad episode",
-      "daddy episode",
-      "toys",
-      "chilli episode",
       "grandad",
-      "toys game",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "toys episode",
-      "dad game"
+      "grand dad",
+      "granddad",
+      "the one where they visit grandad",
+      "the one where grandad had heart surgery",
+      "grandad heart operation",
+      "grandad needs to rest",
+      "visiting grandad in the bush",
+      "grandad mort",
+      "grandad wont slow down",
+      "mum worries about grandad",
+      "grandads house",
+      "chilli and her dad"
     ],
     "source": "Wikipedia"
   },
@@ -3264,7 +3469,7 @@
       "Park"
     ],
     "objects": [
-      "Toys"
+      "Seesaw"
     ],
     "themes": [
       "Adventure",
@@ -3272,12 +3477,19 @@
       "Friendship"
     ],
     "aliases": [
-      "seesaw(part2)",
-      "seesaw (part 2)",
-      "toys",
-      "toys game",
-      "pom pom episode",
-      "toys episode"
+      "seesaw part 2",
+      "see saw part 2",
+      "seesaw two",
+      "seesaw 2",
+      "seesawpart2",
+      "the one with the seesaw again",
+      "second seesaw episode",
+      "pom pom seesaw part two",
+      "more seesaw with pom pom",
+      "park seesaw continued",
+      "seesaw adventure",
+      "playground part two",
+      "pom pom playground"
     ],
     "source": "Wikipedia"
   },
@@ -3298,7 +3510,7 @@
       "Park"
     ],
     "objects": [
-      "Toys"
+      "Ringmaster Hat"
     ],
     "themes": [
       "Creativity",
@@ -3306,10 +3518,19 @@
       "Science"
     ],
     "aliases": [
-      "toys",
       "circus",
-      "toys episode",
-      "toys game"
+      "circus game",
+      "cirkus",
+      "the one with the circus",
+      "the one where bluey is the ringleader",
+      "election day",
+      "pretend circus at the park",
+      "circus show",
+      "ringleader bluey",
+      "kids put on a circus",
+      "circus performers",
+      "circus tricks",
+      "make believe circus"
     ],
     "source": "Wikipedia"
   },
@@ -3332,28 +3553,27 @@
       "Pool"
     ],
     "objects": [
-      "Toys"
+      "Swimming Goggles",
+      "Kickboard"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "dad game",
-      "swim episode",
-      "daddy episode",
-      "swimschool",
       "swim school",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "swim game",
-      "toys episode",
-      "bandit episode"
+      "swimschool",
+      "swimming school",
+      "swim scool",
+      "the one where bluey is a swimming teacher",
+      "the one with the swimming lessons",
+      "pretend swimming lessons",
+      "swimming teacher bluey",
+      "learning to swim",
+      "bluey teaches swimming",
+      "mum and dad swim class",
+      "funny swim teacher",
+      "swimming instructor"
     ],
     "source": "Wikipedia"
   },
@@ -3375,21 +3595,27 @@
       "Park"
     ],
     "objects": [
-      "Toys"
+      "Coffee Cup"
     ],
     "themes": [
       "Creativity",
       "Friendship"
     ],
     "aliases": [
-      "daddy episode",
       "cafe",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "the cafe",
+      "caffe",
+      "the one where bluey meets winnie",
+      "the one with winnie and fido",
+      "winnie and her dad",
+      "bandit meets fido",
+      "new friend at the park",
+      "park cafe",
+      "dad gets coffee at the park",
+      "bluey makes a new friend",
+      "every morning at the park",
+      "winnie episode",
+      "fido episode"
     ],
     "source": "Wikipedia"
   },
@@ -3412,25 +3638,27 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Letter",
+      "Mailbag"
     ],
     "themes": [
       "Family"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
-      "postmanandground'slava",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
-      "postman and ground's lava",
-      "mommy episode",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "postman",
+      "postman and grounds lava",
+      "postmanandgroundslava",
+      "grounds lava",
+      "the floor is lava",
+      "the one where mum and dad argue",
+      "the one where bluey delivers a letter",
+      "sorry letter",
+      "apology letter",
+      "bluey is the postie",
+      "mum and dad have a fight",
+      "postie bluey",
+      "dad says sorry to mum",
+      "floor is lava"
     ],
     "source": "Wikipedia"
   },
@@ -3461,14 +3689,18 @@
     ],
     "aliases": [
       "quiet game",
-      "daddy episode",
-      "game game",
       "quietgame",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "the quiet game",
+      "the one where dad tricks them to be quiet",
+      "the one with the quiet game",
+      "be quiet game",
+      "shh game",
+      "who can be quiet the longest",
+      "too loud",
+      "dad needs quiet",
+      "silence game",
+      "no talking game",
+      "sneaky dad quiet"
     ],
     "source": "Wikipedia"
   },
@@ -3497,17 +3729,20 @@
       "Imagination"
     ],
     "aliases": [
-      "toy",
-      "daddy episode",
       "mr monkeyjocks",
-      "toy episode",
-      "monkey",
-      "monkey episode",
-      "toy game",
-      "monkey game",
+      "mister monkeyjocks",
+      "mr monkey jocks",
       "mrmonkeyjocks",
-      "playing with dad",
-      "dad game"
+      "monkeyjocks",
+      "the one with mr monkeyjocks",
+      "the one where they pick special toys",
+      "monkey toy",
+      "too many toys",
+      "choosing special toys",
+      "bluey wants a new toy",
+      "dad says no more toys",
+      "monkey in undies",
+      "which toys to keep"
     ],
     "source": "Wikipedia"
   },
@@ -3529,21 +3764,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Toilet"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
       "dunny",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
-      "mommy episode",
-      "toys episode"
+      "dunnie",
+      "the one where you cant say dunny",
+      "the one about the word dunny",
+      "mum says dont say dunny",
+      "toilet word",
+      "naughty word",
+      "bluey and bingo say dunny",
+      "not allowed to say dunny",
+      "dunny song",
+      "the toilet episode",
+      "say toilet not dunny",
+      "rude word dunny"
     ],
     "source": "Wikipedia"
   },
@@ -3565,18 +3805,27 @@
       "School"
     ],
     "objects": [
-      "Toys"
+      "Typewriter",
+      "Story Book"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "calypso episode",
       "typewriter",
-      "toys",
-      "toys game",
-      "toys episode"
+      "type writer",
+      "typwriter",
+      "tipewriter",
+      "the one where calypso tells a story",
+      "the one where bluey doesnt like the ending",
+      "calypso story time",
+      "bad ending",
+      "story ending",
+      "bluey unhappy with the story",
+      "story at school",
+      "calypsos story",
+      "story with a bad ending"
     ],
     "source": "Wikipedia"
   },
@@ -3599,7 +3848,7 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Baby Photo"
     ],
     "themes": [
       "Growing Up",
@@ -3607,16 +3856,20 @@
       "Science"
     ],
     "aliases": [
-      "playing with mom",
       "baby race",
       "babyrace",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
-      "judo episode",
-      "mommy episode",
-      "toys episode"
+      "the baby race",
+      "the one where mum tells about bluey as a baby",
+      "the one with bluey and judo as babies",
+      "bluey and judo babies",
+      "baby bluey",
+      "baby bluey learning to walk",
+      "crawling race",
+      "first steps",
+      "mum compares bluey and judo",
+      "when bluey was a baby",
+      "sitting crawling walking",
+      "baby milestones"
     ],
     "source": "Wikipedia"
   },
@@ -3645,17 +3898,20 @@
       "Family"
     ],
     "aliases": [
-      "toy",
+      "christmas swim",
       "christmasswim",
-      "dog game",
-      "stuffed game",
-      "stuffed episode",
-      "stuffed",
-      "toy episode",
-      "toy game",
-      "dog",
-      "dog episode",
-      "christmas swim"
+      "xmas swim",
+      "chrismas swim",
+      "the one with bartlebee",
+      "the one on christmas day",
+      "bartlebee",
+      "bartlebee toy dog",
+      "new toy dog",
+      "christmas with the cousins",
+      "christmas day swim",
+      "bluey christmas",
+      "christmas present dog",
+      "family christmas"
     ],
     "source": "Wikipedia"
   },
@@ -3683,10 +3939,19 @@
       "Imagination"
     ],
     "aliases": [
-      "bunny episode",
-      "bunny game",
-      "bunny",
-      "easter"
+      "easter",
+      "easter episode",
+      "the one with the easter bunny",
+      "the one where the easter bunny forgot",
+      "easter bunny forgot them",
+      "easter eggs",
+      "easter egg hunt",
+      "no easter eggs last year",
+      "bunny brings eggs",
+      "chocolate eggs",
+      "waiting for the easter bunny",
+      "bluey easter",
+      "easter bunny"
     ],
     "source": "Wikipedia"
   },
@@ -3708,22 +3973,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Wheelie Bin"
     ],
     "themes": [
       "Bedtime",
       "Teamwork"
     ],
     "aliases": [
-      "daddy episode",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "binnight",
-      "dad game",
-      "toys episode",
       "bin night",
-      "bandit episode"
+      "binnight",
+      "bin nite",
+      "the one where they take out the bins",
+      "the one with the bins",
+      "taking the bins out",
+      "rubbish bins",
+      "bin night with dad",
+      "walking the bins at night",
+      "wheelie bins",
+      "garbage night",
+      "rubbish night",
+      "night time bins"
     ],
     "source": "Wikipedia"
   },
@@ -3753,11 +4022,18 @@
     ],
     "aliases": [
       "coneycomb",
-      "dog game",
-      "muffin episode",
-      "aunt trixie episode",
-      "dog",
-      "dog episode"
+      "coney comb",
+      "conycomb",
+      "the one where muffin wears a cone",
+      "the one with the dog cone",
+      "muffin sucks her thumb",
+      "thumb sucking",
+      "muffin in a cone",
+      "cone of shame",
+      "aunt trixie and muffin",
+      "stop sucking thumb",
+      "muffin cone",
+      "dog cone"
     ],
     "source": "Wikipedia"
   },
@@ -3788,18 +4064,18 @@
     ],
     "aliases": [
       "duck cake",
-      "cake episode",
-      "duck",
-      "daddy episode",
-      "cake",
-      "cake game",
-      "baking episode",
-      "duck game",
-      "duck episode",
       "duckcake",
-      "playing with dad",
-      "dad game",
-      "bandit episode"
+      "duk cake",
+      "the one with the duck cake",
+      "the one where dad makes a birthday cake",
+      "dad bakes a duck cake",
+      "bingos birthday cake",
+      "duck shaped cake",
+      "birthday duck cake",
+      "baking a cake",
+      "cake book duck",
+      "famous duck cake",
+      "daddy makes a cake"
     ],
     "source": "Wikipedia"
   },
@@ -3820,17 +4096,25 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Birthday Cake"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "toys",
-      "toys game",
-      "toys episode",
-      "handstand"
+      "handstand",
+      "hand stand",
+      "handstan",
+      "the one where bingo does a handstand",
+      "the one at bingos birthday party",
+      "nobody sees bingos handstand",
+      "bingos birthday",
+      "bingo wants someone to watch",
+      "watch me do a handstand",
+      "bingo feels left out at her party",
+      "birthday party handstand",
+      "look at me handstand"
     ],
     "source": "Wikipedia"
   },
@@ -3851,17 +4135,25 @@
       "Car"
     ],
     "objects": [
-      "Toys"
+      "Family Car"
     ],
     "themes": [
       "Family"
     ],
     "aliases": [
       "road trip",
-      "toys",
-      "toys game",
-      "toys episode",
-      "roadtrip"
+      "roadtrip",
+      "rode trip",
+      "the one where they go on a road trip",
+      "the one in the car",
+      "long car ride",
+      "family road trip",
+      "are we there yet",
+      "car trip",
+      "driving holiday",
+      "four wheel drive trip",
+      "heelers road trip",
+      "car ride"
     ],
     "source": "Wikipedia"
   },
@@ -3891,17 +4183,19 @@
       "Imagination"
     ],
     "aliases": [
-      "ice cream episode",
-      "dad game",
-      "daddy episode",
-      "car episode",
-      "icecream",
-      "car",
-      "ice cream game",
-      "car game",
-      "playing with dad",
       "ice cream",
-      "bandit episode"
+      "icecream",
+      "ice cream cart",
+      "the one with the ice cream cart",
+      "the one where they get ice cream from dad",
+      "dad buys ice cream",
+      "ice cream melting",
+      "licking each others ice cream",
+      "ice cream van",
+      "bluey and bingo ice cream",
+      "dripping ice cream",
+      "ice cream cone",
+      "icecream cart"
     ],
     "source": "Wikipedia"
   },
@@ -3922,18 +4216,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Toilet"
     ],
     "themes": [
       "Adventure",
       "Family"
     ],
     "aliases": [
-      "dunny(part2)",
-      "toys",
-      "toys game",
-      "dunny (part 2)",
-      "toys episode"
+      "dunny part 2",
+      "dunny 2",
+      "dunny two",
+      "dunnypart2",
+      "dunny again",
+      "the one with dunny again",
+      "the one with more naughty words",
+      "forbidden words",
+      "saying naughty words",
+      "second dunny episode",
+      "not allowed words",
+      "rude word again",
+      "toilet word again"
     ],
     "source": "Wikipedia"
   },
@@ -3956,7 +4258,8 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Cardboard Box",
+      "Allen Key"
     ],
     "themes": [
       "Sports",
@@ -3964,21 +4267,20 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
-      "build episode",
       "flat pack",
-      "chilli episode",
-      "game game",
       "flatpack",
-      "mom game",
-      "build game",
-      "mommy episode",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "flat pak",
+      "the one where mum and dad build furniture",
+      "the one with the evolution game",
+      "building furniture",
+      "flat pack furniture",
+      "evolution game",
+      "bluey and bingo evolve",
+      "fish to monkey game",
+      "cardboard box game",
+      "mum and dad build a chair",
+      "building a cubby",
+      "furniture box"
     ],
     "source": "Wikipedia"
   },
@@ -4008,17 +4310,19 @@
       "Imagination"
     ],
     "aliases": [
-      "ice cream episode",
       "ragdoll",
-      "dad game",
-      "daddy episode",
-      "doll game",
-      "doll episode",
-      "doll",
-      "ice cream game",
-      "playing with dad",
-      "ice cream",
-      "bandit episode"
+      "rag doll",
+      "raggdoll",
+      "the one where they want ice cream money",
+      "the one about hard work",
+      "work for your money",
+      "earn your ice cream",
+      "dads money",
+      "buying ice cream with dad money",
+      "hard work",
+      "floppy ragdoll",
+      "bandit teaches hard work",
+      "save up for ice cream"
     ],
     "source": "Wikipedia"
   },
@@ -4040,22 +4344,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Story Book"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
-      "playing with dad",
-      "toys",
-      "toys game",
-      "curseofthejinx",
       "curse of the jinx",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "curseofthejinx",
+      "the jinx",
+      "jinx",
+      "the one where dad tells a fairytale",
+      "the one about dad as a kid",
+      "bandit in the eighties",
+      "dad in the 1980s",
+      "daddys childhood story",
+      "real life fairytale",
+      "when dad was little",
+      "bandit as a kid",
+      "eighties story"
     ],
     "source": "Wikipedia"
   },
@@ -4078,7 +4386,7 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Music Player"
     ],
     "themes": [
       "Music",
@@ -4086,19 +4394,18 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "bandit episode",
-      "daddy episode",
       "musical statues",
-      "chilli episode",
-      "game game",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "musicalstatues"
+      "musicalstatues",
+      "musical statchoos",
+      "the one with musical statues",
+      "the one where mum makes everyone play musical statues",
+      "freeze when the music stops",
+      "statues game",
+      "mum demands musical statues",
+      "bluey in a bad mood",
+      "music stops freeze",
+      "musical statue",
+      "dance and freeze"
     ],
     "source": "Wikipedia"
   },
@@ -4121,19 +4428,26 @@
       "School"
     ],
     "objects": [
-      "Toys"
+      "Beeswax Horse"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "calypso episode",
-      "toys",
-      "toys game",
-      "indy episode",
       "stories",
-      "toys episode"
+      "storys",
+      "the one where calypso tells a story about indy",
+      "the one with the beeswax horse",
+      "beeswax horse",
+      "indy makes a horse",
+      "indys horse",
+      "calypso story",
+      "story time at school",
+      "making a horse out of beeswax",
+      "indy craft horse",
+      "wax horse",
+      "indy episode"
     ],
     "source": "Wikipedia"
   },
@@ -4155,21 +4469,27 @@
       "Restaurant"
     ],
     "objects": [
-      "Toys"
+      "Unicorse Puppet"
     ],
     "themes": [
       "Food",
       "Science"
     ],
     "aliases": [
-      "daddy episode",
-      "toys",
-      "toys game",
       "unicorse",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "unicorn",
+      "unicorse puppet",
+      "unicourse",
+      "uni corse",
+      "the one with unicorse",
+      "the one where dad is unicorse",
+      "rude unicorn",
+      "good manners at dinner",
+      "table manners",
+      "naughty unicorn puppet",
+      "unicorse at dinnertime",
+      "manners episode",
+      "bandit as unicorse"
     ],
     "source": "Wikipedia"
   },
@@ -4200,14 +4520,22 @@
       "Sharing"
     ],
     "aliases": [
-      "dad game",
-      "daddy episode",
-      "car episode",
-      "car",
-      "car game",
-      "playing with dad",
       "perfect",
-      "bandit episode"
+      "perfect episode bluey",
+      "prefect",
+      "perfekt",
+      "the one where dad has to be perfect",
+      "the one called perfect",
+      "bandit tries to be perfect",
+      "perfect daddy",
+      "bluey perfect",
+      "bingo perfect",
+      "perfect car game",
+      "the one with dads car",
+      "bluey and bingo want it perfect",
+      "not perfect",
+      "everything has to be perfect",
+      "bluey season three first episode"
     ],
     "source": "Wikipedia"
   },
@@ -4237,20 +4565,21 @@
       "Sharing"
     ],
     "aliases": [
-      "playing with mom",
-      "bed episode",
-      "daddy episode",
       "bedroom",
-      "bed game",
-      "bed",
-      "chilli episode",
-      "bedtime episode",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "sleep episode",
-      "dad game",
-      "bandit episode"
+      "bed room",
+      "bedrom",
+      "the one where bluey and bingo pretend to be mum and dad",
+      "the one in mum and dads bedroom",
+      "playing mum and dad",
+      "pretend grown ups",
+      "bluey pretends to be mum",
+      "bingo pretends to be dad",
+      "mum and dad bed",
+      "morning routine game",
+      "getting ready for work game",
+      "parents bedroom",
+      "pretending to wake up",
+      "bluey bedroom episode"
     ],
     "source": "Wikipedia"
   },
@@ -4273,7 +4602,8 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Obstacle Course",
+      "Stopwatch"
     ],
     "themes": [
       "Sports",
@@ -4281,19 +4611,22 @@
       "Sharing"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
       "obstacle course",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
       "obstaclecourse",
-      "playing with dad",
-      "mommy episode",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "obstical course",
+      "obstacle corse",
+      "the one with the obstacle course",
+      "the one where mum does the obstacle course",
+      "mum and bingo vs dad and bluey",
+      "chilli slow motion run",
+      "mum never gives up",
+      "backyard obstacle course",
+      "obstacle race",
+      "mum and bingo team",
+      "dad and bluey team",
+      "climbing through the course",
+      "dont give up mum",
+      "teams race in the backyard"
     ],
     "source": "Wikipedia"
   },
@@ -4322,14 +4655,20 @@
       "Emotions"
     ],
     "aliases": [
-      "daddy episode",
       "promises",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "promise",
+      "promices",
+      "promisses",
+      "the one about promises",
+      "the one where bluey makes a promise",
+      "bluey breaks a promise",
+      "keeping a promise",
+      "pinky promise",
+      "i promise",
+      "bandit makes a promise",
+      "breaking promises",
+      "promise episode bluey",
+      "bluey promises dad"
     ],
     "source": "Wikipedia"
   },
@@ -4352,26 +4691,31 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Omelette",
+      "Eggs",
+      "Frying Pan",
+      "Breakfast Tray"
     ],
     "themes": [
       "Food"
     ],
     "aliases": [
-      "playing with mom",
       "omelette",
-      "daddy episode",
-      "cook episode",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "cook game",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "omelet",
+      "omlette",
+      "omlet",
+      "the one where they make mum an omelette",
+      "the one with the omelette",
+      "breakfast in bed for mum",
+      "mothers day breakfast",
+      "bingo cracks the eggs",
+      "bluey cooking eggs",
+      "making eggs for mum",
+      "egg breakfast",
+      "bluey is bossy in the kitchen",
+      "cooking with dad",
+      "mum breakfast surprise",
+      "eggs episode"
     ],
     "source": "Wikipedia"
   },
@@ -4393,21 +4737,27 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Toothbrush",
+      "Spoon"
     ],
     "themes": [
       "Imagination"
     ],
     "aliases": [
       "born yesterday",
-      "dad game",
-      "daddy episode",
-      "toys",
-      "toys game",
-      "playing with dad",
       "bornyesterday",
-      "toys episode",
-      "bandit episode"
+      "born yestarday",
+      "the one where dad was born yesterday",
+      "dad pretends to be a baby",
+      "dad doesnt know anything",
+      "teaching dad how to do things",
+      "bandit born yesterday",
+      "dad acts like hes new",
+      "the one where dad forgot everything",
+      "silly dad doesnt know stuff",
+      "bluey and bingo teach dad",
+      "grown up baby dad",
+      "born yesterday game"
     ],
     "source": "Wikipedia"
   },
@@ -4436,14 +4786,19 @@
     ],
     "aliases": [
       "mini bluey",
-      "daddy episode",
       "minibluey",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "mini blooey",
+      "the one with mini bluey",
+      "the one where bingo copies bluey",
+      "bingo pretends to be bluey",
+      "little bluey",
+      "copycat bingo",
+      "bingo copies everything bluey does",
+      "bluey gets annoyed at bingo copying",
+      "bingo dresses like bluey",
+      "copy cat game",
+      "mini me bluey",
+      "stop copying me"
     ],
     "source": "Wikipedia"
   },
@@ -4474,22 +4829,20 @@
       "Sharing"
     ],
     "aliases": [
-      "playing with mom",
-      "bed episode",
-      "puppet",
-      "daddy episode",
-      "bandit episode",
-      "dad game",
-      "playing with dad",
-      "sleep game",
-      "bed",
       "unicorse returns",
-      "bedtime episode",
-      "mommy episode",
-      "puppet game",
-      "sleep episode",
-      "puppet episode",
-      "unicorsereturns"
+      "unicorsereturns",
+      "unicorn returns",
+      "unicorse puppet",
+      "the one where unicorse comes back",
+      "the one with the unicorse puppet",
+      "naughty unicorse",
+      "dad does the unicorse voice",
+      "unicorse at bedtime",
+      "unicorn puppet",
+      "uniporse",
+      "unicourse",
+      "rude puppet dad",
+      "bedtime puppet"
     ],
     "source": "Wikipedia"
   },
@@ -4512,22 +4865,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Curry"
     ],
     "themes": [
       "Adventure"
     ],
     "aliases": [
-      "daddy episode",
       "curry quest",
-      "mackenzie episode",
-      "toys",
-      "toys game",
       "curryquest",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "curry qwest",
+      "cury quest",
+      "the one with the curry",
+      "the one where they go on a curry quest",
+      "quest for curry",
+      "bandit and mackenzie quest",
+      "spicy curry",
+      "curry for dinner",
+      "mackenzie curry",
+      "takeaway curry quest",
+      "curry adventure",
+      "bluey bingo mackenzie and dad quest"
     ],
     "source": "Wikipedia"
   },
@@ -4556,14 +4913,20 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
       "magic",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
-      "mommy episode",
-      "toys episode"
+      "magic episode",
+      "majic",
+      "the one where mum does magic",
+      "the one with magic powers",
+      "chilli magic",
+      "mum is magic",
+      "magic game with mum",
+      "magic spell game",
+      "bluey magic",
+      "pretend magic powers",
+      "mum controls them with magic",
+      "abracadabra",
+      "magic mum"
     ],
     "source": "Wikipedia"
   },
@@ -4594,14 +4957,20 @@
       "Teamwork"
     ],
     "aliases": [
-      "chess episode",
-      "bandit episode",
-      "daddy episode",
-      "chess game",
-      "chess",
-      "playing with dad",
       "chest",
-      "dad game"
+      "chess",
+      "the one with the chest",
+      "the one where they play chess",
+      "treasure chest",
+      "chess with dad",
+      "bandit plays chess",
+      "chest episode bluey",
+      "chess board",
+      "chest or chess",
+      "checkmate",
+      "old chest",
+      "dad chess game",
+      "bluey learns chess"
     ],
     "source": "Wikipedia"
   },
@@ -4631,18 +5000,20 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "dog game",
-      "daddy episode",
-      "playing with dad",
-      "chilli episode",
-      "mom game",
       "sheepdog",
-      "mommy episode",
-      "dog",
-      "dog episode",
-      "dad game",
-      "bandit episode"
+      "sheep dog",
+      "sheepdogs",
+      "sheep dogg",
+      "the one where they play sheepdog",
+      "the one with the sheep",
+      "herding sheep game",
+      "pretend sheep",
+      "bluey is a sheepdog",
+      "rounding up sheep",
+      "dad is a sheep",
+      "baa baa sheep game",
+      "farm dog game",
+      "sheepdog game"
     ],
     "source": "Wikipedia"
   },
@@ -4671,18 +5042,20 @@
       "Family"
     ],
     "aliases": [
-      "blanket episode",
-      "blanket game",
-      "playing with mom",
-      "daddy episode",
       "housework",
-      "blanket",
-      "chilli episode",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "dad game",
-      "bandit episode"
+      "house work",
+      "housewerk",
+      "the one about housework",
+      "the one where they do the housework",
+      "doing chores",
+      "cleaning up the house",
+      "tidy up game",
+      "chores game",
+      "helping with housework",
+      "folding washing",
+      "blanket on the floor",
+      "making beds game",
+      "clean house"
     ],
     "source": "Wikipedia"
   },
@@ -4704,7 +5077,9 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Parcel",
+      "Wrapping Paper",
+      "Prize"
     ],
     "themes": [
       "Learning",
@@ -4714,10 +5089,20 @@
     "aliases": [
       "pass the parcel",
       "passtheparcel",
-      "pat episode",
-      "game game",
-      "game episode",
-      "game"
+      "pass the parsel",
+      "pass the parcle",
+      "the one with pass the parcel",
+      "the one where there is only one prize",
+      "lucky dad pass the parcel",
+      "pat does pass the parcel",
+      "old school pass the parcel",
+      "no lollies in the layers",
+      "party game parcel",
+      "parcel game",
+      "birthday party parcel",
+      "music stops unwrap the present",
+      "parcel with lots of wrapping",
+      "the one where the kids want a prize every layer"
     ],
     "source": "Wikipedia"
   },
@@ -4747,11 +5132,20 @@
       "Friendship"
     ],
     "aliases": [
-      "toys",
-      "toys game",
       "explorers",
-      "jack episode",
-      "toys episode"
+      "explorer",
+      "explorors",
+      "the one where they play explorers",
+      "the one with jack exploring",
+      "explorers game",
+      "bluey and jack explore",
+      "jungle explorers",
+      "exploring the backyard",
+      "explorer adventure",
+      "pretend explorers",
+      "map adventure",
+      "explorers episode bluey",
+      "exploring game"
     ],
     "source": "Wikipedia"
   },
@@ -4773,20 +5167,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Phone"
     ],
     "themes": [
       "Family"
     ],
     "aliases": [
-      "grandad episode",
-      "daddy episode",
       "phones",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "toys episode",
-      "dad game"
+      "phone",
+      "fones",
+      "the one with the phones",
+      "the one where they play phones",
+      "toy phones",
+      "phone game",
+      "calling grandad",
+      "talking on the phone",
+      "bluey on the phone",
+      "ring ring",
+      "pretend phone call",
+      "grandad phone call",
+      "phones episode bluey"
     ],
     "source": "Wikipedia"
   },
@@ -4807,17 +5207,31 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Dam",
+      "Umbrella",
+      "Rainwater"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "toys",
       "rain",
-      "toys game",
-      "toys episode"
+      "rain episode",
+      "rainy day",
+      "the one with the rain",
+      "the one where bluey plays in the rain",
+      "bluey builds a dam",
+      "dam in the driveway",
+      "stopping the water",
+      "bluey in the rain",
+      "the one with no talking",
+      "puddle episode",
+      "water running down the driveway",
+      "mum comes out in the rain",
+      "umbrella episode",
+      "wet bluey",
+      "rain dam"
     ],
     "source": "Wikipedia"
   },
@@ -4845,17 +5259,20 @@
       "Imagination"
     ],
     "aliases": [
-      "pizza",
       "pizza girls",
-      "pizza delivery",
-      "pizza game",
-      "car episode",
-      "delivery girls",
-      "car",
-      "pedal car pizza",
-      "car game",
       "pizzagirls",
-      "pizza episode"
+      "piza girls",
+      "pizza delivery",
+      "pizza delivery girls",
+      "the one where they deliver pizza",
+      "the one with the pizza car",
+      "pedal car pizza",
+      "pizza game",
+      "delivering pizzas",
+      "bluey and bingo pizza",
+      "pizza shop game",
+      "pretend pizza",
+      "pizza order"
     ],
     "source": "Wikipedia"
   },
@@ -4877,21 +5294,27 @@
       "Car"
     ],
     "objects": [
-      "Game"
+      "Car"
     ],
     "themes": [
       "Sports",
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
       "driving",
-      "game game",
-      "chilli episode",
-      "mom game",
-      "mommy episode",
-      "game episode",
-      "game"
+      "driving episode",
+      "drivng",
+      "the one where mum is driving",
+      "the one in the car with mum",
+      "chilli driving",
+      "car trip with mum",
+      "car ride",
+      "driving the car",
+      "road trip",
+      "mum drives the girls",
+      "are we there yet",
+      "car journey",
+      "driving with mum"
     ],
     "source": "Wikipedia"
   },
@@ -4920,9 +5343,17 @@
     ],
     "aliases": [
       "tina",
-      "toys",
-      "toys game",
-      "toys episode"
+      "teena",
+      "tina episode",
+      "the one with tina",
+      "the one about tina",
+      "who is tina",
+      "bluey and tina",
+      "tina bluey",
+      "tina game",
+      "meeting tina",
+      "tina friend",
+      "tina the friend"
     ],
     "source": "Wikipedia"
   },
@@ -4951,15 +5382,20 @@
       "Imagination"
     ],
     "aliases": [
-      "boat episode",
       "whale watching",
-      "daddy episode",
-      "boat",
       "whalewatching",
-      "boat game",
-      "playing with dad",
-      "dad game",
-      "bandit episode"
+      "wale watching",
+      "whale wotching",
+      "the one with the whale",
+      "the one where they go whale watching",
+      "looking for whales",
+      "whale on the boat",
+      "boat ride whales",
+      "pretend boat",
+      "bandit is a whale",
+      "see the whale",
+      "whale spotting",
+      "whale game"
     ],
     "source": "Wikipedia"
   },
@@ -4982,25 +5418,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Table"
     ],
     "themes": [
       "Family"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
-      "familymeeting",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
       "family meeting",
-      "mommy episode",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "familymeeting",
+      "famly meeting",
+      "the one with the family meeting",
+      "the one where they have a family meeting",
+      "vote at the family meeting",
+      "heelers family meeting",
+      "family vote",
+      "meeting at the table",
+      "dad in trouble at the meeting",
+      "family court",
+      "order order",
+      "raise your hand to vote",
+      "bluey calls a meeting"
     ],
     "source": "Wikipedia"
   },
@@ -5030,12 +5467,20 @@
       "Imagination"
     ],
     "aliases": [
-      "muffin episode",
       "faceytalk",
-      "socks episode",
-      "table episode",
-      "table",
-      "table game"
+      "facey talk",
+      "facetalk",
+      "facetime",
+      "face time",
+      "the one with faceytalk",
+      "the one where they video call muffin",
+      "video call muffin and socks",
+      "talking to cousins on the tablet",
+      "calling muffin",
+      "muffin on the screen",
+      "video chat",
+      "tablet call",
+      "facey talk episode"
     ],
     "source": "Wikipedia"
   },
@@ -5063,15 +5508,20 @@
       "Sharing"
     ],
     "aliases": [
-      "doll game",
-      "daddy episode",
-      "doll episode",
-      "ragdollreturns",
-      "doll",
       "ragdoll returns",
-      "playing with dad",
-      "dad game",
-      "bandit episode"
+      "ragdollreturns",
+      "rag doll returns",
+      "ragdol",
+      "the one where dad is a ragdoll again",
+      "floppy dad",
+      "dad goes floppy",
+      "ragdoll dad",
+      "dad is a rag doll",
+      "floppy daddy",
+      "ragdoll game",
+      "dad cant move",
+      "carry floppy dad",
+      "ragdoll again"
     ],
     "source": "Wikipedia"
   },
@@ -5100,14 +5550,20 @@
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
-      "toys",
-      "toys game",
-      "playing with dad",
       "fairytale",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "fairy tale",
+      "fairytail",
+      "fairy tail",
+      "the one with the fairytale",
+      "the one where dad tells a fairytale",
+      "once upon a time",
+      "bedtime story",
+      "dad tells a story",
+      "fairy story",
+      "dads story",
+      "story time",
+      "bandit fairytale",
+      "happily ever after"
     ],
     "source": "Wikipedia"
   },
@@ -5128,7 +5584,7 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Music Player"
     ],
     "themes": [
       "Family",
@@ -5138,11 +5594,20 @@
       "Imagination"
     ],
     "aliases": [
+      "musical statues returns",
       "musicalstatuesreturns",
-      "toys",
-      "toys game",
-      "toys episode",
-      "musical statues returns"
+      "musical statues",
+      "musical statchues",
+      "musical statues again",
+      "the one with musical statues",
+      "the one where they freeze when the music stops",
+      "freeze game",
+      "statues game",
+      "stop the music",
+      "dance and freeze",
+      "freeze dance",
+      "statue game again",
+      "musical statue"
     ],
     "source": "Wikipedia"
   },
@@ -5165,19 +5630,28 @@
       "School"
     ],
     "objects": [
-      "Toys"
+      "Bees",
+      "Beehive"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "calypso episode",
-      "toys",
-      "toys game",
       "beeswax",
-      "indy episode",
-      "toys episode"
+      "bees wax",
+      "beeswacks",
+      "beezwax",
+      "the one with the bees",
+      "the one with calypso and the bees",
+      "bees at kindy",
+      "buzzing bees",
+      "bee episode",
+      "beehive",
+      "honey bees",
+      "indy bees",
+      "mind your own beeswax",
+      "bee game"
     ],
     "source": "Wikipedia"
   },
@@ -5206,13 +5680,18 @@
       "Sharing"
     ],
     "aliases": [
-      "bed episode",
-      "bed game",
-      "bed",
       "unicorse returns again",
-      "bedtime episode",
       "unicorsereturnsagain",
-      "sleep episode"
+      "unicorse again",
+      "unicorn returns again",
+      "the one where unicorse comes back again",
+      "unicorse bedtime again",
+      "naughty unicorse again",
+      "unicorse puppet again",
+      "unicorse at night",
+      "uniporse again",
+      "second unicorse returns",
+      "unicorse is back"
     ],
     "source": "Wikipedia"
   },
@@ -5233,7 +5712,7 @@
       "Park"
     ],
     "objects": [
-      "Toy"
+      "Turtle"
     ],
     "themes": [
       "Learning",
@@ -5241,10 +5720,18 @@
       "Imagination"
     ],
     "aliases": [
-      "toy",
       "turtleboy",
-      "toy game",
-      "toy episode"
+      "turtle boy",
+      "turtel boy",
+      "turtleboi",
+      "the one with turtleboy",
+      "the one with the turtle",
+      "turtle episode",
+      "turtle game",
+      "bluey turtle",
+      "turtleboy toy",
+      "little turtle",
+      "turtle friend"
     ],
     "source": "Wikipedia"
   },
@@ -5267,21 +5754,27 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Onesie"
     ],
     "themes": [
       "Family"
     ],
     "aliases": [
-      "playing with mom",
-      "brandy episode",
-      "toys",
-      "chilli episode",
-      "toys game",
-      "mom game",
       "onesies",
-      "mommy episode",
-      "toys episode"
+      "onesie",
+      "onsies",
+      "wunsies",
+      "the one with the onesies",
+      "the one with aunt brandy",
+      "aunty brandy",
+      "brandy visits",
+      "animal onesies",
+      "pyjama onesies",
+      "dressing up in onesies",
+      "mum and her sister",
+      "brandy and chilli",
+      "sleepover onesies",
+      "onesie party"
     ],
     "source": "Wikipedia"
   },
@@ -5302,19 +5795,28 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Tool Belt",
+      "Hammer"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "hide game",
-      "toys",
-      "toys game",
-      "hide episode",
       "tradies",
-      "toys episode"
+      "tradie",
+      "tradys",
+      "the one where they play tradies",
+      "the one with the tradies",
+      "builders game",
+      "pretend tradesmen",
+      "fixing things game",
+      "tool belt",
+      "hammer game",
+      "plumber game",
+      "tradie game",
+      "hide and seek tradies",
+      "tradies episode bluey"
     ],
     "source": "Wikipedia"
   },
@@ -5336,19 +5838,28 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Granny Mobile",
+      "Wagon"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "muffin episode",
-      "toys",
-      "toys game",
       "granny mobile",
-      "toys episode",
-      "grannymobile"
+      "grannymobile",
+      "grannie mobile",
+      "grany mobile",
+      "the one with the granny mobile",
+      "the one where they play grannies with muffin",
+      "grannies game",
+      "muffin granny",
+      "pretend grannies car",
+      "granny car",
+      "janet and rita mobile",
+      "old lady car",
+      "grannies driving",
+      "granny wagon"
     ],
     "source": "Wikipedia"
   },
@@ -5379,16 +5890,20 @@
       "Imagination"
     ],
     "aliases": [
-      "rock game",
-      "rock episode",
-      "mackenzie episode",
-      "rocket game",
-      "rocket episode",
-      "rock",
       "space",
-      "rusty episode",
-      "jack episode",
-      "rocket"
+      "space episode",
+      "the one with the rocket",
+      "the one where they go to space",
+      "rocket ship",
+      "mackenzie space",
+      "jack and rusty space",
+      "astronauts",
+      "space game",
+      "blast off",
+      "floating in space",
+      "rocket game",
+      "space adventure",
+      "pretend astronauts"
     ],
     "source": "Wikipedia"
   },
@@ -5419,12 +5934,19 @@
     ],
     "aliases": [
       "stickbird",
-      "stick episode",
-      "bird episode",
-      "bird game",
-      "stick game",
-      "bird",
-      "stick"
+      "stick bird",
+      "stikbird",
+      "stick burd",
+      "the one with stickbird",
+      "the one with the stick bird",
+      "bird made of sticks",
+      "making a stickbird",
+      "beach stick bird",
+      "stickbird at the beach",
+      "driftwood bird",
+      "stick bird toy",
+      "stickbird episode",
+      "bluey makes a bird"
     ],
     "source": "Wikipedia"
   },
@@ -5454,19 +5976,20 @@
       "Imagination"
     ],
     "aliases": [
-      "playing with mom",
-      "daddy episode",
       "smoochy kiss",
-      "toys",
-      "chilli episode",
-      "toys game",
       "smoochykiss",
-      "mom game",
-      "mommy episode",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "smoochie kiss",
+      "smooshy kiss",
+      "the one with the smoochy kiss",
+      "the one where mum and dad kiss",
+      "mum and dad smooch",
+      "kissing episode",
+      "big kiss",
+      "smoochy smoochy",
+      "yuck kissing",
+      "kiss game",
+      "mummy daddy kiss",
+      "smooch"
     ],
     "source": "Wikipedia"
   },
@@ -5487,16 +6010,25 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Dirt",
+      "Shovel"
     ],
     "themes": [
       "Imagination"
     ],
     "aliases": [
       "dirt",
-      "toys",
-      "toys game",
-      "toys episode"
+      "dirt episode",
+      "durt",
+      "the one with the dirt",
+      "the one where they play in the dirt",
+      "dirty bluey",
+      "digging in dirt",
+      "mud and dirt",
+      "playing in the dirt",
+      "dirt pile",
+      "getting dirty",
+      "dirt game"
     ],
     "source": "Wikipedia"
   },
@@ -5519,7 +6051,8 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Television",
+      "Football"
     ],
     "themes": [
       "Sports",
@@ -5527,12 +6060,19 @@
     ],
     "aliases": [
       "the decider",
-      "lucky episode",
-      "pat episode",
-      "game game",
       "thedecider",
-      "game episode",
-      "game"
+      "decider",
+      "the desider",
+      "the one with the decider",
+      "the one where pat watches the footy",
+      "footy decider",
+      "big footy game",
+      "lucky dad pat",
+      "watching the footy",
+      "rugby game on tv",
+      "footy on tv",
+      "pat and lucky footy",
+      "the decider game"
     ],
     "source": "Wikipedia"
   },
@@ -5562,21 +6102,20 @@
       "Creativity"
     ],
     "aliases": [
-      "toy",
-      "bed episode",
-      "stuffed game",
-      "stuffed episode",
-      "stuffed",
-      "build episode",
-      "toy episode",
-      "sleep game",
-      "bed",
-      "bed game",
-      "bedtime episode",
-      "toy game",
-      "sleep episode",
-      "build game",
-      "cubby"
+      "cubby",
+      "cubby house",
+      "cubbyhouse",
+      "cubbie",
+      "the one with the cubby",
+      "the one where they build a cubby",
+      "build a fort",
+      "blanket fort",
+      "cubby fort",
+      "sleeping in the cubby",
+      "cubby bed",
+      "making a cubby",
+      "pillow fort",
+      "fort episode"
     ],
     "source": "Wikipedia"
   },
@@ -5605,14 +6144,20 @@
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
       "exercise",
-      "toys",
-      "toys game",
-      "playing with dad",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "exersize",
+      "excercise",
+      "the one where dad does exercise",
+      "the one with exercise",
+      "dad exercising",
+      "workout",
+      "dad gets fit",
+      "push ups",
+      "exercise game",
+      "bandit workout",
+      "running and stretching",
+      "doing exercise",
+      "fitness dad"
     ],
     "source": "Wikipedia"
   },
@@ -5640,10 +6185,18 @@
       "Imagination"
     ],
     "aliases": [
-      "toys",
-      "toys game",
-      "toys episode",
-      "relax"
+      "relax",
+      "relaxing",
+      "relax episode",
+      "the one where mum and dad try to relax",
+      "the one about relaxing",
+      "time to relax",
+      "holiday relax",
+      "chill out",
+      "parents want to relax",
+      "relax game",
+      "just relax",
+      "lazy day relax"
     ],
     "source": "Wikipedia"
   },
@@ -5672,18 +6225,18 @@
       "Sharing"
     ],
     "aliases": [
-      "stick episode",
-      "playing with mom",
-      "bird episode",
-      "bird game",
-      "stickbirdreturns",
-      "stick game",
-      "chilli episode",
-      "bird",
-      "mom game",
-      "mommy episode",
       "stickbird returns",
-      "stick"
+      "stickbirdreturns",
+      "stick bird returns",
+      "stickbird again",
+      "the one where stickbird comes back",
+      "the one with stickbird and mum",
+      "mum and stickbird",
+      "chilli stickbird",
+      "stick bird again",
+      "making stickbird again",
+      "stickbird returns episode",
+      "second stickbird"
     ],
     "source": "Wikipedia"
   },
@@ -5710,11 +6263,18 @@
       "Science"
     ],
     "aliases": [
-      "toys",
-      "toys game",
+      "show and tell",
       "showandtell",
-      "toys episode",
-      "show and tell"
+      "show n tell",
+      "show and tel",
+      "the one with show and tell",
+      "the one where bluey brings something to kindy",
+      "kindy show and tell",
+      "bringing a toy to kindy",
+      "show and tell at school",
+      "calypso show and tell",
+      "what to bring for show and tell",
+      "show and tell day"
     ],
     "source": "Wikipedia"
   },
@@ -5735,17 +6295,28 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Dragon Drawing",
+      "Pencils"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "toys",
       "dragon",
-      "toys game",
-      "toys episode"
+      "dragon episode",
+      "dragun",
+      "the one with the dragon",
+      "the one where dad draws a dragon",
+      "bluey writes a dragon story",
+      "drawing a dragon",
+      "dragon story",
+      "dragon drawing",
+      "dad cant draw a dragon",
+      "knight and dragon",
+      "fire breathing dragon",
+      "bluey dragon book",
+      "dragon picture"
     ],
     "source": "Wikipedia"
   },
@@ -5776,14 +6347,18 @@
       "Imagination"
     ],
     "aliases": [
-      "game",
-      "coco episode",
       "wild girls",
-      "chloe episode",
-      "game game",
-      "indy episode",
-      "game episode",
-      "wildgirls"
+      "wildgirls",
+      "wyld girls",
+      "the one with the wild girls",
+      "the one where they play wild girls",
+      "coco chloe indy and bluey",
+      "wild girls game",
+      "running wild",
+      "wild animals game",
+      "jungle girls",
+      "the wild girls club",
+      "playground wild girls"
     ],
     "source": "Wikipedia"
   },
@@ -5811,11 +6386,19 @@
       "Imagination"
     ],
     "aliases": [
+      "tv shop",
       "tvshop",
-      "toys",
-      "toys game",
-      "toys episode",
-      "tv shop"
+      "tv shopping",
+      "telly shop",
+      "the one with the tv shop",
+      "the one where bluey sells things on tv",
+      "pretend tv ad",
+      "shopping channel",
+      "selling stuff on tv",
+      "but wait theres more",
+      "tv shop game",
+      "infomercial game",
+      "call now"
     ],
     "source": "Wikipedia"
   },
@@ -5846,10 +6429,18 @@
       "Imagination"
     ],
     "aliases": [
-      "table",
       "slide",
-      "table episode",
-      "table game"
+      "slide episode",
+      "the one with the slide",
+      "the one where they make a slide",
+      "table slide",
+      "sliding down the table",
+      "making a slide",
+      "slippery slide",
+      "slide game",
+      "whee slide",
+      "homemade slide",
+      "slide down"
     ],
     "source": "Wikipedia"
   },
@@ -5871,7 +6462,8 @@
       "Home"
     ],
     "objects": [
-      "Game"
+      "Cricket Bat",
+      "Ball"
     ],
     "themes": [
       "Sports",
@@ -5879,13 +6471,18 @@
     ],
     "aliases": [
       "cricket",
-      "daddy episode",
-      "game game",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "criket",
+      "crickett",
+      "the one with the cricket",
+      "the one where they play cricket",
+      "backyard cricket",
+      "dads cricket match",
+      "rusty plays cricket",
+      "bat and ball",
+      "howzat",
+      "cricket game",
+      "cricket bat",
+      "bowling at cricket"
     ],
     "source": "Wikipedia"
   },
@@ -5907,21 +6504,26 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "Laundry Basket"
     ],
     "themes": [
       "Perseverance",
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
-      "playing with dad",
-      "toys",
-      "toys game",
       "ghostbasket",
-      "dad game",
-      "toys episode",
-      "bandit episode"
+      "ghost basket",
+      "gost basket",
+      "ghostbaskit",
+      "the one with the ghost basket",
+      "the one with the ghost",
+      "ghost game",
+      "washing basket ghost",
+      "dad is a ghost",
+      "spooky basket",
+      "basket ghost",
+      "boo ghost",
+      "ghostbasket game"
     ],
     "source": "Wikipedia"
   },
@@ -5945,24 +6547,32 @@
       "Home"
     ],
     "objects": [
-      "Toys"
+      "For Sale Sign",
+      "Wedding Cake"
     ],
     "themes": [
       "Family",
       "Imagination"
     ],
     "aliases": [
-      "frisky episode",
-      "dad game",
-      "daddy episode",
-      "thesign",
-      "uncle rad episode",
-      "toys",
-      "toys game",
-      "playing with dad",
       "the sign",
-      "toys episode",
-      "bandit episode"
+      "thesign",
+      "the sine",
+      "the one with the for sale sign",
+      "the one where they might move house",
+      "uncle rads wedding",
+      "frisky and rad get married",
+      "frisky wedding",
+      "moving house",
+      "house for sale",
+      "selling the house",
+      "bluey doesnt want to move",
+      "wedding episode",
+      "the one with the wedding",
+      "dad got a new job",
+      "long episode wedding",
+      "for sale sign",
+      "not moving after all"
     ],
     "source": "Wikipedia"
   },
@@ -5991,14 +6601,19 @@
       "Imagination"
     ],
     "aliases": [
-      "daddy episode",
-      "game game",
-      "surprise!",
-      "playing with dad",
-      "game episode",
-      "game",
-      "dad game",
-      "bandit episode"
+      "surprise",
+      "surprise episode",
+      "suprise",
+      "surprize",
+      "the one with the surprise",
+      "the one where they plan a surprise",
+      "surprise for mum",
+      "big surprise",
+      "surprise game",
+      "dont tell mum",
+      "hiding for a surprise",
+      "surprise party",
+      "secret surprise"
     ],
     "source": "Wikipedia"
   }

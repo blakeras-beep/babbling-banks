@@ -15,19 +15,30 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Kite",
+      "Kite String"
+    ],
     "themes": [
       "Learning",
       "Science"
     ],
     "aliases": [
       "curious george flies a kite",
-      "curiousgeorgefliesakite",
       "george flies a kite",
-      "flies",
-      "flies episode",
-      "kite",
-      "kite episode"
+      "curiousgeorgefliesakite",
+      "george kite",
+      "monkey kite",
+      "the one where george flies a kite",
+      "the one with the kite",
+      "george and the kite on a windy day",
+      "windy day kite",
+      "kite flying monkey",
+      "kite string",
+      "flying kite",
+      "george makes a kite fly",
+      "kyte",
+      "the one where the wind blows the kite"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -49,17 +60,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Scratches",
+      "Restaurant"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "from scratch",
       "fromscratch",
-      "from",
-      "from episode",
-      "scratch",
-      "scratch episode"
+      "the one with the scratches",
+      "the one where gnocchi gets blamed",
+      "gnocchi the cat",
+      "gnocchi scratches",
+      "who made the scratches",
+      "george the detective at the restaurant",
+      "chef pisghetti restaurant scratches",
+      "pisghetti cat",
+      "spaghetti cat",
+      "naughty kitty",
+      "the one where george proves gnocchi didnt do it",
+      "kitty scratches",
+      "nyokee the cat"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -79,21 +102,30 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Pigeon",
+      "Pigeon House"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
-      "curious george's home for pigeons",
-      "curiousgeorge'shomeforpigeons",
-      "george's home for pigeons",
-      "george's",
-      "george's episode",
-      "home",
-      "home episode",
-      "pigeons",
-      "pigeons episode"
+      "curious georges home for pigeons",
+      "george home for pigeons",
+      "georges home for pigeons",
+      "curiousgeorgeshomeforpigeons",
+      "the one with the homing pigeon",
+      "compass the pigeon",
+      "the one where george builds a pigeon house",
+      "pigeon house",
+      "birdie house",
+      "pigeon home",
+      "homing pigeon",
+      "pidgeon",
+      "pidgeons",
+      "george makes a home for compass",
+      "the one with compass"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -113,7 +145,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Mail",
+      "Letters",
+      "Mailbox"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -121,8 +157,19 @@
     "aliases": [
       "out of order",
       "outoforder",
-      "order",
-      "order episode"
+      "the one with the mail",
+      "the one where george helps the mailman",
+      "george delivers the mail",
+      "mail mix up",
+      "letters out of order",
+      "mail carrier",
+      "postal worker",
+      "mailman monkey",
+      "george sorts the mail",
+      "mail delivery",
+      "the one with the mailbox",
+      "letters and packages",
+      "postman george"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -142,17 +189,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Donuts",
+      "Donut Box"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "zeros to donuts",
       "zerostodonuts",
-      "zeros",
-      "zeros episode",
-      "donuts",
-      "donuts episode"
+      "the one with the donuts",
+      "the one where george orders donuts",
+      "too many donuts",
+      "donut zeros",
+      "doughnuts",
+      "doughnut episode george",
+      "zeroes to donuts",
+      "george counts zeros",
+      "the power of zero",
+      "donut order",
+      "monkey donuts",
+      "lots and lots of donuts",
+      "the one with all the zeros"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -172,22 +231,30 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Grape Juice",
+      "Rug",
+      "Stain"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george, stain remover",
-      "curiousgeorge,stainremover",
-      "george, stain remover",
-      "george,",
-      "george, episode",
-      "stain",
-      "stain episode",
-      "remover",
-      "remover episode",
-      "ice",
-      "ice episode"
+      "curious george stain remover",
+      "george stain remover",
+      "curiousgeorgestainremover",
+      "the one where george spills grape juice",
+      "grape juice on the rug",
+      "the one with the stain",
+      "purple stain",
+      "george cleans the rug",
+      "new rug stain",
+      "spilled juice",
+      "george makes a mess on the carpet",
+      "stain remover monkey",
+      "the one with the grape juice",
+      "stane remover",
+      "cleaning the stain"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -208,7 +275,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Model Boat",
+      "Buoy"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -216,12 +286,19 @@
     "aliases": [
       "buoy wonder",
       "buoywonder",
-      "buoy",
-      "buoy episode",
-      "wonder",
-      "wonder episode",
-      "boat",
-      "boat episode"
+      "boy wonder",
+      "bouy wonder",
+      "boey wonder",
+      "the one with the boat contest",
+      "the one where george builds a boat",
+      "model boat contest",
+      "bills boat race",
+      "toy boat race",
+      "george boat",
+      "floating boat",
+      "sink or float",
+      "the one with the buoy",
+      "boat race with bill"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -241,7 +318,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Roller Skates",
+      "Toy Store"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -249,8 +329,18 @@
     "aliases": [
       "roller monkey",
       "rollermonkey",
-      "roller",
-      "roller episode"
+      "roller skating monkey",
+      "the one where george roller skates",
+      "george roller skates",
+      "roller skates",
+      "rollerskates",
+      "skating monkey",
+      "toy store skates",
+      "the one with the roller skates",
+      "george learns to skate",
+      "rolerskate",
+      "monkey on skates",
+      "george skating for the toy store"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -272,16 +362,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Cuckoo Clock"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george on time",
-      "curiousgeorgeontime",
       "george on time",
-      "time",
-      "time episode"
+      "curiousgeorgeontime",
+      "the one with the cuckoo clock",
+      "george breaks the cuckoo clock",
+      "cuckoo clock",
+      "coo coo clock",
+      "kuku clock",
+      "professor wiseman clock",
+      "the one where george fixes the clock",
+      "broken clock",
+      "telling time",
+      "clock bird",
+      "george fixes the cuckoo"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -302,20 +403,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bunnies"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george's bunny hunt",
-      "curiousgeorge'sbunnyhunt",
-      "george's bunny hunt",
-      "george's",
-      "george's episode",
-      "bunny",
-      "bunny episode",
-      "hunt",
-      "hunt episode"
+      "curious georges bunny hunt",
+      "george bunny hunt",
+      "georges bunny hunt",
+      "curiousgeorgesbunnyhunt",
+      "the one where bills bunnies escape",
+      "bunny hunt",
+      "bunnies",
+      "bunny rabbits",
+      "find the bunnies",
+      "george finds the bunnies",
+      "escaped bunnies",
+      "bills bunnies",
+      "the one with the bunnies",
+      "lost rabbits",
+      "bunnys"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -336,17 +445,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Kitchen",
+      "Spaghetti"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
       "curious george takes a job",
-      "curiousgeorgetakesajob",
       "george takes a job",
-      "takes",
-      "takes episode"
+      "curiousgeorgetakesajob",
+      "the one where george works for chef pisghetti",
+      "george in the kitchen",
+      "restaurant kitchen",
+      "chef pisghetti",
+      "chef pasghetti",
+      "chef spaghetti",
+      "george the cook",
+      "monkey chef",
+      "the one with the restaurant job",
+      "george helps in the kitchen",
+      "pisghetti kitchen"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -366,18 +487,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Window",
+      "Squeegee",
+      "Bucket"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george takes another job",
-      "curiousgeorgetakesanotherjob",
       "george takes another job",
-      "takes",
-      "takes episode",
-      "another",
-      "another episode"
+      "curiousgeorgetakesanotherjob",
+      "the one where george washes windows",
+      "window washer",
+      "window washing monkey",
+      "glass palace",
+      "george the window washer",
+      "the one with the tall glass building",
+      "washing windows",
+      "squeegee",
+      "sqeegee",
+      "george on the window platform",
+      "window cleaner monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -398,20 +530,30 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Sports Balls",
+      "Boxes",
+      "Door"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george, door monkey",
-      "curiousgeorge,doormonkey",
-      "george, door monkey",
-      "george,",
-      "george, episode",
-      "door",
-      "door episode",
-      "ball",
-      "ball episode"
+      "curious george door monkey",
+      "george door monkey",
+      "curiousgeorgedoormonkey",
+      "the one where george is the doorman",
+      "george the doorman",
+      "door monkey",
+      "doorman monkey",
+      "the one with all the balls",
+      "sports balls delivery",
+      "lots of balls",
+      "big delivery of balls",
+      "hundley and the balls",
+      "george helps the doorman",
+      "bouncy balls",
+      "door munkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -432,18 +574,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Raft",
+      "River"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george goes up the river",
-      "curiousgeorgegoesuptheriver",
       "george goes up the river",
-      "goes",
-      "goes episode",
-      "river",
-      "river episode"
+      "curiousgeorgegoesuptheriver",
+      "the one with the raft",
+      "george and jumpy on a raft",
+      "jumpy squirrel raft",
+      "raft ride",
+      "river raft",
+      "floating down the river",
+      "george and the squirrel on the river",
+      "the one where george floats on a raft",
+      "rafting monkey",
+      "jumpy on the river",
+      "up the river"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -463,18 +615,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Cricket"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george and the invisible sound",
-      "curiousgeorgeandtheinvisiblesound",
       "george and the invisible sound",
-      "invisible",
-      "invisible episode",
-      "sound",
-      "sound episode"
+      "curiousgeorgeandtheinvisiblesound",
+      "the one with the cricket",
+      "cricket keeps george awake",
+      "chirping cricket",
+      "the one where george cant sleep",
+      "invisible sound",
+      "noise at night",
+      "find the cricket",
+      "cricket chirp",
+      "where is the sound",
+      "the one with the chirping noise",
+      "crikit"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -494,18 +655,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Banana",
+      "Wrapping Paper"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george, a peeling monkey",
-      "curiousgeorge,apeelingmonkey",
-      "george, a peeling monkey",
-      "george,",
-      "george, episode",
-      "peeling",
-      "peeling episode"
+      "curious george a peeling monkey",
+      "george a peeling monkey",
+      "a peeling monkey",
+      "curiousgeorgeapeelingmonkey",
+      "appealing monkey",
+      "the one about wrapping",
+      "the one with the wrappers",
+      "banana peel",
+      "peeling bananas",
+      "wrapping paper",
+      "george unwraps things",
+      "packaging",
+      "the one where george learns about peels",
+      "peeling monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -525,22 +696,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dogs",
+      "Dog Show"
+    ],
     "themes": [
       "Learning",
       "Math",
       "Animals"
     ],
     "aliases": [
-      "curious george, dog counter",
-      "curiousgeorge,dogcounter",
-      "george, dog counter",
-      "george,",
-      "george, episode",
-      "counter",
-      "counter episode",
-      "dog",
-      "dog episode"
+      "curious george dog counter",
+      "george dog counter",
+      "curiousgeorgedogcounter",
+      "the one with the dog show",
+      "george counts the dogs",
+      "dog show",
+      "doggy show",
+      "counting dogs",
+      "lots of doggies",
+      "the one where george goes to a dog show",
+      "how many dogs",
+      "doggies",
+      "dog counting monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -561,15 +739,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Nuts",
+      "Acorns"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "squirrel for a day",
       "squirrelforaday",
-      "squirrel",
-      "squirrel episode"
+      "the one where george acts like a squirrel",
+      "george the squirrel",
+      "jumpy squirrel",
+      "george hides food",
+      "storing food like a squirrel",
+      "squirrel nuts",
+      "hiding nuts",
+      "the one with jumpy and the nuts",
+      "monkey squirrel",
+      "squirel for a day",
+      "squrrel",
+      "saving food for winter"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -590,20 +781,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Tadpoles",
+      "Frogs",
+      "Jar"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george discovers the 'poles",
-      "curiousgeorgediscoversthe'poles",
-      "george discovers the 'poles",
-      "discovers",
-      "discovers episode",
-      "'poles",
-      "'poles episode",
-      "car",
-      "car episode"
+      "curious george discovers the poles",
+      "george discovers the poles",
+      "curiousgeorgediscoversthepoles",
+      "the one with the tadpoles",
+      "tadpoles",
+      "tadpoles turn into frogs",
+      "bills tadpoles",
+      "pollywogs",
+      "polliwogs",
+      "taddpoles",
+      "frogs",
+      "george takes care of tadpoles",
+      "the one where george babysits tadpoles",
+      "baby frogs"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -624,16 +824,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Map"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george finds his way",
-      "curiousgeorgefindshisway",
       "george finds his way",
-      "finds",
-      "finds episode"
+      "curiousgeorgefindshisway",
+      "the one where george and hundley get lost",
+      "george and hundley lost",
+      "lost doggy",
+      "getting lost",
+      "finding the way home",
+      "george gets lost",
+      "the one where they find their way home",
+      "lost in the city",
+      "hundley lost",
+      "the way home",
+      "george finds the way"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -653,19 +864,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Ducks",
+      "Pond"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "water to ducks",
       "watertoducks",
-      "water",
-      "water episode",
-      "ducks",
-      "ducks episode",
-      "duck",
-      "duck episode"
+      "the one with the ducks",
+      "the one where george keeps the ducks",
+      "ducks need water",
+      "duck pond",
+      "duckies",
+      "quack quack",
+      "ducks leaving",
+      "george finds water for the ducks",
+      "the one with the duck pond",
+      "water for ducks",
+      "duck family",
+      "dux"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -685,17 +905,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Magnet",
+      "Drawing"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "animal magnetism",
       "animalmagnetism",
-      "animal",
-      "animal episode",
-      "magnetism",
-      "magnetism episode"
+      "the one with the magnets",
+      "magnets",
+      "magnet monkey",
+      "george and the magnet",
+      "hanging the drawing",
+      "the one where george hangs his picture",
+      "what sticks to a magnet",
+      "fridge magnet",
+      "magnetizm",
+      "magnatism",
+      "george learns about magnets",
+      "sticky magnets"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -715,7 +946,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Stethoscope",
+      "Bandage"
+    ],
     "themes": [
       "Learning",
       "Friendship",
@@ -724,10 +958,17 @@
     "aliases": [
       "doctor monkey",
       "doctormonkey",
-      "doctor",
-      "doctor episode",
-      "ice",
-      "ice episode"
+      "the one at the doctors office",
+      "george at the doctor",
+      "george the doctor",
+      "doctors office",
+      "docter monkey",
+      "monkey doctor",
+      "the one where george helps the patients",
+      "stethoscope",
+      "checkup",
+      "george plays doctor",
+      "going to the doctor"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -747,17 +988,30 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Blueprints",
+      "Crane",
+      "Building"
+    ],
     "themes": [
       "Learning",
       "Adventure"
     ],
     "aliases": [
       "curious george the architect",
-      "curiousgeorgethearchitect",
       "george the architect",
+      "curiousgeorgethearchitect",
+      "the one at the construction site",
+      "construction site",
+      "george builds a building",
       "architect",
-      "architect episode"
+      "arkitect",
+      "architech",
+      "building site",
+      "the one with the construction",
+      "george explores the construction site",
+      "blueprints",
+      "diggers and cranes"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -777,17 +1031,25 @@
     "settings": [
       "Museum/Zoo"
     ],
-    "objects": [],
+    "objects": [
+      "Zoo"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "zoo night",
       "zoonight",
-      "night",
-      "night episode",
-      "zoo",
-      "zoo episode"
+      "the one where george gets locked in the zoo",
+      "locked in the zoo",
+      "night at the zoo",
+      "zoo at night",
+      "george stuck at the zoo",
+      "the one with the zoo at night",
+      "zoo after closing",
+      "sleepover at the zoo",
+      "zoo animals at night",
+      "stuck in the zoo overnight"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -808,17 +1070,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Fence",
+      "Backyard"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "charkie escapes",
       "charkieescapes",
-      "charkie",
-      "charkie episode",
-      "escapes",
-      "escapes episode"
+      "the one where charkie escapes",
+      "charkie the dog",
+      "charkey",
+      "charky",
+      "doggy escapes",
+      "dog gets out of the yard",
+      "the one with charkie",
+      "keep charkie in the yard",
+      "backyard fence",
+      "runaway dog",
+      "escaping doggy",
+      "dachshund escapes"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -838,22 +1111,29 @@
     "settings": [
       "Space"
     ],
-    "objects": [],
+    "objects": [
+      "Rocket",
+      "Space Station"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george's rocket ride",
-      "curiousgeorge'srocketride",
-      "george's rocket ride",
-      "george's",
-      "george's episode",
-      "rocket",
-      "rocket episode",
-      "ride",
-      "ride episode",
-      "space",
-      "space episode"
+      "curious georges rocket ride",
+      "george rocket ride",
+      "georges rocket ride",
+      "curiousgeorgesrocketride",
+      "the one where george goes to space",
+      "george in space",
+      "space station",
+      "rocket ship",
+      "monkey rocket",
+      "the one with the rocket",
+      "space monkey",
+      "astronaut george",
+      "george delivers supplies to space",
+      "rockit ride",
+      "outer space"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -874,22 +1154,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Train",
+      "Train Station"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george, station master",
-      "curiousgeorge,stationmaster",
-      "george, station master",
-      "george,",
-      "george, episode",
-      "station",
-      "station episode",
-      "master",
-      "master episode",
-      "train",
-      "train episode"
+      "curious george station master",
+      "george station master",
+      "curiousgeorgestationmaster",
+      "the one with the trains",
+      "train station",
+      "george runs the train station",
+      "choo choo",
+      "trains",
+      "station master",
+      "the one where george manages the trains",
+      "train monkey",
+      "george and the choo choo trains",
+      "railroad",
+      "stashun master"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -909,16 +1195,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Beaver Dam",
+      "Sticks"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george and the dam busters",
-      "curiousgeorgeandthedambusters",
       "george and the dam busters",
-      "busters",
-      "busters episode"
+      "dam busters",
+      "curiousgeorgeandthedambusters",
+      "the one with the beavers",
+      "beaver dam",
+      "beavers",
+      "the one where george learns about beaver dams",
+      "beavers build a dam",
+      "damn busters",
+      "dam builders",
+      "beever dam",
+      "beaver",
+      "river dam"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -938,20 +1236,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Video Game"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george's low high score",
-      "curiousgeorge'slowhighscore",
-      "george's low high score",
-      "george's",
-      "george's episode",
-      "high",
-      "high episode",
-      "score",
-      "score episode"
+      "curious georges low high score",
+      "george low high score",
+      "georges low high score",
+      "curiousgeorgeslowhighscore",
+      "the one with the video game",
+      "video game score",
+      "george plays a video game",
+      "high score",
+      "low score",
+      "the one where george gets the high score",
+      "game score",
+      "arcade game",
+      "vidio game",
+      "scoring points"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -971,19 +1276,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Stars"
+    ],
     "themes": [
       "Learning",
       "Math"
     ],
     "aliases": [
       "curious george sees stars",
-      "curiousgeorgeseesstars",
       "george sees stars",
-      "sees",
-      "sees episode",
-      "stars",
-      "stars episode"
+      "curiousgeorgeseesstars",
+      "the one where george counts the stars",
+      "counting stars",
+      "stars in the sky",
+      "starry night",
+      "twinkle stars",
+      "george counts stars",
+      "the one with the stars",
+      "night sky",
+      "how many stars",
+      "starz"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1004,19 +1317,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Trophy"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
       "curious george gets a trophy",
-      "curiousgeorgegetsatrophy",
       "george gets a trophy",
-      "gets",
-      "gets episode",
+      "curiousgeorgegetsatrophy",
+      "the one with the trophy",
+      "the one where george helps the man win a trophy",
       "trophy",
-      "trophy episode"
+      "trofy",
+      "trophey",
+      "winning a trophy",
+      "big shiny trophy",
+      "man with the yellow hat trophy",
+      "george wins a prize",
+      "the trophy contest"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1036,17 +1357,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Lemonade",
+      "Lemons",
+      "Lemonade Stand"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "george makes a stand",
       "georgemakesastand",
-      "makes",
-      "makes episode",
-      "stand",
-      "stand episode"
+      "curious george makes a stand",
+      "the one with the lemonade stand",
+      "lemonade stand",
+      "george sells lemonade",
+      "lemonaid",
+      "lemmonade",
+      "lemons",
+      "the one where george sets up a lemonade stand",
+      "monkey lemonade",
+      "selling lemonade",
+      "lemonade"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1066,7 +1398,9 @@
     "settings": [
       "Country"
     ],
-    "objects": [],
+    "objects": [
+      "Lighthouse"
+    ],
     "themes": [
       "Learning",
       "Math",
@@ -1074,12 +1408,17 @@
     ],
     "aliases": [
       "curious george sees the light",
-      "curiousgeorgeseesthelight",
       "george sees the light",
-      "sees",
-      "sees episode",
-      "light",
-      "light episode"
+      "curiousgeorgeseesthelight",
+      "the one with the lighthouse",
+      "lighthouse",
+      "light house",
+      "george finds a lighthouse",
+      "lighthouse in the country",
+      "the one where george discovers the lighthouse",
+      "lighthouse light",
+      "litehouse",
+      "lighthouse monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1099,7 +1438,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Candy",
+      "Candy Jars"
+    ],
     "themes": [
       "Learning",
       "Math"
@@ -1107,10 +1449,17 @@
     "aliases": [
       "candy counter",
       "candycounter",
-      "candy",
-      "candy episode",
-      "counter",
-      "counter episode"
+      "the one with the candy",
+      "the one where george sorts the candy",
+      "candy store",
+      "sorting candy",
+      "counting candy",
+      "lots of candy",
+      "candy shop",
+      "george organizes candy",
+      "sweets counter",
+      "candy jars",
+      "kandy counter"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1130,19 +1479,30 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Fire Truck",
+      "Fire Hose",
+      "Ladder"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "curious george, rescue monkey",
-      "curiousgeorge,rescuemonkey",
-      "george, rescue monkey",
-      "george,",
-      "george, episode",
-      "rescue",
-      "rescue episode"
+      "curious george rescue monkey",
+      "george rescue monkey",
+      "curiousgeorgerescuemonkey",
+      "the one with the firefighters",
+      "george helps the firefighters",
+      "fire truck",
+      "firetruck",
+      "fire station",
+      "fireman george",
+      "firefighter monkey",
+      "the one where george helps with a rescue",
+      "rescue monkey",
+      "fire engine",
+      "fire fighters"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1163,19 +1523,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Veggie Burgers"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the truth about george burgers",
+      "truth about george burgers",
       "thetruthaboutgeorgeburgers",
-      "truth",
-      "truth episode",
-      "about",
-      "about episode",
+      "george burgers",
+      "the one with the veggie burgers",
+      "veggie burgers",
+      "chef pisghetti burgers",
+      "the one where george loses the veggie burgers",
+      "lost burgers",
+      "vegetable burgers",
+      "hamburgers",
       "burgers",
-      "burgers episode"
+      "pisghetti veggie burger",
+      "missing burgers"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1195,16 +1563,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Flashlight",
+      "Night Light"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george in the dark",
-      "curiousgeorgeinthedark",
       "george in the dark",
-      "dark",
-      "dark episode"
+      "curiousgeorgeinthedark",
+      "the one where george is scared of the dark",
+      "scared of the dark",
+      "afraid of the dark",
+      "night light",
+      "nightlight",
+      "flashlight",
+      "dark room",
+      "the one where george gets brave in the dark",
+      "lights out",
+      "monkey in the dark"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1225,21 +1604,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Yellow Hat"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "the clean, perfect yellow hat",
-      "theclean,perfectyellowhat",
-      "clean,",
-      "clean, episode",
-      "perfect",
-      "perfect episode",
-      "yellow",
-      "yellow episode",
-      "hat",
-      "hat episode"
+      "the clean perfect yellow hat",
+      "clean perfect yellow hat",
+      "thecleanperfectyellowhat",
+      "the one where george ruins the yellow hat",
+      "the one with the dirty yellow hat",
+      "yellow hat",
+      "the mans yellow hat",
+      "george messes up the hat",
+      "dirty hat",
+      "cleaning the hat",
+      "perfect yellow hat",
+      "the one where george tries to fix the yellow hat",
+      "yelow hat",
+      "man with the yellow hat hat"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1259,15 +1644,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Honey",
+      "Beehive",
+      "Bees"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "bee is for bear",
       "beeisforbear",
-      "bear",
-      "bear episode"
+      "b is for bear",
+      "the one with the bees and the bear",
+      "honey bees",
+      "beehive",
+      "bee hive",
+      "honey",
+      "bees",
+      "the one where george learns about honey",
+      "bear and honey",
+      "buzzing bees",
+      "honey bear",
+      "bear wants honey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1287,17 +1686,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Party Decorations"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "surprise quints",
       "surprisequints",
-      "surprise",
-      "surprise episode",
-      "quints",
-      "quints episode"
+      "the one with the quints",
+      "quintuplets",
+      "quintuplet surprise party",
+      "the quint kids",
+      "surprise party",
+      "george keeps the quints busy",
+      "the one where george babysits the quints",
+      "quints party",
+      "five kids",
+      "quintuplits",
+      "quince surprise"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1317,15 +1725,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bath Toy",
+      "Bathtub",
+      "Mud"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "muddy monkey",
       "muddymonkey",
-      "muddy",
-      "muddy episode"
+      "the one where george wont take a bath",
+      "george wont take a bath",
+      "bath toy",
+      "lost bath toy",
+      "bath time",
+      "muddy george",
+      "dirty monkey",
+      "the one where george gets all muddy",
+      "bathtub",
+      "no bath",
+      "stinky monkey",
+      "mud monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1346,18 +1768,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Suitcase",
+      "Airplane"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george takes a vacation",
-      "curiousgeorgetakesavacation",
       "george takes a vacation",
-      "takes",
-      "takes episode",
+      "curiousgeorgetakesavacation",
+      "the one at the airport",
+      "george at the airport",
+      "airport",
+      "airplane",
+      "suitcase",
+      "luggage",
       "vacation",
-      "vacation episode"
+      "the one where george and the man go on a trip",
+      "going on vacation",
+      "airplane ride",
+      "vakation"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1377,18 +1809,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Fishing Pole",
+      "Fish"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george and the one that got away",
-      "curiousgeorgeandtheonethatgotaway",
       "george and the one that got away",
-      "that",
-      "that episode",
-      "away",
-      "away episode"
+      "the one that got away",
+      "curiousgeorgeandtheonethatgotaway",
+      "the one where george goes fishing",
+      "george goes fishing",
+      "fishing with mr quint",
+      "fishing",
+      "big fish",
+      "the one with the fish",
+      "fishing pole",
+      "gone fishing",
+      "fishing monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1408,14 +1849,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Skis",
+      "Pig",
+      "Snow"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
       "ski monkey",
-      "skimonkey"
+      "skimonkey",
+      "the one where george skis",
+      "george goes skiing",
+      "skiing",
+      "ski",
+      "the one with the lost pig",
+      "lost pig in the snow",
+      "george rescues a pig",
+      "piggy in the snow",
+      "snow skiing",
+      "skee monkey",
+      "monkey on skis"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1435,7 +1891,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Groceries",
+      "Grocery Store"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -1443,8 +1902,17 @@
     "aliases": [
       "george the grocer",
       "georgethegrocer",
+      "curious george the grocer",
+      "the one at the grocery store",
+      "grocery store",
+      "groceries",
+      "george organizes groceries",
+      "supermarket",
+      "the one where george works at the grocery store",
       "grocer",
-      "grocer episode"
+      "groser",
+      "food store",
+      "sorting groceries"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1464,17 +1932,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Cows",
+      "Wildflowers",
+      "Fence"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "keep out cows",
       "keepoutcows",
-      "keep",
-      "keep episode",
-      "cows",
-      "cows episode"
+      "the one with the cows",
+      "cows eat the flowers",
+      "hungry cows",
+      "wildflowers",
+      "the one where george protects the flowers",
+      "moo cows",
+      "cow fence",
+      "george and the cows",
+      "keep the cows out",
+      "flowers and cows",
+      "cowz"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1494,18 +1973,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dinosaur Bones",
+      "Shovel"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george and the missing piece",
-      "curiousgeorgeandthemissingpiece",
       "george and the missing piece",
-      "missing",
-      "missing episode",
-      "piece",
-      "piece episode"
+      "the missing piece",
+      "curiousgeorgeandthemissingpiece",
+      "the one with the dinosaur bones",
+      "dinosaur bones",
+      "dino bones",
+      "dinosaur skeleton",
+      "george digs for dinosaur bones",
+      "the one where george finds a dinosaur bone",
+      "dinosaur",
+      "dinasour bones",
+      "fossils"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1527,19 +2015,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Tent",
+      "Campfire"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "camping with hundley",
       "campingwithhundley",
-      "camping",
-      "camping episode",
-      "with",
-      "with episode",
-      "hundley",
-      "hundley episode"
+      "the one where george goes camping",
+      "george goes camping",
+      "camping trip",
+      "hundley camping",
+      "the doorman goes camping",
+      "tent",
+      "the one with the tent",
+      "camping with the doorman",
+      "campfire",
+      "hundley in the woods",
+      "camping doggy"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1559,20 +2055,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Roller Coaster",
+      "Height Chart"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george vs. the turbo python 3000",
-      "curiousgeorgevs.theturbopython3000",
-      "george vs. the turbo python 3000",
-      "turbo",
-      "turbo episode",
-      "python",
-      "python episode",
-      "3000",
-      "3000 episode"
+      "curious george vs the turbo python 3000",
+      "george vs the turbo python 3000",
+      "turbo python 3000",
+      "turbo python",
+      "curiousgeorgevstheturbopython3000",
+      "the one with the roller coaster",
+      "roller coaster",
+      "rollercoaster",
+      "too short for the ride",
+      "the one where george is too short",
+      "measuring height",
+      "george wants to ride the roller coaster",
+      "tall enough to ride",
+      "turbo pithon",
+      "python ride"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1593,13 +2098,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Cast",
+      "Crutches"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "housebound!",
-      "housebound! episode"
+      "housebound",
+      "house bound",
+      "the one where george breaks his leg",
+      "george breaks his leg",
+      "broken leg",
+      "george has a cast",
+      "leg cast",
+      "stuck at home",
+      "the one with the cast",
+      "george stays home with hundley",
+      "hundley and george stuck inside",
+      "hurt leg",
+      "owie leg"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1619,18 +2138,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bicycle",
+      "Newspapers"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george rides a bike",
-      "curiousgeorgeridesabike",
       "george rides a bike",
-      "rides",
-      "rides episode",
-      "bike",
-      "bike episode"
+      "curiousgeorgeridesabike",
+      "the one with the bike",
+      "george bike",
+      "paper route",
+      "newspaper delivery",
+      "george delivers newspapers",
+      "bicycle",
+      "bycicle",
+      "monkey bike",
+      "the one where george learns to ride a bike",
+      "riding a bike",
+      "bike ride"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1650,7 +2179,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Instruments",
+      "Recycling"
+    ],
     "themes": [
       "Learning",
       "Friendship",
@@ -1658,13 +2190,18 @@
     ],
     "aliases": [
       "the all animal recycled band",
+      "all animal recycled band",
       "theallanimalrecycledband",
-      "animal",
-      "animal episode",
-      "recycled",
-      "recycled episode",
-      "band",
-      "band episode"
+      "the one with the animal band",
+      "animal band",
+      "recycled band",
+      "recycled instruments",
+      "the one where george makes a band",
+      "george makes music with junk",
+      "music from trash",
+      "animal music",
+      "recycling band",
+      "the one with the junk instruments"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1684,18 +2221,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Sand Castle",
+      "Bucket",
+      "Shovel"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
       "the times of sand",
+      "times of sand",
       "thetimesofsand",
-      "times",
-      "times episode",
+      "the one with the sand castle",
+      "biggest sand castle",
+      "sandcastle",
+      "sand castle",
+      "george builds a sand castle",
+      "beach",
+      "the one at the beach",
       "sand",
-      "sand episode"
+      "worlds biggest sandcastle",
+      "sand castel"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1715,17 +2263,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Ceiling"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the elephant upstairs",
+      "elephant upstairs",
       "theelephantupstairs",
+      "the one with the noises upstairs",
+      "strange noises upstairs",
+      "stomping upstairs",
       "elephant",
-      "elephant episode",
-      "upstairs",
-      "upstairs episode"
+      "elefant upstairs",
+      "the one where george hears noises",
+      "who is making the noise",
+      "loud upstairs neighbor",
+      "thumping noises",
+      "noises from the ceiling"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1745,7 +2302,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dog Bed",
+      "Dog Bowl"
+    ],
     "themes": [
       "Learning",
       "Animals"
@@ -1753,10 +2313,17 @@
     "aliases": [
       "being hundley",
       "beinghundley",
-      "being",
-      "being episode",
+      "the one where george acts like an animal",
+      "george pretends to be a dog",
+      "george acts like hundley",
+      "living like animals",
+      "george the doggy",
+      "the one where george tries to be hundley",
       "hundley",
-      "hundley episode"
+      "hundly",
+      "pretending to be animals",
+      "monkey dog",
+      "acting like a dog"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1776,20 +2343,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Wagon",
+      "Wagon Wheel"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "george fixes betsy's wagon",
-      "georgefixesbetsy'swagon",
-      "fixes",
-      "fixes episode",
-      "betsy's",
-      "betsy's episode",
-      "wagon",
-      "wagon episode"
+      "george fixes betsys wagon",
+      "george fixes the wagon",
+      "georgefixesbetsyswagon",
+      "curious george fixes betsys wagon",
+      "the one with betsys wagon",
+      "betsys wagon",
+      "broken wagon",
+      "wagon wheel",
+      "the one where george fixes a wagon",
+      "fixing the wagon",
+      "red wagon",
+      "betsy",
+      "wagon"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1809,18 +2384,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Diving Board",
+      "Lake"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george takes a dive",
-      "curiousgeorgetakesadive",
       "george takes a dive",
-      "takes",
-      "takes episode",
-      "dive",
-      "dive episode"
+      "curiousgeorgetakesadive",
+      "the one where george learns to dive",
+      "diving",
+      "diving board",
+      "george dives",
+      "lake wanasinklake",
+      "lake wanna sink lake",
+      "swimming",
+      "the one with the diving",
+      "jumping in the lake",
+      "dive monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1840,14 +2424,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Balance Beam"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
       "unbalanced",
-      "unbalanced episode"
+      "the one with the balancing zucchinis",
+      "balancing zucchinis",
+      "balancing act",
+      "balance",
+      "acrobats",
+      "the one where george helps the acrobats",
+      "circus balancing",
+      "zucchinis show",
+      "balancing zukinis",
+      "george learns to balance",
+      "the zucchini family"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1867,16 +2463,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Snow",
+      "Mittens"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george vs. winter",
-      "curiousgeorgevs.winter",
-      "george vs. winter",
-      "winter",
-      "winter episode"
+      "curious george vs winter",
+      "george vs winter",
+      "curiousgeorgevswinter",
+      "the one with the snow",
+      "george in the winter",
+      "cold weather",
+      "winter fun",
+      "snow day",
+      "snowy day",
+      "george plays in the snow",
+      "the one where george has fun in the cold",
+      "winter monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1897,19 +2503,30 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Hot Air Balloon",
+      "Basket",
+      "Rope"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "up, up and away",
-      "up,upandaway",
-      "away",
-      "away episode",
-      "balloon",
-      "balloon episode",
-      "ball",
-      "ball episode"
+      "up up and away",
+      "upupandaway",
+      "up up and away hot air balloon",
+      "the one where george and bill send the balloon up",
+      "the one with the hot air balloon",
+      "hot air balloon floats away",
+      "balloon flies away",
+      "george in a hot air balloon",
+      "bill and george balloon",
+      "big balloon in the sky",
+      "monkey balloon ride",
+      "hot air baloon",
+      "hot air ballon",
+      "balloon goes up in the sky",
+      "george floats up in the basket"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1929,16 +2546,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Skunk",
+      "Tomato Juice"
+    ],
     "themes": [
       "Learning",
       "Animals"
     ],
     "aliases": [
       "skunked",
-      "skunked episode",
-      "cat",
-      "cat episode"
+      "skunk episode george",
+      "the one where george gets sprayed by a skunk",
+      "the one with the skunk",
+      "george gets skunked",
+      "stinky george",
+      "stinky monkey",
+      "george smells bad",
+      "skunk spray",
+      "george has to catch the skunk",
+      "catching the skunk",
+      "pee yew skunk",
+      "skunc",
+      "monkey and the skunk"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1958,7 +2588,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Gopher",
+      "Tunnel",
+      "Shovel"
+    ],
     "themes": [
       "Learning",
       "Friendship",
@@ -1967,8 +2601,17 @@
     "aliases": [
       "monkey underground",
       "monkeyunderground",
-      "underground",
-      "underground episode"
+      "the one where george digs tunnels for gophers",
+      "the one with the gophers",
+      "george and the gophers",
+      "gopher tunnels",
+      "digging tunnels underground",
+      "monkey in a tunnel",
+      "george helps the gophers escape",
+      "gofer tunnels",
+      "gophers in the garden",
+      "underground monkey",
+      "monkey digging holes"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -1990,17 +2633,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Kitten",
+      "Cat Toy"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "cat mother",
       "catmother",
-      "mother",
-      "mother episode",
-      "car",
-      "car episode"
+      "the one where george takes care of a kitten",
+      "the one with lucky the kitten",
+      "professor wisemans kitten",
+      "george babysits the kitten",
+      "kitty lucky",
+      "monkey cat mommy",
+      "george is a cat mommy",
+      "taking care of a kitty",
+      "little kitten lucky",
+      "professor wiseman cat",
+      "kitten sitting monkey",
+      "baby kitty"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2020,7 +2674,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Treehouse",
+      "Hammer",
+      "Sign"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -2028,8 +2686,17 @@
     "aliases": [
       "up a tree",
       "upatree",
-      "tree",
-      "tree episode"
+      "the one where george builds a treehouse",
+      "the one with the treehouse",
+      "george treehouse rules",
+      "tree house monkey",
+      "monkey tree fort",
+      "no grownups allowed treehouse",
+      "treehouse with rules",
+      "george makes his own rules",
+      "building a tree house",
+      "treehouse club",
+      "up a tree george"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2050,18 +2717,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Yellow Hat",
+      "Garbage Truck",
+      "Trash Can"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george and the trash",
-      "curiousgeorgeandthetrash",
       "george and the trash",
-      "trash",
-      "trash episode",
-      "hat",
-      "hat episode"
+      "curiousgeorgeandthetrash",
+      "the one where george throws away the yellow hat",
+      "the one with the garbage truck",
+      "the man loses his hat in the trash",
+      "yellow hat in the garbage",
+      "hat thrown away",
+      "george finds the hat at the dump",
+      "garbage day",
+      "trash truck monkey",
+      "where did the yellow hat go",
+      "lost yellow hat",
+      "garbidge truck"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2082,18 +2760,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Xylophone",
+      "Mallet"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george gets all keyed up",
-      "curiousgeorgegetsallkeyedup",
       "george gets all keyed up",
-      "gets",
-      "gets episode",
-      "keyed",
-      "keyed episode"
+      "all keyed up",
+      "the one where george fixes the xylophone",
+      "the one with the xylophone",
+      "betsys xylophone",
+      "george puts the xylophone back together",
+      "broken xylophone",
+      "xilophone",
+      "zylophone",
+      "xylaphone",
+      "monkey xylophone",
+      "xylophone keys",
+      "musical keys in order"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2114,17 +2802,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bowling Ball",
+      "Bowling Pins",
+      "Bowling Alley"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "gutter monkey",
       "guttermonkey",
-      "gutter",
-      "gutter episode",
-      "ball",
-      "ball episode"
+      "the one where george goes bowling",
+      "the one with the bowling ball",
+      "george learns to bowl",
+      "bowling monkey",
+      "bowling alley george",
+      "the mans bowling ball",
+      "gutter ball",
+      "knocking down the pins",
+      "bowling pins",
+      "boling ball",
+      "monkey bowling"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2145,7 +2844,11 @@
     "settings": [
       "Space"
     ],
-    "objects": [],
+    "objects": [
+      "Space Telescope",
+      "Rocket",
+      "Space Suit"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -2153,12 +2856,18 @@
     "aliases": [
       "grease monkeys in space",
       "greasemonkeysinspace",
-      "grease",
-      "grease episode",
-      "monkeys",
-      "monkeys episode",
-      "space",
-      "space episode"
+      "grease monkey space",
+      "the one where george goes to space",
+      "the one with the space telescope",
+      "george fixes the telescope in space",
+      "monkey astronaut",
+      "george the astronaut",
+      "space monkey george",
+      "fixing the space telescope",
+      "rocket monkey",
+      "space telescope repair",
+      "monkey in outer space",
+      "astronot monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2178,17 +2887,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Pinata",
+      "Blindfold",
+      "Stick"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "piñata vision",
-      "piñatavision",
-      "piñata",
-      "piñata episode",
-      "vision",
-      "vision episode"
+      "pinata vision",
+      "pinatavision",
+      "pinyata vision",
+      "the one where george is blindfolded",
+      "the one with the pinata",
+      "george wears a blindfold",
+      "hitting the pinata",
+      "pinata party",
+      "peenyata",
+      "pinata monkey",
+      "using his other senses",
+      "blindfold monkey",
+      "george cant see",
+      "smelling and hearing game"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2209,18 +2930,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dog Collar",
+      "Dog Bowl"
+    ],
     "themes": [
       "Learning",
       "Adventure"
     ],
     "aliases": [
-      "all-new hundley",
-      "all-newhundley",
-      "all-new",
-      "all-new episode",
-      "hundley",
-      "hundley episode"
+      "all new hundley",
+      "allnewhundley",
+      "the one where hundley has a look alike",
+      "the one with doxie",
+      "hundley and doxie",
+      "two hundleys",
+      "hundley twin",
+      "look alike dog",
+      "doxie the dog",
+      "which dog is hundley",
+      "hundleys double",
+      "dachshund look alike",
+      "new hundley",
+      "hundly"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2240,15 +2972,28 @@
     "settings": [
       "City"
     ],
-    "objects": [],
+    "objects": [
+      "Street Sign",
+      "Stop Sign",
+      "Wagon"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "signs up",
       "signsup",
-      "signs",
-      "signs episode"
+      "the one where george collects signs",
+      "the one with all the signs",
+      "george takes the signs",
+      "street signs monkey",
+      "stop sign george",
+      "collecting signs around the city",
+      "city signs",
+      "monkey sign collector",
+      "george gets lost without signs",
+      "road signs",
+      "sines up"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2268,15 +3013,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Paint",
+      "Paintbrush",
+      "Painting"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "color me monkey",
       "colormemonkey",
-      "color",
-      "color episode"
+      "the one where george mixes paint colors",
+      "the one with the painting",
+      "mixing colors",
+      "george paints a picture",
+      "matching the paint color",
+      "paint mixing monkey",
+      "red and yellow make orange",
+      "blue and yellow make green",
+      "painting monkey",
+      "george the painter",
+      "colour me monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2297,17 +3055,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Pie",
+      "Bicycle",
+      "Box"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "special delivery monkey",
       "specialdeliverymonkey",
-      "special",
-      "special episode",
-      "delivery",
-      "delivery episode"
+      "the one where george delivers a pie",
+      "the one with the pie",
+      "chef pisghettis pie",
+      "pisghetti pie",
+      "delivery monkey",
+      "george the delivery monkey",
+      "pie delivery",
+      "monkey carries the pie",
+      "spagetti chef pie",
+      "chef pasghetti",
+      "dont drop the pie"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2328,7 +3097,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dog Collar",
+      "Dog Leash"
+    ],
     "themes": [
       "Learning",
       "Animals"
@@ -2336,10 +3108,17 @@
     "aliases": [
       "free hundley",
       "freehundley",
-      "free",
-      "free episode",
-      "hundley",
-      "hundley episode"
+      "the one where hundley goes to the animal shelter",
+      "the one with the animal shelter",
+      "george rescues hundley",
+      "hundley at the pound",
+      "save hundley",
+      "hundley gets lost",
+      "dog pound",
+      "doggy jail",
+      "rescue the doggy",
+      "animal shelter dogs",
+      "free hundly"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2359,13 +3138,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Grocery Bag",
+      "Eggs",
+      "Shopping Cart"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "bag monkey",
-      "bagmonkey"
+      "bagmonkey",
+      "the one where george bags groceries",
+      "the one with the grocery bags",
+      "grocery store monkey",
+      "george bags the groceries",
+      "heavy things on the bottom",
+      "bagging groceries",
+      "supermarket george",
+      "packing the grocery bag",
+      "eggs on top",
+      "monkey grocery bagger",
+      "bagger monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2385,7 +3179,11 @@
     "settings": [
       "Country"
     ],
-    "objects": [],
+    "objects": [
+      "Stage Curtain",
+      "Spotlight",
+      "Microphone"
+    ],
     "themes": [
       "Learning",
       "Math"
@@ -2393,8 +3191,17 @@
     "aliases": [
       "monkey stagehand",
       "monkeystagehand",
-      "stagehand",
-      "stagehand episode"
+      "the one where george runs the talent show",
+      "the one with the talent show",
+      "country talent show",
+      "george behind the stage",
+      "stage curtain monkey",
+      "monkey stage hand",
+      "talent show stage",
+      "stagehand george",
+      "george works the lights",
+      "show in the country",
+      "stagehan monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2415,18 +3222,30 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Watering Can",
+      "Tomato Plant",
+      "Flower Pot"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
       "the magic garden",
+      "magic garden",
       "themagicgarden",
-      "magic",
-      "magic episode",
-      "garden",
-      "garden episode"
+      "the one where george helps the rooftop garden",
+      "the one with the rooftop garden",
+      "chef pisghettis garden",
+      "pisghetti garden",
+      "garden on the roof",
+      "george grows vegetables",
+      "rooftop vegetables",
+      "growing tomatoes",
+      "garden monkey",
+      "magik garden",
+      "spagetti chef garden"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2446,20 +3265,29 @@
     "settings": [
       "City"
     ],
-    "objects": [],
+    "objects": [
+      "Pipe",
+      "Wrench",
+      "Sink"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george, plumber's helper",
-      "curiousgeorge,plumber'shelper",
-      "george, plumber's helper",
-      "george,",
-      "george, episode",
-      "plumber's",
-      "plumber's episode",
-      "helper",
-      "helper episode"
+      "curious george plumbers helper",
+      "george plumbers helper",
+      "plumbers helper",
+      "the one where george breaks the plumbing",
+      "the one with the pipes",
+      "george the plumber",
+      "plumber monkey",
+      "leaky pipes",
+      "water everywhere in the apartment",
+      "fixing the pipes",
+      "sink overflows",
+      "monkey plumber",
+      "plumer monkey",
+      "pipes in the building"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2479,18 +3307,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Backpack",
+      "Map",
+      "Ranger Station"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george takes a hike",
-      "curiousgeorgetakesahike",
       "george takes a hike",
-      "takes",
-      "takes episode",
-      "hike",
-      "hike episode"
+      "takes a hike",
+      "the one where george gets lost on a hike",
+      "the one with the ranger station",
+      "george lost in the woods",
+      "finding the way back",
+      "hiking monkey",
+      "forest ranger station",
+      "george finds his way home",
+      "lost in the forest",
+      "monkey hike",
+      "trail markers"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2511,20 +3349,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Hat",
+      "Propeller",
+      "Flashlight"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
       "the fully automatic monkey fun hat",
-      "thefullyautomaticmonkeyfunhat",
-      "fully",
-      "fully episode",
-      "automatic",
-      "automatic episode",
-      "hat",
-      "hat episode"
+      "fully automatic monkey fun hat",
+      "monkey fun hat",
+      "the one where george makes a fun hat",
+      "the one with the fun hat",
+      "george invents a hat",
+      "silly hat with gadgets",
+      "crazy hat",
+      "hat with lots of things on it",
+      "automatic hat",
+      "invention hat",
+      "monkey hat machine",
+      "fun hat george"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2544,7 +3391,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Flashlight",
+      "Owl",
+      "Bat"
+    ],
     "themes": [
       "Learning",
       "Adventure"
@@ -2552,10 +3403,17 @@
     "aliases": [
       "creatures of the night",
       "creaturesofthenight",
-      "creatures",
-      "creatures episode",
-      "night",
-      "night episode"
+      "the one where george stays up to see night animals",
+      "the one with the night animals",
+      "nocturnal animals",
+      "night time animals",
+      "owl and bats",
+      "animals that come out at night",
+      "george at night in the woods",
+      "nocturnal creatures",
+      "night creatures monkey",
+      "bats at night",
+      "noctural animals"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2576,19 +3434,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Flashlight"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "scaredy dog",
       "scaredydog",
-      "scaredy",
-      "scaredy episode",
-      "car",
-      "car episode",
-      "hat",
-      "hat episode"
+      "scaredy cat dog",
+      "the one where hundley is scared of a noise",
+      "the one with the spooky noise",
+      "spooky noise",
+      "hundley gets scared",
+      "scared doggy",
+      "what is that noise",
+      "george finds the scary sound",
+      "spooky sound in the building",
+      "frightened hundley",
+      "scardy dog"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2608,15 +3473,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Clock",
+      "Bed"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "say goodnight, george",
-      "saygoodnight,george",
-      "goodnight,",
-      "goodnight, episode"
+      "say goodnight george",
+      "saygoodnightgeorge",
+      "goodnight george",
+      "the one where george learns about daylight saving time",
+      "the one with the clocks changing",
+      "daylight saving time",
+      "daylight savings",
+      "clocks go back",
+      "bedtime is still light out",
+      "why is it dark",
+      "george doesnt want to go to bed",
+      "changing the clocks",
+      "good night george"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2636,18 +3513,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bridge",
+      "Chicks",
+      "Pond"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
       "a bridge too farm",
+      "bridge too farm",
       "abridgetoofarm",
-      "bridge",
-      "bridge episode",
-      "farm",
-      "farm episode"
+      "the one where george builds a bridge for the chicks",
+      "the one with the baby chicks",
+      "stranded chicks",
+      "george helps the chicks",
+      "baby chickens on an island",
+      "chick bridge",
+      "building a bridge on the farm",
+      "chickies",
+      "bridge for the chicks",
+      "little chicks get stuck"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2668,17 +3556,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Tissues",
+      "Soup",
+      "Thermometer"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "monkey fever",
       "monkeyfever",
-      "fever",
-      "fever episode",
-      "car",
-      "car episode"
+      "the one where the man with the yellow hat is sick",
+      "the one with the cold",
+      "george takes care of the man",
+      "the man has a cold",
+      "nurse monkey",
+      "george plays doctor",
+      "chicken soup for the man",
+      "sick day",
+      "man with the yellow hat sick",
+      "george is the nurse",
+      "sniffles",
+      "the man sneezes"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2699,18 +3599,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Binoculars",
+      "Toy",
+      "Present"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george, spy monkey",
-      "curiousgeorge,spymonkey",
-      "george, spy monkey",
-      "george,",
-      "george, episode",
-      "hat",
-      "hat episode"
+      "curious george spy monkey",
+      "george spy monkey",
+      "spy monkey",
+      "the one where george spies on the man",
+      "the one with the secret toy",
+      "george is a spy",
+      "secret agent monkey",
+      "what toy is he buying",
+      "spying on the man with the yellow hat",
+      "sneaky monkey",
+      "spy george",
+      "surprise present",
+      "spi monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2730,17 +3640,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Castle",
+      "Bagpipes"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "castle keep",
       "castlekeep",
-      "castle",
-      "castle episode",
-      "keep",
-      "keep episode"
+      "the one where george visits a castle in scotland",
+      "the one with the castle",
+      "uncle tams castle",
+      "uncle tam",
+      "scotland castle",
+      "george in scotland",
+      "monkey in a castle",
+      "bagpipes castle",
+      "castel keep",
+      "scottish castle",
+      "castle visit"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2760,17 +3680,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Robot Costume",
+      "Box"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "robot monkey hullabaloo",
       "robotmonkeyhullabaloo",
-      "robot",
-      "robot episode",
-      "hullabaloo",
-      "hullabaloo episode"
+      "robot monkey",
+      "the one where george dresses up as a robot",
+      "the one with the robot costume",
+      "george is a robot",
+      "robot costume",
+      "beep boop monkey",
+      "monkey robot suit",
+      "robot hullabaloo",
+      "hullaballoo",
+      "robbot monkey",
+      "george the robot"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2790,21 +3720,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Snake",
+      "Mouse",
+      "Cage"
+    ],
     "themes": [
       "Learning",
       "Animals"
     ],
     "aliases": [
       "curious george and the slithery day",
-      "curiousgeorgeandtheslitheryday",
       "george and the slithery day",
-      "slithery",
-      "slithery episode",
-      "cat",
-      "cat episode",
-      "ice",
-      "ice episode"
+      "slithery day",
+      "the one where george catches the snakes",
+      "the one with the snakes and mice",
+      "escaped snakes",
+      "snakes and mice get out",
+      "catching the mice",
+      "sneaky snakes",
+      "slithery snakes",
+      "snake day",
+      "slithry day",
+      "mousies and snakies"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2824,19 +3762,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Spider Web",
+      "Spider",
+      "String"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
-      "curious george, web master",
-      "curiousgeorge,webmaster",
-      "george, web master",
-      "george,",
-      "george, episode",
-      "master",
-      "master episode"
+      "curious george web master",
+      "george web master",
+      "web master",
+      "the one where george makes a spider web",
+      "the one with the spider",
+      "george builds a spider web",
+      "spider web monkey",
+      "spiderweb",
+      "spider monkey web",
+      "string web",
+      "making a web like a spider",
+      "itsy bitsy spider web",
+      "webmaster george"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2856,15 +3804,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Blanket",
+      "Pillow"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the big sleepy",
+      "big sleepy",
       "thebigsleepy",
-      "sleepy",
-      "sleepy episode"
+      "the one where george tries to hibernate",
+      "the one with hibernating",
+      "george hibernates",
+      "sleeping all winter",
+      "bear hibernation",
+      "sleepy monkey winter",
+      "hibernate like a bear",
+      "winter sleep",
+      "hybernate",
+      "sleepy george"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2885,18 +3845,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Pirate Ship",
+      "Pirate Hat",
+      "Toy Boat"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george sinks the pirates",
-      "curiousgeorgesinksthepirates",
       "george sinks the pirates",
-      "sinks",
-      "sinks episode",
-      "pirates",
-      "pirates episode"
+      "sinks the pirates",
+      "the one where hundley is a ship captain",
+      "the one with the pirates",
+      "hundley pirate captain",
+      "pirate ship",
+      "pirate hundley",
+      "hundley dreams he is a captain",
+      "captain hundley",
+      "pirate monkey",
+      "toy boat pirates",
+      "pirits"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2916,19 +3886,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Piggy Bank",
+      "Coins"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "this little piggy",
       "thislittlepiggy",
-      "this",
-      "this episode",
-      "little",
-      "little episode",
-      "piggy",
-      "piggy episode"
+      "the one where george saves money in a piggy bank",
+      "the one with the piggy bank",
+      "piggy bank",
+      "saving money",
+      "george saves his coins",
+      "pennies in the piggy bank",
+      "coins monkey",
+      "piggie bank",
+      "saving up to buy something",
+      "money monkey",
+      "little piggy bank"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2949,7 +3927,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Crown",
+      "Dog Collar"
+    ],
     "themes": [
       "Learning",
       "Animals"
@@ -2957,12 +3938,17 @@
     "aliases": [
       "king doggie",
       "kingdoggie",
-      "king",
-      "king episode",
-      "doggie",
-      "doggie episode",
-      "dog",
-      "dog episode"
+      "king doggy",
+      "the one where hundley is mistaken for a fancy dog",
+      "the one with the dog show",
+      "royal hundley",
+      "fancy dog",
+      "hundley the king",
+      "aristocrat dog",
+      "posh doggie",
+      "hundley is a prince",
+      "dog crown",
+      "king hundley"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -2982,15 +3968,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Baseball Cap"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the lucky cap",
+      "lucky cap",
       "theluckycap",
-      "lucky",
-      "lucky episode"
+      "the one where george has a lucky cap",
+      "the one with the lucky hat",
+      "george wont take off his cap",
+      "lucky baseball cap",
+      "good luck cap",
+      "george loses his lucky cap",
+      "lucky hat monkey",
+      "magic cap",
+      "luky cap",
+      "baseball hat"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3010,16 +4007,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Weather Satellite",
+      "Diving Mask",
+      "Submarine"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george, sea monkey",
-      "curiousgeorge,seamonkey",
-      "george, sea monkey",
-      "george,",
-      "george, episode"
+      "curious george sea monkey",
+      "george sea monkey",
+      "sea monkey",
+      "the one where george dives under the sea",
+      "the one with the weather satellite",
+      "weather satellite in the ocean",
+      "george scuba diving",
+      "underwater monkey",
+      "diving monkey",
+      "satellite fell in the sea",
+      "george swims under water",
+      "scuba george",
+      "sea monky"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3039,19 +4048,28 @@
     "settings": [
       "Country"
     ],
-    "objects": [],
+    "objects": [
+      "Cow",
+      "Tractor",
+      "Hay"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "old mcgeorgie had a farm",
       "oldmcgeorgiehadafarm",
-      "mcgeorgie",
-      "mcgeorgie episode",
-      "farm",
-      "farm episode",
-      "car",
-      "car episode"
+      "old macgeorgie",
+      "old mcdonald george",
+      "the one where george takes care of the farm",
+      "the one with the renkins farm",
+      "george the farmer",
+      "renkins farm",
+      "farm chores",
+      "feeding the cows",
+      "farmer monkey",
+      "mcgeorgie farm",
+      "eieio george"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3071,18 +4089,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Baton",
+      "Violin",
+      "Drum"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george beats the band",
-      "curiousgeorgebeatstheband",
       "george beats the band",
-      "beats",
-      "beats episode",
-      "band",
-      "band episode"
+      "beats the band",
+      "the one where george conducts the orchestra",
+      "the one with the orchestra",
+      "george the conductor",
+      "conductor monkey",
+      "symphony orchestra",
+      "waving the baton",
+      "music band monkey",
+      "orchestra conductor",
+      "simphony",
+      "conducting the band"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3102,19 +4130,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Hard Hat",
+      "Hole",
+      "Crane"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "hats and a hole",
       "hatsandahole",
-      "hats",
-      "hats episode",
-      "hole",
-      "hole episode",
-      "hat",
-      "hat episode"
+      "the one where george drops hard hats down a hole",
+      "the one with the hard hats",
+      "hard hats in the hole",
+      "construction site monkey",
+      "deep hole",
+      "george drops the hats",
+      "construction worker hats",
+      "hats down the hole",
+      "digging site",
+      "hardhat monkey",
+      "big hole"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3135,15 +4172,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Penguin",
+      "Ice",
+      "Camera"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "ice station monkey",
       "icestationmonkey",
-      "station",
-      "station episode"
+      "the one where george goes to antarctica",
+      "the one with the penguins",
+      "george and the penguins",
+      "penguin monkey",
+      "antarctica george",
+      "south pole penguins",
+      "penguins on the ice",
+      "watching penguins",
+      "cold ice monkey",
+      "pengwins",
+      "antartica"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3163,19 +4213,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Carrot",
+      "Bunny",
+      "Garden"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the perfect carrot",
+      "perfect carrot",
       "theperfectcarrot",
-      "perfect",
-      "perfect episode",
-      "carrot",
-      "carrot episode",
-      "car",
-      "car episode"
+      "the one where george grows a giant carrot",
+      "the one with the bunnies",
+      "giant carrot",
+      "bunnies eat the carrot",
+      "george grows a carrot",
+      "share with the bunnies",
+      "big carrot",
+      "bunny rabbits",
+      "carrit",
+      "growing carrots"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3195,19 +4254,29 @@
     "settings": [
       "Country"
     ],
-    "objects": [],
+    "objects": [
+      "Apples",
+      "Cider Press",
+      "Jug"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
       "curious george meets the press",
-      "curiousgeorgemeetsthepress",
       "george meets the press",
-      "meets",
-      "meets episode",
-      "press",
-      "press episode"
+      "meets the press",
+      "the one where george makes apple cider",
+      "the one with the cider press",
+      "apple cider",
+      "mr renkins apples",
+      "squishing apples",
+      "apple press",
+      "apple juice monkey",
+      "george presses apples",
+      "apple picking farm",
+      "appel cider"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3228,7 +4297,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Snowman",
+      "Ice",
+      "Freezer"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -3236,8 +4309,17 @@
     "aliases": [
       "snow use",
       "snowuse",
-      "snow",
-      "snow episode"
+      "the one where george builds a snowman in summer",
+      "the one with the summer snowman",
+      "snowman in summer",
+      "melting snowman",
+      "george wants snow",
+      "snowman monkey",
+      "snow in summer",
+      "ice snowman",
+      "summer snow",
+      "snoman",
+      "building a snowman"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3258,7 +4340,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bird Feeder",
+      "Bird Seed",
+      "Squirrel"
+    ],
     "themes": [
       "Learning",
       "Animals"
@@ -3266,10 +4352,17 @@
     "aliases": [
       "for the birds",
       "forthebirds",
-      "birds",
-      "birds episode",
-      "bird",
-      "bird episode"
+      "the one where jumpy eats the bird seed",
+      "the one with the bird feeder",
+      "bird feeder",
+      "jumpy squirrel",
+      "squirrel steals bird seed",
+      "george fills the bird feeder",
+      "birdseed",
+      "squirrel eats the seeds",
+      "jumpy the squirrel",
+      "bird feeder squirrel",
+      "birdies"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3289,15 +4382,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dinosaur Skeleton",
+      "Bones"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george-asaurus",
-      "curiousgeorge-asaurus",
-      "george-asaurus",
-      "george-asaurus episode"
+      "curious george asaurus",
+      "george asaurus",
+      "georgeasaurus",
+      "the one where george breaks a dinosaur skeleton",
+      "the one with the dinosaur bones",
+      "dinosaur skeleton",
+      "dinosaur bones",
+      "george breaks the dinosaur",
+      "museum dinosaur",
+      "putting the dinosaur back together",
+      "dino bones",
+      "dinosore",
+      "george a saurus"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3317,19 +4422,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Compost Bin",
+      "Banana Peel",
+      "Worms"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "mulch ado about nothing",
       "mulchadoaboutnothing",
-      "mulch",
-      "mulch episode",
-      "about",
-      "about episode",
-      "nothing",
-      "nothing episode"
+      "much ado about nothing",
+      "the one where george learns about compost",
+      "the one with the compost pile",
+      "compost",
+      "composting",
+      "george makes compost",
+      "banana peels in the compost",
+      "worms in the compost",
+      "mulch pile",
+      "kompost",
+      "rotting food dirt"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3349,17 +4463,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Lever",
+      "Plank",
+      "Rock"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "what goes up",
       "whatgoesup",
-      "what",
-      "what episode",
-      "goes",
-      "goes episode"
+      "the one where george uses a lever",
+      "the one with the lever",
+      "levers",
+      "george lifts heavy things",
+      "seesaw lever",
+      "lifting heavy stuff",
+      "lever and plank",
+      "monkey uses a lever",
+      "teeter totter",
+      "leaver",
+      "heavy rock"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3380,20 +4505,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Corn Maze",
+      "Map"
+    ],
     "themes": [
       "Learning",
       "Animals"
     ],
     "aliases": [
       "the amazing maze race",
+      "amazing maze race",
       "theamazingmazerace",
-      "amazing",
-      "amazing episode",
-      "maze",
-      "maze episode",
-      "race",
-      "race episode"
+      "the one where george and the man race in a corn maze",
+      "the one with the corn maze",
+      "corn maze",
+      "maze race",
+      "lost in the corn maze",
+      "corn field maze",
+      "george races the man",
+      "amazing maise race",
+      "maze monkey",
+      "cornfield"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3413,15 +4546,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dye",
+      "Bucket"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the color of monkey",
+      "color of monkey",
       "thecolorofmonkey",
-      "color",
-      "color episode"
+      "the one where george turns yellow",
+      "the one with the dye",
+      "yellow george",
+      "george falls in dye",
+      "yellow monkey",
+      "monkey turns yellow",
+      "george is yellow",
+      "dye vat",
+      "colour of monkey",
+      "yello monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3442,7 +4587,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bandages",
+      "Mittens"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -3450,10 +4598,17 @@
     "aliases": [
       "man with the monkey hands",
       "manwiththemonkeyhands",
-      "with",
-      "with episode",
-      "hands",
-      "hands episode"
+      "the one where the man cant use his hands",
+      "the one where george is the mans hands",
+      "the man hurts his hands",
+      "george helps the man",
+      "monkey hands",
+      "bandaged hands",
+      "george does everything for the man",
+      "helping hands monkey",
+      "man with the yellow hat hands",
+      "mitts on hands",
+      "the man needs help"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3473,17 +4628,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Groundhog",
+      "Shadow"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "whistlepig wednesday",
       "whistlepigwednesday",
+      "whistle pig wednesday",
+      "the one where george learns about groundhogs",
+      "the one with the groundhog",
+      "groundhog day",
+      "groundhog shadow",
       "whistlepig",
-      "whistlepig episode",
-      "wednesday",
-      "wednesday episode"
+      "george and the groundhog",
+      "groundhog sees his shadow",
+      "shadows",
+      "grounhog",
+      "wistlepig"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3503,17 +4668,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Worms",
+      "Shovel",
+      "Bucket"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "george digs worms",
       "georgedigsworms",
-      "digs",
-      "digs episode",
-      "worms",
-      "worms episode"
+      "the one where george digs for worms",
+      "the one with the worm race",
+      "worm racing",
+      "worm race",
+      "wiggly worms",
+      "digging for worms",
+      "earthworms",
+      "george races worms",
+      "fastest worm",
+      "werms",
+      "worm monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3533,17 +4709,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Recycling Bin",
+      "Bottles",
+      "Cans"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "everything old is new again",
       "everythingoldisnewagain",
-      "everything",
-      "everything episode",
-      "again",
-      "again episode"
+      "the one where george learns about recycling",
+      "the one with the recycling",
+      "recycling",
+      "recycle bin",
+      "george recycles",
+      "old things made new",
+      "reuse and recycle",
+      "making new things from old stuff",
+      "recycling monkey",
+      "recicling",
+      "bottles and cans"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3564,15 +4751,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bus",
+      "Papers",
+      "Briefcase"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "wheels on the bus",
       "wheelsonthebus",
-      "wheels",
-      "wheels episode"
+      "the one where george and the man chase a bus",
+      "the one with the bus",
+      "chasing the bus",
+      "work papers on the bus",
+      "the man forgot his papers",
+      "bus monkey",
+      "catch the bus",
+      "bus stop",
+      "the bus drives away",
+      "wheels on the buss",
+      "city bus"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3592,17 +4792,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Seeds",
+      "Seed Packets",
+      "Flower Pot"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "seed trouble",
       "seedtrouble",
-      "seed",
-      "seed episode",
-      "trouble",
-      "trouble episode"
+      "the one where george sorts the seeds",
+      "the one with the mixed up seeds",
+      "mixed up seeds",
+      "sorting seeds",
+      "seed packets",
+      "george sorts seeds",
+      "which seed is which",
+      "seeds all mixed up",
+      "seed sorting monkey",
+      "seeds in the garden",
+      "sead trouble"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3623,19 +4834,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Balls",
+      "Display Case",
+      "Tally Sheet"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "fun-ball tally",
-      "fun-balltally",
-      "fun-ball",
-      "fun-ball episode",
-      "tally",
-      "tally episode",
-      "ball",
-      "ball episode"
+      "fun ball tally",
+      "funballtally",
+      "fun ball",
+      "the one where george guesses how many balls",
+      "the one with the ball display",
+      "how many balls",
+      "counting balls",
+      "guessing contest",
+      "estimating balls",
+      "george counts the balls",
+      "ball pit guess",
+      "tally marks",
+      "funball"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3655,19 +4875,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Clouds",
+      "Weather Vane",
+      "Umbrella"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "red sky at night, monkey's delight",
-      "redskyatnight,monkey'sdelight",
-      "night,",
-      "night, episode",
-      "monkey's",
-      "monkey's episode",
-      "delight",
-      "delight episode"
+      "red sky at night monkeys delight",
+      "red sky at night",
+      "monkeys delight",
+      "the one where george predicts the weather",
+      "the one with the weather",
+      "weather monkey",
+      "george the weatherman",
+      "predicting weather",
+      "rain or sunshine",
+      "red sky",
+      "weather forecast",
+      "clouds and rain",
+      "wether monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3688,19 +4917,28 @@
     "settings": [
       "Beach"
     ],
-    "objects": [],
+    "objects": [
+      "Island",
+      "Boat",
+      "Palm Tree"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "shipwrecked with hundley",
       "shipwreckedwithhundley",
-      "shipwrecked",
-      "shipwrecked episode",
-      "with",
-      "with episode",
-      "hundley",
-      "hundley episode"
+      "the one where george and hundley are stranded on an island",
+      "the one with the desert island",
+      "stranded on an island",
+      "george and hundley on an island",
+      "shipwreck",
+      "island adventure",
+      "hundley on the beach",
+      "lost at sea",
+      "shipreck",
+      "hundly island",
+      "desert island dog"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3720,17 +4958,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Rainbow",
+      "Hose"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "chasing rainbows",
       "chasingrainbows",
-      "chasing",
-      "chasing episode",
-      "rainbows",
-      "rainbows episode"
+      "the one where george looks for the end of the rainbow",
+      "the one with the rainbow",
+      "end of the rainbow",
+      "george chases a rainbow",
+      "rainbow monkey",
+      "finding the rainbow",
+      "rainbow colors",
+      "where does the rainbow end",
+      "rainbow after rain",
+      "raynbow",
+      "making a rainbow"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3752,23 +5000,31 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Stopwatch",
+      "Running Shoes",
+      "Water Bottle"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "curious george, personal trainer",
-      "curiousgeorge,personaltrainer",
-      "george, personal trainer",
-      "george,",
-      "george, episode",
-      "personal",
-      "personal episode",
-      "trainer",
-      "trainer episode",
-      "train",
-      "train episode"
+      "curious george personal trainer",
+      "george personal trainer",
+      "personaltrainer",
+      "personel trainer",
+      "the one where george helps professor wiseman train for a marathon",
+      "the one where george is a coach",
+      "the one with the marathon",
+      "professor wiseman runs a race",
+      "george coaches professor wiseman",
+      "monkey coach",
+      "running race",
+      "marathon monkey",
+      "george helps the professor get fit",
+      "exercise episode with professor wiseman",
+      "maraton"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3788,17 +5044,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Backpack",
+      "Map",
+      "Trail"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "sprout outing",
       "sproutouting",
-      "sprout",
-      "sprout episode",
-      "outing",
-      "outing episode"
+      "sprout outting",
+      "the one where george gets lost on a nature walk",
+      "the one where george gets lost in the woods",
+      "the one with the nature hike",
+      "nature outing",
+      "george lost outside",
+      "monkey lost on the trail",
+      "nature walk episode",
+      "george goes hiking and gets lost",
+      "lost in the forest",
+      "finding the way back on a hike"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3819,7 +5086,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Cat Food",
+      "Food Bowl"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -3827,10 +5097,17 @@
     "aliases": [
       "gnocchi the critic",
       "gnocchithecritic",
-      "gnocchi",
-      "gnocchi episode",
-      "critic",
-      "critic episode"
+      "nyoki the critic",
+      "nokey the critic",
+      "gnochi the critic",
+      "the one where gnocchi wont eat",
+      "the one with the picky cat",
+      "picky kitty",
+      "kitty wont eat",
+      "cat food critic",
+      "george figures out why the cat wont eat",
+      "gnocchi stops eating",
+      "the cat that will not eat its food"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3850,15 +5127,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Vacuum Cleaner",
+      "Dust"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "george cleans up",
       "georgecleansup",
-      "cleans",
-      "cleans episode"
+      "george cleans",
+      "the one where george uses the vacuum",
+      "the one with the vacuum cleaner",
+      "vacuum monkey",
+      "vacum cleaner",
+      "vaccum",
+      "george vacuums",
+      "monkey cleaning up the mess",
+      "george learns to clean with a vacuum",
+      "clean up time monkey",
+      "vroom vacuum"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3879,17 +5168,27 @@
     "settings": [
       "Country"
     ],
-    "objects": [],
+    "objects": [
+      "Bicycle",
+      "Bandage"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "george meets allie-whoops",
-      "georgemeetsallie-whoops",
-      "meets",
-      "meets episode",
-      "allie-whoops",
-      "allie-whoops episode"
+      "george meets allie whoops",
+      "george meets allie",
+      "allie whoops",
+      "ally whoops",
+      "alley oops",
+      "allie oops",
+      "the one where george meets allie",
+      "the one where george meets mrs renkins granddaughter",
+      "first time george meets allie",
+      "clumsy girl allie",
+      "whoops allie",
+      "mrs renkins granddaughter",
+      "allie and george become friends"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3911,19 +5210,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Basement Door",
+      "Window"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "hundley's great escape",
-      "hundley'sgreatescape",
-      "hundley's",
-      "hundley's episode",
-      "great",
-      "great episode",
-      "escape",
-      "escape episode"
+      "hundleys great escape",
+      "hundleysgreatescape",
+      "hundleys escape",
+      "hundley great escape",
+      "hundly great escape",
+      "the one where george hundley and gnocchi get stuck in the basement",
+      "the one with the basement",
+      "stuck in the basement",
+      "escape from the basement",
+      "dog cat and monkey escape",
+      "hundley and gnocchi trapped",
+      "locked in the basement",
+      "great escape monkey dog and cat"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3943,7 +5250,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Juicer",
+      "Oranges",
+      "Juice Glass"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -3951,10 +5262,17 @@
     "aliases": [
       "juicy george",
       "juicygeorge",
-      "juicy",
-      "juicy episode",
-      "ice",
-      "ice episode"
+      "juicey george",
+      "the one where george makes juice",
+      "the one with the juicer",
+      "juice machine",
+      "making orange juice",
+      "george squeezes fruit",
+      "monkey juice",
+      "juice monkey",
+      "george learns to use a juicer",
+      "fresh juice episode",
+      "jucer"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -3975,7 +5293,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bird Book",
+      "Poster",
+      "Billboard"
+    ],
     "themes": [
       "Learning",
       "Animals"
@@ -3983,10 +5305,16 @@
     "aliases": [
       "the big picture",
       "thebigpicture",
-      "picture",
-      "picture episode",
-      "bird",
-      "bird episode"
+      "big picture",
+      "the one where george advertises the bird book",
+      "the one with the bird book",
+      "bird book poster",
+      "george makes an ad",
+      "advertising the mans book",
+      "man with the yellow hat bird book",
+      "big poster of birds",
+      "george helps sell the bird book",
+      "giant picture sign"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4006,17 +5334,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Heart",
+      "Stomach"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the inside story",
       "theinsidestory",
-      "inside",
-      "inside episode",
-      "story",
-      "story episode"
+      "inside story",
+      "the one where george goes inside his own body",
+      "the one where george dreams about his body",
+      "inside george body",
+      "monkey inside his tummy",
+      "tiny george in his body",
+      "george shrinks inside himself",
+      "inside the body dream",
+      "human body episode",
+      "george dream about his insides"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4026,29 +5363,43 @@
     "season": 4,
     "episode": 5,
     "segment": "B",
-    "title": "A Monkey's Duckling",
+    "title": "Little Fish, Littler Pond",
     "platform": "Hulu",
-    "shortDescription": "A duckling thinks George is its mother.",
-    "fullSynopsis": "A duckling thinks George is its mother.",
+    "shortDescription": "A dry spell traps one of George and Allie's fish friends in a little pond away from its family.",
+    "fullSynopsis": "A dry spell has lowered the water level of Lake Wanasink, and one of the fish George and Allie know is stuck in a small pond cut off from the rest of the lake. George and Allie work out how to get the fish back to its family before the little pond dries up.",
     "characters": [
-      "George"
+      "George",
+      "Allie"
     ],
     "settings": [
-      "Home"
+      "Lake Wanasink",
+      "Countryside"
     ],
-    "objects": [],
+    "objects": [
+      "Fish",
+      "Pond",
+      "Bucket"
+    ],
     "themes": [
-      "Learning"
+      "Science",
+      "Problem solving",
+      "Nature"
     ],
     "aliases": [
-      "a monkey's duckling",
-      "amonkey'sduckling",
-      "monkey's",
-      "monkey's episode",
-      "duckling",
-      "duckling episode",
-      "duck",
-      "duck episode"
+      "little fish littler pond",
+      "little fish little pond",
+      "littlefishlitterpond",
+      "the one where the fish gets stuck",
+      "the one with the fish in the little pond",
+      "george saves the fish",
+      "fish stuck in a puddle",
+      "the lake dries up",
+      "dry lake fish",
+      "monkey and the fishy",
+      "fishy family",
+      "george and allie fish",
+      "fish cant get home",
+      "lake wanasink fish"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4069,15 +5420,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Classroom",
+      "Show and Tell"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "guest monkey",
       "guestmonkey",
-      "guest",
-      "guest episode"
+      "gest monkey",
+      "the one where george visits allies class",
+      "the one where george goes to kindergarten",
+      "the one with the kindergarten class",
+      "monkey at school",
+      "george goes to allies school",
+      "kindergarten visit",
+      "monkey visits the classroom",
+      "george is a class guest",
+      "allies kindergarten"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4098,7 +5460,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dog Leash",
+      "Dog Treats"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -4106,12 +5471,17 @@
     "aliases": [
       "charkie goes to school",
       "charkiegoestoschool",
-      "charkie",
-      "charkie episode",
-      "goes",
-      "goes episode",
-      "school",
-      "school episode"
+      "charky goes to school",
+      "charkie school",
+      "the one where charkie goes to obedience school",
+      "the one with the dog school",
+      "doggy school",
+      "puppy school",
+      "obedience school",
+      "obediance school",
+      "george helps charkie pass the test",
+      "dog learns to sit and stay",
+      "charkie learns to behave"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4133,14 +5503,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Hammock",
+      "Pillow"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "relax!",
-      "relax! episode"
+      "relax",
+      "relax episode with professor wiseman",
+      "relaxing",
+      "the one where george helps professor wiseman relax",
+      "the one where professor wiseman needs a break",
+      "stressed professor",
+      "professor wiseman learns to relax",
+      "calm down professor",
+      "george helps the professor rest",
+      "taking it easy",
+      "rest and relax monkey",
+      "relaxe"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4161,15 +5544,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Package",
+      "Cardboard Box"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the box and the hound",
       "theboxandthehound",
-      "hound",
-      "hound episode"
+      "box and the hound",
+      "the one where george protects a package from charkie",
+      "the one with the fragile package",
+      "fragile box",
+      "keep the box safe from the dog",
+      "charkie and the box",
+      "doggy and the box",
+      "george guards the package",
+      "dont break the box",
+      "fragil package"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4189,7 +5583,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Spaghetti",
+      "Measuring Tape",
+      "Ruler"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -4197,8 +5595,17 @@
     "aliases": [
       "george measures up",
       "georgemeasuresup",
-      "measures",
-      "measures episode"
+      "george measures",
+      "the one where george measures the longest spaghetti",
+      "the one with the longest spaghetti",
+      "worlds longest spaghetti",
+      "long noodle",
+      "longest noodle ever",
+      "spagetti",
+      "pisghetti",
+      "spaghetti measuring",
+      "measuring tape monkey",
+      "really long pasta"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4218,17 +5625,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Solar Panel",
+      "Sun"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "something new under the sun",
       "somethingnewunderthesun",
-      "something",
-      "something episode",
-      "under",
-      "under episode"
+      "new under the sun",
+      "the one where george learns about solar power",
+      "the one with the solar panels",
+      "solar power",
+      "soler power",
+      "sun power",
+      "sunshine energy",
+      "george uses the sun for power",
+      "solar panel monkey",
+      "power from the sun"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4248,7 +5664,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Movie Projector",
+      "Movie Screen",
+      "Popcorn"
+    ],
     "themes": [
       "Learning",
       "Friendship"
@@ -4256,10 +5676,17 @@
     "aliases": [
       "movie house monkey",
       "moviehousemonkey",
-      "movie",
-      "movie episode",
-      "house",
-      "house episode"
+      "movie theater monkey",
+      "movie theatre",
+      "the one where george fixes up an old movie theater",
+      "the one with the old movie theater",
+      "old cinema",
+      "fixing the movie house",
+      "projector",
+      "projecter",
+      "george at the movies",
+      "monkey movie theater",
+      "restoring the theater"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4279,19 +5706,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Recipe",
+      "Chef Hat",
+      "Mixing Bowl"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "cooking with monkey",
       "cookingwithmonkey",
-      "cooking",
-      "cooking episode",
-      "with",
-      "with episode",
-      "hat",
-      "hat episode"
+      "cookin with monkey",
+      "the one where george cooks",
+      "the one with the recipe",
+      "follow the recipe",
+      "monkey chef",
+      "george cooking",
+      "monkey in the kitchen",
+      "chef george",
+      "george learns to follow a recipe",
+      "cooking show monkey",
+      "recipie"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4311,21 +5747,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Hot Air Balloon",
+      "Basket"
+    ],
     "themes": [
       "Learning",
       "Adventure"
     ],
     "aliases": [
       "curious george and the balloon ride",
-      "curiousgeorgeandtheballoonride",
       "george and the balloon ride",
-      "balloon",
-      "balloon episode",
-      "ride",
-      "ride episode",
-      "ball",
-      "ball episode"
+      "balloon ride",
+      "balloonride",
+      "the one where george rides a hot air balloon",
+      "the one with the hot air balloon",
+      "hot air balloon",
+      "hot air baloon",
+      "baloon ride",
+      "monkey in a balloon",
+      "flying balloon",
+      "up in the sky balloon",
+      "big balloon ride"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4346,17 +5789,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Sleeping Bag",
+      "Flashlight"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "night of the weiner dog",
       "nightoftheweinerdog",
-      "night",
-      "night episode",
-      "weiner",
-      "weiner episode"
+      "night of the wiener dog",
+      "weiner dog",
+      "wiener dog",
+      "the one where george has a sleepover with hundley",
+      "the one with the sleepover",
+      "hundley sleepover",
+      "sleepover with the dog",
+      "hundley spends the night",
+      "monkey and doggy sleepover",
+      "night with hundley",
+      "weenie dog"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4377,17 +5830,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Drum",
+      "Echo"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "george and marco sound it out",
       "georgeandmarcosounditout",
-      "marco",
-      "marco episode",
-      "sound",
-      "sound episode"
+      "sound it out",
+      "the one where george and marco learn about sound",
+      "the one with the echo",
+      "marco and george sound",
+      "echo echo",
+      "acoustics",
+      "acoustic",
+      "loud and quiet sounds",
+      "how sound travels",
+      "george and marco make noise",
+      "sound bounces"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4407,19 +5870,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Duckling",
+      "Pond"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "a monkey's duckling",
-      "amonkey'sduckling",
-      "monkey's",
-      "monkey's episode",
-      "duckling",
-      "duckling episode",
-      "duck",
-      "duck episode"
+      "a monkeys duckling",
+      "amonkeysduckling",
+      "monkeys duckling",
+      "monkey duckling",
+      "the one where the duckling thinks george is its mom",
+      "the one with the baby duck",
+      "baby duck follows george",
+      "duckie follows monkey",
+      "george is a duck mommy",
+      "ducky thinks george is mama",
+      "imprinting duckling",
+      "little duck follows george everywhere",
+      "ducklin"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4439,15 +5910,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Swap Meet Table"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "trader george",
       "tradergeorge",
-      "trader",
-      "trader episode"
+      "trader goerge",
+      "the one where george trades things",
+      "the one with the swap meet",
+      "swap meet",
+      "swapmeet",
+      "trading game",
+      "george swaps toys",
+      "monkey trades",
+      "trade up",
+      "trading one thing for another",
+      "monkey at the swap meet"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4467,17 +5949,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Chameleon"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "one in a million chameleon",
       "oneinamillionchameleon",
-      "million",
-      "million episode",
+      "million chameleon",
       "chameleon",
-      "chameleon episode"
+      "chamelion",
+      "camelion",
+      "kameleon",
+      "the one where george looks for a lost chameleon",
+      "the one with the chameleon",
+      "escaped lizard",
+      "color changing lizard",
+      "find the lizard",
+      "hiding lizard",
+      "lizard that changes color"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4498,21 +5990,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Subway Train",
+      "Subway Map"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "george's super subway adventure",
-      "george'ssupersubwayadventure",
-      "george's",
-      "george's episode",
-      "super",
-      "super episode",
-      "subway",
-      "subway episode",
-      "adventure",
-      "adventure episode"
+      "georges super subway adventure",
+      "georgessupersubwayadventure",
+      "super subway adventure",
+      "subway adventure",
+      "the one where george gets lost on the subway",
+      "the one with the subway",
+      "lost on the subway",
+      "subway train",
+      "subwey",
+      "george separated from the man with the yellow hat",
+      "monkey on the subway",
+      "underground train",
+      "subway map"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4532,19 +6030,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Well",
+      "Water Pump",
+      "Bucket"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "well done, george",
-      "welldone,george",
-      "well",
-      "well episode",
-      "done,",
-      "done, episode",
-      "water",
-      "water episode"
+      "well done george",
+      "welldonegeorge",
+      "well done",
+      "the one where george learns about wells",
+      "the one with the water well",
+      "water well",
+      "water pump",
+      "pumping water",
+      "wishing well",
+      "george pumps water",
+      "how a well works",
+      "bucket of water from the well"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4565,7 +6071,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Soap Box Car",
+      "Helmet"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -4573,12 +6082,16 @@
     "aliases": [
       "downhill racer",
       "downhillracer",
-      "downhill",
-      "downhill episode",
-      "racer",
-      "racer episode",
-      "car",
-      "car episode"
+      "down hill racer",
+      "the one where george and allie build a race car",
+      "the one with the soap box derby",
+      "soap box derby",
+      "soapbox car",
+      "soap box derby car",
+      "go kart race",
+      "racing down the hill",
+      "race car monkey",
+      "allie and george race"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4598,15 +6111,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Library Books",
+      "Bookshelf"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "book monkey",
       "bookmonkey",
-      "book",
-      "book episode"
+      "the one where george organizes library books",
+      "the one with the library",
+      "library monkey",
+      "libary",
+      "librery",
+      "sorting books",
+      "putting books back on the shelf",
+      "george in the library",
+      "organizing books",
+      "bookshelf monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4626,15 +6150,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Birthday Cake",
+      "Party Hat"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "monkey-size me",
-      "monkey-sizeme",
-      "monkey-size",
-      "monkey-size episode"
+      "monkey size me",
+      "monkeysizeme",
+      "monkey sized me",
+      "the one where george plans a surprise party",
+      "the one with the surprise birthday party",
+      "surprise birthday party",
+      "surprise party",
+      "birthday surprise",
+      "suprise party",
+      "george plans a party",
+      "birthday party monkey",
+      "party planning monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4654,17 +6189,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Metal Detector",
+      "Toy"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "metal detective",
       "metaldetective",
-      "metal",
-      "metal episode",
-      "detective",
-      "detective episode"
+      "metal detector",
+      "the one where george uses a metal detector",
+      "the one with the metal detector",
+      "beep beep detector",
+      "finding the lost toy",
+      "metal dector",
+      "treasure hunt with a metal detector",
+      "monkey treasure hunter",
+      "george finds a lost toy",
+      "lost toy found"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4684,14 +6228,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Vending Machine",
+      "Coins"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
-      "george-o-matic",
-      "george-o-matic episode"
+      "george o matic",
+      "georgeomatic",
+      "george o matic machine",
+      "the one where george builds a vending machine",
+      "the one with the vending machine",
+      "vending machine",
+      "venting machine",
+      "vendin machine",
+      "snack machine",
+      "homemade vending machine",
+      "monkey machine",
+      "george invents a machine",
+      "put in a coin get a snack"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4711,21 +6269,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Whistle",
+      "Sheep"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "curious george, sheep herder",
-      "curiousgeorge,sheepherder",
-      "george, sheep herder",
-      "george,",
-      "george, episode",
-      "sheep",
-      "sheep episode",
-      "herder",
-      "herder episode"
+      "curious george sheep herder",
+      "george sheep herder",
+      "sheep herder",
+      "sheepherder",
+      "sheep hurder",
+      "the one where george herds sheep",
+      "the one with the sheep",
+      "herding sheep",
+      "whistle for sheep",
+      "baa baa sheep",
+      "monkey shepherd",
+      "shepard",
+      "george uses a whistle"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4745,19 +6310,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Baseball",
+      "Scoreboard"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "george's home run",
-      "george'shomerun",
-      "george's",
-      "george's episode",
-      "home",
-      "home episode",
-      "ball",
-      "ball episode"
+      "georges home run",
+      "georgeshomerun",
+      "home run",
+      "homerun",
+      "the one where george keeps score at a baseball game",
+      "the one with the baseball game",
+      "baseball monkey",
+      "keeping score",
+      "scoreboard",
+      "base ball",
+      "george at the ball game",
+      "monkey baseball",
+      "batter up"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4777,14 +6350,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Igloo",
+      "Snow Blocks"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
       "monkey on ice",
-      "monkeyonice"
+      "monkeyonice",
+      "the one where george builds an igloo",
+      "the one with the igloo",
+      "igloo",
+      "iglu",
+      "igloo monkey",
+      "snow house",
+      "ice house",
+      "building with snow",
+      "snow fort",
+      "snow blocks",
+      "ice monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4804,20 +6391,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Toy Train",
+      "Train Tracks"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "go west, young monkey",
-      "gowest,youngmonkey",
-      "west,",
-      "west, episode",
-      "young",
-      "young episode",
-      "train",
-      "train episode"
+      "go west young monkey",
+      "gowestyoungmonkey",
+      "go west",
+      "the one where george builds a train set",
+      "the one with the toy train",
+      "wild west train",
+      "cowboy train",
+      "toy train set",
+      "train tracks",
+      "choo choo",
+      "western train",
+      "monkey train set"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4837,17 +6431,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Grocery Store",
+      "Vegetables"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "meet the new neighbors",
       "meetthenewneighbors",
-      "meet",
-      "meet episode",
-      "neighbors",
-      "neighbors episode"
+      "new neighbors",
+      "new nieghbors",
+      "the one where george meets the new neighbors",
+      "the one with the grocery store",
+      "vietnamese family",
+      "vietnamese grocery store",
+      "new family next door",
+      "neighborhood store",
+      "george meets a new family",
+      "welcome new neighbors"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4867,19 +6470,25 @@
     "settings": [
       "City"
     ],
-    "objects": [],
+    "objects": [
+      "Model Boat"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "follow that boat",
       "followthatboat",
-      "follow",
-      "follow episode",
-      "that",
-      "that episode",
-      "boat",
-      "boat episode"
+      "follow the boat",
+      "the one where george chases a toy boat",
+      "the one with the model boat",
+      "toy boat",
+      "model boat",
+      "boat floating away",
+      "chasing the boat through the city",
+      "little sailboat",
+      "runaway boat",
+      "monkey chases a boat"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4899,7 +6508,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Windmill",
+      "Scarecrow"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -4907,10 +6519,16 @@
     "aliases": [
       "windmill monkey",
       "windmillmonkey",
-      "windmill",
-      "windmill episode",
-      "car",
-      "car episode"
+      "wind mill monkey",
+      "the one where george builds a windmill",
+      "the one with the windmill",
+      "windmill scarecrow",
+      "scarecrow",
+      "scare crow",
+      "scaring away birds",
+      "spinning windmill",
+      "windmil",
+      "monkey windmill"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4931,19 +6549,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Pinata",
+      "Candy"
+    ],
     "themes": [
       "Learning",
       "Friendship",
       "Creativity"
     ],
     "aliases": [
-      "mother's day surprise",
-      "mother'sdaysurprise",
-      "mother's",
-      "mother's episode",
-      "surprise",
-      "surprise episode"
+      "mothers day surprise",
+      "mothersdaysurprise",
+      "mothers day",
+      "mother day",
+      "the one where george and marco make a pinata",
+      "the one with the pinata",
+      "pinata",
+      "penata",
+      "pinyata",
+      "mothers day present",
+      "surprise for mom",
+      "marco and george make a gift"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4964,7 +6591,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Swing",
+      "Slide",
+      "Monkey Bars"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -4972,8 +6603,16 @@
     "aliases": [
       "jungle gym",
       "junglegym",
-      "jungle",
-      "jungle episode"
+      "the one where george and allie build a jungle gym",
+      "the one with the backyard playground",
+      "backyard gym",
+      "monkey bars",
+      "playground",
+      "play ground",
+      "building a playground",
+      "swing and slide",
+      "george and allie build a gym",
+      "climbing gym"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -4993,15 +6632,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Auction Gavel"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "auctioneer george",
       "auctioneergeorge",
+      "auctioner george",
       "auctioneer",
-      "auctioneer episode"
+      "the one where george learns about auctions",
+      "the one with the auction",
+      "auction",
+      "going going gone",
+      "highest bid",
+      "bidding",
+      "sold to the monkey",
+      "george runs an auction",
+      "auktion"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5022,7 +6672,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Sock Puppet",
+      "Stage"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -5030,10 +6683,17 @@
     "aliases": [
       "sock monkey opera",
       "sockmonkeyopera",
-      "sock",
-      "sock episode",
+      "sock opera",
+      "sock puppet opera",
+      "the one where george puts on an opera for betsy",
+      "the one with the sock puppets",
+      "sock puppets",
       "opera",
-      "opera episode"
+      "oprah",
+      "singing socks",
+      "puppet show",
+      "betsy and the opera",
+      "george makes an opera"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5053,15 +6713,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Camera",
+      "Hamster"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "hamster cam",
       "hamstercam",
+      "hampster cam",
+      "hamster camera",
+      "the one where george finds a lost hamster",
+      "the one with the hamster",
+      "lost hamster",
       "hamster",
-      "hamster episode"
+      "hampster",
+      "camera finds the hamster",
+      "where is the hamster",
+      "hamster hiding",
+      "hidden camera"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5081,17 +6753,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Cookbook",
+      "Magnifying Glass"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "the great monkey detective",
       "thegreatmonkeydetective",
-      "great",
-      "great episode",
-      "detective",
-      "detective episode"
+      "great monkey detective",
+      "monkey detective",
+      "the one where george finds a missing cookbook",
+      "the one with the missing cookbook",
+      "missing cookbook",
+      "cook book",
+      "detective george",
+      "monkey solves a mystery",
+      "magnifying glass",
+      "mystery of the cookbook"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5112,7 +6793,9 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Statue"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -5120,10 +6803,16 @@
     "aliases": [
       "george and the giant thumb",
       "georgeandthegiantthumb",
-      "giant",
-      "giant episode",
-      "thumb",
-      "thumb episode"
+      "giant thumb",
+      "the one where george and allie build a statue",
+      "the one with the giant thumb",
+      "big thumb",
+      "thumb statue",
+      "huge thumb",
+      "building a statue",
+      "statue",
+      "statchu",
+      "allie and george make a statue"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5143,15 +6832,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Camera",
+      "Photos"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "shutter monkey",
       "shuttermonkey",
-      "shutter",
-      "shutter episode"
+      "shudder monkey",
+      "the one where george takes photos of hidden shapes",
+      "the one with the camera",
+      "hidden shapes",
+      "finding shapes",
+      "shape pictures",
+      "monkey photographer",
+      "taking pictures",
+      "photographer george",
+      "camera monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5172,17 +6872,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dance Shoes",
+      "Music"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "school of dance",
       "schoolofdance",
-      "school",
-      "school episode",
-      "dance",
-      "dance episode"
+      "dance school",
+      "the one where george teaches bill to dance",
+      "the one with the dancing",
+      "bill learns to dance",
+      "dancing monkey",
+      "dance lessons",
+      "dance class",
+      "monkey dance teacher",
+      "bill dances",
+      "daunce"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5202,16 +6911,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Chicken Coop",
+      "Chickens"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george sounds off",
-      "curiousgeorgesoundsoff",
       "george sounds off",
-      "sounds",
-      "sounds episode"
+      "sounds off",
+      "the one where george soundproofs a chicken coop",
+      "the one with the noisy chickens",
+      "chicken coop",
+      "chiken coop",
+      "noisy chickens",
+      "soundproof",
+      "sound proof",
+      "too loud chickens",
+      "bawk bawk chickens"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5231,7 +6950,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Wind Chimes",
+      "Musical Instruments"
+    ],
     "themes": [
       "Learning",
       "Friendship",
@@ -5240,10 +6962,16 @@
     "aliases": [
       "wind symphony",
       "windsymphony",
-      "wind",
-      "wind episode",
+      "wind simphony",
+      "the one where george makes music with the wind",
+      "the one with the wind instruments",
+      "wind music",
+      "wind chimes",
+      "music from wind",
       "symphony",
-      "symphony episode"
+      "simfony",
+      "windy music",
+      "monkey orchestra"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5263,22 +6991,29 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Car Wash",
+      "Hose",
+      "Sponge"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
-      "george and allie's automated car wash",
-      "georgeandallie'sautomatedcarwash",
-      "allie's",
-      "allie's episode",
-      "automated",
-      "automated episode",
-      "wash",
-      "wash episode",
-      "car",
-      "car episode"
+      "george and allies automated car wash",
+      "automated car wash",
+      "automatic car wash",
+      "car wash",
+      "carwash",
+      "the one where george builds a car wash",
+      "the one with the car wash",
+      "allie and george wash cars",
+      "washing the car",
+      "soapy car",
+      "automatic car wash machine",
+      "bubbles car wash",
+      "hose and sponge"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5299,17 +7034,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Ants",
+      "Picnic Food"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "feeling antsy",
       "feelingantsy",
-      "feeling",
-      "feeling episode",
-      "antsy",
-      "antsy episode"
+      "feeling antsie",
+      "the one where ants invade",
+      "the one with the ants",
+      "ant invasion",
+      "ants everywhere",
+      "aunts",
+      "george and hundley and the ants",
+      "bugs in the house",
+      "marching ants",
+      "too many ants"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5329,7 +7073,11 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Maple Syrup",
+      "Maple Tree",
+      "Bucket"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -5337,10 +7085,16 @@
     "aliases": [
       "maple monkey madness",
       "maplemonkeymadness",
-      "maple",
-      "maple episode",
-      "madness",
-      "madness episode"
+      "maple madness",
+      "the one where george makes maple syrup",
+      "the one with the maple syrup",
+      "maple syrup",
+      "mapel syrup",
+      "maple surup",
+      "syrup from trees",
+      "tapping trees",
+      "pancake syrup",
+      "sticky syrup monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5360,13 +7114,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Microphone",
+      "Radio"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "dj george",
-      "djgeorge"
+      "djgeorge",
+      "dee jay george",
+      "disc jockey",
+      "the one where george is a radio dj",
+      "the one with the radio station",
+      "radio dj",
+      "radio station",
+      "monkey on the radio",
+      "george on the radio",
+      "dj monkey",
+      "radio show"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5386,19 +7153,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Colored Sand",
+      "Cactus"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
       "curious george paints the desert",
-      "curiousgeorgepaintsthedesert",
       "george paints the desert",
-      "paints",
-      "paints episode",
-      "desert",
-      "desert episode"
+      "paints the desert",
+      "the one where george makes sand paintings",
+      "the one with the colored sand",
+      "sand painting",
+      "sand art",
+      "desert painting",
+      "colored sand",
+      "painting with sand",
+      "desert monkey",
+      "dessert painting"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5419,17 +7194,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Cat",
+      "Cat Bed"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "no knowing gnocchi",
       "noknowinggnocchi",
-      "knowing",
-      "knowing episode",
-      "gnocchi",
-      "gnocchi episode"
+      "no knowing nyoki",
+      "no knowing gnochi",
+      "the one where gnocchi keeps running away",
+      "the one with the runaway cat",
+      "runaway kitty",
+      "gnocchi runs away",
+      "cat keeps running away",
+      "where does gnocchi go",
+      "lost kitty",
+      "george follows the cat"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5449,19 +7233,26 @@
     "settings": [
       "Beach"
     ],
-    "objects": [],
+    "objects": [
+      "Sand Castle",
+      "Waves"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "here comes the tide",
       "herecomesthetide",
-      "here",
-      "here episode",
-      "comes",
-      "comes episode",
-      "tide",
-      "tide episode"
+      "the tide",
+      "the one where george learns about tides",
+      "the one with the ocean tide",
+      "high tide low tide",
+      "ocean tide",
+      "beach tide",
+      "tied",
+      "water comes in at the beach",
+      "sand castle washed away",
+      "monkey at the beach"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5481,15 +7272,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Collection",
+      "Bottle Caps"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "junky monkey",
       "junkymonkey",
-      "junky",
-      "junky episode"
+      "junkie monkey",
+      "the one where george starts a collection",
+      "the one with the collection",
+      "collecting",
+      "collecting junk",
+      "monkey collector",
+      "george collects things",
+      "junk collection",
+      "treasures and junk",
+      "colection"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5510,7 +7312,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Squirrel House",
+      "Insulation"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -5518,10 +7323,16 @@
     "aliases": [
       "jumpy warms up",
       "jumpywarmsup",
-      "jumpy",
-      "jumpy episode",
-      "warms",
-      "warms episode"
+      "jumpy squirrel warms up",
+      "the one where george builds a warm house for jumpy",
+      "the one with the squirrel house",
+      "jumpy squirrel",
+      "squirrel house",
+      "warm squirrel",
+      "cold squirrel",
+      "insulation",
+      "insolation",
+      "keeping jumpy warm"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5541,17 +7352,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Kite",
+      "Piggy Bank",
+      "Money"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "george buys a kite",
       "georgebuysakite",
-      "buys",
-      "buys episode",
-      "kite",
-      "kite episode"
+      "buys a kite",
+      "the one where george earns money for a kite",
+      "the one with the new kite",
+      "monkey kite",
+      "kite money",
+      "saving money for a kite",
+      "piggy bank",
+      "george earns money",
+      "buying a kite",
+      "kyte"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5571,7 +7392,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Lights",
+      "Light Bulbs"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -5579,10 +7403,16 @@
     "aliases": [
       "train of light",
       "trainoflight",
-      "train",
-      "train episode",
-      "light",
-      "light episode"
+      "light train",
+      "the one where george makes a light display",
+      "the one with the moving lights",
+      "moving lights",
+      "blinking lights",
+      "light show",
+      "lights that look like a train",
+      "twinkle lights",
+      "chasing lights",
+      "christmas lights display"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5602,7 +7432,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Kangaroo",
+      "Boomerang"
+    ],
     "themes": [
       "Learning",
       "Adventure"
@@ -5610,10 +7443,16 @@
     "aliases": [
       "monkey down under",
       "monkeydownunder",
-      "down",
-      "down episode",
-      "under",
-      "under episode"
+      "down under",
+      "the one where george goes to australia",
+      "the one with the australian outback",
+      "australia",
+      "austrailia",
+      "outback",
+      "kangaroo",
+      "kangaru",
+      "monkey in australia",
+      "george explores the outback"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5633,19 +7472,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Flashlight",
+      "Night Creature"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "bright lights, little monkey",
-      "brightlights,littlemonkey",
-      "bright",
-      "bright episode",
-      "lights,",
-      "lights, episode",
-      "little",
-      "little episode"
+      "bright lights little monkey",
+      "brightlightslittlemonkey",
+      "bright lights",
+      "the one where george looks for a creature at night",
+      "the one with the mysterious night creature",
+      "mystery creature",
+      "night creature",
+      "what is that at night",
+      "glowing lights at night",
+      "night time search",
+      "nighttime monkey",
+      "flashlight hunt"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5665,17 +7511,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Otter",
+      "Keys"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "we otter be friends",
       "weotterbefriends",
+      "otter be friends",
+      "we ought to be friends",
+      "the one where an otter takes the keys",
+      "the one with the otter",
       "otter",
-      "otter episode",
-      "friends",
-      "friends episode"
+      "ottor",
+      "otter has the keys",
+      "sea otter",
+      "lost keys",
+      "getting the keys back"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5695,15 +7550,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Castle",
+      "Dragon",
+      "Armor"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "sir george and the dragon",
       "sirgeorgeandthedragon",
-      "dragon",
-      "dragon episode"
+      "sir george",
+      "the one where george dreams he is a castle guard",
+      "the one with the dragon",
+      "knight george",
+      "castle guard",
+      "george the knight",
+      "dragon dream",
+      "castle dream",
+      "dragun",
+      "monkey knight"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5724,20 +7591,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Caterpillar",
+      "Leaf"
+    ],
     "themes": [
       "Learning",
       "Animals"
     ],
     "aliases": [
-      "hundley jr.",
-      "hundleyjr.",
-      "hundley",
-      "hundley episode",
-      "car",
-      "car episode",
-      "cat",
-      "cat episode"
+      "hundley jr",
+      "hundleyjr",
+      "hundley junior",
+      "hundly junior",
+      "the one where hundley takes care of a caterpillar",
+      "the one with the caterpillar",
+      "caterpiller",
+      "catapillar",
+      "hundley and the caterpillar",
+      "doggy babysits a bug",
+      "hundley is a dad",
+      "caterpillar becomes a butterfly"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5758,21 +7632,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Snow",
+      "Snow Shovel"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
       "curious george gets winded",
-      "curiousgeorgegetswinded",
       "george gets winded",
-      "gets",
-      "gets episode",
-      "winded",
-      "winded episode",
-      "snow",
-      "snow episode"
+      "gets winded",
+      "the one where george helps bill in a snowstorm",
+      "the one with the snowstorm",
+      "snowstorm",
+      "snow storm",
+      "blizzard",
+      "blizard",
+      "windy snow",
+      "snowed in",
+      "bill and george in the snow"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5792,18 +7672,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Fire Truck",
+      "Dalmatian"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "where's the firedog?",
-      "where'sthefiredog?",
-      "where's",
-      "where's episode",
-      "firedog?",
-      "firedog? episode"
+      "wheres the firedog",
+      "wheresthefiredog",
+      "where is the firedog",
+      "fire dog",
+      "firehouse dog",
+      "the one where george finds the firehouse dog",
+      "the one with the fire station mascot",
+      "runaway fire dog",
+      "lost fire dog",
+      "fire station dog",
+      "dalmation",
+      "fire truck doggy",
+      "firehouse mascot"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5823,19 +7713,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Germ"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "toot toot tootsie goodbye",
       "toottoottootsiegoodbye",
-      "toot",
-      "toot episode",
-      "tootsie",
-      "tootsie episode",
-      "goodbye",
-      "goodbye episode"
+      "toot toot tootsie",
+      "tootsie goodbye",
+      "the one where george dreams about toots the germ",
+      "the one with the germ",
+      "toots the germ",
+      "germ dream",
+      "germs",
+      "jerms",
+      "tiny germ friend",
+      "george and the germ again",
+      "goodbye toots"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5857,15 +7754,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Honeycomb",
+      "Beehive"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "honey of a monkey",
       "honeyofamonkey",
-      "honey",
-      "honey episode"
+      "honey monkey",
+      "the one where george and steve eat all the honey",
+      "the one with the honeycomb",
+      "honeycomb",
+      "honey comb",
+      "bettsy honey",
+      "betsys honey",
+      "eating all the honey",
+      "bees and honey",
+      "sticky honey monkey",
+      "beehive"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5886,21 +7795,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bird Nest",
+      "Eggs",
+      "Binoculars"
+    ],
     "themes": [
       "Learning",
       "Animals"
     ],
     "aliases": [
-      "curious george's egg hunt",
-      "curiousgeorge'segghunt",
-      "george's egg hunt",
-      "george's",
-      "george's episode",
-      "hunt",
-      "hunt episode",
-      "bird",
-      "bird episode"
+      "curious george egg hunt",
+      "georges egg hunt",
+      "egg hunt",
+      "the one where george and allie look for a birds nest",
+      "the one with the bird nest",
+      "birds nest",
+      "bird nest",
+      "looking for bird eggs",
+      "egg hunt monkey",
+      "allie and george find the nest",
+      "baby bird eggs",
+      "nest hunt"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5920,19 +7836,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Baby Goats",
+      "Lawn"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "george and allie's lawn service",
-      "georgeandallie'slawnservice",
-      "allie's",
-      "allie's episode",
-      "lawn",
-      "lawn episode",
-      "service",
-      "service episode"
+      "george and allies lawn service",
+      "allies lawn service",
+      "lawn service",
+      "the one where george keeps the baby goats from escaping",
+      "the one with the baby goats",
+      "baby goats",
+      "goats eat the grass",
+      "escaping goats",
+      "goat lawn mowers",
+      "kid goats",
+      "allie and george mow lawns",
+      "naughty goats"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5952,21 +7875,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Scavenger Hunt List"
+    ],
     "themes": [
       "Learning",
       "Animals"
     ],
     "aliases": [
-      "curious george's scavenger hunt",
-      "curiousgeorge'sscavengerhunt",
-      "george's scavenger hunt",
-      "george's",
-      "george's episode",
+      "curious george scavenger hunt",
+      "georges scavenger hunt",
+      "scavenger hunt",
+      "scavanger hunt",
       "scavenger",
-      "scavenger episode",
-      "hunt",
-      "hunt episode"
+      "the one where george does a scavenger hunt",
+      "the one with the scavenger hunt list",
+      "charity scavenger hunt",
+      "find the things on the list",
+      "treasure hunt",
+      "monkey scavenger hunt",
+      "scavenger hunt race"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -5986,13 +7914,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Broken Toy",
+      "Toy Factory"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "toy monkey",
-      "toymonkey"
+      "toymonkey",
+      "the one where george goes to the toy factory",
+      "the one with the toy factory",
+      "toy factory",
+      "toy factery",
+      "fixing a broken toy",
+      "broken toy",
+      "george fixes his toy",
+      "monkey at the toy factory",
+      "how toys are made",
+      "toy machine"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6013,21 +7954,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Teddy Bear",
+      "Carnival Game"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "george and allie's game plan",
-      "georgeandallie'sgameplan",
-      "allie's",
-      "allie's episode",
-      "game",
-      "game episode",
-      "plan",
-      "plan episode",
-      "ice",
-      "ice episode"
+      "george and allies game plan",
+      "allies game plan",
+      "game plan",
+      "the one where allie practices to win a teddy bear",
+      "the one with the teddy bear prize",
+      "win the teddy bear",
+      "teddy bear",
+      "carnival game",
+      "fair game",
+      "prize bear",
+      "allie practices",
+      "tedy bear"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6048,7 +7994,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Guitar",
+      "Strings"
+    ],
     "themes": [
       "Learning",
       "Creativity"
@@ -6056,8 +8005,16 @@
     "aliases": [
       "monkey hoedown",
       "monkeyhoedown",
-      "hoedown",
-      "hoedown episode"
+      "hoe down",
+      "the one where george and allie build a guitar",
+      "the one with the homemade guitar",
+      "homemade guitar",
+      "guitar",
+      "gitar",
+      "guiter",
+      "building a guitar",
+      "country music monkey",
+      "square dance"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6077,19 +8034,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Clown Nose",
+      "Elevator"
+    ],
     "themes": [
       "Learning",
       "Math"
     ],
     "aliases": [
       "curious george clowns around",
-      "curiousgeorgeclownsaround",
       "george clowns around",
+      "clowns around",
+      "the one where george goes to clown college",
+      "the one with the clowns",
+      "clown college",
+      "clown school",
       "clowns",
-      "clowns episode",
-      "around",
-      "around episode"
+      "counting floors",
+      "clown monkey",
+      "elevator floors",
+      "silly clowns"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6109,25 +8074,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Tracking Device",
+      "Bird"
+    ],
     "themes": [
       "Learning",
       "Friendship",
       "Animals"
     ],
     "aliases": [
-      "george's backwards flight plan",
-      "george'sbackwardsflightplan",
-      "george's",
-      "george's episode",
-      "backwards",
-      "backwards episode",
-      "flight",
-      "flight episode",
-      "plan",
-      "plan episode",
-      "bird",
-      "bird episode"
+      "georges backwards flight plan",
+      "backwards flight plan",
+      "flight plan",
+      "the one where george helps track a bird",
+      "the one with the bird tracker",
+      "bird tracking device",
+      "tracking birds",
+      "bird tracker",
+      "flying backwards",
+      "migrating birds",
+      "bird gps",
+      "birdie tracker"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6147,20 +8115,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Pig",
+      "Ribbon"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "curious george, hog trainer",
-      "curiousgeorge,hogtrainer",
-      "george, hog trainer",
-      "george,",
-      "george, episode",
-      "trainer",
-      "trainer episode",
-      "train",
-      "train episode"
+      "curious george hog trainer",
+      "george hog trainer",
+      "hog trainer",
+      "the one where george trains a pig for the fair",
+      "the one with howie the hog",
+      "howie the hog",
+      "howie hog",
+      "pig trainer",
+      "piggy at the fair",
+      "county fair pig",
+      "oink oink pig",
+      "training a pig"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6180,15 +8154,26 @@
     "settings": [
       "Space"
     ],
-    "objects": [],
+    "objects": [
+      "Rocket",
+      "Mars Rover"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "red planet monkey",
       "redplanetmonkey",
-      "planet",
-      "planet episode"
+      "red planet",
+      "the one where george dreams about going to mars",
+      "the one with mars",
+      "mars monkey",
+      "monkey on mars",
+      "space monkey",
+      "rocket to mars",
+      "red planet dream",
+      "astronaut george",
+      "outer space"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6208,17 +8193,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Tortillas",
+      "Masa",
+      "Corn"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "tortilla express",
       "tortillaexpress",
-      "tortilla",
-      "tortilla episode",
-      "express",
-      "express episode"
+      "tortila express",
+      "tortia express",
+      "the one where george learns about masa",
+      "the one with the tortillas",
+      "tortillas",
+      "tortias",
+      "masa",
+      "corn tortillas",
+      "making tortillas",
+      "where tortillas come from",
+      "tortilla factory"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6238,16 +8234,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Flag",
+      "Number 100"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george goes for 100",
-      "curiousgeorgegoesfor100",
       "george goes for 100",
-      "goes",
-      "goes episode"
+      "goes for 100",
+      "goes for one hundred",
+      "the one where george makes a flag for the town birthday",
+      "the one with the flag",
+      "town anniversary flag",
+      "100 years",
+      "one hundred years",
+      "hundred stars",
+      "counting to 100",
+      "town birthday party"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6267,7 +8273,10 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Toys",
+      "Toy Box"
+    ],
     "themes": [
       "Learning",
       "Adventure"
@@ -6275,8 +8284,16 @@
     "aliases": [
       "fearless george",
       "fearlessgeorge",
-      "fearless",
-      "fearless episode"
+      "fearles george",
+      "the one where george plays adventure games with his toys",
+      "the one with the toy adventure",
+      "toy adventure",
+      "pretend adventure",
+      "brave george",
+      "monkey hero",
+      "playing pretend with toys",
+      "adventure game",
+      "superhero monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6297,17 +8314,25 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Ruler"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "big, bad hundley",
-      "big,badhundley",
-      "big,",
-      "big, episode",
-      "hundley",
-      "hundley episode"
+      "big bad hundley",
+      "bigbadhundley",
+      "big bad hundly",
+      "the one where hundley wants to be bigger",
+      "the one with big hundley",
+      "hundley wants to be big",
+      "little dog wants to be big",
+      "small dog big dreams",
+      "hundley grows",
+      "hundley is too small",
+      "wiener dog wishes he was bigger",
+      "big doggy"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6327,19 +8352,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Siphon Hose",
+      "Kiddie Pool"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "george's simple siphon",
-      "george'ssimplesiphon",
-      "george's",
-      "george's episode",
-      "simple",
-      "simple episode",
+      "georges simple siphon",
+      "georgessimplesiphon",
+      "simple siphon",
       "siphon",
-      "siphon episode"
+      "syphon",
+      "sifon",
+      "the one where george empties a pool with a siphon",
+      "the one with the siphon hose",
+      "emptying the pool",
+      "draining the pool",
+      "kiddie pool",
+      "water through a hose",
+      "hose trick"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6359,14 +8392,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Submarine",
+      "Fish"
+    ],
     "themes": [
       "Learning",
       "Adventure"
     ],
     "aliases": [
       "submonkey",
-      "submonkey episode"
+      "sub monkey",
+      "submarine monkey",
+      "the one where george goes in a submarine",
+      "the one with the submarine",
+      "submarine",
+      "submarene",
+      "under the sea",
+      "undersea adventure",
+      "monkey under water",
+      "ocean adventure",
+      "yellow submarine monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6387,20 +8433,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Binoculars",
+      "Tracks"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "double-o monkey tracks trouble",
-      "double-omonkeytrackstrouble",
-      "double-o",
-      "double-o episode",
-      "tracks",
-      "tracks episode",
-      "trouble",
-      "trouble episode"
+      "double o monkey tracks trouble",
+      "double o monkey",
+      "doubleo monkey",
+      "the one where george is a spy",
+      "the one with the spy tracks",
+      "spy monkey",
+      "secret agent monkey",
+      "george the spy",
+      "following tracks",
+      "animal tracks",
+      "spy skills",
+      "george helps betsy"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6421,17 +8474,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bat",
+      "Flashlight"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "monkey goes batty",
       "monkeygoesbatty",
-      "goes",
-      "goes episode",
-      "batty",
-      "batty episode"
+      "goes batty",
+      "the one where george and the man sleep in the living room",
+      "the one with the bat",
+      "bat in the house",
+      "batty monkey",
+      "camping in the living room",
+      "sleeping in the living room",
+      "bats",
+      "bat monkey",
+      "living room campout",
+      "george and the man sleep on the couch"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6452,18 +8515,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Balloon",
+      "Goggles"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "curious george and the balloon hound",
-      "curiousgeorgeandtheballoonhound",
       "george and the balloon hound",
-      "balloon",
-      "balloon episode",
-      "hound",
-      "hound episode"
+      "balloon hound",
+      "the one where hundley dreams he can fly",
+      "the one with the flying dog",
+      "flying ace",
+      "hundley flying ace",
+      "flying doggy",
+      "hundley the pilot",
+      "dog with balloons",
+      "balloon dog",
+      "baloon hound"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6483,19 +8554,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dinosaur Bone",
+      "Camera",
+      "Photos"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
-      "george's photo finish",
-      "george'sphotofinish",
-      "george's",
-      "george's episode",
-      "photo",
-      "photo episode",
-      "finish",
-      "finish episode"
+      "georges photo finish",
+      "georgesphotofinish",
+      "photo finish",
+      "the one where george finds a missing dinosaur bone",
+      "the one with the dinosaur bone",
+      "dinosaur bone",
+      "dino bone",
+      "dinosore bone",
+      "missing bone",
+      "museum dinosaur",
+      "photos find the bone",
+      "dinosaur museum"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6516,19 +8595,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Mystery Box",
+      "Gift"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "monkey mystery gift",
       "monkeymysterygift",
-      "mystery",
-      "mystery episode",
-      "gift",
-      "gift episode",
-      "hat",
-      "hat episode"
+      "mystery gift",
+      "mistery gift",
+      "the one where george and allie guess whats in the box",
+      "the one with the mystery box",
+      "mystery box",
+      "whats in the box",
+      "guessing game present",
+      "secret present",
+      "surprise box",
+      "allie and george guess the gift"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6548,22 +8634,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Valentine Cards",
+      "Hearts"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
-      "happy valentine's day, george",
-      "happyvalentine'sday,george",
-      "happy",
-      "happy episode",
-      "valentine's",
-      "valentine's episode",
-      "day,",
-      "day, episode",
-      "car",
-      "car episode"
+      "happy valentines day george",
+      "valentines day george",
+      "valentines day",
+      "valentine day",
+      "the one where george makes valentines",
+      "the one with the valentine cards",
+      "valentine cards",
+      "valentines cards",
+      "valintines",
+      "heart cards",
+      "making valentines",
+      "love cards monkey"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6583,15 +8674,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Deer",
+      "Garden Fence"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "oh deer",
       "ohdeer",
-      "deer",
-      "deer episode"
+      "oh dear",
+      "the one where george keeps a deer out of the garden",
+      "the one with the deer",
+      "deer in the garden",
+      "deer eats the garden",
+      "keep the deer out",
+      "reindeer",
+      "garden fence",
+      "hungry deer",
+      "dear in the garden"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6611,20 +8713,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Dragon Costume",
+      "Drum"
+    ],
     "themes": [
       "Learning",
       "Friendship"
     ],
     "aliases": [
-      "george's curious dragon dance",
-      "george'scuriousdragondance",
-      "george's",
-      "george's episode",
-      "dragon",
-      "dragon episode",
-      "dance",
-      "dance episode"
+      "georges curious dragon dance",
+      "georgescuriousdragondance",
+      "curious dragon dance",
+      "dragon dance",
+      "the one where george does the dragon dance",
+      "the one with the chinese dragon",
+      "chinese new year",
+      "lunar new year",
+      "chinese dragon",
+      "dragon costume",
+      "new year parade",
+      "dragun dance"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6644,17 +8753,28 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Bowling Shoes",
+      "Bowling Ball",
+      "Bowling Pins"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "bowling for bobolinks",
       "bowlingforbobolinks",
-      "bowling",
-      "bowling episode",
+      "bowling for bobolincs",
       "bobolinks",
-      "bobolinks episode"
+      "bobolink",
+      "the one where george sorts bowling shoes",
+      "the one with the bowling alley",
+      "bowling alley",
+      "bowling shoes",
+      "shoes by size",
+      "bowling monkey",
+      "bowling pins",
+      "bolling"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6674,21 +8794,27 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Video Camera",
+      "Rainforest"
+    ],
     "themes": [
       "Learning",
       "Creativity"
     ],
     "aliases": [
-      "curious george's amazon adventure",
-      "curiousgeorge'samazonadventure",
-      "george's amazon adventure",
-      "george's",
-      "george's episode",
-      "amazon",
-      "amazon episode",
-      "adventure",
-      "adventure episode"
+      "curious george amazon adventure",
+      "georges amazon adventure",
+      "amazon adventure",
+      "the one where george makes a rainforest movie",
+      "the one with the rainforest",
+      "amazon rainforest",
+      "rainforest movie",
+      "rain forest",
+      "jungle movie",
+      "monkey in the jungle",
+      "george films the rainforest",
+      "amazone"
     ],
     "source": "Wikipedia/Hulu"
   },
@@ -6708,15 +8834,26 @@
     "settings": [
       "Home"
     ],
-    "objects": [],
+    "objects": [
+      "Nose",
+      "Ears"
+    ],
     "themes": [
       "Learning"
     ],
     "aliases": [
       "monkey senses",
       "monkeysenses",
-      "senses",
-      "senses episode"
+      "monkey sences",
+      "the one where george uses his senses to get home",
+      "the one with the five senses",
+      "five senses",
+      "smell hear see",
+      "finding the way home",
+      "lost monkey finds home",
+      "using your nose",
+      "george finds his way home",
+      "sences"
     ],
     "source": "Wikipedia/Hulu"
   }
