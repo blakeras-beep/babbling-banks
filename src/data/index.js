@@ -12,6 +12,8 @@ import sesameStreet from './episodes/sesame_street.json';
 import danielTiger from './episodes/daniel_tiger.json';
 import mickeyMouseFunhouse from './episodes/mickey_mouse_funhouse.json';
 import missRachel from './episodes/miss_rachel.json';
+import peppaPig from './episodes/peppa_pig.json';
+import pawPatrol from './episodes/paw_patrol.json';
 
 export const SHOWS = shows;
 
@@ -22,6 +24,8 @@ export const EPISODES = [
   ...danielTiger,
   ...mickeyMouseFunhouse,
   ...missRachel,
+  ...peppaPig,
+  ...pawPatrol,
 ];
 
 const EPISODES_BY_ID = new Map(EPISODES.map((episode) => [episode.id, episode]));

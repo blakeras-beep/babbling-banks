@@ -28,14 +28,19 @@ Live at **[babblingbanks.com](https://babblingbanks.com)**.
 
 ## Catalog
 
-| Show                          | Episodes | Source           |
-| ----------------------------- | -------: | ---------------- |
-| Bluey                         |      154 | Wikipedia        |
-| Curious George                |      216 | Wikipedia / Hulu |
-| Sesame Street                 |      325 | AI generated     |
-| Daniel Tiger's Neighborhood   |       64 | AI generated     |
-| Mickey Mouse Funhouse         |       26 | AI generated     |
-| Ms Rachel (Songs for Littles) |       20 | YouTube          |
+| Show                          | Episodes | Seasons | Source                                   |
+| ----------------------------- | -------: | ------- | ---------------------------------------- |
+| Bluey                         |      154 | 1–3     | Wikipedia (numbering re-verified)        |
+| Curious George                |      216 | 1–9     | Wikipedia / Hulu                         |
+| Sesame Street                 |      123 | 53–56   | Titles verified; descriptions AI-written |
+| Daniel Tiger's Neighborhood   |      116 | 1–2     | Titles verified; descriptions AI-written |
+| Mickey Mouse Funhouse         |      108 | 1–2     | Titles verified; descriptions AI-written |
+| Peppa Pig                     |      104 | 1–2     | Titles verified; descriptions AI-written |
+| PAW Patrol                    |       96 | 1–2     | Titles verified; descriptions AI-written |
+| Ms Rachel (Songs for Littles) |       20 | –       | YouTube                                  |
+
+Sesame Street also includes five landmark classic episodes. Counts are stories: shows with
+two stories per episode (Curious George, Daniel Tiger, Mickey, PAW Patrol) list each one.
 
 AI-generated entries are flagged on the episode page. Corrections are very welcome:
 open an issue or a pull request that edits the JSON under `src/data/episodes/`.
