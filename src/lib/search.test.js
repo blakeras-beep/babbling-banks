@@ -106,6 +106,43 @@ describe('searchEpisodes', () => {
   });
 });
 
+describe('catalog queries', () => {
+  // One case per query checked or fixed in the catalog audit: "query" returns the id first.
+  const cases = [
+    ['the one where the dog freezes dad', 'bluey-s1e1'],
+    ['the dog family has a bus', 'bluey-bus'],
+    ['bluey burger shop', 'bluey-burger-shop'],
+    ['bluey dad takes us on piggyback', 'bluey-piggyback'],
+    ['bingo floppy chickenrat', 'bluey-s1e40'],
+    ['monkey flies a kite', 'cg-s1e1a'],
+    ['little fish littler pond', 'cg-s4e5b'],
+    ['a monkeys duckling', 'cg-s5e1b'],
+    ['the one where the pig jumps in muddy puddles', 'peppa_pig-s1e1'],
+    ['george loses his dinosaur', 'peppa_pig-s1e2'],
+    ['dine saw lost', 'peppa_pig-s1e2'],
+    ['the pig with the glasses daddy', 'peppa_pig-s1e9'],
+    ['peppa george has a cold', 'peppa_pig-s2e24'],
+    ['puppies save the turtles', 'paw_patrol-s1e2a'],
+    ['the one where everest joins', 'paw_patrol-s2e6'],
+    ['the puppies and the ghost pirate', 'paw_patrol-s1e10'],
+    ['daniel tiger potty song', 'daniel_tiger-s1e6'],
+    ['daniel tiger trolley ride', 'daniel_tiger-s2e11a'],
+    ['mickey goldfish goofy', 'mickey_mouse_funhouse-s1e2b'],
+    ['elmo slide', 'sesame_street-s54e31'],
+    ['goodbye mr hooper', 'sesame_street-s15e4'],
+    ['snuffleupagus is real', 'sesame_street-s17e1'],
+  ];
+  it.each(cases)('"%s" returns %s first', (query, id) => {
+    expect(searchEpisodes(query)[0]?.episode.id).toBe(id);
+  });
+
+  it('includes every show', () => {
+    for (const showId of Object.keys(SHOWS)) {
+      expect(EPISODES.some((e) => e.show === showId)).toBe(true);
+    }
+  });
+});
+
 describe('generateFollowUps', () => {
   it('returns nothing when the top result is a clear winner', () => {
     expect(generateFollowUps(searchEpisodes('magic xylophone'))).toEqual([]);
