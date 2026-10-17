@@ -1322,7 +1322,8 @@
       "Hospital"
     ],
     "objects": [
-      "Dog"
+      "Drainpipe",
+      "Factory"
     ],
     "themes": [
       "Family"
@@ -1334,12 +1335,18 @@
       "playing work",
       "pretend work",
       "the one where they play work",
-      "going to work game",
-      "office game",
-      "pretend office",
-      "play office",
-      "bluey goes to work",
-      "bingo goes to work"
+      "the one with the drainpipe factory",
+      "drainpipe factory",
+      "drain pipe factory",
+      "pretend factory",
+      "bluey is the boss",
+      "bossy bluey",
+      "bluey the boss",
+      "no dancing at work",
+      "dad cant dance at work",
+      "bandit has a strict boss",
+      "bluey bosses dad around",
+      "the one where dad works for bluey"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -1360,7 +1367,9 @@
       "Home"
     ],
     "objects": [
-      "Video"
+      "Video Camera",
+      "Homemade Film",
+      "Hospital Bed"
     ],
     "themes": [
       "Adventure",
@@ -1374,14 +1383,18 @@
       "wise old wolf hound",
       "wolfhound",
       "wolf hound",
+      "wolfound",
       "barnicus",
-      "bumpy the dog",
+      "barnacus",
       "the one with barnicus",
       "the one where bingo is in hospital",
       "bingo sick in hospital",
+      "bingo in the hospital",
       "bluey makes a movie for bingo",
-      "video for bingo",
-      "bumpy story"
+      "homemade movie for bingo",
+      "barnicus looks for the wolfhound",
+      "quest to save bumpy",
+      "bumpy is sick"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -1449,7 +1462,9 @@
       "Car"
     ],
     "objects": [
-      "Car"
+      "Rubbish",
+      "Drawing",
+      "Recycling"
     ],
     "themes": [
       "Adventure",
@@ -1458,16 +1473,21 @@
     "aliases": [
       "the dump",
       "dump",
+      "thedump",
       "the tip",
       "rubbish dump",
-      "the one where the kids are backpacks",
-      "kids pretend to be backpacks",
-      "mum and dad carry the kids",
-      "cousins backpacking in the backyard",
-      "muffin and socks backpacks",
-      "holiday in the backyard",
-      "carry me backpack",
-      "kids ride on mum and dads backs"
+      "trip to the dump",
+      "the one where they go to the dump",
+      "the one where dad throws out bluey drawing",
+      "dad throws out bluey drawing",
+      "bluey drawing in the rubbish",
+      "dad is the best at the dump",
+      "best dad at the dump",
+      "is dad the best",
+      "dad is not perfect",
+      "drawing gets recycled",
+      "recycling the drawing",
+      "throwing out rubbish with dad"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -1499,15 +1519,20 @@
       "zoo",
       "the zoo",
       "zu",
-      "zoo trip",
-      "the one at the zoo",
-      "visiting the zoo",
-      "family day at the zoo",
-      "zoo animals",
-      "bluey wants to see one animal",
-      "waiting to see the animal",
-      "patience at the zoo",
-      "looking at the animals"
+      "zoo game",
+      "pretend zoo",
+      "playing zoo",
+      "the one where they play zoo",
+      "the one where mum and dad are the animals",
+      "mum and dad pretend to be animals",
+      "home zoo",
+      "backyard zoo",
+      "house turned into a zoo",
+      "bluey runs a zoo",
+      "zookeeper bluey",
+      "zoo keeper",
+      "the one with the zoo map",
+      "zoo map"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -1570,7 +1595,8 @@
       "Home"
     ],
     "objects": [
-      "Bed"
+      "Tennis Ball",
+      "Magic Wand"
     ],
     "themes": [
       "Adventure",
@@ -1583,15 +1609,20 @@
       "the adventure",
       "adventure",
       "adventures",
-      "mum goes to a baby shower",
-      "the one where mum goes out for the night",
-      "dad does bedtime",
-      "bedtime with dad",
-      "bluey misses mum",
-      "missing mum",
-      "pretend baby shower",
-      "bluey cant sleep without mum",
-      "mum is out"
+      "adventshure",
+      "the one where bluey and chloe go on an adventure",
+      "bluey and chloe adventure",
+      "pretend adventure at school",
+      "princess adventure",
+      "the kindly queen",
+      "the greedy queen",
+      "greedy queen freezes everyone",
+      "the one with the magic wand",
+      "princess and the tennis ball",
+      "tennis ball trick",
+      "unfreeze the kingdom",
+      "find food for the people",
+      "taking turns being the princess"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -1616,8 +1647,7 @@
       "Zoo"
     ],
     "objects": [
-      "Bird",
-      "Cat",
+      "Budgie",
       "Car"
     ],
     "themes": [
@@ -1630,17 +1660,20 @@
       "copycat",
       "copy cat",
       "copykat",
+      "kopycat",
       "the one with the budgie",
       "injured budgie",
       "budgie dies",
       "the bird that dies",
       "dead bird",
       "the one where they find a hurt bird",
-      "taking the bird to the vet",
+      "dad takes the budgie to the vet",
       "bluey copies dad",
-      "bluey copies everything",
+      "bluey copies everything dad does",
+      "copying daddy",
+      "bluey plays vet with mum",
       "sad budgie episode",
-      "pretend vet"
+      "pretend vet with mum"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -1662,7 +1695,8 @@
       "Home"
     ],
     "objects": [
-      "Bed"
+      "Bed",
+      "Pyjamas"
     ],
     "themes": [
       "Sports",
@@ -1681,11 +1715,14 @@
       "muffin is tired",
       "sleepy muffin",
       "grumpy muffin",
+      "overtired muffin",
       "muffin stops napping",
+      "muffin gives up naps",
       "no more naps",
       "staying up late",
-      "muffin cant sleep",
-      "cousin sleepover"
+      "help muffin go to sleep",
+      "cousin sleepover",
+      "muffin sleeps at bluey house"
     ],
     "source": "Wikipedia"
   },
@@ -3094,6 +3131,7 @@
       "Home"
     ],
     "objects": [
+      "Breakfast Tray",
       "Costumes"
     ],
     "themes": [
@@ -3104,16 +3142,21 @@
     "aliases": [
       "the show",
       "show",
+      "theshow",
       "the one where they put on a show",
-      "putting on a show for mum",
       "mothers day show",
+      "mothers day",
       "mums show",
-      "show for mum and dad",
-      "costumes and music",
-      "dress ups show",
-      "singing and dancing show",
-      "the concert",
-      "performance for mum"
+      "show for mum",
+      "play about mum and dad",
+      "how mum and dad met",
+      "the one where bingo drops the breakfast",
+      "bingo drops mums breakfast",
+      "breakfast in bed",
+      "spilled breakfast in bed",
+      "bingo ruined mothers day",
+      "bluey and bingo put on a play",
+      "mothers day play"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -3343,7 +3386,7 @@
       "Restaurant"
     ],
     "objects": [
-      "Parenting Book"
+      "Tree Stump"
     ],
     "themes": [
       "Creativity",
@@ -3351,18 +3394,22 @@
     ],
     "aliases": [
       "helicopter",
-      "helicopter parent",
       "helicoptor",
       "hellicopter",
-      "the one with the parenting book",
-      "the one where dad reads a parenting book",
-      "helicopter parenting",
-      "dad lets them choose",
-      "girls make their own choices",
-      "bandit reads a book about parenting",
-      "letting kids decide",
-      "dad stops helping",
-      "parenting book"
+      "helicoper",
+      "helicopta",
+      "the one with the helicopter",
+      "the one with the tree stump",
+      "tree stump helicopter",
+      "helicopter game",
+      "pretend helicopter",
+      "helicopter at school",
+      "bluey wants to be the pilot",
+      "bluey is the pilot",
+      "sharing the controls",
+      "taking turns flying",
+      "flying a stump helicopter",
+      "helicopter pilot"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -3686,7 +3733,8 @@
       "Park"
     ],
     "objects": [
-      "Ringmaster Hat"
+      "Ringmaster Hat",
+      "Motorbike"
     ],
     "themes": [
       "Creativity",
@@ -3697,16 +3745,20 @@
       "circus",
       "circus game",
       "cirkus",
+      "sircus",
       "the one with the circus",
-      "the one where bluey is the ringleader",
-      "election day",
-      "pretend circus at the park",
-      "circus show",
-      "ringleader bluey",
+      "the one where bluey is the ringmaster",
+      "ringmaster bluey",
+      "ring master",
+      "ringmaster hat",
+      "hercules motorbike",
+      "hercules motorcycle game",
+      "hercules wants to play motorbikes",
+      "motorbike game",
+      "circus at school",
+      "pretend circus",
       "kids put on a circus",
-      "circus performers",
-      "circus tricks",
-      "make believe circus"
+      "everyone happy circus"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -3782,6 +3834,7 @@
       "cafe",
       "the cafe",
       "caffe",
+      "kafe",
       "the one where bluey meets winnie",
       "the one with winnie and fido",
       "winnie and her dad",
@@ -3791,8 +3844,9 @@
       "dad gets coffee at the park",
       "bluey makes a new friend",
       "every morning at the park",
-      "winnie episode",
-      "fido episode"
+      "dad makes a dad friend",
+      "winnie and fido",
+      "coffee at the park"
     ],
     "source": "Wikipedia"
   },
@@ -3823,19 +3877,22 @@
     ],
     "aliases": [
       "postman",
-      "postman and grounds lava",
-      "postmanandgroundslava",
-      "grounds lava",
-      "the floor is lava",
+      "post man",
+      "postie",
+      "postmen",
       "the one where mum and dad argue",
       "the one where bluey delivers a letter",
       "sorry letter",
       "apology letter",
       "bluey is the postie",
-      "mum and dad have a fight",
       "postie bluey",
+      "mum and dad have a fight",
       "dad says sorry to mum",
-      "floor is lava"
+      "letter for mum",
+      "bluey delivers dads letter",
+      "mailbag",
+      "playing postman",
+      "mum and dad make up"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -3868,16 +3925,19 @@
       "the quiet game",
       "quiet game",
       "quietgame",
+      "kwiet game",
       "the one where dad tricks them to be quiet",
       "the one with the quiet game",
       "be quiet game",
       "shh game",
+      "shush game",
       "who can be quiet the longest",
       "too loud",
+      "girls are too loud",
       "dad needs quiet",
       "silence game",
       "no talking game",
-      "sneaky dad quiet"
+      "sneaky dad quiet game"
     ],
     "source": "Wikipedia"
   },
@@ -4367,15 +4427,19 @@
       "type writer",
       "typwriter",
       "tipewriter",
-      "the one where calypso tells a story",
-      "the one where bluey doesnt like the ending",
+      "the one with the typewriter",
+      "the one with the terriers",
+      "terriers ambush",
+      "ambushed by the terriers",
+      "bluey snickers and winton",
+      "snickers and winton",
+      "going to see calypso",
+      "ask calypso for help",
+      "everyone uses their talent",
+      "special talents",
+      "getting past the terriers",
       "calypso story time",
-      "bad ending",
-      "story ending",
-      "bluey unhappy with the story",
-      "story at school",
-      "calypsos story",
-      "story with a bad ending"
+      "story at school"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -4832,7 +4896,8 @@
       "Restaurant"
     ],
     "objects": [
-      "Unicorse Puppet"
+      "Unicorse Puppet",
+      "Story Book"
     ],
     "themes": [
       "Food",
@@ -4840,19 +4905,22 @@
     ],
     "aliases": [
       "unicorse",
-      "unicorn",
       "unicorse puppet",
       "unicourse",
       "uni corse",
+      "unicorce",
       "the one with unicorse",
       "the one where dad is unicorse",
       "rude unicorn",
-      "good manners at dinner",
-      "table manners",
+      "rude unicorn puppet",
+      "cheeky unicorn puppet",
       "naughty unicorn puppet",
-      "unicorse at dinnertime",
-      "manners episode",
-      "bandit as unicorse"
+      "unicorn hand puppet",
+      "bandit as unicorse",
+      "bluey cant get to sleep",
+      "mum reads a bedtime story",
+      "unicorse ruins the story",
+      "puppet interrupts the story"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -5556,8 +5624,8 @@
       "Home"
     ],
     "objects": [
-      "Doll",
-      "Ice Cream"
+      "Ice Cream",
+      "Car"
     ],
     "themes": [
       "Family",
@@ -5567,16 +5635,20 @@
       "ragdoll",
       "rag doll",
       "raggdoll",
-      "the one where they want ice cream money",
-      "the one about hard work",
-      "work for your money",
-      "earn your ice cream",
-      "dads money",
-      "buying ice cream with dad money",
-      "hard work",
+      "ragdol",
+      "the one where dad is a ragdoll",
+      "floppy dad",
+      "floppy daddy",
+      "dad goes floppy",
       "floppy ragdoll",
-      "bandit teaches hard work",
-      "save up for ice cream"
+      "ragdoll mode",
+      "get dad into the car",
+      "dragging dad to the car",
+      "ice cream if they get dad in the car",
+      "the one where they want ice cream",
+      "ice cream at the shops",
+      "dad goes limp",
+      "bluey and bingo carry dad"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -5609,16 +5681,19 @@
       "fairy tale",
       "fairytail",
       "fairy tail",
-      "the one with the fairytale",
       "the one where dad tells a fairytale",
-      "once upon a time",
-      "bedtime story",
-      "dad tells a story",
-      "fairy story",
-      "dads story",
-      "story time",
-      "bandit fairytale",
-      "happily ever after"
+      "dads fairytale",
+      "true fairytale",
+      "bandit tells a true story",
+      "dad growing up in the 80s",
+      "the eighties",
+      "the 80s story",
+      "wild place called the 80s",
+      "cursed boy",
+      "the one where dad was mean to his brother",
+      "bandit and his little brother",
+      "uncle rad",
+      "mean to little brother"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -5692,17 +5767,22 @@
     "aliases": [
       "stories",
       "storys",
-      "the one where calypso tells a story about indy",
+      "storeys",
       "the one with the beeswax horse",
       "beeswax horse",
-      "indy makes a horse",
-      "indys horse",
-      "calypso story",
-      "story time at school",
-      "making a horse out of beeswax",
-      "indy craft horse",
+      "bees wax horse",
       "wax horse",
-      "indy episode"
+      "indy makes a horse",
+      "indys horse looks like a cow",
+      "horse that looks like a cow",
+      "indy horse cow",
+      "making a horse out of beeswax",
+      "dont give up indy",
+      "major tom",
+      "major tom the horse",
+      "horse next door",
+      "lin manuel miranda horse",
+      "indy and winton"
     ],
     "source": "AI Generated (titles verified)"
   },
