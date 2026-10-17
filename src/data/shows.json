@@ -164,5 +164,34 @@
       "ryder",
       "chase"
     ]
+  },
+  "trash_truck": {
+    "id": "trash_truck",
+    "name": "Trash Truck",
+    "emoji": "🚛",
+    "description": "Six-year-old Hank and his best friend, a giant garbage truck, explore the world together",
+    "color": "#6CC24A",
+    "accentColor": "#F4A300",
+    "platform": "Netflix",
+    "platformUrl": "https://www.netflix.com/search?q=trash%20truck",
+    "network": "Netflix",
+    "isYouTube": false,
+    "ageRange": "2-5",
+    "episodeLength": "13 min",
+    "mainCharacters": ["Hank", "Trash Truck", "Walter", "Donny", "Ms. Mona"],
+    "keywords": [
+      "trash truck",
+      "the truck",
+      "garbage truck",
+      "the garbage truck",
+      "rubbish truck",
+      "big truck",
+      "green truck",
+      "hank",
+      "hank and the truck",
+      "trash trick",
+      "trashtruck",
+      "truck show"
+    ]
   }
 }
