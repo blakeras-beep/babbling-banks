@@ -1,11 +1,11 @@
 {
   "name": "Babbling Banks",
   "short_name": "Babbling Banks",
-  "description": "Find any toddler TV episode from a chaotic description",
+  "description": "Find any toddler TV episode from whatever the kid said",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FAFBFC",
-  "theme_color": "#2E9B9B",
+  "background_color": "#F5F6F2",
+  "theme_color": "#F5F6F2",
   "icons": [
     { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }

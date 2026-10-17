@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Puff;src:url(../assets/fonts/DynaPuff-600.woff2);font-weight:600}
+@font-face{font-family:Dela;src:url(../assets/fonts/DelaGothicOne-400.woff2)}
+@font-face{font-family:Atk;src:url(../assets/fonts/AtkinsonHyperlegibleNext-400.woff2);font-weight:400}
+@font-face{font-family:Atk;src:url(../assets/fonts/AtkinsonHyperlegibleNext-700.woff2);font-weight:700}
+@font-face{font-family:Mono;src:url(../assets/fonts/IBMPlexMono-500.woff2)}
+:root{--paper:#F5F6F2;--tape:#fff;--ink:#1D1C1F;--muted:#5E615A;--cobalt:#3550B8;--sunk:#E8EAE4}
+*{box-sizing:border-box}body{margin:0;background:#E9EAEE;padding:40px;font-family:Atk}p{margin:0}
+.lab{font:700 15px/1.3 Atk;color:#333;margin:0 0 12px}.board{display:flex;gap:40px;align-items:flex-start}
+.phone{width:375px;height:780px;overflow:hidden;position:relative;border-radius:28px;box-shadow:0 0 0 1px rgba(0,0,0,.08);background:var(--paper);color:var(--ink)}
+.hd{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;position:relative;z-index:3}
+.hd img{height:24px}
+.band{height:250px;overflow:hidden}.band img{width:100%;height:100%;object-fit:cover;object-position:30% 40%;display:block}
+.tape{background:var(--tape);position:relative}
+.head{margin:-62px 14px 0;padding:16px 18px 18px;transform:rotate(-2.5deg);z-index:2}
+.head p{font:400 38px/.98 Dela;letter-spacing:-.4px}
+.body{padding:0 18px;position:relative}
+.lead{font:700 16px/1.4 Atk;margin-top:20px;max-width:300px}
+.field{margin-top:20px;padding:16px 56px 16px 16px;font:700 22px/1.1 Atk;color:var(--muted)}
+.field i{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--ink);font-style:normal}
+.cline{display:block;height:14px;background:url(../assets/art/crayon-line-cobalt.png) left center/100% 100% no-repeat}
+.field+.cline{margin:6px 0 0 -4px}
+.btn{position:relative;display:inline-block;margin-top:22px;font:400 22px/1 Dela;color:var(--paper);background:var(--ink);padding:18px 34px;transform:rotate(1.5deg)}
+.try{margin-top:22px;font:600 18px/1.1 Puff}
+.chips{margin-top:6px;display:flex;flex-direction:column;gap:0}
+.chips span{font:700 17px/1 Atk;min-height:44px;display:flex;align-items:center;color:var(--cobalt)}
+.credit{position:absolute;right:16px;bottom:12px;font:400 11px/1 Atk;color:var(--muted)}
+/* results */
+.bg{position:absolute;left:0;right:0;top:56px;height:430px;overflow:hidden}.bg img{width:100%;height:100%;object-fit:cover;object-position:35% 40%}
+.rb{position:relative;z-index:2;padding:12px 18px 0}
+.quote{padding:16px 16px 18px;transform:rotate(-2deg);font:400 26px/1.15 Dela;letter-spacing:-.3px;margin-top:6px}
+.sw{position:relative;display:inline-block;z-index:0}
+.sw::before{content:"";position:absolute;left:-.18em;right:-.18em;top:.12em;bottom:-.08em;background:url(../assets/art/crayon-swipe-lemon.png) center/100% 100% no-repeat;z-index:-1}
+.sw.b::before{background-image:url(../assets/art/crayon-swipe-lemon-2.png)}
+.arrowrow{display:flex;align-items:flex-end;gap:6px;height:84px;margin:4px 0 2px 34px}
+.arrowrow img{width:86px;height:82px}
+.found{font:600 18px/1 Puff;color:var(--cobalt);background:var(--tape);padding:7px 10px;margin-bottom:18px;transform:rotate(-4deg)}
+.card{padding:22px 18px 18px;transform:rotate(1deg)}
+.card h2{margin:0;font:400 30px/1 Dela}
+.meta{margin-top:10px;display:flex;gap:10px;align-items:center;font:700 13px/1 Atk}
+.meta .show{color:var(--cobalt)}
+.th{margin-top:14px;height:120px;background:var(--sunk);display:flex;align-items:center;justify-content:center;font:700 13px Atk;color:var(--muted)}
+.also{margin-top:26px;font:600 18px/1.1 Puff}
+.row{display:flex;align-items:center;gap:12px;padding:14px 0 10px;font:400 17px/1.1 Dela}
+.row small{display:block;font:700 13px Atk;margin-top:4px;color:var(--muted)}
+.row .hv{margin-left:auto}
+
+.board{gap:32px}
+.band.scrib{height:auto}.band.scrib img{height:auto;display:block}
+.ghost{display:inline-block;margin-top:14px;font:700 17px/1.25 Atk;color:var(--ink);background:var(--tape);border:2px solid var(--ink);padding:12px 18px}
+.wall{display:grid;grid-template-columns:1fr 1fr;gap:20px 14px;margin-top:20px;align-items:start}
+.wall figure{margin:0}.wall img{width:100%;display:block}
+.wall figcaption{margin-top:6px;font:400 11px/1.35 Atk;color:var(--muted)}.wall figcaption b{display:block;font:600 13px/1.2 Puff;color:var(--ink)}
+.ahead{margin:22px 14px 0}
+.sm{font:400 15px/1.45 Atk;margin-top:16px;max-width:320px}
+.qs{margin:14px 14px 0;padding:14px 16px;transform:rotate(-2deg);font:400 22px/1.15 Dela}
+.qs small{display:block;margin-top:8px;font:700 13px/1.3 Atk;color:var(--muted)}
+.spot{margin:34px 18px 0;padding:22px 18px 20px;text-align:center}
+.spot img{width:auto;max-width:70%;height:240px;object-fit:contain;display:block;margin:0 auto}
+.spot h1{margin:14px 0 6px;font:400 22px/1.1 Dela}
+.spot p{font:400 15px/1.45 Atk}
+.spot .ghost{margin-top:16px}
+.dots{font:600 18px/1 Puff;color:var(--cobalt);margin-top:10px}
+</style></head><body>
+<p class="lab">Babbling Banks v1.5 · 404 (Black and Blue, whole), the art page (every piece whole, with a wall label), loading (Green Leaf), offline (Cone Flat)</p>
+<div class="board">
+<div class="phone"><div class="hd"><img src="../assets/logo/wordmark.svg" alt="babbling banks"><span><svg width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Zm-5.49,142.36A328.69,328.69,0,0,1,128,210.16a328.69,328.69,0,0,1-44.51-31.8C61.82,159.77,36,131.42,36,102A42,42,0,0,1,78,60c17.8,0,32.7,9.4,38.89,24.54a12,12,0,0,0,22.22,0C145.3,69.4,160.2,60,178,60a42,42,0,0,1,42,42C220,131.42,194.18,159.77,172.51,178.36Z"/></svg></span></div>
+ <div class="band scrib"><img src="../assets/art/scribble-01-cutout.png" alt=""></div>
+ <div class="tape head"><p>Lost the<br>thread.</p></div>
+ <div class="body">
+  <p class="lead">This page wandered off. Happens to the best of us.</p>
+  <span class="btn">Back to finding</span>
+ </div>
+ <span class="credit">Art by Banks · Black and Blue</span>
+</div>
+<div class="phone"><div class="hd"><img src="../assets/logo/wordmark.svg" alt="babbling banks"><span><svg width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Zm-5.49,142.36A328.69,328.69,0,0,1,128,210.16a328.69,328.69,0,0,1-44.51-31.8C61.82,159.77,36,131.42,36,102A42,42,0,0,1,78,60c17.8,0,32.7,9.4,38.89,24.54a12,12,0,0,0,22.22,0C145.3,69.4,160.2,60,178,60a42,42,0,0,1,42,42C220,131.42,194.18,159.77,172.51,178.36Z"/></svg></span></div>
+ <div class="tape head ahead"><p>Art by<br>Banks.</p></div>
+ <div class="body">
+  <p class="sm">Every picture here was made by Banks, the toddler this app is named for. Crayon, finger paint, tape, stars. We just cleaned them up.</p>
+  <div class="wall"><figure><img src="../assets/art/tape-resist-01-1600.jpg" alt="Blue and Yellow, by Banks"><figcaption><b>Blue and Yellow</b>crayon over masking tape</figcaption></figure><figure><img src="../assets/art/collage-01-1600.jpg" alt="Geometric Collage, by Banks"><figcaption><b>Geometric Collage</b>cut paper, paint dots</figcaption></figure><figure><img src="../assets/art/stars-01-1600.jpg" alt="Purple Starfield, by Banks"><figcaption><b>Purple Starfield</b>finger paint, foil stars</figcaption></figure><figure><img src="../assets/art/leaf-01-1600.jpg" alt="Green Leaf, by Banks"><figcaption><b>Green Leaf</b>paint over a tape leaf</figcaption></figure><figure><img src="../assets/art/swirl-01-1600.jpg" alt="Mint and Blue, by Banks"><figcaption><b>Mint and Blue</b>finger paint</figcaption></figure><figure><img src="../assets/art/scribble-01-1600.jpg" alt="Black and Blue, by Banks"><figcaption><b>Black and Blue</b>marker</figcaption></figure></div>
+ </div>
+</div>
+<div class="phone"><div class="hd"><img src="../assets/logo/wordmark.svg" alt="babbling banks"><span><svg width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Zm-5.49,142.36A328.69,328.69,0,0,1,128,210.16a328.69,328.69,0,0,1-44.51-31.8C61.82,159.77,36,131.42,36,102A42,42,0,0,1,78,60c17.8,0,32.7,9.4,38.89,24.54a12,12,0,0,0,22.22,0C145.3,69.4,160.2,60,178,60a42,42,0,0,1,42,42C220,131.42,194.18,159.77,172.51,178.36Z"/></svg></span></div>
+ <div class="tape qs">“the purple one where they go up”<small>You said</small></div>
+ <div class="tape spot"><img src="../assets/art/leaf-01-cutout.png" alt=""><h1>Thinking about it.</h1><p class="dots">decoding…</p></div>
+ <span class="credit">Art by Banks · Green Leaf</span>
+</div>
+<div class="phone"><div class="hd"><img src="../assets/logo/wordmark.svg" alt="babbling banks"><span><svg width="24" height="24" viewBox="0 0 256 256" fill="currentColor"><path d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Zm-5.49,142.36A328.69,328.69,0,0,1,128,210.16a328.69,328.69,0,0,1-44.51-31.8C61.82,159.77,36,131.42,36,102A42,42,0,0,1,78,60c17.8,0,32.7,9.4,38.89,24.54a12,12,0,0,0,22.22,0C145.3,69.4,160.2,60,178,60a42,42,0,0,1,42,42C220,131.42,194.18,159.77,172.51,178.36Z"/></svg></span></div>
+ <div class="tape spot" style="margin-top:56px"><img src="../assets/art/cone-01-cutout.png" alt=""><h1>No internet.</h1><p>We need it to look things up. Your repeat offenders still work.</p><span class="ghost">Try again</span></div>
+ <span class="credit">Art by Banks · Cone Flat</span>
+</div>
+</div></body></html>

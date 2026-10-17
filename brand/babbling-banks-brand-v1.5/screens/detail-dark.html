@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../assets/logo/mark-app-icon.svg" type="image/svg+xml">
+<title>Coco Learns to Ride · Babbling Banks</title>
+<style>
+  @font-face { font-family: "DynaPuff"; src: url("../assets/fonts/DynaPuff-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+  @font-face { font-family: "Dela Gothic One"; src: url("../assets/fonts/DelaGothicOne-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Atkinson Hyperlegible Next"; src: url("../assets/fonts/AtkinsonHyperlegibleNext-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Atkinson Hyperlegible Next"; src: url("../assets/fonts/AtkinsonHyperlegibleNext-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: "IBM Plex Mono"; src: url("../assets/fonts/IBMPlexMono-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+
+  :root {
+    color-scheme: light; /* Light only in v1 */
+    --ink: #1D1C1F;
+    --on-ink: #F5F6F2;
+    --paper: #F5F6F2;
+    --tape: #FFFFFF;
+    --sunk: #E8EAE4;
+    --muted: #5E615A;
+    --cobalt: #3550B8;
+    --lemon: #EEE45E;
+    --danger: #B3271F;
+    --f-playful: "DynaPuff", "Arial Rounded MT Bold", sans-serif;
+    --f-dela: "Dela Gothic One", "Arial Black", sans-serif;
+    --f-body: "Atkinson Hyperlegible Next", Verdana, sans-serif;
+    --f-mono: "IBM Plex Mono", Menlo, monospace;
+    --gutter: 18px;
+    --col: 560px;
+  }
+  @media (min-width: 600px) { :root { --gutter: 48px; } }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 16px/1.5 var(--f-body);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .icon { width: 24px; height: 24px; fill: var(--ink); display: block; flex: none; }
+
+  /* Header */
+  .header {
+    height: 56px;
+    background: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 calc(var(--gutter) - 12px) 0 calc(var(--gutter) - 12px);
+  }
+  .header-left { display: flex; align-items: center; gap: 4px; }
+  .wordmark { display: block; padding: 0 12px; } /* 12px ~ clear space (1x "b" = 13px at this size, partly inside the SVG viewBox) */
+  .wordmark img { display: block; height: 24px; width: auto; }
+  .tap { width: 48px; height: 48px; display: grid; place-items: center; border: 0; background: none; padding: 0; cursor: pointer; color: var(--ink); text-decoration: none; }
+
+  /* Art band */
+  .art-band { position: relative; height: 120px; overflow: hidden; }
+  .art-band img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; }
+
+  /* Column */
+  main { flex: 1; }
+  .col { width: calc(100% - 2 * var(--gutter)); max-width: var(--col); margin-left: var(--gutter); }
+
+  /* Tape strips */
+  .tape { background: var(--tape); padding: 16px 18px; }
+
+  /* Result card (+1deg) */
+  .result-card {
+    position: relative;
+    margin-top: -48px; /* overlaps the art band, text sits on tape */
+    padding: 22px 18px;
+    transform: rotate(1deg);
+  }
+  .result-card h1 { font: 400 30px/1.0 var(--f-dela); margin: 0 0 12px; letter-spacing: 0; text-wrap: balance; }
+  .caption-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 0 0 16px; }
+  .show-name { font: 700 13px/1.3 var(--f-body); color: var(--cobalt); }
+  .code { font: 500 13px/1.3 var(--f-mono); color: var(--ink); }
+  .runtime { font: 700 13px/1.3 var(--f-body); color: var(--ink); }
+  .thumb {
+    aspect-ratio: 16 / 9;
+    background: var(--sunk);
+    color: var(--muted);
+    font: 700 13px/1.3 var(--f-body);
+    display: grid;
+    place-items: center;
+  }
+
+  /* Primary button: ink block, +1.5deg */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+    padding: 18px 34px;
+    background: var(--ink);
+    color: var(--on-ink);
+    font: 400 22px/1 var(--f-dela);
+    border: 0;
+    border-radius: 0;
+    transform: rotate(1.5deg);
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 26px;
+  }
+  .btn-primary:hover { background: #34333A; }
+  .btn-primary:active { transform: rotate(0deg) translateY(2px); }
+
+  .description { margin: 24px 0 0; font: 400 16px/1.5 var(--f-body); }
+
+  /* Small text actions (save / share) */
+  .actions { display: flex; flex-wrap: wrap; gap: 0 24px; margin-top: 12px; margin-left: -12px; }
+  .text-action {
+    display: inline-flex; align-items: center; gap: 8px;
+    min-height: 48px; padding: 0 12px;
+    font: 700 17px/1.25 var(--f-body); color: var(--ink);
+    background: none; border: 0; cursor: pointer; text-decoration: none;
+  }
+
+  /* Section label */
+  .section-label { font: 600 18px/1.1 var(--f-playful); color: var(--ink); margin: 40px 0 8px; }
+
+  /* Song rows */
+  .songs { list-style: none; margin: 0; padding: 0; }
+  .song {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    min-height: 52px; padding: 12px 0;
+  }
+  .song-name { font: 700 17px/1.25 var(--f-body); }
+  .song-time { font: 500 13px/1.3 var(--f-mono); color: var(--ink); flex: none; }
+  .song { position: relative; }
+  .song + .song { margin-top: 10px; }
+  .song + .song::before {
+    content: ""; position: absolute; left: 0; top: -10px;
+    height: 10px; width: 85%;
+    background: url("../assets/art/crayon-line-cobalt.png") center / 100% 100% no-repeat;
+  }
+
+  /* Quote strip (-2deg) */
+  .quote-strip {
+    margin-top: 16px;
+    padding: 16px;
+    transform: rotate(-2deg);
+  }
+  .quote-strip p { margin: 0; font: 400 26px/1.15 var(--f-dela); letter-spacing: -0.01em; }
+  .nowrap { white-space: nowrap; }
+  .match { position: relative; isolation: isolate; display: inline-block; }
+  .match::before {
+    content: ""; position: absolute; z-index: -1;
+    left: -0.18em; right: -0.18em; top: 0.12em; bottom: -0.08em;
+    background: url("../assets/art/crayon-swipe-lemon.png") center / 100% 100% no-repeat;
+  }
+  .match.alt::before { background-image: url("../assets/art/crayon-swipe-lemon-2.png"); }
+
+  /* Credit */
+  .credit-row { padding: 32px 16px 12px; text-align: right; }
+  .credit { font: 400 11px/1 var(--f-body); color: var(--muted); }
+</style>
+
+<style id="night">
+:root{color-scheme:dark;--paper:#111613;--sunk:#1B211D;--ink:#EEF1EC;--on-ink:#111613;--muted:#9AA39C;--cobalt:#8FA6F2;--danger:#FF8A80}
+body,.phone{background:#111613 !important;color:#EEF1EC}
+.tape,.tape *{--ink:#1D1C1F;--muted:#5E615A;--cobalt:#3550B8;--sunk:#E8EAE4}
+.tape{color:#1D1C1F}
+[class*="cline"],.crayon-line,.cl{filter:brightness(1.6) saturate(.8)}
+.btn,.btn-primary{background:#EEF1EC !important;color:#111613 !important}
+.btn-secondary{color:#1D1C1F !important;border-color:#1D1C1F !important}
+.arrowrow img,img[src*="crayon-arrow"]{filter:invert(1) brightness(.95)}
+</style></head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-heart" viewBox="0 0 256 256"><path d="M178,36c-20.09,0-37.92,7.93-50,21.56C115.92,43.93,98.09,36,78,36a66.08,66.08,0,0,0-66,66c0,72.34,105.81,130.14,110.31,132.57a12,12,0,0,0,11.38,0C138.19,232.14,244,174.34,244,102A66.08,66.08,0,0,0,178,36Zm-5.49,142.36A328.69,328.69,0,0,1,128,210.16a328.69,328.69,0,0,1-44.51-31.8C61.82,159.77,36,131.42,36,102A42,42,0,0,1,78,60c17.8,0,32.7,9.4,38.89,24.54a12,12,0,0,0,22.22,0C145.3,69.4,160.2,60,178,60a42,42,0,0,1,42,42C220,131.42,194.18,159.77,172.51,178.36Z"/></symbol>
+    <symbol id="i-caret-left" viewBox="0 0 256 256"><path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"/></symbol>
+    <symbol id="i-share" viewBox="0 0 256 256"><path d="M176,156a43.78,43.78,0,0,0-29.09,11L106.1,140.8a44.07,44.07,0,0,0,0-25.6L146.91,89a43.83,43.83,0,1,0-13-20.17L93.09,95a44,44,0,1,0,0,65.94L133.9,187.2A44,44,0,1,0,176,156Zm0-120a20,20,0,1,1-20,20A20,20,0,0,1,176,36ZM64,148a20,20,0,1,1,20-20A20,20,0,0,1,64,148Zm112,72a20,20,0,1,1,20-20A20,20,0,0,1,176,220Z"/></symbol>
+  </svg>
+
+  <header class="header">
+    <div class="header-left">
+      <a class="tap" href="#results" aria-label="Back to results"><svg class="icon" aria-hidden="true"><use href="#i-caret-left"/></svg></a>
+      <a class="wordmark" href="#home"><img src="../assets/logo/wordmark-reversed.svg" alt="babbling banks" width="136" height="24"></a>
+    </div>
+    <a class="tap" href="#repeat-offenders" aria-label="Repeat offenders"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></a>
+  </header>
+
+  <div class="art-band">
+    <img src="../assets/art/night-01-1600.jpg" srcset="../assets/art/night-01-1600.jpg 1600w" sizes="100vw" alt="">
+  </div>
+
+  <main>
+    <div class="col">
+      <article class="tape result-card">
+        <h1>Coco Learns to Ride</h1>
+        <p class="caption-row">
+          <span class="show-name">Coco &amp; Friends</span>
+          <span class="code">S2E14</span>
+          <span class="runtime">11 min</span>
+        </p>
+        <div class="thumb" role="img" aria-label="Episode image placeholder">Episode image</div>
+      </article>
+
+      <a class="btn-primary" href="#play">Play this one</a>
+
+      <p class="description">Coco wants to ride the big bike like Pip does. The helmet goes on, the training wheels come off, and the whole park gets a wobble-by-wobble report before one very proud lap around the duck pond.</p>
+
+      <div class="actions">
+        <button class="text-action" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>Keep it</button>
+        <a class="text-action" href="#share"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>Share the decode</a>
+      </div>
+
+      <h2 class="section-label">songs in this one</h2>
+      <ol class="songs">
+        <li class="song"><span class="song-name">Click goes the helmet</span><span class="song-time"><span class="sr-only">at </span>01:12</span></li>
+        <li class="song"><span class="song-name">Pedal, pedal, pedal</span><span class="song-time"><span class="sr-only">at </span>04:38</span></li>
+        <li class="song"><span class="song-name">Round the duck pond</span><span class="song-time"><span class="sr-only">at </span>09:05</span></li>
+      </ol>
+
+      <h2 class="section-label">what they said</h2>
+      <div class="tape quote-strip">
+        <p><span class="nowrap">&ldquo;the</span> one with the <span class="match">monkey</span> and the <span class="nowrap"><span class="match alt">bike</span>&rdquo;</span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="credit-row"><span class="credit">Art by Banks · Emerald Texture</span></footer>
+</body>
+</html>

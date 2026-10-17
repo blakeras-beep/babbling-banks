@@ -3,55 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Babbling Banks - What Episode Is This?</title>
+    <title>Babbling Banks. Toddler in. Episode out.</title>
     <meta
       name="description"
-      content="Find any toddler TV episode from a chaotic description. Works with Bluey, Curious George, Sesame Street, Daniel Tiger, Ms Rachel and more."
+      content="Find any toddler TV episode from whatever the kid said. Works with Bluey, Curious George, Sesame Street, Daniel Tiger, Ms Rachel and more."
     />
     <link rel="canonical" href="https://babblingbanks.com/" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#2E9B9B" />
+    <meta name="theme-color" content="#F5F6F2" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Babbling Banks" />
     <meta name="format-detection" content="telephone=no" />
 
+    <link
+      rel="preload"
+      href="/fonts/DelaGothicOne-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/AtkinsonHyperlegibleNext-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://babblingbanks.com/" />
-    <meta property="og:title" content="Babbling Banks - What Episode Is This?" />
+    <meta property="og:title" content="Babbling Banks. Toddler in. Episode out." />
     <meta
       property="og:description"
-      content="Find any toddler TV episode from a chaotic description. Works with Bluey, Curious George, Sesame Street, Daniel Tiger, Ms Rachel and more."
+      content="Find any toddler TV episode from whatever the kid said. Works with Bluey, Curious George, Sesame Street, Daniel Tiger, Ms Rachel and more."
     />
     <meta property="og:image" content="https://babblingbanks.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Babbling Banks - What Episode Is This?" />
+    <meta name="twitter:title" content="Babbling Banks. Toddler in. Episode out." />
     <meta
       name="twitter:description"
-      content="Find any toddler TV episode from a chaotic description."
+      content="Find any toddler TV episode from whatever the kid said."
     />
     <meta name="twitter:image" content="https://babblingbanks.com/og-image.png" />
 
     <style>
-      /* Critical CSS: paint the right background before the app loads. */
+      /* Critical CSS: paint paper before the app loads. */
       html {
-        background-color: #fafbfc;
+        background-color: #f5f6f2;
       }
       @media (prefers-color-scheme: dark) {
         html:not([data-theme='light']) {
-          background-color: #0f0f0f;
+          background-color: #111613;
         }
+      }
+      html[data-theme='dark'] {
+        background-color: #111613;
       }
       body {
         margin: 0;
-        font-family:
-          system-ui,
-          -apple-system,
-          sans-serif;
+        font-family: 'Atkinson Hyperlegible Next', Verdana, sans-serif;
       }
     </style>
     <script>

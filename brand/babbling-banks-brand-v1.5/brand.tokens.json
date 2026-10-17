@@ -1,0 +1,367 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "A toddler-episode finder dressed in Banks' own crayon. Tape-resist art frames the screen, content sits on white tape strips, lemon crayon marks what matched, and the copy is in on the joke.",
+  "color": {
+    "$type": "color",
+    "primary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.114,
+          0.11,
+          0.122
+        ],
+        "hex": "#1d1c1f"
+      }
+    },
+    "on-primary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.961,
+          0.965,
+          0.949
+        ],
+        "hex": "#f5f6f2"
+      }
+    },
+    "surface": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.961,
+          0.965,
+          0.949
+        ],
+        "hex": "#f5f6f2"
+      }
+    },
+    "surface-tape": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    "surface-sunk": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.91,
+          0.918,
+          0.894
+        ],
+        "hex": "#e8eae4"
+      }
+    },
+    "text": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.114,
+          0.11,
+          0.122
+        ],
+        "hex": "#1d1c1f"
+      }
+    },
+    "text-muted": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.369,
+          0.38,
+          0.353
+        ],
+        "hex": "#5e615a"
+      }
+    },
+    "crayon-cobalt": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.208,
+          0.314,
+          0.722
+        ],
+        "hex": "#3550b8"
+      }
+    },
+    "crayon-lemon": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.933,
+          0.894,
+          0.369
+        ],
+        "hex": "#eee45e"
+      }
+    },
+    "success": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.122,
+          0.42,
+          0.239
+        ],
+        "hex": "#1f6b3d"
+      }
+    },
+    "warning": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.541,
+          0.325,
+          0
+        ],
+        "hex": "#8a5300"
+      }
+    },
+    "danger": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.702,
+          0.153,
+          0.122
+        ],
+        "hex": "#b3271f"
+      }
+    }
+  },
+  "spacing": {
+    "1": {
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "2": {
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "3": {
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "4": {
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    "6": {
+      "$value": {
+        "value": 48,
+        "unit": "px"
+      }
+    },
+    "8": {
+      "$value": {
+        "value": 64,
+        "unit": "px"
+      }
+    },
+    "12": {
+      "$value": {
+        "value": 96,
+        "unit": "px"
+      }
+    },
+    "$type": "dimension"
+  },
+  "rounded": {
+    "$type": "dimension",
+    "none": {
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      }
+    },
+    "full": {
+      "$value": {
+        "value": 9999,
+        "unit": "px"
+      }
+    }
+  },
+  "typography": {
+    "wordmark": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "DynaPuff, Arial Rounded MT Bold, sans-serif",
+        "fontSize": {
+          "value": 26,
+          "unit": "px"
+        },
+        "fontWeight": 600,
+        "letterSpacing": {
+          "value": -0.01,
+          "unit": "em"
+        }
+      }
+    },
+    "playful": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "DynaPuff, Arial Rounded MT Bold, sans-serif",
+        "fontSize": {
+          "value": 18,
+          "unit": "px"
+        },
+        "fontWeight": 600
+      }
+    },
+    "display": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Dela Gothic One, Arial Black, sans-serif",
+        "fontSize": {
+          "value": 38,
+          "unit": "px"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": -0.01,
+          "unit": "em"
+        }
+      }
+    },
+    "headline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Dela Gothic One, Arial Black, sans-serif",
+        "fontSize": {
+          "value": 30,
+          "unit": "px"
+        },
+        "fontWeight": 400
+      }
+    },
+    "quote": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Dela Gothic One, Arial Black, sans-serif",
+        "fontSize": {
+          "value": 26,
+          "unit": "px"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": -0.01,
+          "unit": "em"
+        }
+      }
+    },
+    "button": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Dela Gothic One, Arial Black, sans-serif",
+        "fontSize": {
+          "value": 22,
+          "unit": "px"
+        },
+        "fontWeight": 400
+      }
+    },
+    "title": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Dela Gothic One, Arial Black, sans-serif",
+        "fontSize": {
+          "value": 17,
+          "unit": "px"
+        },
+        "fontWeight": 400
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Atkinson Hyperlegible Next, Verdana, sans-serif",
+        "fontSize": {
+          "value": 16,
+          "unit": "px"
+        },
+        "fontWeight": 400
+      }
+    },
+    "lead": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Atkinson Hyperlegible Next, Verdana, sans-serif",
+        "fontSize": {
+          "value": 16,
+          "unit": "px"
+        },
+        "fontWeight": 700
+      }
+    },
+    "input": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Atkinson Hyperlegible Next, Verdana, sans-serif",
+        "fontSize": {
+          "value": 22,
+          "unit": "px"
+        },
+        "fontWeight": 700
+      }
+    },
+    "label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Atkinson Hyperlegible Next, Verdana, sans-serif",
+        "fontSize": {
+          "value": 17,
+          "unit": "px"
+        },
+        "fontWeight": 700
+      }
+    },
+    "caption": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Atkinson Hyperlegible Next, Verdana, sans-serif",
+        "fontSize": {
+          "value": 13,
+          "unit": "px"
+        },
+        "fontWeight": 700
+      }
+    },
+    "credit": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Atkinson Hyperlegible Next, Verdana, sans-serif",
+        "fontSize": {
+          "value": 11,
+          "unit": "px"
+        },
+        "fontWeight": 400
+      }
+    },
+    "code": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "IBM Plex Mono, Menlo, monospace",
+        "fontSize": {
+          "value": 13,
+          "unit": "px"
+        },
+        "fontWeight": 500
+      }
+    }
+  }
+}
