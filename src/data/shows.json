@@ -2,7 +2,7 @@
   "bluey": {
     "id": "bluey",
     "name": "Bluey",
-    "emoji": "\ud83d\udc15",
+    "emoji": "🐕",
     "description": "A loveable, inexhaustible six-year-old Blue Heeler dog",
     "color": "#6EC1E4",
     "accentColor": "#FF6B35",
@@ -18,7 +18,7 @@
   "curious_george": {
     "id": "curious_george",
     "name": "Curious George",
-    "emoji": "\ud83d\udc35",
+    "emoji": "🐵",
     "description": "A curious little monkey learns about the world with his friend, The Man with the Yellow Hat",
     "color": "#FFD93D",
     "accentColor": "#8B4513",
@@ -34,7 +34,7 @@
   "sesame_street": {
     "id": "sesame_street",
     "name": "Sesame Street",
-    "emoji": "\ud83c\udf3b",
+    "emoji": "🌻",
     "description": "Big Bird, Elmo, and friends learn letters, numbers, and life lessons on the most famous street in the world",
     "color": "#00A550",
     "accentColor": "#FFD700",
@@ -50,7 +50,7 @@
   "miss_rachel": {
     "id": "miss_rachel",
     "name": "Songs for Littles - Miss Rachel",
-    "emoji": "\ud83d\udc69\u200d\ud83c\udfeb",
+    "emoji": "👩‍🏫",
     "description": "Miss Rachel teaches toddlers words, songs, and signs through engaging educational videos",
     "color": "#FF6B9D",
     "accentColor": "#9B59B6",
@@ -73,7 +73,7 @@
   "daniel_tiger": {
     "id": "daniel_tiger",
     "name": "Daniel Tiger's Neighborhood",
-    "emoji": "\ud83d\udc2f",
+    "emoji": "🐯",
     "description": "Daniel Tiger learns important lessons about emotions and social skills in the Neighborhood of Make-Believe",
     "color": "#FF8C00",
     "accentColor": "#CD853F",
@@ -96,7 +96,7 @@
   "mickey_mouse_funhouse": {
     "id": "mickey_mouse_funhouse",
     "name": "Mickey Mouse Funhouse",
-    "emoji": "\ud83c\udff0",
+    "emoji": "🏰",
     "description": "Mickey and friends visit magical worlds inside Funny, the talking playhouse",
     "color": "#FF0000",
     "accentColor": "#FFD700",
@@ -108,5 +108,61 @@
     "episodeLength": "22 min (two segments)",
     "mainCharacters": ["Mickey", "Minnie", "Goofy", "Donald", "Daisy", "Pluto", "Funny"],
     "keywords": ["mickey", "mouse", "minnie", "funny the funhouse", "disney"]
+  },
+  "peppa_pig": {
+    "id": "peppa_pig",
+    "name": "Peppa Pig",
+    "emoji": "🐷",
+    "description": "Peppa, a cheeky little piggy, lives with her brother George, Mummy Pig and Daddy Pig",
+    "color": "#F28BB1",
+    "accentColor": "#E2403B",
+    "platform": "Paramount+",
+    "platformUrl": "https://www.paramountplus.com/shows/peppa-pig/",
+    "network": "Channel 5 / Nick Jr.",
+    "isYouTube": false,
+    "ageRange": "2-5",
+    "episodeLength": "5 min",
+    "mainCharacters": ["Peppa", "George", "Mummy Pig", "Daddy Pig", "Suzy Sheep"],
+    "keywords": [
+      "pig",
+      "the pig",
+      "pink pig",
+      "piggy",
+      "peppa",
+      "pepper pig",
+      "peppa pig",
+      "muddy puddles",
+      "george pig",
+      "oink"
+    ]
+  },
+  "paw_patrol": {
+    "id": "paw_patrol",
+    "name": "PAW Patrol",
+    "emoji": "🐾",
+    "description": "Ryder and a team of rescue pups keep Adventure Bay safe",
+    "color": "#1F75FE",
+    "accentColor": "#FFD500",
+    "platform": "Paramount+",
+    "platformUrl": "https://www.paramountplus.com/shows/paw-patrol/",
+    "network": "Nick Jr.",
+    "isYouTube": false,
+    "ageRange": "3-6",
+    "episodeLength": "22 min (two stories)",
+    "mainCharacters": ["Ryder", "Chase", "Marshall", "Skye", "Rubble", "Rocky", "Zuma", "Everest"],
+    "keywords": [
+      "the puppies",
+      "puppies",
+      "pups",
+      "dogs",
+      "rescue dogs",
+      "paw patrol",
+      "pup patrol",
+      "paw petrol",
+      "police dog",
+      "fire dog",
+      "ryder",
+      "chase"
+    ]
   }
 }
