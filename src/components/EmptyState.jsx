@@ -1,11 +1,17 @@
-export default function EmptyState({ emoji = '🤔', title, children }) {
+import ExampleSearches from './ExampleSearches.jsx';
+
+/**
+ * A straight tape strip: a Dela 20 line, a body line, and (optionally)
+ * example searches under "try one". The results screen's "That one stumped us."
+ */
+export default function EmptyState({ title, children, examples, onPick }) {
   return (
-    <div className="empty-state" role="status">
-      <div className="empty-state__emoji" aria-hidden="true">
-        {emoji}
-      </div>
-      <div className="empty-state__title">{title}</div>
-      {children && <div>{children}</div>}
-    </div>
+    <section className="tape empty-strip" role="status" aria-labelledby="empty-title">
+      <h1 className="empty-strip__title" id="empty-title">
+        {title}
+      </h1>
+      {children}
+      {examples?.length > 0 && <ExampleSearches examples={examples} onPick={onPick} />}
+    </section>
   );
 }

@@ -1,5 +1,7 @@
 import { useAuth } from '../lib/AuthContext.jsx';
+import Icon from './Icon.jsx';
 
+/** Heart in a 48 px target. Labelled variant reads "Keep it" / "Kept". */
 export default function FavoriteButton({ episode, labelled = false, className = '' }) {
   const { isFavorite, toggleFavorite } = useAuth();
   const saved = isFavorite(episode.id);
@@ -13,16 +15,19 @@ export default function FavoriteButton({ episode, labelled = false, className = 
   return (
     <button
       type="button"
-      className={`favorite-button ${saved ? 'is-saved' : ''} ${labelled ? 'favorite-button--labelled' : ''} ${className}`}
+      className={`${labelled ? 'text-action' : 'tap'} heart-button ${saved ? 'is-saved' : ''} ${className}`.trim()}
       onClick={handleClick}
       aria-pressed={saved}
       aria-label={
-        saved ? `Remove ${episode.title} from favorites` : `Save ${episode.title} to favorites`
+        labelled
+          ? undefined
+          : saved
+            ? `Remove ${episode.title} from repeat offenders`
+            : `Keep ${episode.title} as a repeat offender`
       }
-      title={saved ? 'Remove from favorites' : 'Save to favorites'}
     >
-      <span aria-hidden="true">{saved ? '❤️' : '🤍'}</span>
-      {labelled && <span>{saved ? 'Saved' : 'Save'}</span>}
+      <Icon name={saved ? 'heartFill' : 'heart'} />
+      {labelled && <span>{saved ? 'Kept' : 'Keep it'}</span>}
     </button>
   );
 }
