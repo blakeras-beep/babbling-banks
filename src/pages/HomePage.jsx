@@ -41,18 +41,8 @@ export default function HomePage() {
 
   useDocumentTitle(urlQuery ? `“${urlQuery}”` : '');
 
-  // Keep the URL in sync (debounced) so searches are shareable and the back
-  // button works.
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const trimmed = query.trim();
-      if (trimmed === urlQuery) return;
-      setSearchParams(trimmed ? { q: trimmed } : {}, { replace: true });
-    }, 250);
-    return () => clearTimeout(timer);
-  }, [query, urlQuery, setSearchParams]);
-
-  // Browser back/forward changes the URL; mirror it into the input.
+  // The URL holds the submitted search (shareable, back button works); `query`
+  // is only the draft in the field. Back/forward changes the URL; mirror it in.
   useEffect(() => {
     setQuery((current) => (current.trim() === urlQuery ? current : urlQuery));
   }, [urlQuery]);
@@ -63,13 +53,13 @@ export default function HomePage() {
     setEditing(false);
   }, [urlQuery]);
 
-  const allResults = useMemo(() => searchEpisodes(query, { limit: MAX_RESULTS }), [query]);
+  const allResults = useMemo(() => searchEpisodes(urlQuery, { limit: MAX_RESULTS }), [urlQuery]);
   const results = useMemo(
     () =>
       Object.keys(filters).length
-        ? searchEpisodes(query, { limit: MAX_RESULTS, ...filters })
+        ? searchEpisodes(urlQuery, { limit: MAX_RESULTS, ...filters })
         : allResults,
-    [query, filters, allResults]
+    [urlQuery, filters, allResults]
   );
   const followUps = useMemo(
     () => (Object.keys(filters).length ? [] : generateFollowUps(allResults)),
@@ -80,24 +70,28 @@ export default function HomePage() {
     if (urlQuery.length >= 3 && allResults.length > 0) setRecent(addRecentSearch(urlQuery));
   }, [urlQuery, allResults.length]);
 
-  const hasQuery = query.trim().length > 0;
+  const hasQuery = urlQuery.length > 0;
   const hasResults = hasQuery && results.length > 0;
   const top = hasResults ? results[0] : null;
   const rest = hasResults ? results.slice(1) : [];
-  const matched = useMemo(() => getMatchedWords(query, top), [query, top]);
+  const matched = useMemo(() => getMatchedWords(urlQuery, top), [urlQuery, top]);
   const filterCount = Object.keys(filters).length;
 
   useArtCredit(hasQuery ? (hasResults ? RESULTS_PIECE?.id : EMPTY_PIECE?.id) : HOME_PIECE?.id);
 
   const submit = (value) => {
     const trimmed = value.trim();
-    setSearchParams(trimmed ? { q: trimmed } : {}, { replace: true });
+    setQuery(value);
+    setEditing(false);
+    if (trimmed === urlQuery) return;
+    setSearchParams(trimmed ? { q: trimmed } : {});
   };
   const answerFollowUp = (type, value) => {
     if (value === null) return;
     setFilters((current) => ({ ...current, [type]: value }));
   };
-  // "Say it another way" / "Not it? Add a clue": swap the quote strip for the field.
+  // Tapping the quote, "Say it another way" or "Not it? Add a clue": swap the
+  // quote strip for the field.
   const sayItAnotherWay = () => {
     setEditing(true);
     window.scrollTo({ top: 0 });
@@ -133,7 +127,7 @@ export default function HomePage() {
           <button type="submit" form="home-search" className="btn-primary home__button">
             Find it
           </button>
-          <ExampleSearches examples={HOME_EXAMPLES} onPick={setQuery} />
+          <ExampleSearches examples={HOME_EXAMPLES} onPick={submit} />
           {recent.length > 0 && (
             <section>
               <div className="section-row">
@@ -149,7 +143,7 @@ export default function HomePage() {
               <ul className="examples">
                 {recent.map((item) => (
                   <li key={item}>
-                    <button type="button" className="example-link" onClick={() => setQuery(item)}>
+                    <button type="button" className="example-link" onClick={() => submit(item)}>
                       {'“'}
                       {item}
                       {'”'}
@@ -174,20 +168,13 @@ export default function HomePage() {
       />
       <div className="col">
         {editing ? (
-          <SearchField
-            value={query}
-            onChange={setQuery}
-            onSubmit={(value) => {
-              submit(value);
-              setEditing(false);
-            }}
-            inputRef={inputRef}
-          />
+          <SearchField value={query} onChange={setQuery} onSubmit={submit} inputRef={inputRef} />
         ) : (
           <QuoteStrip
-            text={query}
+            text={urlQuery}
             matched={hasResults ? matched : []}
             caption={hasResults ? undefined : 'You searched'}
+            onClick={sayItAnotherWay}
           />
         )}
 
@@ -198,7 +185,7 @@ export default function HomePage() {
               <p className="found-label">found it</p>
             </div>
             <section aria-live="polite">
-              <ResultCard episode={top.episode} query={query} />
+              <ResultCard episode={top.episode} query={urlQuery} />
             </section>
           </>
         )}
@@ -229,7 +216,7 @@ export default function HomePage() {
         {hasResults && rest.length > 0 && (
           <section>
             <h2 className="section-label">or maybe…</h2>
-            <ResultRows episodes={rest.slice(0, visible).map((r) => r.episode)} query={query} />
+            <ResultRows episodes={rest.slice(0, visible).map((r) => r.episode)} query={urlQuery} />
           </section>
         )}
 
@@ -252,7 +239,7 @@ export default function HomePage() {
 
         {!hasResults && (
           <>
-            <EmptyState title="That one stumped us." examples={EMPTY_EXAMPLES} onPick={setQuery}>
+            <EmptyState title="That one stumped us." examples={EMPTY_EXAMPLES} onPick={submit}>
               <p className="body-text">Try a character, a color, or a song they keep humming.</p>
               {filterCount > 0 && (
                 <p className="body-text">

@@ -444,8 +444,15 @@
   margin-top: 6px;
 }
 .quote-strip__text {
+  display: block;
   font: var(--text-quote);
   letter-spacing: -0.01em;
+}
+.quote-strip--button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: text;
 }
 .quote-strip__caption {
   display: block;

@@ -3,14 +3,21 @@ import { isMatchedWord } from '../lib/matchedWords.js';
 /**
  * The kid's words on a tape strip (-2°), in real quotation marks, with a lemon
  * crayon swipe behind each matched word (max three, alternating the two swipe
- * images). The closing mark stays on the same line as the last word.
+ * images). The closing mark stays on the same line as the last word. With
+ * `onClick` the strip is a button (tap the quote to edit it).
  */
-export default function QuoteStrip({ text, matched = [], caption, className = '' }) {
+export default function QuoteStrip({ text, matched = [], caption, className = '', onClick }) {
   const words = text.trim().split(/\s+/).filter(Boolean);
   let swipe = 0;
+  const Tag = onClick ? 'button' : 'div';
   return (
-    <div className={`tape tape--quote quote-strip ${className}`.trim()}>
-      <p className="quote-strip__text">
+    <Tag
+      className={`tape tape--quote quote-strip ${onClick ? 'quote-strip--button' : ''} ${className}`
+        .replace(/\s+/g, ' ')
+        .trim()}
+      {...(onClick && { type: 'button', onClick, 'aria-label': `Edit search: ${text.trim()}` })}
+    >
+      <span className="quote-strip__text">
         {words.map((word, index) => {
           const first = index === 0;
           const last = index === words.length - 1;
@@ -36,8 +43,8 @@ export default function QuoteStrip({ text, matched = [], caption, className = ''
             </span>
           );
         })}
-      </p>
+      </span>
       {caption && <span className="quote-strip__caption">{caption}</span>}
-    </div>
+    </Tag>
   );
 }
