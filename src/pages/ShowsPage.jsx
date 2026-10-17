@@ -36,6 +36,13 @@ export default function ShowsPage() {
         </a>
         .
       </p>
+      <p className="notice notice--muted">
+        Episode pictures come from{' '}
+        <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
+          TMDB
+        </a>
+        . This product uses the TMDB API but is not endorsed or certified by TMDB.
+      </p>
       <ShowGrid title="all of them" />
     </div>
   );
