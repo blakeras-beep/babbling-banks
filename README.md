@@ -23,7 +23,9 @@ Live at **[babblingbanks.com](https://babblingbanks.com)**.
 - **Favorites that work without an account.** Favorites are saved on your device
   instantly. Sign in to sync them across devices; device favorites are merged into
   your account automatically.
-- **Dark mode** that follows your system setting, with a manual toggle.
+- **Dark mode** ("night") that follows your system setting, with a switch bottom-left.
+- **Art by Banks.** Every picture in the app was made by the toddler it is named for; the
+  credit on each screen links to the collection at `/art`.
 - **Installable.** Add it to your phone's home screen like an app.
 
 ## Catalog
@@ -77,27 +79,36 @@ The same two variables must be set in Vercel for the production site
 
 ## Scripts
 
-| Command                    | What it does                                             |
-| -------------------------- | -------------------------------------------------------- |
-| `npm run dev`              | Start the dev server with hot reload                     |
-| `npm run build`            | Production build into `dist/`                            |
-| `npm run preview`          | Serve the production build locally                       |
-| `npm test`                 | Run the unit tests (search engine, catalog)              |
-| `npm run lint`             | ESLint                                                   |
-| `npm run format`           | Prettier (write)                                         |
-| `npm run validate-catalog` | Check every episode file against the catalog schema      |
-| `npm run generate-catalog` | Add a show to the catalog with Claude (needs an API key) |
-| `npm run check`            | Everything CI runs: lint, validate, test, build          |
+| Command                     | What it does                                                 |
+| --------------------------- | ------------------------------------------------------------ |
+| `npm run dev`               | Start the dev server with hot reload                         |
+| `npm run build`             | Production build into `dist/`                                |
+| `npm run preview`           | Serve the production build locally                           |
+| `npm test`                  | Run the unit tests (search engine, catalog)                  |
+| `npm run lint`              | ESLint                                                       |
+| `npm run format`            | Prettier (write)                                             |
+| `npm run validate-catalog`  | Check every episode file against the catalog schema          |
+| `npm run generate-catalog`  | Add a show to the catalog with Claude (needs an API key)     |
+| `npm run generate-og-image` | Re-render the 1200 × 630 share card to `public/og-image.png` |
+| `npm run screenshots`       | Screenshot every screen (375 and 1440, light and dark)       |
+| `npm run check`             | Everything CI runs: lint, validate, test, build              |
 
 ## Project structure
 
 ```
 .
 ├── index.html                 # HTML entry (meta tags, critical CSS, theme bootstrap)
-├── public/                    # Static assets: logo, icons, manifest, OG image
+├── brand/                     # The brand kit (DESIGN.md is the source of truth)
+├── public/
+│   ├── art/                   # Banks' pieces and the crayon marks
+│   ├── fonts/                 # Self-hosted woff2
+│   ├── logo/                  # Wordmark and app icon SVGs
+│   └── …                      # Icons, manifest, share card
 ├── scripts/
 │   ├── generate-catalog.mjs   # Add a show to the catalog using the Claude API
-│   └── validate-catalog.mjs   # Schema + consistency checks for the catalog
+│   ├── validate-catalog.mjs   # Schema + consistency checks for the catalog
+│   ├── generate-og-image.mjs  # Render the share card with the brand fonts and art
+│   └── screenshot-screens.mjs # Screenshot every screen for review against the kit
 ├── supabase/schema.sql        # Database tables and row-level-security policies
 ├── src/
 │   ├── main.jsx               # React entry: router + providers
@@ -116,8 +127,9 @@ The same two variables must be set in Vercel for the production site
 │   ├── data/
 │   │   ├── shows.json         # Show metadata
 │   │   ├── episodes/*.json    # One file per show
+│   │   ├── art-collection.json# Banks' pieces: titles, media, modes, focus points
 │   │   └── index.js           # Assembles the catalog
-│   └── styles/                # Design tokens (global.css) and component styles (app.css)
+│   └── styles/                # tokens.css (from the kit), reset (global.css), components (app.css)
 └── .github/workflows/ci.yml   # Lint, validate, test, build on every push and PR
 ```
 
@@ -129,7 +141,8 @@ The same two variables must be set in Vercel for the production site
 | `/shows`        | All shows                     |
 | `/show/:showId` | One show, grouped by season   |
 | `/episode/:id`  | Episode detail                |
-| `/favorites`    | Saved episodes                |
+| `/favorites`    | Repeat offenders (saved)      |
+| `/art`          | Art by Banks                  |
 
 ## Data model
 
@@ -210,3 +223,12 @@ new aliases, which need no code at all.
 ## License
 
 Private project. Show names and episode descriptions belong to their respective owners.
+
+## Brand
+
+The look is Babbling Banks v1.5, "Banks Originals": the kit lives in
+`brand/babbling-banks-brand-v1.5/` and `DESIGN.md` there is the source of truth.
+`src/styles/tokens.css` is the kit's `colors_and_type.css` with the asset URLs pointed at
+`public/`; regenerate it from the kit rather than editing values by hand. Rules that are
+easy to miss: only five things tilt, no shadows, no rounded corners except the mic
+button, lemon only behind matched words, and no exclamation marks in the UI.

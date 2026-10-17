@@ -297,6 +297,7 @@ export function searchEpisodes(rawQuery, options = {}) {
 /**
  * Suggest clarifying questions when the top results are close together.
  * Returns up to two questions, each with options and a "Not sure" escape.
+ * (Options carry no emoji: the brand's UI renders them as plain text links.)
  */
 export function generateFollowUps(results) {
   if (!results || results.length < 2) return [];
@@ -310,11 +311,7 @@ export function generateFollowUps(results) {
     questions.push({
       type: 'show',
       text: 'Which show?',
-      options: showIds.map((id) => ({
-        label: SHOWS[id]?.name ?? id,
-        value: id,
-        emoji: SHOWS[id]?.emoji ?? '📺',
-      })),
+      options: showIds.map((id) => ({ label: SHOWS[id]?.name ?? id, value: id })),
     });
   }
 
@@ -334,7 +331,7 @@ export function generateFollowUps(results) {
     questions.push({
       type: 'character',
       text: 'Who was in it?',
-      options: characters.map((name) => ({ label: name, value: name, emoji: '👤' })),
+      options: characters.map((name) => ({ label: name, value: name })),
     });
   }
 
@@ -343,12 +340,12 @@ export function generateFollowUps(results) {
     questions.push({
       type: 'setting',
       text: 'Where did it happen?',
-      options: settings.map((name) => ({ label: name, value: name, emoji: '📍' })),
+      options: settings.map((name) => ({ label: name, value: name })),
     });
   }
 
   for (const question of questions) {
-    question.options.push({ label: 'Not sure', value: null, emoji: '🤷' });
+    question.options.push({ label: 'Not sure', value: null });
   }
   return questions.slice(0, 2);
 }

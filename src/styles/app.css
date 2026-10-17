@@ -83,7 +83,9 @@
   margin-left: 0;
 }
 .header__wordmark {
-  display: block;
+  display: flex;
+  align-items: center;
+  min-height: var(--tap-min);
   padding: 0 12px;
 }
 .header__wordmark--after-back {
@@ -109,9 +111,11 @@
   font: var(--text-credit);
   color: var(--color-text-muted);
   text-decoration: none;
-  min-height: 24px;
+  min-height: var(--tap-min);
   display: inline-flex;
   align-items: flex-end;
+  margin-bottom: -12px;
+  padding-bottom: 12px;
 }
 .credit:hover,
 .credit-row__theme:hover {
@@ -222,6 +226,14 @@
 }
 .body-text a:not([class]) {
   color: var(--color-crayon-cobalt);
+}
+/* Inline links in prose: vertical padding on an inline box grows the tap
+   area to 48 px without moving the lines around it. */
+.body-text a,
+.source-note a,
+.notice a,
+.caption-row a {
+  padding: 16px 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -374,7 +386,7 @@
 .example-link {
   display: flex;
   align-items: center;
-  min-height: 44px;
+  min-height: var(--tap-min);
   font: var(--text-label);
   color: var(--color-crayon-cobalt);
   text-decoration: none;
@@ -785,11 +797,15 @@
 .season-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 20px;
-  margin-top: 12px;
+  gap: 0 8px;
+  margin: 12px 0 0 -12px;
 }
 .season-tabs .example-link {
   color: var(--color-crayon-cobalt);
+  min-height: var(--tap-min);
+  min-width: var(--tap-min);
+  padding: 0 12px;
+  justify-content: center;
 }
 .season-tabs .example-link[aria-selected='true'] {
   color: var(--color-text);
