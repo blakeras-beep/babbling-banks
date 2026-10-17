@@ -44,7 +44,6 @@
       "bingo wants a turn",
       "taking turns with the xylophone",
       "bluey wont share the xylophone",
-      "bluey plays daddy like a piano",
       "freeze bandit",
       "the one where the dog freezes dad",
       "dog freezes dad",
@@ -90,7 +89,11 @@
       "operation on daddy",
       "playing doctors and nurses",
       "nurse bingo",
-      "doctor bluey"
+      "doctor bluey",
+      "doctor game",
+      "sore tummy",
+      "the one with the cat in dads tummy",
+      "hopsital"
     ],
     "source": "Wikipedia"
   },
@@ -112,9 +115,7 @@
       "Home"
     ],
     "objects": [
-      "Ball",
-      "Balloon",
-      "Game"
+      "Balloon"
     ],
     "themes": [
       "Sports",
@@ -136,7 +137,10 @@
       "balloon chase in the garden",
       "bandit and the balloon",
       "keep the balloon up",
-      "balloon pops"
+      "balloon pops",
+      "balloon",
+      "keepy up",
+      "bingo and the balloon"
     ],
     "source": "Wikipedia"
   },
@@ -179,7 +183,10 @@
       "beep boop daddy",
       "robot goes wrong",
       "tidy up the playroom",
-      "bluey and bingo tidy up"
+      "bluey and bingo tidy up",
+      "robot",
+      "daddy is a robot",
+      "tidy up game"
     ],
     "source": "Wikipedia"
   },
@@ -220,12 +227,15 @@
       "the one where you can only step on shadows",
       "step on the shadows",
       "only walk in the shade",
-      "the sun is lava",
       "coco takes a shortcut",
       "snickers and coco",
       "shadow game at the park",
       "picnic in the park shadows",
-      "the one at the picnic"
+      "the one at the picnic",
+      "shadows",
+      "shadowlans",
+      "stay in the shade",
+      "shadow game"
     ],
     "source": "Wikipedia"
   },
@@ -269,7 +279,10 @@
       "bingo the moving statue",
       "bingo calls dad and he doesnt come",
       "weekend at home with dad",
-      "saturday at home"
+      "saturday at home",
+      "leaf insect",
+      "bingo finds a bug",
+      "the one with the bug"
     ],
     "source": "Wikipedia"
   },
@@ -318,7 +331,9 @@
       "uncle stripe and aunt trixie come over",
       "barbecue with muffin and socks",
       "salad for the grown ups",
-      "cousins barbecue"
+      "cousins barbecue",
+      "barbie",
+      "barbecue salad"
     ],
     "source": "Wikipedia"
   },
@@ -333,7 +348,9 @@
     "fullSynopsis": "At bedtime, Bluey is disappointed the day is over and is unwilling to go to sleep. She learns that fruit bats are nocturnal and wishes that she could become one herself to be able to stay awake during the night. She decides to dream of being a fruit bat instead.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit",
+      "Chilli"
     ],
     "settings": [
       "Home"
@@ -344,7 +361,8 @@
     "themes": [
       "Learning",
       "Bedtime",
-      "Sharing"
+      "Imagination",
+      "Emotions"
     ],
     "aliases": [
       "fruitbat",
@@ -360,7 +378,10 @@
       "flying fox",
       "dream about being a bat",
       "bat dream",
-      "the one where bluey flies at night"
+      "the one where bluey flies at night",
+      "bluey is a fruit bat",
+      "bat",
+      "fruitbats"
     ],
     "source": "Wikipedia"
   },
@@ -401,7 +422,10 @@
       "daddy horses",
       "horsies getting married",
       "socks chews bluey toy",
-      "giddy up"
+      "giddy up",
+      "horsey",
+      "horses",
+      "horsey wedding"
     ],
     "source": "Wikipedia"
   },
@@ -446,7 +470,10 @@
       "bingo upset bluey is bossy",
       "dad just wants to sleep",
       "the one where they keep waking dad",
-      "hotel guest daddy"
+      "hotel guest daddy",
+      "pretend hotel",
+      "hotel room",
+      "bluey and bingo hotel"
     ],
     "source": "Wikipedia"
   },
@@ -461,7 +488,8 @@
     "fullSynopsis": "Bluey becomes discouraged while learning to ride a bike, and notices that her friends and family around her are struggling with challenges of their own. She watches as they find the determination to overcome their obstacles and is inspired to persevere with her own goal.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit"
     ],
     "settings": [
       "Home"
@@ -488,7 +516,10 @@
       "bluey keeps trying",
       "the one with the bike",
       "bike riding",
-      "try again on the bike"
+      "try again on the bike",
+      "riding a bike",
+      "bluey bike",
+      "learn to ride"
     ],
     "source": "Wikipedia"
   },
@@ -531,7 +562,10 @@
       "taking photos of bob bilby",
       "too much screen time",
       "the puppet that goes home for the weekend",
-      "bob bilby weekend"
+      "bob bilby weekend",
+      "bilby",
+      "bob the bilby",
+      "bingo takes the class puppet home"
     ],
     "source": "Wikipedia"
   },
@@ -573,7 +607,10 @@
       "bluey needs bingo",
       "community barbecue spies",
       "sneaky spies",
-      "spy team"
+      "spy team",
+      "spy",
+      "playing spies",
+      "bluey spy game"
     ],
     "source": "Wikipedia"
   },
@@ -612,7 +649,10 @@
       "picking up dinner",
       "waiting for food",
       "restless at the restaurant",
-      "the one where the kids cant sit still"
+      "the one where the kids cant sit still",
+      "take away dinner",
+      "waiting for takeaway",
+      "dad gets takeaway"
     ],
     "source": "Wikipedia"
   },
@@ -656,7 +696,10 @@
       "caterpillar to butterfly",
       "life cycle of a butterfly",
       "cocoon",
-      "bluey says sorry to bingo"
+      "bluey says sorry to bingo",
+      "playing butterflies",
+      "bingo is sad",
+      "judo"
     ],
     "source": "Wikipedia"
   },
@@ -701,7 +744,12 @@
       "bingo stands up to dad",
       "dad works from home",
       "big bouncy ball chair",
-      "chilli helps bingo be brave"
+      "chilli helps bingo be brave",
+      "bouncy ball",
+      "exercise ball",
+      "the one where bingo yells at dad",
+      "yoga bowl",
+      "dad is too rough with bingo"
     ],
     "source": "Wikipedia"
   },
@@ -748,7 +796,12 @@
       "fish and chip shop",
       "pretend fish and chips",
       "indy the waitress",
-      "pretzel cant think what to play"
+      "pretzel cant think what to play",
+      "the one with the teacher",
+      "fish and chips",
+      "calypsoe",
+      "pretzel",
+      "bluey at school"
     ],
     "source": "Wikipedia"
   },
@@ -788,7 +841,12 @@
       "honey gets a pretend injury",
       "pretend doctors office",
       "bluey is the receptionist",
-      "waiting room"
+      "waiting room",
+      "the one with honey",
+      "pretend doctor",
+      "dokter",
+      "doctors game",
+      "playing doctors"
     ],
     "source": "Wikipedia"
   },
@@ -832,7 +890,11 @@
       "bandit claw",
       "prize machine",
       "bluey wants a toy from the claw machine",
-      "the claw grab"
+      "the claw grab",
+      "the clawe",
+      "claw",
+      "grabber machine",
+      "the one where dad is the claw machine"
     ],
     "source": "Wikipedia"
   },
@@ -875,7 +937,11 @@
       "bluey and indy at the markets",
       "market stalls",
       "buying something with indy",
-      "spending tooth fairy money"
+      "spending tooth fairy money",
+      "tooth fairy money",
+      "the one where bluey loses a tooth",
+      "markit",
+      "bluey and indy"
     ],
     "source": "Wikipedia"
   },
@@ -919,7 +985,12 @@
       "the fox",
       "bandit wakes up as the fox",
       "puppet story with mum",
-      "mountains made of daddy"
+      "mountains made of daddy",
+      "daddy mountain",
+      "dad is asleep",
+      "sleeping dad",
+      "hand people",
+      "fox"
     ],
     "source": "Wikipedia"
   },
@@ -963,7 +1034,11 @@
       "swimming at uncle stripes",
       "mum brings the bag",
       "forgot the swimming bag",
-      "hot day at the pool"
+      "hot day at the pool",
+      "poole",
+      "swimming",
+      "the one where dad forgets everything",
+      "pool day"
     ],
     "source": "Wikipedia"
   },
@@ -1007,7 +1082,11 @@
       "too many rules",
       "bluey makes up rules",
       "shops with mackenzie",
-      "who gets to be what"
+      "who gets to be what",
+      "shopps",
+      "playing shops",
+      "the one where bluey takes too long",
+      "mackenzie"
     ],
     "source": "Wikipedia"
   },
@@ -1030,8 +1109,8 @@
       "Park"
     ],
     "objects": [
-      "Monkey",
-      "Wagon"
+      "Wagon",
+      "Monkey Bars"
     ],
     "themes": [
       "Learning"
@@ -1048,7 +1127,11 @@
       "the one where bluey wants to go to the monkey bars",
       "bluey gets impatient",
       "bingo plays by herself",
-      "pat talks to dad"
+      "pat talks to dad",
+      "monkey bars",
+      "dad talks too much",
+      "dad chatting",
+      "wagen ride"
     ],
     "source": "Wikipedia"
   },
@@ -1091,7 +1174,11 @@
       "catch the plane",
       "taxi breaks down",
       "missed flight",
-      "airport taxi"
+      "airport taxi",
+      "taksi",
+      "satnav",
+      "airport",
+      "bluey the taxi driver"
     ],
     "source": "Wikipedia"
   },
@@ -1105,6 +1192,7 @@
     "shortDescription": "On a family trip to the beach, Chilli decides to go for a walk by herself, and when Bluey wants to join her, she follows her mother's footsteps along the shore and enjoys the sights along the way.",
     "fullSynopsis": "On a family trip to the beach, Chilli decides to go for a walk by herself, and when Bluey wants to join her, she follows her mother's footsteps along the shore and enjoys the sights along the way. While walking alone for the first time, she tries to be brave, and eventually catches up to her mother.",
     "characters": [
+      "Bandit",
       "Chilli",
       "Bluey",
       "Bingo"
@@ -1113,7 +1201,8 @@
       "Beach"
     ],
     "objects": [
-      "Cat"
+      "Footprints",
+      "Sand"
     ],
     "themes": [
       "Family"
@@ -1130,7 +1219,11 @@
       "bluey catches up with mum",
       "brave walk on the beach",
       "chilli goes for a walk",
-      "beach walk"
+      "beach walk",
+      "seaside",
+      "footprints",
+      "bluey on her own",
+      "mum walks by herself"
     ],
     "source": "Wikipedia"
   },
@@ -1145,7 +1238,8 @@
     "fullSynopsis": "Bluey, Bingo, and Missy pretend to be pirates on the hammock swing at the playground. Missy is frightened of the rough journey on the imaginary ship, but faces her fear to rescue her friends from inside the stomach of a whale.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Missy"
     ],
     "settings": [
       "Park"
@@ -1171,7 +1265,11 @@
       "inside the whale",
       "rescue from the whale",
       "pirate ship at the playground",
-      "rough seas"
+      "rough seas",
+      "pirets",
+      "the one with missy",
+      "whale",
+      "pirate ship"
     ],
     "source": "Wikipedia"
   },
@@ -1214,7 +1312,11 @@
       "video call nana",
       "janet and rita",
       "bluey teaches nana the floss",
-      "granny dress up"
+      "granny dress up",
+      "grandma",
+      "floss",
+      "dress up as grandmas",
+      "grannys floss"
     ],
     "source": "Wikipedia"
   },
@@ -1259,7 +1361,10 @@
       "nature walk",
       "bush walk",
       "the one where bluey tries new things",
-      "water at the creek"
+      "water at the creek",
+      "creeks",
+      "the one with mackenzie at the creek",
+      "walking in the bush"
     ],
     "source": "Wikipedia"
   },
@@ -1299,7 +1404,11 @@
       "dad outsmarts the fairies",
       "bandit hurts bingos feelings",
       "bingo upset with dad",
-      "fairy trap"
+      "fairy trap",
+      "ferries",
+      "fairys in the house",
+      "the one where dad hurts bingos feelings",
+      "fairy catching"
     ],
     "source": "Wikipedia"
   },
@@ -1361,10 +1470,13 @@
     "fullSynopsis": "While Bingo is in hospital, Bluey and the family make her a homemade film to lift her spirits. In the story, Barnicus goes on a quest to find the Wise Old Wolfhound so he can heal his sick friend Bumpy.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit",
+      "Chilli"
     ],
     "settings": [
-      "Home"
+      "Home",
+      "Hospital"
     ],
     "objects": [
       "Video Camera",
@@ -1372,9 +1484,10 @@
       "Hospital Bed"
     ],
     "themes": [
-      "Adventure",
-      "Food",
-      "Creativity"
+      "Family",
+      "Creativity",
+      "Imagination",
+      "Adventure"
     ],
     "aliases": [
       "bumpy and the wise old wolfhound",
@@ -1394,7 +1507,8 @@
       "homemade movie for bingo",
       "barnicus looks for the wolfhound",
       "quest to save bumpy",
-      "bumpy is sick"
+      "bumpy is sick",
+      "the one with the wise old wolfhound"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -1436,7 +1550,11 @@
       "keep dad on the trampoline",
       "bouncing on the trampoline",
       "trampoline game",
-      "bluey has to keep making up games"
+      "bluey has to keep making up games",
+      "dad on the trampoline",
+      "bandit on the trampoline",
+      "the one where dad goes to work",
+      "trampolin"
     ],
     "source": "Wikipedia"
   },
@@ -1572,7 +1690,11 @@
       "pretend travellers",
       "bluey and bingo backpacking",
       "adventure around the house",
-      "backpack holiday"
+      "backpack holiday",
+      "back packer",
+      "bakpackers",
+      "backpackers game",
+      "pretend backpacking holiday"
     ],
     "source": "Wikipedia"
   },
@@ -1637,24 +1759,25 @@
     "fullSynopsis": "Bluey spends the day copying Bandit's every word and move. When they find an injured budgie, Bandit takes it to the vet, but the bird does not survive. At home, Bluey re-enacts the day with Chilli to work through what happened.",
     "characters": [
       "Bluey",
+      "Bandit",
+      "Chilli",
       "Bingo"
     ],
     "settings": [
-      "Beach",
-      "Farm",
-      "Hospital",
       "Car",
-      "Zoo"
+      "Vet",
+      "Home"
     ],
     "objects": [
       "Budgie",
-      "Car"
+      "Car",
+      "Box"
     ],
     "themes": [
-      "Learning",
-      "Science",
       "Family",
-      "Nature"
+      "Nature",
+      "Grief",
+      "Learning"
     ],
     "aliases": [
       "copycat",
@@ -1673,7 +1796,9 @@
       "copying daddy",
       "bluey plays vet with mum",
       "sad budgie episode",
-      "pretend vet with mum"
+      "pretend vet with mum",
+      "dead budgie",
+      "bluey copies bandit"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -1766,7 +1891,11 @@
       "indy and rusty play together",
       "two games collide",
       "playgroup games",
-      "rusty and indy share their games"
+      "rusty and indy share their games",
+      "early babby",
+      "the baby came early",
+      "two games become one",
+      "rusty and indy play together"
     ],
     "source": "Wikipedia"
   },
@@ -1810,7 +1939,11 @@
       "who goes to work",
       "mum goes to work",
       "rusty and indy argue",
-      "rusty and indy fall out"
+      "rusty and indy fall out",
+      "mommies and daddies",
+      "rusty and indy play mums and dads",
+      "who works mum or dad",
+      "mums and dads at kindy"
     ],
     "source": "Wikipedia"
   },
@@ -1855,7 +1988,11 @@
       "dad hiding",
       "counting to ten",
       "hiding spots",
-      "the one where everyone hides"
+      "the one where everyone hides",
+      "hide and seak",
+      "hidenseek",
+      "hide and seek game",
+      "bluey plays hide and seek"
     ],
     "source": "Wikipedia"
   },
@@ -1869,12 +2006,14 @@
     "shortDescription": "While camping, Bluey meets Jean Luc, a French-speaking boy.",
     "fullSynopsis": "While camping, Bluey meets Jean Luc, a French-speaking boy. Despite the language barrier, they play together all day. But Jean Luc is leaving tomorrow—teaching Bluey about brief but meaningful friendships.",
     "characters": [
-      "Jean Luc",
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit",
+      "Chilli",
+      "Jean Luc"
     ],
     "settings": [
-      "Camping"
+      "Campsite"
     ],
     "objects": [
       "Tent"
@@ -1899,7 +2038,10 @@
       "tent",
       "the one where bluey makes a friend camping",
       "jean luc goes home",
-      "friend with a different language"
+      "friend with a different language",
+      "jeanluc",
+      "bluey goes camping",
+      "camping holiday"
     ],
     "source": "Wikipedia"
   },
@@ -1915,21 +2057,20 @@
     "characters": [
       "Bluey",
       "Bingo",
-      "Pat",
       "Chilli",
       "Bandit"
     ],
     "settings": [
-      "Car"
+      "Home"
     ],
     "objects": [
-      "Game",
-      "Car"
+      "Backpack",
+      "Bed"
     ],
     "themes": [
       "Family",
-      "Sports",
-      "Imagination"
+      "Imagination",
+      "Adventure"
     ],
     "aliases": [
       "mount mumandad",
@@ -1943,7 +2084,13 @@
       "bingo packs a backpack",
       "climbing equipment",
       "race to the top",
-      "bluey races to the summit"
+      "bluey races to the summit",
+      "mountain mum and dad",
+      "climbing up mum and dad",
+      "mount mum n dad",
+      "the one where they climb mum and dad",
+      "mum and dad mountain",
+      "climb the mountain"
     ],
     "source": "Wikipedia"
   },
@@ -1981,7 +2128,11 @@
       "dad fills the trolley",
       "bluey tells dad off",
       "role swap",
-      "parents and kids swap"
+      "parents and kids swap",
+      "kids",
+      "kid",
+      "the kids episode",
+      "kidds"
     ],
     "source": "Wikipedia"
   },
@@ -2027,7 +2178,9 @@
       "retracing steps",
       "dad is a chicken rat",
       "half chicken half rat",
-      "lost bunny toy"
+      "lost bunny toy",
+      "chickin rat",
+      "chicken rat bluey"
     ],
     "source": "Wikipedia"
   },
@@ -2070,7 +2223,10 @@
       "difficult neighbour",
       "bingo invades blueys space",
       "new neighbours mum and dad",
-      "rope fence"
+      "rope fence",
+      "neighbours game",
+      "neighbors bluey",
+      "naybours"
     ],
     "source": "Wikipedia"
   },
@@ -2111,7 +2267,10 @@
       "stop teasing",
       "mean teasing",
       "bandit pranks",
-      "teasing or playing"
+      "teasing or playing",
+      "teezing",
+      "dad is a tease",
+      "bluey teasing episode"
     ],
     "source": "Wikipedia"
   },
@@ -2131,9 +2290,8 @@
       "Bingo"
     ],
     "settings": [
-      "Farm",
-      "Zoo",
-      "Restaurant"
+      "Home",
+      "Dining Room"
     ],
     "objects": [
       "Table",
@@ -2142,10 +2300,9 @@
     ],
     "themes": [
       "Family",
-      "Sharing",
-      "Nature",
-      "Science",
-      "Learning"
+      "Manners",
+      "Imagination",
+      "Food"
     ],
     "aliases": [
       "asparagus",
@@ -2160,7 +2317,10 @@
       "dinner manners",
       "bandit teaches manners",
       "bluey controls everyone",
-      "eat your dinner nicely"
+      "eat your dinner nicely",
+      "aspargus",
+      "the one with the asparagus",
+      "asparagus game"
     ],
     "source": "Wikipedia"
   },
@@ -2205,7 +2365,9 @@
       "we want a pet",
       "looking after shaun",
       "walking the emu",
-      "bath for shaun"
+      "bath for shaun",
+      "shaun bluey",
+      "dads hand puppet emu"
     ],
     "source": "Wikipedia"
   },
@@ -2243,16 +2405,20 @@
       "daddy putdown episode",
       "the one where dad puts them to bed",
       "the one where mum goes to a baby shower",
-      "baby shower",
       "mum goes out",
       "dad does bedtime",
       "bluey misses mum",
       "daddy put me to bed",
       "bedtime with dad",
       "mummy is at a party",
-      "the one before verandah santa",
       "dady putdown",
-      "putdown"
+      "putdown",
+      "dad putting us to bed",
+      "daddy puts us down",
+      "bedtime episode",
+      "daddy put down bedtime",
+      "dadi putdown",
+      "daddy putdown bluey"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -2269,8 +2435,9 @@
       "Bluey",
       "Bingo",
       "Chilli",
+      "Bandit",
       "Socks",
-      "Bandit"
+      "Muffin"
     ],
     "settings": [
       "Home"
@@ -2280,9 +2447,10 @@
       "Christmas Tree"
     ],
     "themes": [
-      "Learning",
-      "Imagination",
-      "Sports"
+      "Christmas",
+      "Kindness",
+      "Family",
+      "Imagination"
     ],
     "aliases": [
       "verandah santa",
@@ -2297,7 +2465,11 @@
       "socks is naughty",
       "naughty list",
       "being nice all year",
-      "bluey leaves socks out"
+      "bluey leaves socks out",
+      "christmas",
+      "bluey christmas",
+      "santa on the verandah",
+      "christmas presents"
     ],
     "source": "Wikipedia"
   },
@@ -2366,8 +2538,7 @@
       "Pat"
     ],
     "settings": [
-      "Home",
-      "Farm",
+      "Hardware Store",
       "Shop"
     ],
     "objects": [
@@ -2376,10 +2547,9 @@
     ],
     "themes": [
       "Family",
-      "Adventure",
-      "Food",
-      "Creativity",
-      "Imagination"
+      "Jealousy",
+      "Imagination",
+      "Creativity"
     ],
     "aliases": [
       "hammerbarn",
@@ -2395,7 +2565,9 @@
       "family goes to hammerbarn",
       "shopping for building stuff",
       "bandit at the hardware store",
-      "pizza oven episode"
+      "pizza oven episode",
+      "shopping trolley game",
+      "trolley garden"
     ],
     "source": "Wikipedia"
   },
@@ -2441,7 +2613,9 @@
       "bingo feels sad left behind",
       "magic feather wand",
       "bingo stays home with mum",
-      "party invitation sad bingo"
+      "party invitation sad bingo",
+      "feather",
+      "fevver wand"
     ],
     "source": "Wikipedia"
   },
@@ -2461,7 +2635,7 @@
       "Bingo"
     ],
     "settings": [
-      "Home"
+      "Squash Court"
     ],
     "objects": [
       "Squash Racquet",
@@ -2486,7 +2660,10 @@
       "controlling dad and stripe",
       "kids control the players",
       "bandit and stripe squash match",
-      "squash ball"
+      "squash ball",
+      "squash bluey",
+      "uncle stripe squash",
+      "dad and uncle stripe"
     ],
     "source": "Wikipedia"
   },
@@ -2514,9 +2691,9 @@
     ],
     "themes": [
       "Growing Up",
-      "Sports",
       "Family",
-      "Sharing",
+      "Listening",
+      "Confidence",
       "Teamwork"
     ],
     "aliases": [
@@ -2533,7 +2710,9 @@
       "pretend hair salon",
       "bingo wants a turn to talk",
       "let bingo talk",
-      "hair salon game"
+      "hair salon game",
+      "nits",
+      "dad has nits"
     ],
     "source": "Wikipedia"
   },
@@ -2556,7 +2735,7 @@
     ],
     "settings": [
       "Home",
-      "Camping"
+      "Backyard"
     ],
     "objects": [
       "Tree"
@@ -2579,7 +2758,9 @@
       "dads digging in the yard",
       "tree stump day",
       "backyard stumps",
-      "muffin at stumpfest"
+      "muffin at stumpfest",
+      "stumps",
+      "nail salon on the stump"
     ],
     "source": "Wikipedia"
   },
@@ -2593,11 +2774,14 @@
     "shortDescription": "At the dinner table, the Heelers share their favourite things that happened throughout the day.",
     "fullSynopsis": "At the dinner table, the Heelers share their favourite things that happened throughout the day. Bluey recalls her highlight and accidentally embarrasses Bingo in the process, so the family work together to retell funny moments from the day in the hope of making Bingo feel better.",
     "characters": [
+      "Bandit",
+      "Chilli",
       "Bluey",
       "Bingo"
     ],
     "settings": [
-      "Restaurant"
+      "Home",
+      "Dining Room"
     ],
     "objects": [
       "Table"
@@ -2622,7 +2806,9 @@
       "family dinner favourite things",
       "everyone says their favourite part",
       "heeler family dinner",
-      "favrite thing"
+      "favrite thing",
+      "favorite thing bluey",
+      "favourite part of the day"
     ],
     "source": "Wikipedia"
   },
@@ -2641,18 +2827,19 @@
       "Bingo"
     ],
     "settings": [
-      "School"
+      "Home",
+      "School",
+      "Kindy"
     ],
     "objects": [
       "School Bag",
       "Lunchbox"
     ],
     "themes": [
-      "Sports",
       "Family",
-      "Sharing",
-      "Creativity",
-      "Imagination"
+      "Routine",
+      "Imagination",
+      "Creativity"
     ],
     "aliases": [
       "daddy dropoff",
@@ -2667,7 +2854,9 @@
       "bluey and bingo going to school with dad",
       "dad walks to school and kindy",
       "kindy drop off",
-      "morning drop off game"
+      "morning drop off game",
+      "school run",
+      "dad takes us to kindy"
     ],
     "source": "Wikipedia"
   },
@@ -2694,11 +2883,10 @@
       "Game"
     ],
     "themes": [
-      "Sports",
-      "Science",
-      "Friendship",
       "Learning",
-      "Imagination"
+      "Imagination",
+      "Independence",
+      "Problem solving"
     ],
     "aliases": [
       "bingo episode",
@@ -2713,7 +2901,10 @@
       "playing by yourself",
       "bingo alone at home",
       "bingo without bluey",
-      "no bluey today"
+      "no bluey today",
+      "bingo is bored",
+      "bingo finds a problem to solve",
+      "bingo plays alone while bluey is out"
     ],
     "source": "Wikipedia"
   },
@@ -2725,7 +2916,7 @@
     "title": "Rug Island",
     "platform": "Disney+",
     "shortDescription": "Bluey and Bingo set up the imaginative 'Rug Island' in the backyard, repurposing their play mat and felt-tip pens.",
-    "fullSynopsis": "Bluey and Bingo set up the imaginative 'Rug Island' in the backyard, repurposing their play mat and felt-tip pens. While adults are not typically not allowed on the island, Bandit suddenly finds himself washed up on the beach. He is tempted to stay and rediscover his inner child, as he learns about the routines and customs of the land.",
+    "fullSynopsis": "Bluey and Bingo set up the imaginative 'Rug Island' in the backyard, repurposing their play mat and felt-tip pens. While adults are not typically allowed on the island, Bandit suddenly finds himself washed up on the beach. He is tempted to stay and rediscover his inner child, as he learns about the routines and customs of the land.",
     "characters": [
       "Bandit",
       "Bluey",
@@ -2740,9 +2931,8 @@
       "Felt Tip Pens"
     ],
     "themes": [
-      "Learning",
-      "Science",
-      "Imagination"
+      "Imagination",
+      "Family"
     ],
     "aliases": [
       "rug island",
@@ -2758,9 +2948,12 @@
       "island in the backyard",
       "bluey and bingo on rug island",
       "pretend island",
-      "texta pens island"
+      "texta pens island",
+      "dad washes up on rug island",
+      "island on the rug",
+      "rug island bluey"
     ],
-    "source": "Wikipedia"
+    "source": "Wikipedia (synopsis revised with AI)"
   },
   {
     "id": "bluey-s2e11",
@@ -2769,24 +2962,25 @@
     "episode": 11,
     "title": "Charades",
     "platform": "Disney+",
-    "shortDescription": "Bluey and Bingo play charades with the cousins at Nana's house, but They struggle to comprehend the rules of the game.",
-    "fullSynopsis": "Bluey and Bingo play charades with the cousins at Nana's house, but They struggle to comprehend the rules of the game. While She tries to cater for everyone, the cousins begin to bicker and the game quickly derails. She teaches them how to sacrifice the rules of the game to ensure that their younger cousins have fun.",
+    "shortDescription": "Bluey tries to run a game of charades with Bingo and cousins Muffin and Socks at Nana's house, but the younger ones don't understand the rules.",
+    "fullSynopsis": "Bluey and Bingo play charades with the cousins at Nana's house, but Muffin and Socks struggle to comprehend the rules of the game. While Bluey tries to cater for everyone, the cousins begin to bicker and the game quickly derails. Nana teaches Bluey that bending the rules of the game is worth it to make sure her younger cousins have fun.",
     "characters": [
       "Nana",
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Muffin",
+      "Socks"
     ],
     "settings": [
-      "Home"
+      "Nana's House"
     ],
     "objects": [
-      "Cat",
       "Game"
     ],
     "themes": [
-      "Sports",
-      "Science",
-      "Imagination"
+      "Family",
+      "Games",
+      "Fairness"
     ],
     "aliases": [
       "charades",
@@ -2802,9 +2996,11 @@
       "cousins play charades",
       "pretend to be a cat charades",
       "nana and the cousins",
-      "acting game"
+      "acting game",
+      "bluey charades",
+      "charade"
     ],
-    "source": "Wikipedia"
+    "source": "Wikipedia (synopsis revised with AI)"
   },
   {
     "id": "bluey-s2e12",
@@ -2821,11 +3017,10 @@
       "Bingo"
     ],
     "settings": [
-      "Park"
+      "Home"
     ],
     "objects": [
-      "Stick",
-      "Toy"
+      "Sticky Gecko"
     ],
     "themes": [
       "Imagination",
@@ -2845,7 +3040,10 @@
       "mum gets cross getting ready",
       "chilli tries to leave the house",
       "stretchy sticky toy",
-      "going to a play date"
+      "going to a play date",
+      "gecko",
+      "sticky lizard",
+      "lizard on the ceiling"
     ],
     "source": "Wikipedia"
   },
@@ -2890,7 +3088,10 @@
       "pregnant daddy",
       "daddy has a baby in his tummy",
       "baby carrier",
-      "dad pretend birth"
+      "dad pretend birth",
+      "dad has a baby",
+      "bingo is the baby",
+      "banned bluey episode"
     ],
     "source": "Wikipedia"
   },
@@ -2936,7 +3137,9 @@
       "pretend mum training",
       "chilli teaches mum school",
       "balloon baby",
-      "how to be a mummy"
+      "how to be a mummy",
+      "balloon babies game",
+      "mum school bluey"
     ],
     "source": "Wikipedia"
   },
@@ -2980,7 +3183,9 @@
       "bingos busy day",
       "all aboard dad train",
       "choo choo dad",
-      "train running late"
+      "train running late",
+      "train",
+      "choo choo train"
     ],
     "source": "Wikipedia"
   },
@@ -2996,6 +3201,7 @@
     "characters": [
       "Jack",
       "Rusty",
+      "Calypso",
       "Bluey",
       "Bingo"
     ],
@@ -3006,9 +3212,9 @@
       "Army Helmet"
     ],
     "themes": [
-      "Science",
+      "Friendship",
       "Imagination",
-      "Friendship"
+      "Inclusion"
     ],
     "aliases": [
       "army",
@@ -3024,7 +3230,10 @@
       "new boy at school",
       "jack and rusty",
       "army marching",
-      "new kid jack"
+      "new kid jack",
+      "soldier game",
+      "jack army",
+      "rusty army"
     ],
     "source": "Wikipedia"
   },
@@ -3039,6 +3248,7 @@
     "fullSynopsis": "Bluey and Bingo want to witness their parents kiss, so they decide to teach Bandit how to be romantic. The sisters set up a pretend restaurant in the playroom, with Bluey acting as their server and Bingo becoming the chef.",
     "characters": [
       "Bandit",
+      "Chilli",
       "Bluey",
       "Bingo"
     ],
@@ -3052,8 +3262,8 @@
     ],
     "themes": [
       "Family",
-      "Science",
-      "Imagination"
+      "Imagination",
+      "Love"
     ],
     "aliases": [
       "fancy restaurant",
@@ -3066,10 +3276,13 @@
       "teaching dad to be romantic",
       "romantic dinner",
       "bluey and bingo run a restaurant",
-      "waiter bingo",
       "mum and dad date night",
       "kiss kiss",
-      "pretend restaurant"
+      "pretend restaurant",
+      "mum and dad kiss",
+      "candle dinner",
+      "bluey restaurant",
+      "restaurant game"
     ],
     "source": "Wikipedia"
   },
@@ -3110,7 +3323,12 @@
       "dad carries bingo",
       "piggyback episode",
       "bingo tired legs",
-      "walk home from the river"
+      "walk home from the river",
+      "piggy back ride",
+      "carry me daddy",
+      "bingo wants a piggyback",
+      "too tired to walk",
+      "piggie back"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -3125,7 +3343,9 @@
     "fullSynopsis": "On Mother's Day, Bingo drops Chilli's breakfast in bed and thinks she has ruined the day. Bluey helps her make amends by putting on a play about how Mum and Dad first met.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Chilli",
+      "Bandit"
     ],
     "settings": [
       "Home"
@@ -3135,9 +3355,9 @@
       "Costumes"
     ],
     "themes": [
-      "Music",
-      "Science",
-      "Family"
+      "Family",
+      "Imagination",
+      "Mothers Day"
     ],
     "aliases": [
       "the show",
@@ -3196,7 +3416,10 @@
       "seagull saves dad",
       "tickle crab game",
       "pinchy crabs tickle",
-      "dad cant stop laughing"
+      "dad cant stop laughing",
+      "tickle crabs game",
+      "crabs",
+      "tickling game"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -3235,7 +3458,10 @@
       "can we have a rest",
       "eskape",
       "mum and dad want to relax",
-      "dont let them get away"
+      "dont let them get away",
+      "escape bluey",
+      "bluey escape",
+      "escap"
     ],
     "source": "AI Generated"
   },
@@ -3279,9 +3505,11 @@
       "the one with the bus",
       "buss",
       "mum is shy on the bus",
+      "bluey bus",
+      "bus driver",
+      "riding the bus",
       "dog family plays bus",
-      "the dog family bus game",
-      "bluey bus"
+      "the dog family bus game"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -3322,7 +3550,9 @@
       "bluey plays the flute",
       "royal queens game",
       "quins",
-      "your majesty"
+      "your majesty",
+      "queens game",
+      "playing queens"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -3342,16 +3572,17 @@
       "Bingo"
     ],
     "settings": [
-      "Home"
+      "Backyard"
     ],
     "objects": [
       "Cardboard Box",
       "Allen Key"
     ],
     "themes": [
-      "Sports",
-      "Creativity",
-      "Imagination"
+      "Family",
+      "Imagination",
+      "Evolution",
+      "Teamwork"
     ],
     "aliases": [
       "flat pack",
@@ -3366,8 +3597,11 @@
       "fish to monkey game",
       "cardboard box game",
       "mum and dad build a chair",
-      "building a cubby",
-      "furniture box"
+      "furniture box",
+      "the one where bluey and bingo evolve",
+      "fish to people game",
+      "mum and dad put furniture together",
+      "flat pack episode"
     ],
     "source": "Wikipedia"
   },
@@ -3426,22 +3660,25 @@
     "shortDescription": "At bedtime, Bingo is determined to sleep for the whole night in her own bed, and after reading a bedtime story about outer space, she is propelled into traveling through the Solar System in her dream.",
     "fullSynopsis": "At bedtime, Bingo is determined to sleep for the whole night in her own bed, and after reading a bedtime story about outer space, she is propelled into traveling through the Solar System in her dream. Along with her stuffed toy rabbit Floppy, she imagines journeying among the planets as she unconsciously switches between the beds of the house during the night.",
     "characters": [
+      "Bingo",
       "Bluey",
-      "Bingo"
+      "Chilli",
+      "Bandit",
+      "Floppy"
     ],
     "settings": [
       "Home"
     ],
     "objects": [
-      "Stuffed",
+      "Floppy",
       "Bed",
-      "Rope",
-      "Toy"
+      "Bedtime Story Book"
     ],
     "themes": [
-      "Adventure",
       "Bedtime",
-      "Imagination"
+      "Imagination",
+      "Adventure",
+      "Growing Up"
     ],
     "aliases": [
       "sleepytime",
@@ -3460,7 +3697,9 @@
       "bedtime episode",
       "bingo dream",
       "bingo sleeps all night",
-      "floppy space"
+      "floppy space",
+      "the one where mum is the sun",
+      "bingo and floppy in space"
     ],
     "source": "Wikipedia"
   },
@@ -3502,7 +3741,13 @@
       "grandad wont slow down",
       "mum worries about grandad",
       "grandads house",
-      "chilli and her dad"
+      "chilli and her dad",
+      "mort",
+      "chillis dad",
+      "grandad heart surgery",
+      "grandpa",
+      "granpa",
+      "grandad episode"
     ],
     "source": "Wikipedia"
   },
@@ -3548,7 +3793,11 @@
       "tiny pom pom",
       "park playground",
       "little pom pom seesaw",
-      "seesaw game"
+      "seesaw game",
+      "dad on the seesaw",
+      "dad stops the seesaw",
+      "dad is too heavy",
+      "kids push dad off the seesaw"
     ],
     "source": "Wikipedia"
   },
@@ -3567,14 +3816,16 @@
       "Bingo"
     ],
     "settings": [
-      "Home"
+      "Movie Theatre"
     ],
     "objects": [
       "Movie Ticket",
       "Popcorn"
     ],
     "themes": [
-      "Food"
+      "Fear",
+      "First Experiences",
+      "Family"
     ],
     "aliases": [
       "movies",
@@ -3589,7 +3840,11 @@
       "bluey worried about the scary bit",
       "popcorn movie",
       "picture theatre",
-      "movie theater"
+      "movie theater",
+      "cinema",
+      "the scary bit",
+      "bluey goes to the cinema",
+      "first movie"
     ],
     "source": "Wikipedia"
   },
@@ -3601,7 +3856,7 @@
     "title": "Library",
     "platform": "Disney+",
     "shortDescription": "Uncle Stripe tells Muffin that she is 'the most special kid in the world', leading her to believe that she does not have to follow the rules.",
-    "fullSynopsis": "Uncle Stripe tells Muffin that she is 'the most special kid in the world', leading her to believe that she does not have to follow the rules. This leads to conflict when They struggle to involve her in their library roleplay.",
+    "fullSynopsis": "Uncle Stripe tells Muffin that she is 'the most special kid in the world', leading her to believe that she does not have to follow the rules. This leads to conflict when Bluey and Bingo struggle to involve her in their library roleplay.",
     "characters": [
       "Uncle Stripe",
       "Muffin",
@@ -3615,7 +3870,9 @@
       "Library Book"
     ],
     "themes": [
-      "Imagination"
+      "Imagination",
+      "Rules",
+      "Family"
     ],
     "aliases": [
       "library",
@@ -3630,9 +3887,12 @@
       "playing library",
       "shh library",
       "special muffin",
-      "muffin breaks the rules"
+      "muffin breaks the rules",
+      "muffin at the library",
+      "uncle stripe and muffin",
+      "muffin is special"
     ],
-    "source": "Wikipedia"
+    "source": "Wikipedia (synopsis revised with AI)"
   },
   {
     "id": "bluey-s2e22",
@@ -3672,7 +3932,9 @@
       "boats down the stream",
       "bark boat race",
       "big kid buddies",
-      "floating bark boats"
+      "floating bark boats",
+      "fairy garden",
+      "mackenzie and captain"
     ],
     "source": "Wikipedia"
   },
@@ -3804,7 +4066,9 @@
       "bluey teaches swimming",
       "mum and dad swim class",
       "funny swim teacher",
-      "swimming instructor"
+      "swimming instructor",
+      "bluey swim teacher",
+      "pretend swimming"
     ],
     "source": "Wikipedia"
   },
@@ -3820,20 +4084,22 @@
     "characters": [
       "Bandit",
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Winnie",
+      "Fido"
     ],
     "settings": [
-      "Park"
+      "Park",
+      "Cafe"
     ],
     "objects": [
       "Coffee Cup"
     ],
     "themes": [
-      "Creativity",
-      "Friendship"
+      "Friendship",
+      "Family"
     ],
     "aliases": [
-      "caf",
       "cafe",
       "the cafe",
       "caffe",
@@ -3849,7 +4115,8 @@
       "every morning at the park",
       "dad makes a dad friend",
       "winnie and fido",
-      "coffee at the park"
+      "coffee at the park",
+      "bluey and winnie"
     ],
     "source": "Wikipedia"
   },
@@ -3920,9 +4187,9 @@
       "Game"
     ],
     "themes": [
-      "Adventure",
-      "Imagination",
-      "Sports"
+      "Family",
+      "Patience",
+      "Games"
     ],
     "aliases": [
       "the quiet game",
@@ -3940,7 +4207,8 @@
       "dad needs quiet",
       "silence game",
       "no talking game",
-      "sneaky dad quiet game"
+      "sneaky dad quiet game",
+      "quiet"
     ],
     "source": "Wikipedia"
   },
@@ -3955,7 +4223,8 @@
     "fullSynopsis": "Bluey asks her father for a new toy, but he says they have too many toys already and insists that the girls must decide which of their toys are special.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit"
     ],
     "settings": [
       "Home"
@@ -3982,7 +4251,10 @@
       "bluey wants a new toy",
       "dad says no more toys",
       "monkey in undies",
-      "which toys to keep"
+      "which toys to keep",
+      "special toys",
+      "giving away toys",
+      "mr monkey"
     ],
     "source": "Wikipedia"
   },
@@ -4026,7 +4298,10 @@
       "rad and frisky fall in love",
       "godmother frisky",
       "two babysitters at once",
-      "babysiter"
+      "babysiter",
+      "uncle rad babysits",
+      "frisky babysits",
+      "babysitter night"
     ],
     "source": "Wikipedia"
   },
@@ -4068,7 +4343,10 @@
       "grumpy bingo",
       "bingo runs to dad",
       "chasing the bad mood",
-      "bad mood dad"
+      "bad mood dad",
+      "bingo bad mood",
+      "bingo is cranky",
+      "bingo cross with mum"
     ],
     "source": "Wikipedia"
   },
@@ -4108,7 +4386,11 @@
       "daddy octopus",
       "chloe and her dad",
       "tickle octopus",
-      "octopus with chloe"
+      "octopus with chloe",
+      "octopus game with chloe",
+      "chloes dad",
+      "dale plays octopus",
+      "octopuss"
     ],
     "source": "Wikipedia"
   },
@@ -4149,7 +4431,10 @@
       "wheelie bins",
       "garbage night",
       "rubbish night",
-      "night time bins"
+      "night time bins",
+      "bluey bin night",
+      "taking out the rubbish",
+      "dad and the bins"
     ],
     "source": "Wikipedia"
   },
@@ -4193,7 +4478,9 @@
       "cone on muffin",
       "the one with the cone",
       "mufin cone",
-      "aunt trixie cone"
+      "aunt trixie cone",
+      "muffin has a cone",
+      "cone head muffin"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -4235,7 +4522,10 @@
       "baking a cake",
       "cake book duck",
       "famous duck cake",
-      "daddy makes a cake"
+      "daddy makes a cake",
+      "dad makes a duck cake",
+      "cake shaped like a duck",
+      "duckie cake"
     ],
     "source": "Wikipedia"
   },
@@ -4274,7 +4564,11 @@
       "watch me do a handstand",
       "bingo feels left out at her party",
       "birthday party handstand",
-      "look at me handstand"
+      "look at me handstand",
+      "bingo handstand",
+      "upside down bingo",
+      "handstands",
+      "nobody watching bingo"
     ],
     "source": "Wikipedia"
   },
@@ -4289,7 +4583,9 @@
     "fullSynopsis": "The Heelers embark on a road trip in the family four-wheel drive.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit",
+      "Chilli"
     ],
     "settings": [
       "Car"
@@ -4313,7 +4609,10 @@
       "driving holiday",
       "four wheel drive trip",
       "heelers road trip",
-      "car ride"
+      "car ride",
+      "bluey road trip",
+      "long drive",
+      "bored in the car"
     ],
     "source": "Wikipedia"
   },
@@ -4355,7 +4654,10 @@
       "bluey and bingo ice cream",
       "dripping ice cream",
       "ice cream cone",
-      "icecream cart"
+      "icecream cart",
+      "bluey ice cream",
+      "melting ice cream",
+      "eyes cream"
     ],
     "source": "Wikipedia"
   },
@@ -4396,7 +4698,10 @@
       "dunny song",
       "the toilet episode",
       "say toilet not dunny",
-      "rude word dunny"
+      "rude word dunny",
+      "dunny word",
+      "bluey dunny",
+      "toilet"
     ],
     "source": "Wikipedia"
   },
@@ -4459,6 +4764,7 @@
       "Judo",
       "Chilli",
       "Bluey",
+      "Bandit",
       "Bingo"
     ],
     "settings": [
@@ -4469,8 +4775,9 @@
     ],
     "themes": [
       "Growing Up",
-      "Sports",
-      "Science"
+      "Parenting",
+      "Comparison",
+      "Family"
     ],
     "aliases": [
       "baby race",
@@ -4486,7 +4793,9 @@
       "mum compares bluey and judo",
       "when bluey was a baby",
       "sitting crawling walking",
-      "baby milestones"
+      "baby milestones",
+      "bluey learns to walk",
+      "babie race"
     ],
     "source": "Wikipedia"
   },
@@ -4501,15 +4810,20 @@
     "fullSynopsis": "The Heelers spend Christmas Day with the extended family, and Bluey receives a new stuffed toy dog, Bartlebee, as a gift.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit",
+      "Chilli",
+      "Stripe",
+      "Trixie",
+      "Muffin",
+      "Socks"
     ],
     "settings": [
       "Home"
     ],
     "objects": [
-      "Stuffed",
-      "Dog",
-      "Toy"
+      "Stuffed toy dog",
+      "Christmas presents"
     ],
     "themes": [
       "Family"
@@ -4528,7 +4842,9 @@
       "christmas day swim",
       "bluey christmas",
       "christmas present dog",
-      "family christmas"
+      "family christmas",
+      "christmas pool swim",
+      "swimming on christmas"
     ],
     "source": "Wikipedia"
   },
@@ -4568,7 +4884,10 @@
       "chocolate eggs",
       "waiting for the easter bunny",
       "bluey easter",
-      "easter bunny"
+      "easter bunny",
+      "bluey easter eggs",
+      "eastr",
+      "easter bunny forgot"
     ],
     "source": "Wikipedia"
   },
@@ -4587,16 +4906,16 @@
       "Bingo"
     ],
     "settings": [
-      "Car"
+      "Home"
     ],
     "objects": [
-      "Car"
+      "Father's Day card",
+      "Drawing"
     ],
     "themes": [
-      "Teamwork",
-      "Imagination",
-      "Friendship",
-      "Sharing"
+      "Father's Day",
+      "Perfectionism",
+      "Family"
     ],
     "aliases": [
       "perfect",
@@ -4614,7 +4933,11 @@
       "bluey and bingo want it perfect",
       "not perfect",
       "everything has to be perfect",
-      "bluey season three first episode"
+      "bluey season three first episode",
+      "fathers day card",
+      "the one with the fathers day card",
+      "bluey draws dad",
+      "drawing of dad"
     ],
     "source": "Wikipedia"
   },
@@ -4669,8 +4992,8 @@
     "episode": 3,
     "title": "Obstacle Course",
     "platform": "Disney+",
-    "shortDescription": "Chilli sets up an obstacle course in the backyard, but Bluey is disheartened when Bandit turns it into a race and beats her.",
-    "fullSynopsis": "Chilli sets up an obstacle course in the backyard, but Bluey is disheartened when Bandit turns it into a race and beats her.",
+    "shortDescription": "Bandit and Bluey challenge Chilli and Bingo to beat their time on a backyard obstacle course. Chilli finds it really hard, but with Bingo cheering her on she refuses to give up.",
+    "fullSynopsis": "The family splits into teams for an obstacle course in the backyard, with Bandit and Bluey against Chilli and Bingo. Bandit and Bluey set a time for the others to beat. Chilli is not much of an athlete and struggles badly with the course. Encouraged by Bingo, she keeps pushing on and never gives up.",
     "characters": [
       "Bandit",
       "Chilli",
@@ -4678,16 +5001,17 @@
       "Bingo"
     ],
     "settings": [
-      "Home"
+      "Home",
+      "Backyard"
     ],
     "objects": [
       "Obstacle Course",
       "Stopwatch"
     ],
     "themes": [
-      "Sports",
-      "Food",
-      "Sharing"
+      "Perseverance",
+      "Teamwork",
+      "Family"
     ],
     "aliases": [
       "obstacle course",
@@ -4705,9 +5029,10 @@
       "dad and bluey team",
       "climbing through the course",
       "dont give up mum",
-      "teams race in the backyard"
+      "teams race in the backyard",
+      "mum keeps going"
     ],
-    "source": "Wikipedia"
+    "source": "Wikipedia (synopsis revised with AI)"
   },
   {
     "id": "bluey-s3e4",
@@ -4758,8 +5083,8 @@
     "episode": 5,
     "title": "Omelette",
     "platform": "Disney+",
-    "shortDescription": "Chilli decides to cook Bandit an omelette for his birthday and Bingo offers her assistance.",
-    "fullSynopsis": "Chilli decides to cook Bandit an omelette for his birthday and Bingo offers her assistance.",
+    "shortDescription": "On Mother's Day, Bluey and Bandit make Chilli an omelette for breakfast in bed, but Bluey gets bossy and won't let Bingo help.",
+    "fullSynopsis": "It's Mother's Day, and Bluey decides to cook Chilli an omelette with Bandit's help. Bingo wants to help too, but Bluey takes charge and keeps bossing her around. Bingo ends up upset at being left out. The episode explores sharing jobs and letting a little sister join in.",
     "characters": [
       "Bandit",
       "Chilli",
@@ -4767,7 +5092,8 @@
       "Bingo"
     ],
     "settings": [
-      "Home"
+      "Home",
+      "Kitchen"
     ],
     "objects": [
       "Omelette",
@@ -4776,7 +5102,10 @@
       "Breakfast Tray"
     ],
     "themes": [
-      "Food"
+      "Food",
+      "Family",
+      "Sharing",
+      "Mothers Day"
     ],
     "aliases": [
       "omelette",
@@ -4794,9 +5123,11 @@
       "bluey is bossy in the kitchen",
       "cooking with dad",
       "mum breakfast surprise",
-      "eggs episode"
+      "eggs episode",
+      "mothers day omelette",
+      "bingo wants to help"
     ],
-    "source": "Wikipedia"
+    "source": "Wikipedia (synopsis revised with AI)"
   },
   {
     "id": "bluey-s3e6",
@@ -4892,19 +5223,22 @@
     "fullSynopsis": "Bluey can't get to sleep, so Chilli reads her a bedtime story while Bandit interjects with a crass unicorn hand puppet named Unicorse. The cheeky puppet keeps disrupting the story.",
     "characters": [
       "Bandit",
+      "Chilli",
       "Bluey",
       "Bingo"
     ],
     "settings": [
-      "Restaurant"
+      "Home",
+      "Bedroom"
     ],
     "objects": [
       "Unicorse Puppet",
       "Story Book"
     ],
     "themes": [
-      "Food",
-      "Science"
+      "Bedtime",
+      "Humour",
+      "Imagination"
     ],
     "aliases": [
       "unicorse",
@@ -4990,8 +5324,8 @@
       "Toys"
     ],
     "themes": [
-      "Science",
-      "Imagination"
+      "Imagination",
+      "Family"
     ],
     "aliases": [
       "magic",
@@ -5007,7 +5341,12 @@
       "pretend magic powers",
       "mum controls them with magic",
       "abracadabra",
-      "magic mum"
+      "magic mum",
+      "the one where bluey controls mum with magic",
+      "bingo learns magic",
+      "magic on mum",
+      "bluey makes mum move with magic",
+      "tired mum magic game"
     ],
     "source": "Wikipedia"
   },
@@ -5152,10 +5491,11 @@
     "characters": [
       "Bluey",
       "Bingo",
-      "Pat"
+      "Pat",
+      "Lucky"
     ],
     "settings": [
-      "Home"
+      "Birthday Party"
     ],
     "objects": [
       "Parcel",
@@ -5163,9 +5503,9 @@
       "Prize"
     ],
     "themes": [
-      "Learning",
-      "Imagination",
-      "Sports"
+      "Patience",
+      "Resilience",
+      "Parties"
     ],
     "aliases": [
       "pass the parcel",
@@ -5311,7 +5651,9 @@
       "pretend cafe kitchen",
       "dad gets fired",
       "rival shop",
-      "trying new food"
+      "trying new food",
+      "bluey pavlova",
+      "pavlova episode"
     ],
     "source": "AI Generated (titles verified)"
   },
@@ -5322,14 +5664,16 @@
     "episode": 18,
     "title": "Rain",
     "platform": "Disney+",
-    "shortDescription": "A summer rainstorm approaches the neighbourhood, causing the Heelers' front yard to be flooded with rain.",
-    "fullSynopsis": "A summer rainstorm approaches the neighbourhood, causing the Heelers' front yard to be flooded with rain.",
+    "shortDescription": "Bluey plays out in a summer rainstorm, trying to dam the water running down the driveway, until Mum comes out to join her.",
+    "fullSynopsis": "During a summer downpour, Bluey heads out into the front yard to play in the rain. She tries to stop the water running down the driveway by building a dam. Chilli tries to get her to come back inside, but Bluey keeps working on it. In the end Mum joins her in the rain. The episode has almost no dialogue and is told mostly through music.",
     "characters": [
       "Bluey",
+      "Chilli",
       "Bingo"
     ],
     "settings": [
-      "Home"
+      "Front yard",
+      "Driveway"
     ],
     "objects": [
       "Dam",
@@ -5338,7 +5682,8 @@
     ],
     "themes": [
       "Family",
-      "Imagination"
+      "Imagination",
+      "Determination"
     ],
     "aliases": [
       "rain",
@@ -5356,9 +5701,12 @@
       "mum comes out in the rain",
       "umbrella episode",
       "wet bluey",
-      "rain dam"
+      "rain dam",
+      "bluey and mum in the rain",
+      "mum helps build the dam",
+      "raining"
     ],
-    "source": "Wikipedia"
+    "source": "Wikipedia (synopsis revised with AI)"
   },
   {
     "id": "bluey-s3e18",
@@ -5397,7 +5745,10 @@
       "bluey and bingo pizza",
       "pizza shop game",
       "pretend pizza",
-      "pizza order"
+      "pizza order",
+      "pizza",
+      "bluey pizza",
+      "pizza episode"
     ],
     "source": "Wikipedia"
   },
@@ -5422,7 +5773,7 @@
       "Car"
     ],
     "themes": [
-      "Sports",
+      "Family",
       "Imagination"
     ],
     "aliases": [
@@ -5439,7 +5790,12 @@
       "mum drives the girls",
       "are we there yet",
       "car journey",
-      "driving with mum"
+      "driving with mum",
+      "mum is too busy",
+      "busy mum",
+      "five minutes with mum",
+      "driving game",
+      "pretend driving"
     ],
     "source": "Wikipedia"
   },
@@ -5454,7 +5810,9 @@
     "fullSynopsis": "Bluey and Bingo introduce their imaginary friend Tina to their parents when they are tired of being told what to do.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit",
+      "Chilli"
     ],
     "settings": [
       "Home"
@@ -5478,7 +5836,12 @@
       "tina game",
       "meeting tina",
       "tina friend",
-      "tina the friend"
+      "tina the friend",
+      "imaginary friend",
+      "the one with the imaginary friend",
+      "pretend friend tina",
+      "tina imaginary friend",
+      "bluey imaginary friend"
     ],
     "source": "Wikipedia"
   },
@@ -5493,6 +5856,7 @@
     "fullSynopsis": "While their parents are lying down exhausted, Bluey and Bingo pretend that Bandit is a boat for a whale watching expedition.",
     "characters": [
       "Bandit",
+      "Chilli",
       "Bluey",
       "Bingo"
     ],
@@ -5517,10 +5881,13 @@
       "whale on the boat",
       "boat ride whales",
       "pretend boat",
-      "bandit is a whale",
       "see the whale",
       "whale spotting",
-      "whale game"
+      "whale game",
+      "dad is a boat",
+      "the one where dad is a boat",
+      "whale watching boat",
+      "bluey whale watching"
     ],
     "source": "Wikipedia"
   },
@@ -5562,7 +5929,11 @@
       "family court",
       "order order",
       "raise your hand to vote",
-      "bluey calls a meeting"
+      "bluey calls a meeting",
+      "dad farted",
+      "the one where dad farts",
+      "dad on trial",
+      "fart episode"
     ],
     "source": "Wikipedia"
   },
@@ -5585,7 +5956,7 @@
       "Home"
     ],
     "objects": [
-      "Table"
+      "Tablet"
     ],
     "themes": [
       "Family",
@@ -5605,7 +5976,10 @@
       "muffin on the screen",
       "video chat",
       "tablet call",
-      "facey talk episode"
+      "facey talk episode",
+      "socks and muffin",
+      "video call episode",
+      "bluey video call"
     ],
     "source": "Wikipedia"
   },
@@ -5723,7 +6097,7 @@
     ],
     "themes": [
       "Music",
-      "Sports",
+      "Family",
       "Imagination"
     ],
     "aliases": [
@@ -5738,7 +6112,11 @@
       "bluey in a bad mood",
       "music stops freeze",
       "musical statue",
-      "dance and freeze"
+      "dance and freeze",
+      "statues",
+      "musical statues game",
+      "bluey musical statues",
+      "freeze game"
     ],
     "source": "Wikipedia"
   },
@@ -5824,7 +6202,13 @@
       "puppet voices",
       "puppets episode",
       "hand puppets",
-      "making puppets talk"
+      "making puppets talk",
+      "puppet bluey",
+      "pupets",
+      "puppit",
+      "bluey puppet show",
+      "puppet episode",
+      "the one with puppets"
     ],
     "source": "AI Generated"
   },
@@ -5864,7 +6248,10 @@
       "bluey turtle",
       "turtleboy toy",
       "little turtle",
-      "turtle friend"
+      "turtle friend",
+      "turtle",
+      "turtleboy episode",
+      "turtle boy bluey"
     ],
     "source": "Wikipedia"
   },
@@ -5907,7 +6294,12 @@
       "mum and her sister",
       "brandy and chilli",
       "sleepover onesies",
-      "onesie party"
+      "onesie party",
+      "aunt brandy",
+      "auntie brandy",
+      "mums sister",
+      "brandy",
+      "the one where brandy visits"
     ],
     "source": "Wikipedia"
   },
@@ -5949,7 +6341,11 @@
       "plumber game",
       "tradie game",
       "hide and seek tradies",
-      "tradies episode bluey"
+      "tradies episode bluey",
+      "bluey tradies",
+      "tradesmen",
+      "tradeys",
+      "tradie episode"
     ],
     "source": "Wikipedia"
   },
@@ -5992,7 +6388,10 @@
       "janet and rita mobile",
       "old lady car",
       "grannies driving",
-      "granny wagon"
+      "granny wagon",
+      "bluey granny mobile",
+      "granny mobil",
+      "grannys mobile"
     ],
     "source": "Wikipedia"
   },
@@ -6036,7 +6435,11 @@
       "floating in space",
       "rocket game",
       "space adventure",
-      "pretend astronauts"
+      "pretend astronauts",
+      "spase",
+      "rocketship",
+      "outer space",
+      "bluey space"
     ],
     "source": "Wikipedia"
   },
@@ -6079,7 +6482,10 @@
       "yuck kissing",
       "kiss game",
       "mummy daddy kiss",
-      "smooch"
+      "smooch",
+      "smoochey kiss",
+      "smoochy kis",
+      "bluey smoochy kiss"
     ],
     "source": "Wikipedia"
   },
@@ -6114,11 +6520,14 @@
       "the one where they play in the dirt",
       "dirty bluey",
       "digging in dirt",
-      "mud and dirt",
       "playing in the dirt",
       "dirt pile",
       "getting dirty",
-      "dirt game"
+      "dirt game",
+      "bluey dirt",
+      "pile of dirt",
+      "dirt mound",
+      "dert"
     ],
     "source": "Wikipedia"
   },
@@ -6132,9 +6541,11 @@
     "shortDescription": "Lucky, Chucky, and Pat come over to watch the big rugby league game.",
     "fullSynopsis": "Lucky, Chucky, and Pat come over to watch the big rugby league game.",
     "characters": [
-      "Lucky",
+      "Bandit",
       "Bluey",
       "Bingo",
+      "Lucky",
+      "Chucky",
       "Pat"
     ],
     "settings": [
@@ -6162,7 +6573,10 @@
       "rugby game on tv",
       "footy on tv",
       "pat and lucky footy",
-      "the decider game"
+      "the decider game",
+      "bluey decider",
+      "rugby league",
+      "the big game"
     ],
     "source": "Wikipedia"
   },
@@ -6205,7 +6619,11 @@
       "cubby bed",
       "making a cubby",
       "pillow fort",
-      "fort episode"
+      "fort episode",
+      "kimjim",
+      "bluey cubby",
+      "cubbie house",
+      "kubby"
     ],
     "source": "Wikipedia"
   },
@@ -6247,7 +6665,10 @@
       "bandit workout",
       "running and stretching",
       "doing exercise",
-      "fitness dad"
+      "fitness dad",
+      "bluey exercise",
+      "exersise",
+      "bandit exercise"
     ],
     "source": "Wikipedia"
   },
@@ -6262,10 +6683,13 @@
     "fullSynopsis": "The Heelers arrive at a hotel by the beach for a holiday.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit",
+      "Chilli"
     ],
     "settings": [
-      "Beach"
+      "Beach",
+      "Hotel"
     ],
     "objects": [
       "Toys"
@@ -6286,7 +6710,13 @@
       "parents want to relax",
       "relax game",
       "just relax",
-      "lazy day relax"
+      "lazy day relax",
+      "bluey relax",
+      "relaks",
+      "beach holiday",
+      "hotel holiday",
+      "beach hotel",
+      "the one where they go on holiday at the beach"
     ],
     "source": "Wikipedia"
   },
@@ -6297,23 +6727,25 @@
     "episode": 41,
     "title": "Stickbird",
     "platform": "Disney+",
-    "shortDescription": "Bluey discovers what she thinks is a special stick bird creation in the garden.",
+    "shortDescription": "At the beach, Bluey makes a bird out of sticks and other bits she finds on the sand.",
     "fullSynopsis": "Bluey discovers what she thinks is a special stick bird creation in the garden.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Bandit",
+      "Chilli"
     ],
     "settings": [
-      "Home"
+      "Beach"
     ],
     "objects": [
-      "Bird",
-      "Stick"
+      "Stick",
+      "Driftwood"
     ],
     "themes": [
-      "Learning",
-      "Food",
-      "Science"
+      "Family",
+      "Creativity",
+      "Imagination"
     ],
     "aliases": [
       "stickbird",
@@ -6329,9 +6761,12 @@
       "driftwood bird",
       "stick bird toy",
       "stickbird episode",
-      "bluey makes a bird"
+      "bluey makes a bird",
+      "bluey stickbird",
+      "stik bird",
+      "bird at the beach"
     ],
-    "source": "Wikipedia"
+    "source": "Wikipedia (synopsis revised with AI)"
   },
   {
     "id": "bluey-s3e42",
@@ -6367,7 +6802,11 @@
       "show and tell at school",
       "calypso show and tell",
       "what to bring for show and tell",
-      "show and tell day"
+      "show and tell day",
+      "bingo show and tell",
+      "practising show and tell",
+      "show an tell",
+      "bluey show and tell"
     ],
     "source": "Wikipedia"
   },
@@ -6409,7 +6848,10 @@
       "knight and dragon",
       "fire breathing dragon",
       "bluey dragon book",
-      "dragon picture"
+      "dragon picture",
+      "dragen",
+      "bluey dragon",
+      "dragon drawings"
     ],
     "source": "Wikipedia"
   },
@@ -6448,10 +6890,14 @@
       "coco chloe indy and bluey",
       "wild girls game",
       "running wild",
-      "wild animals game",
-      "jungle girls",
       "the wild girls club",
-      "playground wild girls"
+      "playground wild girls",
+      "wild girl",
+      "bluey wild girls",
+      "wilde girls",
+      "wild girls episode",
+      "playing wild girls",
+      "wildgurls"
     ],
     "source": "Wikipedia"
   },
@@ -6469,10 +6915,11 @@
       "Bingo"
     ],
     "settings": [
-      "Home"
+      "Chemist"
     ],
     "objects": [
-      "Toys"
+      "Security Monitors",
+      "Television"
     ],
     "themes": [
       "Family",
@@ -6481,17 +6928,24 @@
     "aliases": [
       "tv shop",
       "tvshop",
-      "tv shopping",
       "telly shop",
       "the one with the tv shop",
       "the one where bluey sells things on tv",
       "pretend tv ad",
-      "shopping channel",
       "selling stuff on tv",
       "but wait theres more",
       "tv shop game",
       "infomercial game",
-      "call now"
+      "call now",
+      "the one at the chemist",
+      "security cameras",
+      "security camera tv",
+      "seeing themselves on tv",
+      "chemist",
+      "pharmacy",
+      "bluey tv shop",
+      "tee vee shop",
+      "the one where they see themselves on tv"
     ],
     "source": "Wikipedia"
   },
@@ -6506,16 +6960,14 @@
     "fullSynopsis": "Bingo and Lila test out a new inflatable water slide in the backyard.",
     "characters": [
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Lila"
     ],
     "settings": [
-      "Home",
-      "Pool",
-      "Creek",
-      "Park"
+      "Home"
     ],
     "objects": [
-      "Table"
+      "Water Slide"
     ],
     "themes": [
       "Family",
@@ -6526,14 +6978,22 @@
       "slide episode",
       "the one with the slide",
       "the one where they make a slide",
-      "table slide",
       "sliding down the table",
       "making a slide",
       "slippery slide",
       "slide game",
       "whee slide",
       "homemade slide",
-      "slide down"
+      "slide down",
+      "water slide",
+      "waterslide",
+      "inflatable slide",
+      "blow up slide",
+      "the one with the water slide",
+      "backyard water slide",
+      "bingo and lila",
+      "lila slide",
+      "slippery dip"
     ],
     "source": "Wikipedia"
   },
@@ -6549,10 +7009,12 @@
     "characters": [
       "Bandit",
       "Bluey",
-      "Bingo"
+      "Bingo",
+      "Rusty"
     ],
     "settings": [
-      "Home"
+      "Neighbourhood",
+      "Backyard"
     ],
     "objects": [
       "Cricket Bat",
@@ -6575,7 +7037,11 @@
       "howzat",
       "cricket game",
       "cricket bat",
-      "bowling at cricket"
+      "bowling at cricket",
+      "the one with rusty",
+      "rusty batting",
+      "street cricket",
+      "bluey cricket"
     ],
     "source": "Wikipedia"
   },
@@ -6616,7 +7082,10 @@
       "spooky basket",
       "basket ghost",
       "boo ghost",
-      "ghostbasket game"
+      "ghostbasket game",
+      "the one with the laundry basket",
+      "ghostbaskett",
+      "goast basket"
     ],
     "source": "Wikipedia"
   },
@@ -6630,14 +7099,16 @@
     "shortDescription": "Bluey struggles to adjust to the impending sale of their house and moving to another city due to Bandit's new job.",
     "fullSynopsis": "Bluey struggles to adjust to the impending sale of their house and moving to another city due to Bandit's new job. While Uncle Rad and Frisky's wedding is being prepared in the Heelers' backyard, Frisky overhears Rad's plans to move away and flees.",
     "characters": [
-      "Uncle Rad",
-      "Frisky",
       "Bluey",
       "Bingo",
-      "Bandit"
+      "Bandit",
+      "Chilli",
+      "Uncle Rad",
+      "Frisky"
     ],
     "settings": [
-      "Home"
+      "Home",
+      "Backyard"
     ],
     "objects": [
       "For Sale Sign",
@@ -6645,7 +7116,9 @@
     ],
     "themes": [
       "Family",
-      "Imagination"
+      "Change",
+      "Moving House",
+      "Uncertainty"
     ],
     "aliases": [
       "the sign",
@@ -6665,7 +7138,9 @@
       "dad got a new job",
       "long episode wedding",
       "for sale sign",
-      "not moving after all"
+      "not moving after all",
+      "good bad who knows",
+      "the farmer and the horse story"
     ],
     "source": "Wikipedia"
   },
@@ -6690,8 +7165,9 @@
       "Game"
     ],
     "themes": [
-      "Sports",
-      "Imagination"
+      "Imagination",
+      "Play",
+      "Family"
     ],
     "aliases": [
       "surprise",
@@ -6700,13 +7176,20 @@
       "surprize",
       "the one with the surprise",
       "the one where they plan a surprise",
-      "surprise for mum",
       "big surprise",
       "surprise game",
       "dont tell mum",
       "hiding for a surprise",
       "surprise party",
-      "secret surprise"
+      "secret surprise",
+      "the one where dad plays two games at once",
+      "bingo plays mums and babies",
+      "mum and baby game",
+      "the one where bingo is the mum",
+      "bluey surprise game",
+      "playing two games",
+      "surpise",
+      "suprise bluey"
     ],
     "source": "Wikipedia"
   }

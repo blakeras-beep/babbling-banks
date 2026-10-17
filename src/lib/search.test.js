@@ -131,6 +131,15 @@ describe('catalog queries', () => {
     ['elmo slide', 'sesame_street-s54e31'],
     ['goodbye mr hooper', 'sesame_street-s15e4'],
     ['snuffleupagus is real', 'sesame_street-s17e1'],
+    // API review pass: corrected titles, synopses and characters.
+    ['peppa secret club', 'peppa_pig-s1e13'],
+    ['granny and grandpa babysit peppa', 'peppa_pig-s1e30'],
+    ['peppa follows footprints back to the picnic', 'peppa_pig-s2e40'],
+    ['bluey makes mum an omelette for mothers day', 'bluey-s3e5'],
+    ['mum does the obstacle course', 'bluey-s3e3'],
+    ['bluey builds a dam in the rain', 'bluey-s3e17'],
+    ['bluey cousins play charades at nanas', 'bluey-s2e11'],
+    ['tango obstacle course elmo', 'sesame_street-s53e11'],
   ];
   it.each(cases)('"%s" returns %s first', (query, id) => {
     expect(searchEpisodes(query)[0]?.episode.id).toBe(id);
