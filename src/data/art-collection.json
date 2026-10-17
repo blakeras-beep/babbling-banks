@@ -16,9 +16,7 @@
       "medium": "crayon over masking tape",
       "mode": "object",
       "focus": null,
-      "usedOn": [
-        "home"
-      ],
+      "usedOn": ["home"],
       "files": {
         "web": "assets/art/tape-resist-01-1600.jpg"
       }
@@ -30,9 +28,7 @@
       "medium": "cut paper, paint dots",
       "mode": "object",
       "focus": null,
-      "usedOn": [
-        "art-page"
-      ],
+      "usedOn": ["art-page"],
       "files": {
         "web": "assets/art/collage-01-1600.jpg"
       }
@@ -44,9 +40,7 @@
       "medium": "finger paint",
       "mode": "field",
       "focus": "35% 40%",
-      "usedOn": [
-        "results"
-      ],
+      "usedOn": ["results"],
       "files": {
         "web": "assets/art/swirl-01-1600.jpg"
       }
@@ -58,9 +52,7 @@
       "medium": "finger paint",
       "mode": "field",
       "focus": "40% 15%",
-      "usedOn": [
-        "episode-detail"
-      ],
+      "usedOn": ["episode-detail"],
       "files": {
         "web": "assets/art/ripple-01-1600.jpg"
       }
@@ -72,9 +64,7 @@
       "medium": "dry-brushed paint",
       "mode": "field",
       "focus": "50% 35%",
-      "usedOn": [
-        "dark-theme-all-bands"
-      ],
+      "usedOn": ["dark-theme-all-bands"],
       "files": {
         "web": "assets/art/night-01-1600.jpg"
       }
@@ -86,9 +76,7 @@
       "medium": "finger paint, foil stars",
       "mode": "field",
       "focus": "50% 30%",
-      "usedOn": [
-        "empty-results"
-      ],
+      "usedOn": ["empty-results"],
       "files": {
         "web": "assets/art/stars-01-1600.jpg"
       }
@@ -100,9 +88,7 @@
       "medium": "finger paint",
       "mode": "field",
       "focus": "40% 35%",
-      "usedOn": [
-        "social-post"
-      ],
+      "usedOn": ["social-post"],
       "files": {
         "web": "assets/art/finger-01-1600.jpg"
       }
@@ -114,9 +100,7 @@
       "medium": "thick acrylic",
       "mode": "field",
       "focus": "50% 45%",
-      "usedOn": [
-        "share-card"
-      ],
+      "usedOn": ["share-card"],
       "files": {
         "web": "assets/art/smear-01-1600.jpg"
       }
@@ -128,9 +112,7 @@
       "medium": "paint over a tape leaf",
       "mode": "object",
       "focus": null,
-      "usedOn": [
-        "loading"
-      ],
+      "usedOn": ["loading"],
       "files": {
         "web": "assets/art/leaf-01-1600.jpg",
         "cutout": "assets/art/leaf-01-cutout.png"
@@ -143,9 +125,7 @@
       "medium": "paint and stamps",
       "mode": "object",
       "focus": null,
-      "usedOn": [
-        "offline"
-      ],
+      "usedOn": ["offline"],
       "files": {
         "web": "assets/art/cone-01-1600.jpg",
         "cutout": "assets/art/cone-01-cutout.png"
@@ -158,9 +138,7 @@
       "medium": "marker",
       "mode": "object",
       "focus": null,
-      "usedOn": [
-        "404"
-      ],
+      "usedOn": ["404"],
       "files": {
         "web": "assets/art/scribble-01-1600.jpg",
         "cutout": "assets/art/scribble-01-cutout.png"
