@@ -143,6 +143,7 @@ Each file in `src/data/episodes/` is an array of episodes:
   "episode": 1,
   "segment": "A", // optional, for two-stories-per-episode shows
   "title": "Magic Xylophone",
+  "shortTitle": "Learn To Talk", // optional; shown in lists when the title is a long YouTube-style one
   "platform": "Disney+",
   "platformUrl": "https://…", // optional; direct link to watch
   "videoId": "dv2PkDPu8Zs", // optional; YouTube only

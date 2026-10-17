@@ -5,7 +5,10 @@ import { useTheme } from '../lib/ThemeContext.jsx';
 
 export default function Header() {
   const { user, favorites, signOut, openAuthModal, authEnabled } = useAuth();
-  const { resolvedTheme, toggleTheme } = useTheme();
+  const { theme, resolvedTheme, toggleTheme } = useTheme();
+  const nextTheme = theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light';
+  const themeIcon = theme === 'system' ? '🌓' : resolvedTheme === 'dark' ? '🌙' : '☀️';
+  const themeName = theme === 'system' ? 'system (follows your device)' : theme;
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -23,14 +26,18 @@ export default function Header() {
             to="/shows"
             className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`}
           >
-            <span aria-hidden="true">📺</span>
+            <span className="nav-link__icon" aria-hidden="true">
+              📺
+            </span>
             <span className="nav-link__label">Shows</span>
           </NavLink>
           <NavLink
             to="/favorites"
             className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`}
           >
-            <span aria-hidden="true">❤️</span>
+            <span className="nav-link__icon" aria-hidden="true">
+              ❤️
+            </span>
             <span className="nav-link__label">Favorites</span>
             {favorites.length > 0 && <span className="nav-link__badge">{favorites.length}</span>}
           </NavLink>
@@ -38,10 +45,10 @@ export default function Header() {
             type="button"
             className="icon-button"
             onClick={toggleTheme}
-            aria-label={resolvedTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-            title={resolvedTheme === 'dark' ? 'Light mode' : 'Dark mode'}
+            aria-label={`Theme: ${themeName}. Switch to ${nextTheme}`}
+            title={`Theme: ${themeName}. Click for ${nextTheme}`}
           >
-            <span aria-hidden="true">{resolvedTheme === 'dark' ? '☀️' : '🌙'}</span>
+            <span aria-hidden="true">{themeIcon}</span>
           </button>
           {authEnabled &&
             (user ? (

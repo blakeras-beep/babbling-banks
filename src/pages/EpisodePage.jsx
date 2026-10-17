@@ -5,6 +5,7 @@ import { getRelatedEpisodes } from '../lib/search.js';
 import {
   formatDuration,
   formatEpisodeCode,
+  getDisplayTitle,
   getPlatformColor,
   getWatchUrl,
 } from '../lib/platforms.js';
@@ -101,7 +102,8 @@ export default function EpisodePage() {
           </div>
         </div>
         <div className="detail-card__body">
-          <h1 className="detail-card__title">{episode.title}</h1>
+          <h1 className="detail-card__title">{getDisplayTitle(episode)}</h1>
+          {episode.shortTitle && <p className="detail-card__alt-title">{episode.title}</p>}
           <p className="detail-card__synopsis">
             {episode.fullSynopsis || episode.shortDescription}
           </p>
@@ -113,8 +115,10 @@ export default function EpisodePage() {
                 {episode.characters.map((name) => (
                   <Link
                     key={name}
-                    to={`/?q=${encodeURIComponent(name)}`}
+                    to={`/show/${episode.show}?q=${encodeURIComponent(name)}`}
                     className="pill pill--primary"
+                    title={`More ${show?.name ?? ''} episodes with ${name}`}
+                    aria-label={`${name}: more ${show?.name ?? ''} episodes with ${name}`}
                   >
                     {name}
                   </Link>
@@ -141,7 +145,13 @@ export default function EpisodePage() {
               <h2 className="section-label">Themes</h2>
               <div className="pill-row">
                 {episode.themes.map((name) => (
-                  <Link key={name} to={`/?q=${encodeURIComponent(name)}`} className="pill">
+                  <Link
+                    key={name}
+                    to={`/show/${episode.show}?q=${encodeURIComponent(name)}`}
+                    className="pill"
+                    title={`More ${show?.name ?? ''} episodes about ${name.toLowerCase()}`}
+                    aria-label={`${name}: more ${show?.name ?? ''} episodes about ${name.toLowerCase()}`}
+                  >
                     {name}
                   </Link>
                 ))}
@@ -215,14 +225,14 @@ export default function EpisodePage() {
         <div className="detail-toolbar" style={{ marginTop: 14 }}>
           {previous ? (
             <Link to={`/episode/${previous.id}`} className="btn btn--ghost">
-              ← {previous.title}
+              ← {getDisplayTitle(previous)}
             </Link>
           ) : (
             <span />
           )}
           {next && (
             <Link to={`/episode/${next.id}`} className="btn btn--ghost">
-              {next.title} →
+              {getDisplayTitle(next)} →
             </Link>
           )}
         </div>

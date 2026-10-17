@@ -166,6 +166,26 @@ describe('catalog queries', () => {
   });
 });
 
+describe('home page suggestion chips', () => {
+  // Every chip on the home page should land on an obvious top result.
+  const chips = [
+    ['freeze dad', 'Magic Xylophone'],
+    ['wheels on the bus', 'Wheels on the Bus'],
+    ['muddy puddles', 'Muddy Puddles'],
+    ['sleepytime', 'Sleepytime'],
+    ['potty song', 'Potty Training Video for Toddlers'],
+    ['the one with the balloon', 'Balloon Day'],
+    ['george at the hospital', 'Doctor Monkey'],
+  ];
+  it.each(chips)('"%s" lands on %s', (query, title) => {
+    expect(titleOf(searchEpisodes(query))).toBe(title);
+  });
+
+  it('"elmo" returns Sesame Street episodes', () => {
+    expect(searchEpisodes('elmo')[0].episode.show).toBe('sesame_street');
+  });
+});
+
 describe('generateFollowUps', () => {
   it('returns nothing when the top result is a clear winner', () => {
     expect(generateFollowUps(searchEpisodes('magic xylophone'))).toEqual([]);

@@ -2,20 +2,24 @@ import { useMemo } from 'react';
 
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-/** Wraps any of `terms` found in `text` in <mark>. */
+/**
+ * Wraps words in `text` that start with any of `terms` in <mark>. The whole
+ * word is highlighted ("Daddy" for the term "dad") so a word is never split
+ * visually in two.
+ */
 export default function Highlight({ text, terms }) {
   const parts = useMemo(() => {
     if (!text || !terms || terms.length === 0) return [text];
-    const pattern = new RegExp(`\\b(${terms.map(escapeRegExp).join('|')})`, 'gi');
+    const pattern = new RegExp(`\\b((?:${terms.map(escapeRegExp).join('|')})\\w*)`, 'gi');
     return text.split(pattern);
   }, [text, terms]);
 
   if (parts.length === 1) return <>{text}</>;
-  const lower = new Set(terms.map((t) => t.toLowerCase()));
+  // String.split with one capture group alternates: plain, match, plain, match…
   return (
     <>
       {parts.map((part, index) =>
-        lower.has(part.toLowerCase()) ? (
+        index % 2 === 1 ? (
           <mark className="highlight" key={index}>
             {part}
           </mark>

@@ -31,9 +31,9 @@
       "letter W"
     ],
     "themes": [
-      "first day",
-      "meeting neighbors",
-      "letters"
+      "First day",
+      "Meeting neighbors",
+      "Letters"
     ],
     "aliases": [
       "gordon introduces sally to sesame street",
@@ -82,9 +82,9 @@
       "broom"
     ],
     "themes": [
-      "fear",
-      "trust",
-      "lost and found"
+      "Fear",
+      "Trust",
+      "Lost and found"
     ],
     "aliases": [
       "episode 847",
@@ -140,10 +140,10 @@
       "picture of mr hooper"
     ],
     "themes": [
-      "death",
-      "grief",
-      "loss",
-      "family"
+      "Death",
+      "Grief",
+      "Loss",
+      "Family"
     ],
     "aliases": [
       "farewell mr hooper",
@@ -196,9 +196,9 @@
       "snuffle"
     ],
     "themes": [
-      "being believed",
-      "honesty",
-      "friendship"
+      "Being believed",
+      "Honesty",
+      "Friendship"
     ],
     "aliases": [
       "episode 2096",
@@ -249,9 +249,9 @@
       "wedding dress"
     ],
     "themes": [
-      "weddings",
-      "love",
-      "family"
+      "Weddings",
+      "Love",
+      "Family"
     ],
     "aliases": [
       "maria and luis wedding",
@@ -301,9 +301,9 @@
       "paintbrushes"
     ],
     "themes": [
-      "art",
-      "self identity",
-      "teamwork"
+      "Art",
+      "Self identity",
+      "Teamwork"
     ],
     "aliases": [
       "community mural",
@@ -350,9 +350,9 @@
       "superhero costumes"
     ],
     "themes": [
-      "self identity",
-      "pretend play",
-      "bilingualism"
+      "Self identity",
+      "Pretend play",
+      "Bilingualism"
     ],
     "aliases": [
       "sesame street super heroes",
@@ -392,15 +392,15 @@
       "Abby Cadabby"
     ],
     "settings": [
-      "community garden"
+      "Community garden"
     ],
     "objects": [
       "watering can",
       "garden"
     ],
     "themes": [
-      "kindness",
-      "helping others"
+      "Kindness",
+      "Helping others"
     ],
     "aliases": [
       "kind rudy",
@@ -450,9 +450,9 @@
       "tortillas"
     ],
     "themes": [
-      "food",
-      "culture",
-      "sharing"
+      "Food",
+      "Culture",
+      "Sharing"
     ],
     "aliases": [
       "the great corn festival",
@@ -499,9 +499,9 @@
       "work tools"
     ],
     "themes": [
-      "careers",
-      "hard work",
-      "practice"
+      "Careers",
+      "Hard work",
+      "Practice"
     ],
     "aliases": [
       "jobs day",
@@ -549,9 +549,9 @@
       "helmet"
     ],
     "themes": [
-      "courage",
-      "learning new skills",
-      "perseverance"
+      "Courage",
+      "Learning new skills",
+      "Perseverance"
     ],
     "aliases": [
       "berts bike time with luis",
@@ -601,9 +601,9 @@
       "hair accessories"
     ],
     "themes": [
-      "self identity",
-      "self acceptance",
-      "diversity"
+      "Self identity",
+      "Self acceptance",
+      "Diversity"
     ],
     "aliases": [
       "happy hair day",
@@ -650,9 +650,9 @@
       "clothing drive box"
     ],
     "themes": [
-      "growing up",
-      "giving",
-      "sharing"
+      "Growing up",
+      "Giving",
+      "Sharing"
     ],
     "aliases": [
       "rudys favorite sweater",
@@ -700,9 +700,9 @@
       "fishing pole"
     ],
     "themes": [
-      "engineering",
-      "problem solving",
-      "magnets"
+      "Engineering",
+      "Problem solving",
+      "Magnets"
     ],
     "aliases": [
       "how to catch a robot dog",
@@ -748,9 +748,9 @@
       "clubhouse"
     ],
     "themes": [
-      "self acceptance",
-      "peer pressure",
-      "belonging"
+      "Self acceptance",
+      "Peer pressure",
+      "Belonging"
     ],
     "aliases": [
       "big birds happy to be me club",
@@ -799,9 +799,9 @@
       "hoops"
     ],
     "themes": [
-      "pets",
-      "exercise",
-      "perseverance"
+      "Pets",
+      "Exercise",
+      "Perseverance"
     ],
     "aliases": [
       "gold medal tango",
@@ -848,8 +848,8 @@
       "bubble wands"
     ],
     "themes": [
-      "problem solving",
-      "engineering"
+      "Problem solving",
+      "Engineering"
     ],
     "aliases": [
       "bubble trouble",
@@ -897,8 +897,8 @@
       "ukulele"
     ],
     "themes": [
-      "culture",
-      "family",
+      "Culture",
+      "Family",
       "Hawaii"
     ],
     "aliases": [
@@ -945,9 +945,9 @@
       "photos"
     ],
     "themes": [
-      "family",
-      "self identity",
-      "skin color"
+      "Family",
+      "Self identity",
+      "Skin color"
     ],
     "aliases": [
       "family album",
@@ -992,9 +992,9 @@
       "musical instruments"
     ],
     "themes": [
-      "friendship",
-      "music",
-      "compromise"
+      "Friendship",
+      "Music",
+      "Compromise"
     ],
     "aliases": [
       "rockin with elmo and abby",
@@ -1033,16 +1033,16 @@
       "Gabrielle"
     ],
     "settings": [
-      "outdoor library"
+      "Outdoor library"
     ],
     "objects": [
       "books",
       "comic book"
     ],
     "themes": [
-      "representation",
-      "reading",
-      "creativity"
+      "Representation",
+      "Reading",
+      "Creativity"
     ],
     "aliases": [
       "read and share",
@@ -1089,9 +1089,9 @@
       "costumes"
     ],
     "themes": [
-      "pretend play",
-      "standing up for yourself",
-      "inclusion"
+      "Pretend play",
+      "Standing up for yourself",
+      "Inclusion"
     ],
     "aliases": [
       "just right",
@@ -1130,7 +1130,7 @@
       "Big Bird"
     ],
     "settings": [
-      "community garden"
+      "Community garden"
     ],
     "objects": [
       "rocks",
@@ -1138,9 +1138,9 @@
       "paper"
     ],
     "themes": [
-      "art",
-      "creativity",
-      "problem solving"
+      "Art",
+      "Creativity",
+      "Problem solving"
     ],
     "aliases": [
       "art rocks",
@@ -1179,7 +1179,7 @@
       "Elmo"
     ],
     "settings": [
-      "shoe store",
+      "Shoe store",
       "Sesame Street"
     ],
     "objects": [
@@ -1187,9 +1187,9 @@
       "glass slipper"
     ],
     "themes": [
-      "play",
-      "being yourself",
-      "exercise"
+      "Play",
+      "Being yourself",
+      "Exercise"
     ],
     "aliases": [
       "cinderellas new shoes",
@@ -1235,9 +1235,9 @@
       "cats"
     ],
     "themes": [
-      "counting",
-      "math",
-      "jobs"
+      "Counting",
+      "Math",
+      "Jobs"
     ],
     "aliases": [
       "count on",
@@ -1285,9 +1285,9 @@
       "trash can"
     ],
     "themes": [
-      "exercise",
-      "health",
-      "grouches"
+      "Exercise",
+      "Health",
+      "Grouches"
     ],
     "aliases": [
       "grouch ercise",
@@ -1333,8 +1333,8 @@
       "ramp"
     ],
     "themes": [
-      "engineering",
-      "problem solving"
+      "Engineering",
+      "Problem solving"
     ],
     "aliases": [
       "monster truckin",
@@ -1373,7 +1373,7 @@
       "Sam"
     ],
     "settings": [
-      "horse farm"
+      "Horse farm"
     ],
     "objects": [
       "pony",
@@ -1381,9 +1381,9 @@
       "saddle"
     ],
     "themes": [
-      "animals",
-      "patience",
-      "care"
+      "Animals",
+      "Patience",
+      "Care"
     ],
     "aliases": [
       "horsing around",
@@ -1428,9 +1428,9 @@
       "music"
     ],
     "themes": [
-      "dance",
-      "movement",
-      "exercise"
+      "Dance",
+      "Movement",
+      "Exercise"
     ],
     "aliases": [
       "move and groove on sesame street",
@@ -1472,14 +1472,14 @@
       "Tamir"
     ],
     "settings": [
-      "dance class"
+      "Dance class"
     ],
     "objects": [
       "fans"
     ],
     "themes": [
-      "culture",
-      "dance",
+      "Culture",
+      "Dance",
       "Korean heritage"
     ],
     "aliases": [
@@ -1525,9 +1525,9 @@
       "piano"
     ],
     "themes": [
-      "music",
-      "science",
-      "sound"
+      "Music",
+      "Science",
+      "Sound"
     ],
     "aliases": [
       "make music with bob",
@@ -1576,8 +1576,8 @@
       "trash"
     ],
     "themes": [
-      "recycling",
-      "environment"
+      "Recycling",
+      "Environment"
     ],
     "aliases": [
       "recycling fairy to the rescue",
@@ -1626,8 +1626,8 @@
       "cake"
     ],
     "themes": [
-      "letters",
-      "alphabet"
+      "Letters",
+      "Alphabet"
     ],
     "aliases": [
       "the letter c vacation",
@@ -1674,9 +1674,9 @@
       "conditioner"
     ],
     "themes": [
-      "self care",
-      "hair",
-      "family"
+      "Self care",
+      "Hair",
+      "Family"
     ],
     "aliases": [
       "wash day",
@@ -1717,16 +1717,16 @@
       "Tamir"
     ],
     "settings": [
-      "community garden"
+      "Community garden"
     ],
     "objects": [
       "rakes",
       "garden tools"
     ],
     "themes": [
-      "community",
-      "teamwork",
-      "responsibility"
+      "Community",
+      "Teamwork",
+      "Responsibility"
     ],
     "aliases": [
       "community garden cleanup",
@@ -1773,8 +1773,8 @@
       "camera"
     ],
     "themes": [
-      "family",
-      "love"
+      "Family",
+      "Love"
     ],
     "aliases": [
       "love makes a family",
@@ -1822,9 +1822,9 @@
       "maze"
     ],
     "themes": [
-      "engineering",
-      "pets",
-      "problem solving"
+      "Engineering",
+      "Pets",
+      "Problem solving"
     ],
     "aliases": [
       "gabrielles amazing maze",
@@ -1872,9 +1872,9 @@
       "macaroni and cheese"
     ],
     "themes": [
-      "family",
-      "grandparents",
-      "cooking"
+      "Family",
+      "Grandparents",
+      "Cooking"
     ],
     "aliases": [
       "grandparents day",
@@ -1921,8 +1921,8 @@
       "ping pong balls"
     ],
     "themes": [
-      "engineering",
-      "problem solving"
+      "Engineering",
+      "Problem solving"
     ],
     "aliases": [
       "ramp and roll",
@@ -1969,9 +1969,9 @@
       "boxes"
     ],
     "themes": [
-      "engineering",
-      "pretend play",
-      "size"
+      "Engineering",
+      "Pretend play",
+      "Size"
     ],
     "aliases": [
       "sesame street submarine",
@@ -2015,8 +2015,8 @@
       "microphone"
     ],
     "themes": [
-      "friendship",
-      "differences"
+      "Friendship",
+      "Differences"
     ],
     "aliases": [
       "can they be friends",
@@ -2062,8 +2062,8 @@
       "dough"
     ],
     "themes": [
-      "food",
-      "culture"
+      "Food",
+      "Culture"
     ],
     "aliases": [
       "the oct dough pus",
@@ -2108,9 +2108,9 @@
       "soccer ball"
     ],
     "themes": [
-      "self identity",
-      "names",
-      "speaking up"
+      "Self identity",
+      "Names",
+      "Speaking up"
     ],
     "aliases": [
       "proud of my name",
@@ -2158,9 +2158,9 @@
       "sleeping bags"
     ],
     "themes": [
-      "bedtime",
-      "routines",
-      "friendship"
+      "Bedtime",
+      "Routines",
+      "Friendship"
     ],
     "aliases": [
       "abbys magical sleepover",
@@ -2210,8 +2210,8 @@
       "mirror"
     ],
     "themes": [
-      "art",
-      "self identity"
+      "Art",
+      "Self identity"
     ],
     "aliases": [
       "sesame street self portraits",
@@ -2257,8 +2257,8 @@
       "helmet"
     ],
     "themes": [
-      "patience",
-      "taking turns"
+      "Patience",
+      "Taking turns"
     ],
     "aliases": [
       "scootin on sesame street",
@@ -2299,16 +2299,16 @@
       "Frankie the worm"
     ],
     "settings": [
-      "community garden"
+      "Community garden"
     ],
     "objects": [
       "worms",
       "dirt"
     ],
     "themes": [
-      "engineering",
-      "friendship",
-      "loneliness"
+      "Engineering",
+      "Friendship",
+      "Loneliness"
     ],
     "aliases": [
       "worms want to play",
@@ -2354,8 +2354,8 @@
       "toothbrush"
     ],
     "themes": [
-      "routines",
-      "getting ready"
+      "Routines",
+      "Getting ready"
     ],
     "aliases": [
       "elmos morning routine",
@@ -2401,9 +2401,9 @@
       "game show buzzer"
     ],
     "themes": [
-      "starting school",
-      "anxiety",
-      "kindergarten"
+      "Starting school",
+      "Anxiety",
+      "Kindergarten"
     ],
     "aliases": [
       "are you ready for school",
@@ -2443,15 +2443,15 @@
       "Cookie Monster"
     ],
     "settings": [
-      "supermarket"
+      "Supermarket"
     ],
     "objects": [
       "shopping cart",
       "groceries"
     ],
     "themes": [
-      "shopping",
-      "games"
+      "Shopping",
+      "Games"
     ],
     "aliases": [
       "supermarket games",
@@ -2496,9 +2496,9 @@
       "music"
     ],
     "themes": [
-      "self identity",
-      "language",
-      "music"
+      "Self identity",
+      "Language",
+      "Music"
     ],
     "aliases": [
       "sesame street song day",
@@ -2543,9 +2543,9 @@
       "flamingos"
     ],
     "themes": [
-      "animals",
-      "family",
-      "nature"
+      "Animals",
+      "Family",
+      "Nature"
     ],
     "aliases": [
       "the flamingo scoop",
@@ -2592,9 +2592,9 @@
       "pond"
     ],
     "themes": [
-      "animals",
-      "habitats",
-      "self acceptance"
+      "Animals",
+      "Habitats",
+      "Self acceptance"
     ],
     "aliases": [
       "a home for fido",
@@ -2641,9 +2641,9 @@
       "lanterns"
     ],
     "themes": [
-      "holidays",
-      "culture",
-      "family"
+      "Holidays",
+      "Culture",
+      "Family"
     ],
     "aliases": [
       "sesame streets lunar new year celebration",
@@ -2687,9 +2687,9 @@
       "number zero"
     ],
     "themes": [
-      "math",
-      "counting",
-      "zero"
+      "Math",
+      "Counting",
+      "Zero"
     ],
     "aliases": [
       "elmo helps the amazing zero",
@@ -2728,7 +2728,7 @@
       "Grover"
     ],
     "settings": [
-      "carnival"
+      "Carnival"
     ],
     "objects": [
       "ping pong balls",
@@ -2736,9 +2736,9 @@
       "tube"
     ],
     "themes": [
-      "problem solving",
-      "games",
-      "science"
+      "Problem solving",
+      "Games",
+      "Science"
     ],
     "aliases": [
       "the grover game",
@@ -2785,9 +2785,9 @@
       "lost pet signs"
     ],
     "themes": [
-      "pets",
-      "responsibility",
-      "caring"
+      "Pets",
+      "Responsibility",
+      "Caring"
     ],
     "aliases": [
       "the kitty sitters",
@@ -2826,7 +2826,7 @@
       "Elmo"
     ],
     "settings": [
-      "community garden"
+      "Community garden"
     ],
     "objects": [
       "hose",
@@ -2834,9 +2834,9 @@
       "water bottle"
     ],
     "themes": [
-      "engineering",
-      "problem solving",
-      "gardening"
+      "Engineering",
+      "Problem solving",
+      "Gardening"
     ],
     "aliases": [
       "tamirs water works",
@@ -2881,9 +2881,9 @@
       "striped shirts"
     ],
     "themes": [
-      "opposites",
-      "friendship",
-      "differences"
+      "Opposites",
+      "Friendship",
+      "Differences"
     ],
     "aliases": [
       "bert and ernies opposite day",
@@ -2928,9 +2928,9 @@
       "costumes"
     ],
     "themes": [
-      "family",
-      "culture",
-      "music"
+      "Family",
+      "Culture",
+      "Music"
     ],
     "aliases": [
       "our family musical",
@@ -2969,7 +2969,7 @@
       "Dorothy"
     ],
     "settings": [
-      "ocean",
+      "Ocean",
       "Sesame Street"
     ],
     "objects": [
@@ -2977,9 +2977,9 @@
       "magic wand"
     ],
     "themes": [
-      "ocean",
-      "problem solving",
-      "magic"
+      "Ocean",
+      "Problem solving",
+      "Magic"
     ],
     "aliases": [
       "elmo and abbys ocean adventure",
@@ -3025,9 +3025,9 @@
       "fair games"
     ],
     "themes": [
-      "feelings",
-      "emotions",
-      "empathy"
+      "Feelings",
+      "Emotions",
+      "Empathy"
     ],
     "aliases": [
       "the feelings fair",
@@ -3073,9 +3073,9 @@
       "alphabet"
     ],
     "themes": [
-      "sign language",
-      "alphabet",
-      "inclusion"
+      "Sign language",
+      "Alphabet",
+      "Inclusion"
     ],
     "aliases": [
       "the sign language abcs",
@@ -3120,8 +3120,8 @@
       "umbrella"
     ],
     "themes": [
-      "weather",
-      "patience"
+      "Weather",
+      "Patience"
     ],
     "aliases": [
       "jumpin in the rain",
@@ -3169,8 +3169,8 @@
       "candles"
     ],
     "themes": [
-      "holidays",
-      "culture",
+      "Holidays",
+      "Culture",
       "Jewish traditions"
     ],
     "aliases": [
@@ -3214,9 +3214,9 @@
       "musical instrument"
     ],
     "themes": [
-      "practice",
-      "perseverance",
-      "music"
+      "Practice",
+      "Perseverance",
+      "Music"
     ],
     "aliases": [
       "elmos little star",
@@ -3265,9 +3265,9 @@
       "stop sign"
     ],
     "themes": [
-      "vehicles",
-      "helping",
-      "transportation"
+      "Vehicles",
+      "Helping",
+      "Transportation"
     ],
     "aliases": [
       "the tasty transport",
@@ -3312,9 +3312,9 @@
       "comic book"
     ],
     "themes": [
-      "language",
-      "culture",
-      "art"
+      "Language",
+      "Culture",
+      "Art"
     ],
     "aliases": [
       "tamir learns tagalog",
@@ -3359,9 +3359,9 @@
       "pilot costume"
     ],
     "themes": [
-      "bravery",
-      "history",
-      "careers"
+      "Bravery",
+      "History",
+      "Careers"
     ],
     "aliases": [
       "brave bessie by brave gabrielle",
@@ -3400,14 +3400,14 @@
       "Elmo"
     ],
     "settings": [
-      "library"
+      "Library"
     ],
     "objects": [
       "books"
     ],
     "themes": [
-      "reading",
-      "libraries"
+      "Reading",
+      "Libraries"
     ],
     "aliases": [
       "elmo visits the library",
@@ -3444,15 +3444,15 @@
       "Chris"
     ],
     "settings": [
-      "playground"
+      "Playground"
     ],
     "objects": [
       "big slide"
     ],
     "themes": [
-      "courage",
-      "fear",
-      "trying new things"
+      "Courage",
+      "Fear",
+      "Trying new things"
     ],
     "aliases": [
       "elmo goes down the big slide",
@@ -3496,8 +3496,8 @@
       "dinosaur book"
     ],
     "themes": [
-      "dinosaurs",
-      "science"
+      "Dinosaurs",
+      "Science"
     ],
     "aliases": [
       "roar its a dinosaur",
@@ -3545,9 +3545,9 @@
       "kimbap"
     ],
     "themes": [
-      "food",
-      "culture",
-      "sharing"
+      "Food",
+      "Culture",
+      "Sharing"
     ],
     "aliases": [
       "use that rice",
@@ -3595,9 +3595,9 @@
       "wooden cricket"
     ],
     "themes": [
-      "music",
-      "culture",
-      "problem solving"
+      "Music",
+      "Culture",
+      "Problem solving"
     ],
     "aliases": [
       "the mystery cricket",
@@ -3643,9 +3643,9 @@
       "octagon"
     ],
     "themes": [
-      "shapes",
-      "math",
-      "sharing"
+      "Shapes",
+      "Math",
+      "Sharing"
     ],
     "aliases": [
       "prairie dawns cookie party",
@@ -3691,9 +3691,9 @@
       "blocks"
     ],
     "themes": [
-      "anger",
-      "calming down",
-      "mindfulness"
+      "Anger",
+      "Calming down",
+      "Mindfulness"
     ],
     "aliases": [
       "beachball bop",
@@ -3741,9 +3741,9 @@
       "tablet"
     ],
     "themes": [
-      "holidays",
-      "fairness",
-      "kindness"
+      "Holidays",
+      "Fairness",
+      "Kindness"
     ],
     "aliases": [
       "martin luther king jr day on sesame street",
@@ -3789,9 +3789,9 @@
       "art supplies"
     ],
     "themes": [
-      "disappointment",
-      "feelings",
-      "art"
+      "Disappointment",
+      "Feelings",
+      "Art"
     ],
     "aliases": [
       "tamirs art show",
@@ -3837,9 +3837,9 @@
       "drums"
     ],
     "themes": [
-      "music",
-      "taking turns",
-      "listening"
+      "Music",
+      "Taking turns",
+      "Listening"
     ],
     "aliases": [
       "jam session jam up",
@@ -3885,8 +3885,8 @@
       "books"
     ],
     "themes": [
-      "helping others",
-      "community",
+      "Helping others",
+      "Community",
       "Jewish traditions"
     ],
     "aliases": [
@@ -3926,16 +3926,16 @@
       "Abby Cadabby"
     ],
     "settings": [
-      "doctor's office"
+      "Doctor's office"
     ],
     "objects": [
       "shot",
       "doctor kit"
     ],
     "themes": [
-      "fear",
-      "doctor visits",
-      "health"
+      "Fear",
+      "Doctor visits",
+      "Health"
     ],
     "aliases": [
       "rudys doctor dilemma",
@@ -3979,9 +3979,9 @@
       "snowman"
     ],
     "themes": [
-      "weather",
-      "melting",
-      "science"
+      "Weather",
+      "Melting",
+      "Science"
     ],
     "aliases": [
       "elmos lost snowman",
@@ -4025,8 +4025,8 @@
       "microphone"
     ],
     "themes": [
-      "feelings",
-      "nursery rhymes"
+      "Feelings",
+      "Nursery rhymes"
     ],
     "aliases": [
       "nursery rhyme day on sesame street",
@@ -4066,16 +4066,16 @@
     ],
     "settings": [
       "Sesame Street",
-      "the moon"
+      "The moon"
     ],
     "objects": [
       "telescope",
       "spaceship"
     ],
     "themes": [
-      "space",
-      "science",
-      "pretend play"
+      "Space",
+      "Science",
+      "Pretend play"
     ],
     "aliases": [
       "a trip to the moon",
@@ -4120,7 +4120,7 @@
       "machine"
     ],
     "themes": [
-      "grouches"
+      "Grouches"
     ],
     "aliases": [
       "the grouch machine",
@@ -4156,16 +4156,16 @@
       "Telly"
     ],
     "settings": [
-      "community garden"
+      "Community garden"
     ],
     "objects": [
       "earthworms",
       "party"
     ],
     "themes": [
-      "fear",
-      "nature",
-      "friendship"
+      "Fear",
+      "Nature",
+      "Friendship"
     ],
     "aliases": [
       "abbys garden party",
@@ -4212,9 +4212,9 @@
       "treats"
     ],
     "themes": [
-      "pets",
-      "calm",
-      "patience"
+      "Pets",
+      "Calm",
+      "Patience"
     ],
     "aliases": [
       "the wet dog wiggles",
@@ -4259,9 +4259,9 @@
       "tap shoes"
     ],
     "themes": [
-      "self kindness",
-      "practice",
-      "dance"
+      "Self kindness",
+      "Practice",
+      "Dance"
     ],
     "aliases": [
       "abby taps into kindness",
@@ -4308,9 +4308,9 @@
       "everyday objects"
     ],
     "themes": [
-      "creativity",
-      "problem solving",
-      "games"
+      "Creativity",
+      "Problem solving",
+      "Games"
     ],
     "aliases": [
       "i wonder if we can use this",
@@ -4356,9 +4356,9 @@
       "tools"
     ],
     "themes": [
-      "tools",
-      "problem solving",
-      "fairy tales"
+      "Tools",
+      "Problem solving",
+      "Fairy tales"
     ],
     "aliases": [
       "abby helps cinderella",
@@ -4404,9 +4404,9 @@
       "camera"
     ],
     "themes": [
-      "sharing",
-      "anger",
-      "friendship"
+      "Sharing",
+      "Anger",
+      "Friendship"
     ],
     "aliases": [
       "lights camera share",
@@ -4457,9 +4457,9 @@
       "bread"
     ],
     "themes": [
-      "teamwork",
-      "problem solving",
-      "surprises"
+      "Teamwork",
+      "Problem solving",
+      "Surprises"
     ],
     "aliases": [
       "a snuffy sized sandwich",
@@ -4505,9 +4505,9 @@
       "bulldozer"
     ],
     "themes": [
-      "mistakes",
-      "feelings",
-      "perseverance"
+      "Mistakes",
+      "Feelings",
+      "Perseverance"
     ],
     "aliases": [
       "a bulldozers unlucky day",
@@ -4554,9 +4554,9 @@
       "puzzle"
     ],
     "themes": [
-      "letters",
-      "alphabet",
-      "magic"
+      "Letters",
+      "Alphabet",
+      "Magic"
     ],
     "aliases": [
       "the letter go getters",
@@ -4602,9 +4602,9 @@
       "tent"
     ],
     "themes": [
-      "disappointment",
-      "creativity",
-      "camp"
+      "Disappointment",
+      "Creativity",
+      "Camp"
     ],
     "aliases": [
       "camp sesame street",
@@ -4650,9 +4650,9 @@
       "chickens"
     ],
     "themes": [
-      "fear",
-      "weather",
-      "storms"
+      "Fear",
+      "Weather",
+      "Storms"
     ],
     "aliases": [
       "chicken about thunderstorms",
@@ -4695,9 +4695,9 @@
       "potato"
     ],
     "themes": [
-      "sportsmanship",
-      "winning and losing",
-      "games"
+      "Sportsmanship",
+      "Winning and losing",
+      "Games"
     ],
     "aliases": [
       "elmo and abbys hot potato hoopla",
@@ -4735,16 +4735,16 @@
       "Gabrielle"
     ],
     "settings": [
-      "community garden"
+      "Community garden"
     ],
     "objects": [
       "charm bracelet",
       "magnifying glass"
     ],
     "themes": [
-      "five senses",
-      "nature",
-      "exploring"
+      "Five senses",
+      "Nature",
+      "Exploring"
     ],
     "aliases": [
       "garden explorers",
@@ -4790,9 +4790,9 @@
       "fort"
     ],
     "themes": [
-      "engineering",
-      "problem solving",
-      "sleepovers"
+      "Engineering",
+      "Problem solving",
+      "Sleepovers"
     ],
     "aliases": [
       "elmo and rudy make a fort",
@@ -4838,9 +4838,9 @@
       "chameleon"
     ],
     "themes": [
-      "animals",
-      "camouflage",
-      "science"
+      "Animals",
+      "Camouflage",
+      "Science"
     ],
     "aliases": [
       "hide and seek chameleon",
@@ -4879,15 +4879,15 @@
       "Count von Count"
     ],
     "settings": [
-      "the Count's castle"
+      "The Count's castle"
     ],
     "objects": [
       "bats"
     ],
     "themes": [
-      "counting",
-      "math",
-      "games"
+      "Counting",
+      "Math",
+      "Games"
     ],
     "aliases": [
       "counting bats",
@@ -4932,8 +4932,8 @@
       "robot dog"
     ],
     "themes": [
-      "engineering",
-      "problem solving"
+      "Engineering",
+      "Problem solving"
     ],
     "aliases": [
       "ruff ruff doggie robot",
@@ -4979,9 +4979,9 @@
       "birthday cake"
     ],
     "themes": [
-      "frustration",
-      "friendship",
-      "birthdays"
+      "Frustration",
+      "Friendship",
+      "Birthdays"
     ],
     "aliases": [
       "happy bert day",
@@ -5026,9 +5026,9 @@
       "golf ball"
     ],
     "themes": [
-      "focus",
-      "perseverance",
-      "sports"
+      "Focus",
+      "Perseverance",
+      "Sports"
     ],
     "aliases": [
       "putt putt cookie",
@@ -5074,9 +5074,9 @@
       "choir"
     ],
     "themes": [
-      "disappointment",
-      "feelings",
-      "music"
+      "Disappointment",
+      "Feelings",
+      "Music"
     ],
     "aliases": [
       "big birds big solo",
@@ -5121,9 +5121,9 @@
       "lost and found box"
     ],
     "themes": [
-      "memory",
-      "sorting",
-      "helping"
+      "Memory",
+      "Sorting",
+      "Helping"
     ],
     "aliases": [
       "sesame streets lost and found",
@@ -5170,8 +5170,8 @@
       "comb"
     ],
     "themes": [
-      "self identity",
-      "being yourself"
+      "Self identity",
+      "Being yourself"
     ],
     "aliases": [
       "no wrong way to be you",
@@ -5219,9 +5219,9 @@
       "net"
     ],
     "themes": [
-      "frustration",
-      "sports",
-      "inclusion"
+      "Frustration",
+      "Sports",
+      "Inclusion"
     ],
     "aliases": [
       "rudy plays ball",
@@ -5269,9 +5269,9 @@
       "chef hat"
     ],
     "themes": [
-      "nervousness",
-      "starting school",
-      "mindfulness"
+      "Nervousness",
+      "Starting school",
+      "Mindfulness"
     ],
     "aliases": [
       "new school scaries",
@@ -5318,9 +5318,9 @@
       "crayons"
     ],
     "themes": [
-      "sports",
-      "interests",
-      "family"
+      "Sports",
+      "Interests",
+      "Family"
     ],
     "aliases": [
       "tee ball trouble",
@@ -5365,9 +5365,9 @@
       "finish line"
     ],
     "themes": [
-      "healthy eating",
-      "sports",
-      "feelings"
+      "Healthy eating",
+      "Sports",
+      "Feelings"
     ],
     "aliases": [
       "elmo runs the race",
@@ -5415,9 +5415,9 @@
       "puzzle"
     ],
     "themes": [
-      "listening",
-      "apologizing",
-      "problem solving"
+      "Listening",
+      "Apologizing",
+      "Problem solving"
     ],
     "aliases": [
       "cookie monsters big puzzle",
@@ -5463,9 +5463,9 @@
       "flashlight"
     ],
     "themes": [
-      "magic",
-      "pets",
-      "problem solving"
+      "Magic",
+      "Pets",
+      "Problem solving"
     ],
     "aliases": [
       "abbys magical beasties",
@@ -5511,9 +5511,9 @@
       "suitcase"
     ],
     "themes": [
-      "sadness",
-      "missing a parent",
-      "friendship"
+      "Sadness",
+      "Missing a parent",
+      "Friendship"
     ],
     "aliases": [
       "grovers super suitycase",
@@ -5558,9 +5558,9 @@
       "toys"
     ],
     "themes": [
-      "imagination",
-      "sharing",
-      "play"
+      "Imagination",
+      "Sharing",
+      "Play"
     ],
     "aliases": [
       "elmos toy swap",
@@ -5605,9 +5605,9 @@
       "baby dragons"
     ],
     "themes": [
-      "bedtime",
-      "music",
-      "magic"
+      "Bedtime",
+      "Music",
+      "Magic"
     ],
     "aliases": [
       "abbys magical dragons",
@@ -5655,9 +5655,9 @@
       "magic wand"
     ],
     "themes": [
-      "gratitude",
-      "self worth",
-      "magic"
+      "Gratitude",
+      "Self worth",
+      "Magic"
     ],
     "aliases": [
       "elmos awesome bike",
@@ -5705,9 +5705,9 @@
       "cookie tower"
     ],
     "themes": [
-      "counting",
-      "teamwork",
-      "self control"
+      "Counting",
+      "Teamwork",
+      "Self control"
     ],
     "aliases": [
       "elmo and the great cookie stack",
@@ -5756,8 +5756,8 @@
       "ice cream"
     ],
     "themes": [
-      "building",
-      "creativity"
+      "Building",
+      "Creativity"
     ],
     "aliases": [
       "elmos magnificent mini city",
@@ -5805,9 +5805,9 @@
       "cookies"
     ],
     "themes": [
-      "frustration",
-      "independence",
-      "calming down"
+      "Frustration",
+      "Independence",
+      "Calming down"
     ],
     "aliases": [
       "cookie monsters cookie cart",
@@ -5847,16 +5847,16 @@
       "Abby Cadabby"
     ],
     "settings": [
-      "pretend spaceship"
+      "Pretend spaceship"
     ],
     "objects": [
       "spaceship",
       "rocket boosters"
     ],
     "themes": [
-      "expressing feelings",
-      "space",
-      "friendship"
+      "Expressing feelings",
+      "Space",
+      "Friendship"
     ],
     "aliases": [
       "elmos space adventure",
@@ -5904,8 +5904,8 @@
       "suitcase"
     ],
     "themes": [
-      "theater",
-      "flexibility"
+      "Theater",
+      "Flexibility"
     ],
     "aliases": [
       "grovers play",
@@ -5953,9 +5953,9 @@
       "boxes"
     ],
     "themes": [
-      "listening",
-      "frustration",
-      "magic"
+      "Listening",
+      "Frustration",
+      "Magic"
     ],
     "aliases": [
       "cookie monsters magical cart",

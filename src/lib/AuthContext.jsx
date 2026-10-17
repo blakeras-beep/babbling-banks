@@ -68,18 +68,22 @@ export function AuthProvider({ children }) {
       if (!cancelled) setLoading(false);
     })();
 
-    const {
-      data: { subscription },
-    } = auth.onAuthStateChange((_event, session) => {
-      const sessionUser = session?.user ?? null;
-      setUser(sessionUser);
-      if (sessionUser) loadRemoteFavorites(sessionUser);
-      else setFavorites(readLocalFavorites());
-    });
+    let unsubscribe = () => {};
+    auth
+      .onAuthStateChange((_event, session) => {
+        const sessionUser = session?.user ?? null;
+        setUser(sessionUser);
+        if (sessionUser) loadRemoteFavorites(sessionUser);
+        else setFavorites(readLocalFavorites());
+      })
+      .then((unsub) => {
+        if (cancelled) unsub();
+        else unsubscribe = unsub;
+      });
 
     return () => {
       cancelled = true;
-      subscription.unsubscribe();
+      unsubscribe();
     };
   }, [loadRemoteFavorites]);
 

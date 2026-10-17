@@ -38,9 +38,18 @@ export function getPlatformColor(platform) {
       return '#002BE7';
     case 'PBS Kids':
       return '#00A651';
+    case 'Paramount+':
+      return '#0064FF';
+    case 'Prime Video':
+      return '#00A8E1';
     default:
       return null;
   }
+}
+
+/** Short, scannable title for lists; falls back to the full title. */
+export function getDisplayTitle(episode) {
+  return episode.shortTitle || episode.title;
 }
 
 /** Human-friendly episode code: "S1 E3", "S2 E4b", or "Video" for YouTube. */

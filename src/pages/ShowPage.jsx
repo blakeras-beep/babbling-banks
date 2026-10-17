@@ -1,19 +1,83 @@
-import { useMemo, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { getEpisodesForShow, getShow } from '../data/index.js';
 import { searchEpisodes, getHighlightTerms } from '../lib/search.js';
-import { formatEpisodeCode } from '../lib/platforms.js';
+import { formatDuration, formatEpisodeCode, getDisplayTitle } from '../lib/platforms.js';
 import { useDocumentTitle } from '../hooks/useDocumentTitle.js';
 import EpisodeCard from '../components/EpisodeCard.jsx';
 import EmptyState from '../components/EmptyState.jsx';
 import NotFoundPage from './NotFoundPage.jsx';
 
+/** Horizontal tab strip that shows a fade while more tabs are off-screen. */
+function SeasonTabs({ seasons, season, onSelect }) {
+  const ref = useRef(null);
+  const [moreRight, setMoreRight] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return undefined;
+    const update = () => setMoreRight(el.scrollWidth - el.clientWidth - el.scrollLeft > 4);
+    update();
+    el.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => {
+      el.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+    };
+  }, [seasons]);
+
+  return (
+    <div className={`season-tabs-wrap ${moreRight ? 'has-more' : ''}`}>
+      <div className="season-tabs" role="tablist" aria-label="Seasons" ref={ref}>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={season === 'all'}
+          className={`chip chip--small ${season === 'all' ? 'chip--active' : ''}`}
+          onClick={() => onSelect('all')}
+        >
+          All
+        </button>
+        {seasons.map((number) => (
+          <button
+            type="button"
+            role="tab"
+            key={number}
+            aria-selected={season === String(number)}
+            className={`chip chip--small ${season === String(number) ? 'chip--active' : ''}`}
+            onClick={() => onSelect(String(number))}
+          >
+            Season {number}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function ShowPage() {
   const { showId } = useParams();
   const show = getShow(showId);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const urlFilter = searchParams.get('q') ?? '';
   const [season, setSeason] = useState('all');
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState(urlFilter);
   useDocumentTitle(show?.name ?? 'Show not found');
+
+  // Keep the in-show search in the URL so episode-page pills can link here
+  // and the back button restores it.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const trimmed = filter.trim();
+      if (trimmed === urlFilter) return;
+      setSearchParams(trimmed ? { q: trimmed } : {}, { replace: true });
+    }, 250);
+    return () => clearTimeout(timer);
+  }, [filter, urlFilter, setSearchParams]);
+
+  useEffect(() => {
+    setFilter((current) => (current.trim() === urlFilter ? current : urlFilter));
+  }, [urlFilter]);
 
   const episodes = useMemo(() => getEpisodesForShow(showId), [showId]);
   const seasons = useMemo(
@@ -105,7 +169,8 @@ export default function ShowPage() {
           ) : (
             <div className="stack">
               <div className="results-count">
-                {searchResults.length} match{searchResults.length === 1 ? '' : 'es'}
+                {searchResults.length} match{searchResults.length === 1 ? '' : 'es'} for “
+                {trimmedFilter}”
               </div>
               {searchResults.map((result, index) => (
                 <EpisodeCard
@@ -122,40 +187,37 @@ export default function ShowPage() {
       ) : (
         <>
           {seasons.length > 1 && (
-            <div className="season-tabs" role="tablist" aria-label="Seasons">
-              <button
-                type="button"
-                role="tab"
-                aria-selected={season === 'all'}
-                className={`chip chip--small ${season === 'all' ? 'chip--active' : ''}`}
-                onClick={() => setSeason('all')}
-              >
-                All
-              </button>
-              {seasons.map((number) => (
-                <button
-                  type="button"
-                  role="tab"
-                  key={number}
-                  aria-selected={season === String(number)}
-                  className={`chip chip--small ${season === String(number) ? 'chip--active' : ''}`}
-                  onClick={() => setSeason(String(number))}
-                >
-                  Season {number}
-                </button>
-              ))}
-            </div>
+            <SeasonTabs seasons={seasons} season={season} onSelect={setSeason} />
           )}
           <div className="stack" style={{ gap: 8, marginTop: seasons.length > 1 ? 0 : 18 }}>
-            {listed.map((episode) => (
-              <Link key={episode.id} to={`/episode/${episode.id}`} className="episode-row">
-                <span className="episode-row__code">{formatEpisodeCode(episode)}</span>
-                <span className="episode-row__title">{episode.title}</span>
-                <span className="episode-row__arrow" aria-hidden="true">
-                  →
-                </span>
-              </Link>
-            ))}
+            {listed.map((episode) => {
+              const songs = show.isYouTube ? (episode.songs ?? []).slice(0, 3) : [];
+              const code = show.isYouTube
+                ? (formatDuration(episode.duration) ?? 'Video')
+                : formatEpisodeCode(episode);
+              return (
+                <Link key={episode.id} to={`/episode/${episode.id}`} className="episode-row">
+                  <span
+                    className={`episode-row__code ${show.isYouTube ? 'episode-row__code--wide' : ''}`}
+                  >
+                    {code}
+                  </span>
+                  <span className="episode-row__main">
+                    <span className="episode-row__title">{getDisplayTitle(episode)}</span>
+                    {songs.length > 0 && (
+                      <span className="episode-row__sub">
+                        {songs.map((song) => song.title).join(' · ')}
+                        {episode.songs.length > songs.length &&
+                          ` · +${episode.songs.length - songs.length} more`}
+                      </span>
+                    )}
+                  </span>
+                  <span className="episode-row__arrow" aria-hidden="true">
+                    →
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </>
       )}

@@ -10,10 +10,11 @@ import FollowUpQuestions from '../components/FollowUpQuestions.jsx';
 import ShowGrid from '../components/ShowGrid.jsx';
 import EmptyState from '../components/EmptyState.jsx';
 
+// Every suggestion should land on an obvious top result.
 const SUGGESTIONS = [
   { label: 'freeze dad', emoji: '🧊' },
   { label: 'wheels on the bus', emoji: '🚌' },
-  { label: 'baby shark', emoji: '🦈' },
+  { label: 'muddy puddles', emoji: '💦' },
   { label: 'sleepytime', emoji: '💤' },
   { label: 'potty song', emoji: '🚽' },
   { label: 'elmo', emoji: '🔴' },
@@ -23,14 +24,23 @@ const SUGGESTIONS = [
 
 const PAGE_SIZE = 8;
 const MAX_RESULTS = 24;
+// Same margin the follow-up questions use to decide the top result is clear.
+const CONFIDENT_RATIO = 1.35;
+
+// Only steal focus on devices with a mouse/trackpad; on phones autofocus pops
+// the keyboard over the page before anyone has read it.
+const hasFinePointer = () =>
+  typeof window !== 'undefined' && (window.matchMedia?.('(pointer: fine)').matches ?? true);
 
 export default function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const urlQuery = searchParams.get('q') ?? '';
   const [query, setQuery] = useState(urlQuery);
   const [filters, setFilters] = useState({});
+  const [followUpsDismissed, setFollowUpsDismissed] = useState(false);
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [recent, setRecent] = useState(getRecentSearches);
+  const [autoFocus] = useState(hasFinePointer);
 
   useDocumentTitle(urlQuery ? `“${urlQuery}”` : '');
 
@@ -52,6 +62,7 @@ export default function HomePage() {
 
   useEffect(() => {
     setFilters({});
+    setFollowUpsDismissed(false);
     setVisible(PAGE_SIZE);
   }, [urlQuery]);
 
@@ -64,8 +75,8 @@ export default function HomePage() {
     [query, filters, allResults]
   );
   const followUps = useMemo(
-    () => (Object.keys(filters).length ? [] : generateFollowUps(allResults)),
-    [allResults, filters]
+    () => (Object.keys(filters).length || followUpsDismissed ? [] : generateFollowUps(allResults)),
+    [allResults, filters, followUpsDismissed]
   );
   const highlightTerms = useMemo(() => getHighlightTerms(query), [query]);
 
@@ -74,22 +85,44 @@ export default function HomePage() {
   }, [urlQuery, allResults.length]);
 
   const hasQuery = query.trim().length > 0;
+  const hasFilters = Object.keys(filters).length > 0;
+  const confident =
+    results.length === 1 ||
+    (results.length > 1 && results[0].score >= results[1].score * CONFIDENT_RATIO);
+  const best = confident ? results[0] : null;
+  const others = confident ? results.slice(1) : results;
+
   const answerFollowUp = (type, value) => {
-    if (value === null) return;
-    setFilters((current) => ({ ...current, [type]: value }));
+    // "Not sure" just dismisses the questions.
+    if (value === null) return setFollowUpsDismissed(true);
+    return setFilters((current) => ({ ...current, [type]: value }));
   };
+
+  const countLabel = (count) =>
+    `${count}${count >= MAX_RESULTS ? '+' : ''} ${count === 1 ? 'episode' : 'episodes'}`;
 
   return (
     <div className="container">
-      <section className="hero">
-        <img className="hero__logo" src="/logo.png" alt="Babbling Banks" width="150" height="150" />
-        <h1 className="hero__title">
-          Find any episode from a<span>toddler&apos;s description</span>
-        </h1>
-        <p className="hero__tagline">“The one where the dog freezes dad” → We&apos;ll find it.</p>
-      </section>
+      {!hasQuery && (
+        <section className="hero">
+          <img
+            className="hero__logo"
+            src="/logo.png"
+            alt="Babbling Banks"
+            width="150"
+            height="150"
+          />
+          <h1 className="hero__title">
+            Find any episode from a<span>toddler&apos;s description</span>
+          </h1>
+          <p className="hero__tagline">“The one where the dog freezes dad” → We&apos;ll find it.</p>
+        </section>
+      )}
 
-      <SearchBox value={query} onChange={setQuery} autoFocus />
+      <div className={hasQuery ? 'search-sticky' : ''}>
+        {hasQuery && <h1 className="visually-hidden">Search results</h1>}
+        <SearchBox value={query} onChange={setQuery} autoFocus={autoFocus} />
+      </div>
 
       {!hasQuery && (
         <div className="stack" style={{ gap: 28, marginTop: 24 }}>
@@ -143,7 +176,7 @@ export default function HomePage() {
 
       {hasQuery && (
         <div className="stack" style={{ gap: 18, marginTop: 20 }}>
-          {Object.keys(filters).length > 0 && (
+          {hasFilters && (
             <div className="filter-bar" aria-label="Active filters">
               <span>Filtered by:</span>
               {Object.entries(filters).map(([type, value]) => (
@@ -168,30 +201,47 @@ export default function HomePage() {
 
           {results.length > 0 && (
             <section aria-live="polite">
-              <div className="results-count">
-                Found {results.length}
-                {results.length >= MAX_RESULTS ? '+' : ''} episode{results.length === 1 ? '' : 's'}
-              </div>
-              <div className="stack">
-                {results.slice(0, visible).map((result, index) => (
+              {best && (
+                <div className="results-group">
+                  <div className="results-count">This looks like it</div>
                   <EpisodeCard
-                    key={result.episode.id}
-                    episode={result.episode}
-                    matches={result.matches}
+                    key={best.episode.id}
+                    episode={best.episode}
+                    matches={best.matches}
                     highlightTerms={highlightTerms}
-                    index={index}
+                    variant="best"
                   />
-                ))}
-              </div>
-              {results.length > visible && (
-                <div style={{ textAlign: 'center', marginTop: 18 }}>
-                  <button
-                    type="button"
-                    className="btn btn--secondary"
-                    onClick={() => setVisible((v) => v + PAGE_SIZE)}
-                  >
-                    Show more results
-                  </button>
+                </div>
+              )}
+              {others.length > 0 && (
+                <div className="results-group">
+                  <div className="results-count">
+                    {best
+                      ? `Not it? ${countLabel(others.length)} more`
+                      : `Found ${countLabel(others.length)}`}
+                  </div>
+                  <div className="stack">
+                    {others.slice(0, visible).map((result, index) => (
+                      <EpisodeCard
+                        key={result.episode.id}
+                        episode={result.episode}
+                        matches={result.matches}
+                        highlightTerms={highlightTerms}
+                        index={index}
+                      />
+                    ))}
+                  </div>
+                  {others.length > visible && (
+                    <div style={{ textAlign: 'center', marginTop: 18 }}>
+                      <button
+                        type="button"
+                        className="btn btn--secondary"
+                        onClick={() => setVisible((v) => v + PAGE_SIZE)}
+                      >
+                        Show more results
+                      </button>
+                    </div>
+                  )}
                 </div>
               )}
             </section>
@@ -202,7 +252,7 @@ export default function HomePage() {
               <p>
                 Try fewer words, a character&apos;s name, or something that happened in the episode.
               </p>
-              {Object.keys(filters).length > 0 && (
+              {hasFilters && (
                 <p style={{ marginTop: 8 }}>
                   <button type="button" className="btn--link" onClick={() => setFilters({})}>
                     Remove filters

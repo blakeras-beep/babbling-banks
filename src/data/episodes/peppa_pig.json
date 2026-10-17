@@ -17,7 +17,7 @@
     ],
     "settings": [
       "Peppa's house",
-      "garden"
+      "Garden"
     ],
     "objects": [
       "muddy puddles",
@@ -25,8 +25,8 @@
       "raincoats"
     ],
     "themes": [
-      "play",
-      "getting messy"
+      "Play",
+      "Getting messy"
     ],
     "aliases": [
       "jumping in muddy puddles",
@@ -71,8 +71,8 @@
       "Mr Dinosaur"
     ],
     "themes": [
-      "losing things",
-      "helping"
+      "Losing things",
+      "Helping"
     ],
     "aliases": [
       "george lost his dinosaur",
@@ -120,8 +120,8 @@
       "doctor's kit"
     ],
     "themes": [
-      "friendship",
-      "including others"
+      "Friendship",
+      "Including others"
     ],
     "aliases": [
       "suzy sheep comes to play",
@@ -169,8 +169,8 @@
       "birdcage"
     ],
     "themes": [
-      "copying",
-      "pets"
+      "Copying",
+      "Pets"
     ],
     "aliases": [
       "the parrot episode",
@@ -212,8 +212,8 @@
     ],
     "objects": [],
     "themes": [
-      "games",
-      "counting"
+      "Games",
+      "Counting"
     ],
     "aliases": [
       "hide and go seek",
@@ -257,15 +257,15 @@
       "Candy Cat"
     ],
     "settings": [
-      "playgroup"
+      "Playgroup"
     ],
     "objects": [
       "paints",
       "paintbrushes"
     ],
     "themes": [
-      "first day",
-      "school"
+      "First day",
+      "School"
     ],
     "aliases": [
       "georges first day at playgroup",
@@ -309,8 +309,8 @@
       "computer"
     ],
     "themes": [
-      "work",
-      "patience"
+      "Work",
+      "Patience"
     ],
     "aliases": [
       "mommy pig at work",
@@ -349,14 +349,14 @@
       "Suzy Sheep"
     ],
     "settings": [
-      "garden"
+      "Garden"
     ],
     "objects": [
       "ball"
     ],
     "themes": [
-      "fairness",
-      "sharing"
+      "Fairness",
+      "Sharing"
     ],
     "aliases": [
       "piggie in the middle",
@@ -400,8 +400,8 @@
       "glasses"
     ],
     "themes": [
-      "losing things",
-      "helping"
+      "Losing things",
+      "Helping"
     ],
     "aliases": [
       "daddy pig lost his glasses",
@@ -449,9 +449,9 @@
       "spade"
     ],
     "themes": [
-      "growing",
-      "patience",
-      "nature"
+      "Growing",
+      "Patience",
+      "Nature"
     ],
     "aliases": [
       "grandpa pig garden",
@@ -495,8 +495,8 @@
       "glass of water"
     ],
     "themes": [
-      "remedies",
-      "family"
+      "Remedies",
+      "Family"
     ],
     "aliases": [
       "hiccup",
@@ -539,16 +539,16 @@
       "Pedro Pony"
     ],
     "settings": [
-      "park",
-      "countryside"
+      "Park",
+      "Countryside"
     ],
     "objects": [
       "bicycle",
       "tricycle"
     ],
     "themes": [
-      "keeping up",
-      "including others"
+      "Keeping up",
+      "Including others"
     ],
     "aliases": [
       "bikes",
@@ -591,8 +591,8 @@
     ],
     "objects": [],
     "themes": [
-      "secrets",
-      "friendship"
+      "Secrets",
+      "Friendship"
     ],
     "aliases": [
       "secret",
@@ -631,15 +631,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "hill",
-      "outdoors"
+      "Hill",
+      "Outdoors"
     ],
     "objects": [
       "kite"
     ],
     "themes": [
-      "sharing",
-      "wind"
+      "Sharing",
+      "Wind"
     ],
     "aliases": [
       "kite",
@@ -677,15 +677,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "countryside"
+      "Countryside"
     ],
     "objects": [
       "picnic basket",
       "picnic blanket"
     ],
     "themes": [
-      "family outing",
-      "food"
+      "Family outing",
+      "Food"
     ],
     "aliases": [
       "pick nick",
@@ -736,8 +736,8 @@
       "recorder"
     ],
     "themes": [
-      "music",
-      "teamwork"
+      "Music",
+      "Teamwork"
     ],
     "aliases": [
       "music band",
@@ -777,13 +777,13 @@
       "Daddy Pig"
     ],
     "settings": [
-      "garden",
-      "outdoors"
+      "Garden",
+      "Outdoors"
     ],
     "objects": [],
     "themes": [
-      "nature",
-      "animals"
+      "Nature",
+      "Animals"
     ],
     "aliases": [
       "frogs worms butterflies",
@@ -829,7 +829,7 @@
       "dressing-up clothes"
     ],
     "themes": [
-      "pretend play"
+      "Pretend play"
     ],
     "aliases": [
       "dress up",
@@ -868,7 +868,7 @@
       "Daddy Pig"
     ],
     "settings": [
-      "shoe shop",
+      "Shoe shop",
       "Peppa's house"
     ],
     "objects": [
@@ -876,8 +876,8 @@
       "boots"
     ],
     "themes": [
-      "new things",
-      "muddy puddles"
+      "New things",
+      "Muddy puddles"
     ],
     "aliases": [
       "peppas new shoes",
@@ -917,15 +917,15 @@
       "Madame Gazelle"
     ],
     "settings": [
-      "playgroup",
-      "fete"
+      "Playgroup",
+      "Fete"
     ],
     "objects": [
       "stalls"
     ],
     "themes": [
-      "community",
-      "fundraising"
+      "Community",
+      "Fundraising"
     ],
     "aliases": [
       "school fair",
@@ -971,8 +971,8 @@
       "present"
     ],
     "themes": [
-      "birthdays",
-      "surprises"
+      "Birthdays",
+      "Surprises"
     ],
     "aliases": [
       "mommy pigs birthday",
@@ -1020,8 +1020,8 @@
       "coin"
     ],
     "themes": [
-      "growing up",
-      "magic"
+      "Growing up",
+      "Magic"
     ],
     "aliases": [
       "tooth fairy",
@@ -1060,14 +1060,14 @@
       "Daddy Pig"
     ],
     "settings": [
-      "car showroom"
+      "Car showroom"
     ],
     "objects": [
       "car"
     ],
     "themes": [
-      "shopping",
-      "change"
+      "Shopping",
+      "Change"
     ],
     "aliases": [
       "new car",
@@ -1115,8 +1115,8 @@
       "treasure"
     ],
     "themes": [
-      "problem solving",
-      "games"
+      "Problem solving",
+      "Games"
     ],
     "aliases": [
       "pirate treasure",
@@ -1163,8 +1163,8 @@
       "thermometer"
     ],
     "themes": [
-      "illness",
-      "getting better"
+      "Illness",
+      "Getting better"
     ],
     "aliases": [
       "peppa is sick",
@@ -1203,8 +1203,8 @@
       "Daddy Pig"
     ],
     "settings": [
-      "garden",
-      "outdoors"
+      "Garden",
+      "Outdoors"
     ],
     "objects": [
       "snowman",
@@ -1212,8 +1212,8 @@
       "hat"
     ],
     "themes": [
-      "weather",
-      "winter"
+      "Weather",
+      "Winter"
     ],
     "aliases": [
       "snow day",
@@ -1252,16 +1252,16 @@
       "Daddy Pig"
     ],
     "settings": [
-      "castle",
-      "hill"
+      "Castle",
+      "Hill"
     ],
     "objects": [
       "car",
       "picnic"
     ],
     "themes": [
-      "wind",
-      "family outing"
+      "Wind",
+      "Family outing"
     ],
     "aliases": [
       "the castle on the hill",
@@ -1307,8 +1307,8 @@
     ],
     "objects": [],
     "themes": [
-      "family",
-      "growing up"
+      "Family",
+      "Growing up"
     ],
     "aliases": [
       "cousin chloe",
@@ -1348,15 +1348,15 @@
     ],
     "settings": [
       "Peppa's house",
-      "kitchen"
+      "Kitchen"
     ],
     "objects": [
       "pancakes",
       "frying pan"
     ],
     "themes": [
-      "cooking",
-      "food"
+      "Cooking",
+      "Food"
     ],
     "aliases": [
       "pancake",
@@ -1401,8 +1401,8 @@
     ],
     "objects": [],
     "themes": [
-      "bedtime",
-      "family"
+      "Bedtime",
+      "Family"
     ],
     "aliases": [
       "babysitter",
@@ -1440,7 +1440,7 @@
       "Daddy Pig"
     ],
     "settings": [
-      "ballet class",
+      "Ballet class",
       "Peppa's house"
     ],
     "objects": [
@@ -1448,8 +1448,8 @@
       "tutu"
     ],
     "themes": [
-      "dance",
-      "learning"
+      "Dance",
+      "Learning"
     ],
     "aliases": [
       "ballet",
@@ -1493,8 +1493,8 @@
       "rain"
     ],
     "themes": [
-      "fear",
-      "weather"
+      "Fear",
+      "Weather"
     ],
     "aliases": [
       "thunder and lightning",
@@ -1533,7 +1533,7 @@
     ],
     "settings": [
       "Peppa's house",
-      "driveway"
+      "Driveway"
     ],
     "objects": [
       "car",
@@ -1542,8 +1542,8 @@
       "bucket"
     ],
     "themes": [
-      "chores",
-      "teamwork"
+      "Chores",
+      "Teamwork"
     ],
     "aliases": [
       "washing the car",
@@ -1590,8 +1590,8 @@
       "vegetables"
     ],
     "themes": [
-      "food",
-      "trying new things"
+      "Food",
+      "Trying new things"
     ],
     "aliases": [
       "lunch at granny and grandpas",
@@ -1629,16 +1629,16 @@
       "Daddy Pig"
     ],
     "settings": [
-      "campsite",
-      "countryside"
+      "Campsite",
+      "Countryside"
     ],
     "objects": [
       "tent",
       "camper van"
     ],
     "themes": [
-      "family outing",
-      "outdoors"
+      "Family outing",
+      "Outdoors"
     ],
     "aliases": [
       "camping trip",
@@ -1682,8 +1682,8 @@
       "bed"
     ],
     "themes": [
-      "bedtime",
-      "stories"
+      "Bedtime",
+      "Stories"
     ],
     "aliases": [
       "the sleepy princess",
@@ -1730,8 +1730,8 @@
       "ladder"
     ],
     "themes": [
-      "building",
-      "play"
+      "Building",
+      "Play"
     ],
     "aliases": [
       "tree house",
@@ -1779,8 +1779,8 @@
       "costumes"
     ],
     "themes": [
-      "parties",
-      "pretend play"
+      "Parties",
+      "Pretend play"
     ],
     "aliases": [
       "costume party",
@@ -1818,14 +1818,14 @@
       "Daddy Pig"
     ],
     "settings": [
-      "museum"
+      "Museum"
     ],
     "objects": [
       "dinosaur skeleton"
     ],
     "themes": [
-      "learning",
-      "history"
+      "Learning",
+      "History"
     ],
     "aliases": [
       "museum",
@@ -1863,15 +1863,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "garden"
+      "Garden"
     ],
     "objects": [
       "sun hat",
       "paddling pool"
     ],
     "themes": [
-      "weather",
-      "summer"
+      "Weather",
+      "Summer"
     ],
     "aliases": [
       "hot day",
@@ -1916,8 +1916,8 @@
       "puppets"
     ],
     "themes": [
-      "performance",
-      "stories"
+      "Performance",
+      "Stories"
     ],
     "aliases": [
       "puppet show",
@@ -1956,14 +1956,14 @@
     ],
     "settings": [
       "Peppa's house",
-      "outdoors"
+      "Outdoors"
     ],
     "objects": [
       "exercise"
     ],
     "themes": [
-      "exercise",
-      "health"
+      "Exercise",
+      "Health"
     ],
     "aliases": [
       "daddy pig exercise",
@@ -2008,8 +2008,8 @@
       "toy box"
     ],
     "themes": [
-      "chores",
-      "responsibility"
+      "Chores",
+      "Responsibility"
     ],
     "aliases": [
       "tidy up",
@@ -2047,7 +2047,7 @@
       "Daddy Pig"
     ],
     "settings": [
-      "playground"
+      "Playground"
     ],
     "objects": [
       "swings",
@@ -2055,8 +2055,8 @@
       "see-saw"
     ],
     "themes": [
-      "play",
-      "outdoors"
+      "Play",
+      "Outdoors"
     ],
     "aliases": [
       "playground",
@@ -2103,7 +2103,7 @@
     ],
     "themes": [
       "DIY",
-      "pride"
+      "Pride"
     ],
     "aliases": [
       "hanging a picture",
@@ -2141,16 +2141,16 @@
       "Daddy Pig"
     ],
     "settings": [
-      "beach",
-      "seaside"
+      "Beach",
+      "Seaside"
     ],
     "objects": [
       "sandcastle",
       "bucket and spade"
     ],
     "themes": [
-      "seaside",
-      "family outing"
+      "Seaside",
+      "Family outing"
     ],
     "aliases": [
       "beach",
@@ -2195,8 +2195,8 @@
       "spider"
     ],
     "themes": [
-      "fear",
-      "animals"
+      "Fear",
+      "Animals"
     ],
     "aliases": [
       "mister skinnylegs",
@@ -2237,7 +2237,7 @@
       "Granny Pig"
     ],
     "settings": [
-      "river",
+      "River",
       "Grandpa Pig's boat"
     ],
     "objects": [
@@ -2245,8 +2245,8 @@
       "life jackets"
     ],
     "themes": [
-      "boats",
-      "adventure"
+      "Boats",
+      "Adventure"
     ],
     "aliases": [
       "grandpas boat",
@@ -2284,15 +2284,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "supermarket"
+      "Supermarket"
     ],
     "objects": [
       "shopping trolley",
       "shopping list"
     ],
     "themes": [
-      "shopping",
-      "food"
+      "Shopping",
+      "Food"
     ],
     "aliases": [
       "supermarket",
@@ -2341,8 +2341,8 @@
       "presents"
     ],
     "themes": [
-      "birthdays",
-      "parties"
+      "Birthdays",
+      "Parties"
     ],
     "aliases": [
       "peppas birthday party",
@@ -2386,8 +2386,8 @@
       "movie camera"
     ],
     "themes": [
-      "filming",
-      "memories"
+      "Filming",
+      "Memories"
     ],
     "aliases": [
       "daddy pig camera",
@@ -2430,15 +2430,15 @@
       "Pedro Pony"
     ],
     "settings": [
-      "playgroup"
+      "Playgroup"
     ],
     "objects": [
       "costumes",
       "stage"
     ],
     "themes": [
-      "performance",
-      "school"
+      "Performance",
+      "School"
     ],
     "aliases": [
       "the school play",
@@ -2476,15 +2476,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "garden"
+      "Garden"
     ],
     "objects": [
       "bubble mixture",
       "bubble wand"
     ],
     "themes": [
-      "play",
-      "science"
+      "Play",
+      "Science"
     ],
     "aliases": [
       "blowing bubbles",
@@ -2528,12 +2528,12 @@
       "Pedro Pony"
     ],
     "settings": [
-      "playgroup"
+      "Playgroup"
     ],
     "objects": [],
     "themes": [
-      "new friends",
-      "shyness"
+      "New friends",
+      "Shyness"
     ],
     "aliases": [
       "new girl at playgroup",
@@ -2581,8 +2581,8 @@
       "birdcage"
     ],
     "themes": [
-      "responsibility",
-      "pets"
+      "Responsibility",
+      "Pets"
     ],
     "aliases": [
       "polly parrot holiday",
@@ -2621,14 +2621,14 @@
       "Teddy"
     ],
     "settings": [
-      "outdoors"
+      "Outdoors"
     ],
     "objects": [
       "Teddy"
     ],
     "themes": [
-      "losing things",
-      "toys"
+      "Losing things",
+      "Toys"
     ],
     "aliases": [
       "peppa loses teddy",
@@ -2672,8 +2672,8 @@
       "magnifying glass"
     ],
     "themes": [
-      "mystery",
-      "pretend play"
+      "Mystery",
+      "Pretend play"
     ],
     "aliases": [
       "detective peppa",
@@ -2719,8 +2719,8 @@
       "toys"
     ],
     "themes": [
-      "friendship",
-      "siblings"
+      "Friendship",
+      "Siblings"
     ],
     "aliases": [
       "richard rabbit",
@@ -2767,8 +2767,8 @@
       "seeds"
     ],
     "themes": [
-      "gardening",
-      "problem solving"
+      "Gardening",
+      "Problem solving"
     ],
     "aliases": [
       "scarecrow",
@@ -2806,15 +2806,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "woods",
-      "outdoors"
+      "Woods",
+      "Outdoors"
     ],
     "objects": [
       "leaves"
     ],
     "themes": [
-      "seasons",
-      "weather"
+      "Seasons",
+      "Weather"
     ],
     "aliases": [
       "windy day",
@@ -2853,14 +2853,14 @@
     ],
     "settings": [
       "Peppa's house",
-      "garden"
+      "Garden"
     ],
     "objects": [
       "time capsule"
     ],
     "themes": [
-      "memories",
-      "the future"
+      "Memories",
+      "The future"
     ],
     "aliases": [
       "time capsule",
@@ -2902,16 +2902,16 @@
       "Granny Pig"
     ],
     "settings": [
-      "seaside",
-      "rock pools"
+      "Seaside",
+      "Rock pools"
     ],
     "objects": [
       "crab",
       "net"
     ],
     "themes": [
-      "nature",
-      "seaside"
+      "Nature",
+      "Seaside"
     ],
     "aliases": [
       "rockpools",
@@ -2954,7 +2954,7 @@
     ],
     "settings": [
       "Peppa's house",
-      "recycling centre"
+      "Recycling centre"
     ],
     "objects": [
       "bottles",
@@ -2962,8 +2962,8 @@
       "tins"
     ],
     "themes": [
-      "recycling",
-      "environment"
+      "Recycling",
+      "Environment"
     ],
     "aliases": [
       "recycle",
@@ -3003,15 +3003,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "park",
-      "boat pond"
+      "Park",
+      "Boat pond"
     ],
     "objects": [
       "toy boats"
     ],
     "themes": [
-      "play",
-      "boats"
+      "Play",
+      "Boats"
     ],
     "aliases": [
       "boat pond",
@@ -3052,15 +3052,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "road",
-      "car"
+      "Road",
+      "Car"
     ],
     "objects": [
       "car"
     ],
     "themes": [
-      "patience",
-      "travel"
+      "Patience",
+      "Travel"
     ],
     "aliases": [
       "stuck in traffic",
@@ -3106,8 +3106,8 @@
       "beds"
     ],
     "themes": [
-      "bedtime",
-      "routine"
+      "Bedtime",
+      "Routine"
     ],
     "aliases": [
       "bed time",
@@ -3152,15 +3152,15 @@
       "Pedro Pony"
     ],
     "settings": [
-      "playgroup",
-      "sports field"
+      "Playgroup",
+      "Sports field"
     ],
     "objects": [
       "finish line"
     ],
     "themes": [
-      "competition",
-      "sportsmanship"
+      "Competition",
+      "Sportsmanship"
     ],
     "aliases": [
       "races at school",
@@ -3201,15 +3201,15 @@
       "Doctor Elephant"
     ],
     "settings": [
-      "optician"
+      "Optician"
     ],
     "objects": [
       "glasses",
       "eye chart"
     ],
     "themes": [
-      "health",
-      "glasses"
+      "Health",
+      "Glasses"
     ],
     "aliases": [
       "eye test",
@@ -3258,8 +3258,8 @@
       "tools"
     ],
     "themes": [
-      "work",
-      "fixing things"
+      "Work",
+      "Fixing things"
     ],
     "aliases": [
       "grandad dogs garage",
@@ -3299,14 +3299,14 @@
       "Daddy Pig"
     ],
     "settings": [
-      "outdoors",
-      "road"
+      "Outdoors",
+      "Road"
     ],
     "objects": [
       "fog"
     ],
     "themes": [
-      "weather"
+      "Weather"
     ],
     "aliases": [
       "fog",
@@ -3347,14 +3347,14 @@
       "Madame Gazelle"
     ],
     "settings": [
-      "playgroup"
+      "Playgroup"
     ],
     "objects": [
       "old toys"
     ],
     "themes": [
-      "recycling",
-      "letting go"
+      "Recycling",
+      "Letting go"
     ],
     "aliases": [
       "rummage sale",
@@ -3394,15 +3394,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "swimming pool"
+      "Swimming pool"
     ],
     "objects": [
       "armbands",
       "swimsuits"
     ],
     "themes": [
-      "swimming",
-      "learning"
+      "Swimming",
+      "Learning"
     ],
     "aliases": [
       "swimming pool",
@@ -3442,14 +3442,14 @@
       "Daddy Pig"
     ],
     "settings": [
-      "garden"
+      "Garden"
     ],
     "objects": [
       "magnifying glass"
     ],
     "themes": [
-      "nature",
-      "insects"
+      "Nature",
+      "Insects"
     ],
     "aliases": [
       "bugs",
@@ -3496,8 +3496,8 @@
       "computer"
     ],
     "themes": [
-      "work",
-      "family"
+      "Work",
+      "Family"
     ],
     "aliases": [
       "daddys work",
@@ -3539,15 +3539,15 @@
       "Granny Pig"
     ],
     "settings": [
-      "island"
+      "Island"
     ],
     "objects": [
       "pirate hat",
       "treasure"
     ],
     "themes": [
-      "pretend play",
-      "adventure"
+      "Pretend play",
+      "Adventure"
     ],
     "aliases": [
       "pirates",
@@ -3594,8 +3594,8 @@
       "rain hat"
     ],
     "themes": [
-      "illness",
-      "listening"
+      "Illness",
+      "Listening"
     ],
     "aliases": [
       "george has a cold",
@@ -3638,15 +3638,15 @@
       "Granny Pig"
     ],
     "settings": [
-      "sky",
-      "fete"
+      "Sky",
+      "Fete"
     ],
     "objects": [
       "hot air balloon"
     ],
     "themes": [
-      "adventure",
-      "flight"
+      "Adventure",
+      "Flight"
     ],
     "aliases": [
       "balloon ride",
@@ -3694,8 +3694,8 @@
       "dinosaur"
     ],
     "themes": [
-      "birthdays",
-      "parties"
+      "Birthdays",
+      "Parties"
     ],
     "aliases": [
       "georges birthday party",
@@ -3735,14 +3735,14 @@
       "Daddy Pig"
     ],
     "settings": [
-      "garden"
+      "Garden"
     ],
     "objects": [
       "lawnmower"
     ],
     "themes": [
-      "gardening",
-      "chores"
+      "Gardening",
+      "Chores"
     ],
     "aliases": [
       "long grass",
@@ -3785,15 +3785,15 @@
     ],
     "settings": [
       "Peppa's house",
-      "village"
+      "Village"
     ],
     "objects": [
       "letters",
       "invitation"
     ],
     "themes": [
-      "jobs",
-      "helping"
+      "Jobs",
+      "Helping"
     ],
     "aliases": [
       "zoe zebra",
@@ -3834,7 +3834,7 @@
     ],
     "settings": [
       "Peppa's house",
-      "garden"
+      "Garden"
     ],
     "objects": [
       "paints",
@@ -3842,8 +3842,8 @@
       "easel"
     ],
     "themes": [
-      "art",
-      "creativity"
+      "Art",
+      "Creativity"
     ],
     "aliases": [
       "paint",
@@ -3891,8 +3891,8 @@
       "cuckoo clock"
     ],
     "themes": [
-      "time",
-      "waiting"
+      "Time",
+      "Waiting"
     ],
     "aliases": [
       "coo coo clock",
@@ -3941,8 +3941,8 @@
       "baby"
     ],
     "themes": [
-      "new baby",
-      "family"
+      "New baby",
+      "Family"
     ],
     "aliases": [
       "baby piggy",
@@ -3984,14 +3984,14 @@
       "Granny Pig"
     ],
     "settings": [
-      "countryside"
+      "Countryside"
     ],
     "objects": [
       "train"
     ],
     "themes": [
-      "trains",
-      "outings"
+      "Trains",
+      "Outings"
     ],
     "aliases": [
       "grandpa pig train",
@@ -4031,14 +4031,14 @@
       "Daddy Pig"
     ],
     "settings": [
-      "countryside"
+      "Countryside"
     ],
     "objects": [
       "bicycles"
     ],
     "themes": [
-      "exercise",
-      "family outing"
+      "Exercise",
+      "Family outing"
     ],
     "aliases": [
       "cycle ride",
@@ -4078,14 +4078,14 @@
       "Daddy Pig"
     ],
     "settings": [
-      "ice rink"
+      "Ice rink"
     ],
     "objects": [
       "ice skates"
     ],
     "themes": [
-      "learning",
-      "winter"
+      "Learning",
+      "Winter"
     ],
     "aliases": [
       "skating",
@@ -4126,15 +4126,15 @@
       "Doctor Elephant"
     ],
     "settings": [
-      "dentist"
+      "Dentist"
     ],
     "objects": [
       "toothbrush",
       "dentist chair"
     ],
     "themes": [
-      "health",
-      "teeth"
+      "Health",
+      "Teeth"
     ],
     "aliases": [
       "dentist",
@@ -4175,15 +4175,15 @@
     ],
     "settings": [
       "Peppa's house",
-      "garden"
+      "Garden"
     ],
     "objects": [
       "blankets",
       "den"
     ],
     "themes": [
-      "building",
-      "pretend play"
+      "Building",
+      "Pretend play"
     ],
     "aliases": [
       "den",
@@ -4228,8 +4228,8 @@
     ],
     "objects": [],
     "themes": [
-      "imagination",
-      "friendship"
+      "Imagination",
+      "Friendship"
     ],
     "aliases": [
       "imaginary friend",
@@ -4277,15 +4277,15 @@
       "Zoe Zebra"
     ],
     "settings": [
-      "school bus",
-      "mountains"
+      "School bus",
+      "Mountains"
     ],
     "objects": [
       "bus"
     ],
     "themes": [
-      "school trip",
-      "adventure"
+      "School trip",
+      "Adventure"
     ],
     "aliases": [
       "bus trip",
@@ -4334,8 +4334,8 @@
       "carrots"
     ],
     "themes": [
-      "friendship",
-      "homes"
+      "Friendship",
+      "Homes"
     ],
     "aliases": [
       "rebecca rabbits house",
@@ -4375,16 +4375,16 @@
       "Daddy Pig"
     ],
     "settings": [
-      "woods",
-      "nature trail"
+      "Woods",
+      "Nature trail"
     ],
     "objects": [
       "footprints",
       "picnic"
     ],
     "themes": [
-      "nature",
-      "problem solving"
+      "Nature",
+      "Problem solving"
     ],
     "aliases": [
       "nature walk",
@@ -4426,14 +4426,14 @@
     ],
     "settings": [
       "Peppa's house",
-      "playgroup"
+      "Playgroup"
     ],
     "objects": [
       "letters"
     ],
     "themes": [
-      "friendship",
-      "other countries"
+      "Friendship",
+      "Other countries"
     ],
     "aliases": [
       "penpal",
@@ -4482,8 +4482,8 @@
       "records"
     ],
     "themes": [
-      "memories",
-      "music"
+      "Memories",
+      "Music"
     ],
     "aliases": [
       "grandpas attic",
@@ -4527,8 +4527,8 @@
     ],
     "objects": [],
     "themes": [
-      "friendship",
-      "arguments"
+      "Friendship",
+      "Arguments"
     ],
     "aliases": [
       "quarrel",
@@ -4574,8 +4574,8 @@
       "toys"
     ],
     "themes": [
-      "tidying",
-      "toys"
+      "Tidying",
+      "Toys"
     ],
     "aliases": [
       "toy cupboard",
@@ -4622,8 +4622,8 @@
       "Zoe Zebra"
     ],
     "settings": [
-      "campsite",
-      "woods"
+      "Campsite",
+      "Woods"
     ],
     "objects": [
       "tents",
@@ -4631,8 +4631,8 @@
       "sticks"
     ],
     "themes": [
-      "school trip",
-      "outdoors"
+      "School trip",
+      "Outdoors"
     ],
     "aliases": [
       "camping with madame gazelle",
@@ -4671,15 +4671,15 @@
       "Daddy Pig"
     ],
     "settings": [
-      "boat",
-      "water"
+      "Boat",
+      "Water"
     ],
     "objects": [
       "boat"
     ],
     "themes": [
-      "boats",
-      "pride"
+      "Boats",
+      "Pride"
     ],
     "aliases": [
       "daddy pig the captain",
@@ -4725,8 +4725,8 @@
       "candles"
     ],
     "themes": [
-      "dark",
-      "problem solving"
+      "Dark",
+      "Problem solving"
     ],
     "aliases": [
       "power cut",
@@ -4765,14 +4765,14 @@
       "Daddy Pig"
     ],
     "settings": [
-      "outdoors"
+      "Outdoors"
     ],
     "objects": [
       "bouncy ball"
     ],
     "themes": [
-      "games",
-      "play"
+      "Games",
+      "Play"
     ],
     "aliases": [
       "bouncing ball",
@@ -4811,16 +4811,16 @@
       "Daddy Pig"
     ],
     "settings": [
-      "garden",
-      "night sky"
+      "Garden",
+      "Night sky"
     ],
     "objects": [
       "stars",
       "moon"
     ],
     "themes": [
-      "night",
-      "space"
+      "Night",
+      "Space"
     ],
     "aliases": [
       "looking at the stars",
@@ -4867,8 +4867,8 @@
       "present"
     ],
     "themes": [
-      "birthdays",
-      "surprises"
+      "Birthdays",
+      "Surprises"
     ],
     "aliases": [
       "daddys birthday",
@@ -4918,8 +4918,8 @@
       "sleeping bags"
     ],
     "themes": [
-      "friendship",
-      "bedtime"
+      "Friendship",
+      "Bedtime"
     ],
     "aliases": [
       "sleepover",
@@ -4958,16 +4958,16 @@
       "Daddy Pig"
     ],
     "settings": [
-      "outdoors",
-      "pond"
+      "Outdoors",
+      "Pond"
     ],
     "objects": [
       "scarves",
       "hats"
     ],
     "themes": [
-      "winter",
-      "weather"
+      "Winter",
+      "Weather"
     ],
     "aliases": [
       "winter day",

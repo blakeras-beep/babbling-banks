@@ -1,23 +1,29 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { getShowColor, getShowEmoji, getShowName } from '../data/index.js';
-import { formatEpisodeCode } from '../lib/platforms.js';
+import { formatEpisodeCode, getDisplayTitle } from '../lib/platforms.js';
 import FavoriteButton from './FavoriteButton.jsx';
 import Highlight from './Highlight.jsx';
 
-const FIELD_LABELS = {
-  title: 'title',
-  alias: 'also known as',
-  song: 'song',
-  character: 'character',
-  object: 'mentions',
-  theme: 'theme',
-  setting: 'place',
+/** How a non-title match is explained: `${label} “${text}”`. */
+const MATCH_LABELS = {
+  alias: 'Also called',
+  song: 'Has the song',
+  character: 'Features',
+  object: 'Mentions',
+  theme: 'Theme',
+  setting: 'Set in',
 };
 
-export default function EpisodeCard({ episode, highlightTerms = [], matches = [], index = 0 }) {
+export default function EpisodeCard({
+  episode,
+  highlightTerms = [],
+  matches = [],
+  index = 0,
+  variant,
+}) {
   const navigate = useNavigate();
   const href = `/episode/${episode.id}`;
-  const bestMatch = matches.find((m) => m.field !== 'title');
+  const bestMatch = matches.find((m) => m.field !== 'title' && MATCH_LABELS[m.field]);
 
   const handleCardClick = (event) => {
     // Let real links and buttons inside the card do their own thing.
@@ -27,7 +33,7 @@ export default function EpisodeCard({ episode, highlightTerms = [], matches = []
 
   return (
     <article
-      className="episode-card"
+      className={`episode-card ${variant === 'best' ? 'episode-card--best' : ''}`}
       onClick={handleCardClick}
       style={{ animationDelay: `${Math.min(index, 8) * 35}ms` }}
     >
@@ -41,9 +47,10 @@ export default function EpisodeCard({ episode, highlightTerms = [], matches = []
       <div className="episode-card__body">
         <div className="episode-card__top">
           <div style={{ minWidth: 0, flex: 1 }}>
+            {variant === 'best' && <div className="episode-card__badge">★ Best match</div>}
             <h3 className="episode-card__title">
               <Link to={href} style={{ color: 'inherit', textDecoration: 'none' }}>
-                <Highlight text={episode.title} terms={highlightTerms} />
+                <Highlight text={getDisplayTitle(episode)} terms={highlightTerms} />
               </Link>
             </h3>
             <div className="episode-card__meta">
@@ -65,7 +72,7 @@ export default function EpisodeCard({ episode, highlightTerms = [], matches = []
         )}
         {bestMatch && (
           <p className="episode-card__match">
-            Matched {FIELD_LABELS[bestMatch.field] ?? bestMatch.field}: <em>“{bestMatch.text}”</em>
+            {MATCH_LABELS[bestMatch.field]} <em>“{bestMatch.text}”</em>
           </p>
         )}
         {episode.songs?.length > 0 && (

@@ -25,8 +25,8 @@
       "Funny's magic doors"
     ],
     "themes": [
-      "bravery",
-      "courage"
+      "Bravery",
+      "Courage"
     ],
     "aliases": [
       "the first funhouse episode",
@@ -76,7 +76,7 @@
     ],
     "objects": [],
     "themes": [
-      "home"
+      "Home"
     ],
     "aliases": [
       "homesick episode",
@@ -126,7 +126,7 @@
       "goldfish"
     ],
     "themes": [
-      "silliness"
+      "Silliness"
     ],
     "aliases": [
       "goofy goldfish",
@@ -170,13 +170,13 @@
       "Funny"
     ],
     "settings": [
-      "outer space"
+      "Outer space"
     ],
     "objects": [
       "rocket"
     ],
     "themes": [
-      "exploration"
+      "Exploration"
     ],
     "aliases": [
       "mickey in space",
@@ -219,14 +219,14 @@
       "Funny"
     ],
     "settings": [
-      "the sea",
-      "pirate ship"
+      "The sea",
+      "Pirate ship"
     ],
     "objects": [
       "treasure"
     ],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "treasure ahoy",
@@ -276,7 +276,7 @@
       "water"
     ],
     "themes": [
-      "problem solving"
+      "Problem solving"
     ],
     "aliases": [
       "plumber episode",
@@ -320,13 +320,13 @@
       "Funny"
     ],
     "settings": [
-      "underwater"
+      "Underwater"
     ],
     "objects": [
       "fish"
     ],
     "themes": [
-      "storytelling"
+      "Storytelling"
     ],
     "aliases": [
       "a fish tale",
@@ -369,11 +369,11 @@
       "Funny"
     ],
     "settings": [
-      "jungle"
+      "Jungle"
     ],
     "objects": [],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "minnie goes ape",
@@ -421,7 +421,7 @@
     ],
     "objects": [],
     "themes": [
-      "friendship"
+      "Friendship"
     ],
     "aliases": [
       "dino doggies",
@@ -469,7 +469,7 @@
     ],
     "objects": [],
     "themes": [
-      "kindness"
+      "Kindness"
     ],
     "aliases": [
       "troll trouble",
@@ -517,7 +517,7 @@
     ],
     "objects": [],
     "themes": [
-      "sportsmanship"
+      "Sportsmanship"
     ],
     "aliases": [
       "sunny gulch games",
@@ -565,7 +565,7 @@
       "package"
     ],
     "themes": [
-      "responsibility"
+      "Responsibility"
     ],
     "aliases": [
       "minnies big delivery",
@@ -615,7 +615,7 @@
       "bird"
     ],
     "themes": [
-      "friendship"
+      "Friendship"
     ],
     "aliases": [
       "wandrin warbler",
@@ -660,7 +660,7 @@
       "Funny"
     ],
     "settings": [
-      "giant cornstalk",
+      "Giant cornstalk",
       "Fun and Fancy Faire"
     ],
     "objects": [
@@ -668,7 +668,7 @@
       "corn"
     ],
     "themes": [
-      "courage"
+      "Courage"
     ],
     "aliases": [
       "mickey and the cornstalk",
@@ -717,7 +717,7 @@
       "crown"
     ],
     "themes": [
-      "leadership"
+      "Leadership"
     ],
     "aliases": [
       "king mickey",
@@ -759,14 +759,14 @@
       "Funny"
     ],
     "settings": [
-      "desert"
+      "Desert"
     ],
     "objects": [
       "genie bottle",
       "lamp"
     ],
     "themes": [
-      "wishes"
+      "Wishes"
     ],
     "aliases": [
       "daisy genie",
@@ -810,14 +810,14 @@
       "Funny"
     ],
     "settings": [
-      "fairy land"
+      "Fairy land"
     ],
     "objects": [
       "fairy wings",
       "wand"
     ],
     "themes": [
-      "self discovery"
+      "Self discovery"
     ],
     "aliases": [
       "minnie fairy",
@@ -868,8 +868,8 @@
       "broom"
     ],
     "themes": [
-      "tidying up",
-      "teamwork"
+      "Tidying up",
+      "Teamwork"
     ],
     "aliases": [
       "daisy and goofy clean up",
@@ -922,7 +922,7 @@
       "crayons"
     ],
     "themes": [
-      "creativity"
+      "Creativity"
     ],
     "aliases": [
       "crayon world",
@@ -966,13 +966,13 @@
       "Funny"
     ],
     "settings": [
-      "snowy Funhouse"
+      "Snowy Funhouse"
     ],
     "objects": [
       "snow"
     ],
     "themes": [
-      "seasons"
+      "Seasons"
     ],
     "aliases": [
       "summer snow day",
@@ -1023,7 +1023,7 @@
       "snowman"
     ],
     "themes": [
-      "friendship"
+      "Friendship"
     ],
     "aliases": [
       "sunny the snowman",
@@ -1066,11 +1066,11 @@
       "Funny"
     ],
     "settings": [
-      "maze"
+      "Maze"
     ],
     "objects": [],
     "themes": [
-      "problem solving"
+      "Problem solving"
     ],
     "aliases": [
       "maybe im a maze",
@@ -1120,7 +1120,7 @@
       "socks"
     ],
     "themes": [
-      "lost and found"
+      "Lost and found"
     ],
     "aliases": [
       "land of the lost socks",
@@ -1171,7 +1171,7 @@
       "water"
     ],
     "themes": [
-      "nature"
+      "Nature"
     ],
     "aliases": [
       "crystal clear waters",
@@ -1222,7 +1222,7 @@
       "sleeping bags"
     ],
     "themes": [
-      "bedtime"
+      "Bedtime"
     ],
     "aliases": [
       "big funhouse sleepover",
@@ -1267,13 +1267,13 @@
     ],
     "settings": [
       "Majestica",
-      "inn"
+      "Inn"
     ],
     "objects": [
       "pancakes"
     ],
     "themes": [
-      "helping"
+      "Helping"
     ],
     "aliases": [
       "ducks inn trouble",
@@ -1323,7 +1323,7 @@
       "polka dots"
     ],
     "themes": [
-      "style"
+      "Style"
     ],
     "aliases": [
       "polka dots and donts",
@@ -1371,7 +1371,7 @@
     ],
     "objects": [],
     "themes": [
-      "heroism"
+      "Heroism"
     ],
     "aliases": [
       "the mighty goof",
@@ -1422,8 +1422,8 @@
       "crayons"
     ],
     "themes": [
-      "compromise",
-      "taking turns"
+      "Compromise",
+      "Taking turns"
     ],
     "aliases": [
       "playtime in crayon world",
@@ -1467,14 +1467,14 @@
       "gnomes"
     ],
     "settings": [
-      "forest"
+      "Forest"
     ],
     "objects": [
       "musical instruments"
     ],
     "themes": [
-      "seasons",
-      "music"
+      "Seasons",
+      "Music"
     ],
     "aliases": [
       "music of the seasons",
@@ -1526,7 +1526,7 @@
       "seahorses"
     ],
     "themes": [
-      "helping"
+      "Helping"
     ],
     "aliases": [
       "mermaids to the rescue",
@@ -1575,7 +1575,7 @@
     ],
     "objects": [],
     "themes": [
-      "heroism"
+      "Heroism"
     ],
     "aliases": [
       "festival of heroes",
@@ -1625,7 +1625,7 @@
       "bird"
     ],
     "themes": [
-      "friendship"
+      "Friendship"
     ],
     "aliases": [
       "where warbler went",
@@ -1675,7 +1675,7 @@
       "superpowers"
     ],
     "themes": [
-      "teamwork"
+      "Teamwork"
     ],
     "aliases": [
       "fantabulous five",
@@ -1720,13 +1720,13 @@
       "Rocket Mouse"
     ],
     "settings": [
-      "outer space"
+      "Outer space"
     ],
     "objects": [
       "rocket"
     ],
     "themes": [
-      "exploration"
+      "Exploration"
     ],
     "aliases": [
       "mickey meets rocket mouse",
@@ -1777,7 +1777,7 @@
       "batteries"
     ],
     "themes": [
-      "helping"
+      "Helping"
     ],
     "aliases": [
       "batteries included",
@@ -1820,13 +1820,13 @@
       "Funny"
     ],
     "settings": [
-      "ice rink"
+      "Ice rink"
     ],
     "objects": [
       "ice skates"
     ],
     "themes": [
-      "teamwork"
+      "Teamwork"
     ],
     "aliases": [
       "mickey and minnie on ice",
@@ -1876,7 +1876,7 @@
       "rain"
     ],
     "themes": [
-      "weather"
+      "Weather"
     ],
     "aliases": [
       "rain rain go away",
@@ -1923,7 +1923,7 @@
     ],
     "objects": [],
     "themes": [
-      "honesty"
+      "Honesty"
     ],
     "aliases": [
       "donalds razzle dazzle deal",
@@ -1966,15 +1966,15 @@
       "Captain Salty Bones"
     ],
     "settings": [
-      "pirate ship",
-      "the sea"
+      "Pirate ship",
+      "The sea"
     ],
     "objects": [
       "treasure map",
       "treasure"
     ],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "pirate adventure",
@@ -2024,7 +2024,7 @@
     ],
     "objects": [],
     "themes": [
-      "creativity"
+      "Creativity"
     ],
     "aliases": [
       "daisy and the muses",
@@ -2074,7 +2074,7 @@
       "ball"
     ],
     "themes": [
-      "perseverance"
+      "Perseverance"
     ],
     "aliases": [
       "keep on the ball",
@@ -2118,11 +2118,11 @@
       "Farfus"
     ],
     "settings": [
-      "forest"
+      "Forest"
     ],
     "objects": [],
     "themes": [
-      "family"
+      "Family"
     ],
     "aliases": [
       "farfus family",
@@ -2165,13 +2165,13 @@
       "Funny"
     ],
     "settings": [
-      "parade route"
+      "Parade route"
     ],
     "objects": [
       "parade float"
     ],
     "themes": [
-      "teamwork"
+      "Teamwork"
     ],
     "aliases": [
       "adventure parade",
@@ -2221,7 +2221,7 @@
       "magic wand"
     ],
     "themes": [
-      "magic",
+      "Magic",
       "Halloween"
     ],
     "aliases": [
@@ -2266,11 +2266,11 @@
     ],
     "settings": [
       "Zany Mulaney Land",
-      "the road"
+      "The road"
     ],
     "objects": [],
     "themes": [
-      "travel"
+      "Travel"
     ],
     "aliases": [
       "funnys road trip",
@@ -2371,7 +2371,7 @@
     ],
     "objects": [],
     "themes": [
-      "problem solving"
+      "Problem solving"
     ],
     "aliases": [
       "a big giant problem",
@@ -2422,7 +2422,7 @@
       "crabs"
     ],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "giant crab island",
@@ -2471,7 +2471,7 @@
     "objects": [],
     "themes": [
       "Halloween",
-      "bravery"
+      "Bravery"
     ],
     "aliases": [
       "ghosts of haunted gulch",
@@ -2521,7 +2521,7 @@
       "tea set"
     ],
     "themes": [
-      "manners"
+      "Manners"
     ],
     "aliases": [
       "enchanted tea party",
@@ -2568,7 +2568,7 @@
       "tent"
     ],
     "themes": [
-      "camping"
+      "Camping"
     ],
     "aliases": [
       "unhappy campers",
@@ -2612,7 +2612,7 @@
     ],
     "objects": [],
     "themes": [
-      "tidying up"
+      "Tidying up"
     ],
     "aliases": [
       "heroes clean up",
@@ -2656,7 +2656,7 @@
     ],
     "objects": [],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "dino duck",
@@ -2702,7 +2702,7 @@
       "treasure"
     ],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "finding treasure",
@@ -2795,7 +2795,7 @@
       "pie"
     ],
     "themes": [
-      "baking"
+      "Baking"
     ],
     "aliases": [
       "clarabelles pie day",
@@ -2841,7 +2841,7 @@
       "puppy"
     ],
     "themes": [
-      "pets"
+      "Pets"
     ],
     "aliases": [
       "minnies new puppy",
@@ -2887,7 +2887,7 @@
       "clam"
     ],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "curse of the crusty clam",
@@ -2931,8 +2931,8 @@
     ],
     "objects": [],
     "themes": [
-      "dreams",
-      "bedtime"
+      "Dreams",
+      "Bedtime"
     ],
     "aliases": [
       "dream a little dream",
@@ -2978,7 +2978,7 @@
       "boat"
     ],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "seas the day",
@@ -3026,8 +3026,8 @@
     ],
     "objects": [],
     "themes": [
-      "sharing",
-      "kindness"
+      "Sharing",
+      "Kindness"
     ],
     "aliases": [
       "play nice",
@@ -3079,7 +3079,7 @@
       "Belching Idol"
     ],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "rutabaga ruby",
@@ -3128,7 +3128,7 @@
     ],
     "objects": [],
     "themes": [
-      "trying new things"
+      "Trying new things"
     ],
     "aliases": [
       "goofy doesnt like it",
@@ -3179,7 +3179,7 @@
       "tooth"
     ],
     "themes": [
-      "dental hygiene"
+      "Dental hygiene"
     ],
     "aliases": [
       "tooth or consequences",
@@ -3229,7 +3229,7 @@
     ],
     "objects": [],
     "themes": [
-      "sportsmanship"
+      "Sportsmanship"
     ],
     "aliases": [
       "heroic games",
@@ -3279,7 +3279,7 @@
       "feathers"
     ],
     "themes": [
-      "friendship"
+      "Friendship"
     ],
     "aliases": [
       "birds of a feather",
@@ -3327,7 +3327,7 @@
     ],
     "objects": [],
     "themes": [
-      "competition"
+      "Competition"
     ],
     "aliases": [
       "salty vs pepper",
@@ -3377,7 +3377,7 @@
       "airplane"
     ],
     "themes": [
-      "flying"
+      "Flying"
     ],
     "aliases": [
       "just plane quackers",
@@ -3426,7 +3426,7 @@
     ],
     "objects": [],
     "themes": [
-      "perseverance"
+      "Perseverance"
     ],
     "aliases": [
       "frannie takes flight",
@@ -3479,7 +3479,7 @@
       "roller coaster"
     ],
     "themes": [
-      "compromise"
+      "Compromise"
     ],
     "aliases": [
       "no thrills please",
@@ -3526,11 +3526,11 @@
       "Zoop Bloop"
     ],
     "settings": [
-      "outer space"
+      "Outer space"
     ],
     "objects": [],
     "themes": [
-      "friendship"
+      "Friendship"
     ],
     "aliases": [
       "space doggies",
@@ -3577,15 +3577,15 @@
       "Ruthie"
     ],
     "settings": [
-      "baseball field"
+      "Baseball field"
     ],
     "objects": [
       "baseball",
       "bat"
     ],
     "themes": [
-      "sharing",
-      "teamwork"
+      "Sharing",
+      "Teamwork"
     ],
     "aliases": [
       "ready to play ruthie",
@@ -3631,13 +3631,13 @@
       "Lunar Clarabelle"
     ],
     "settings": [
-      "space snack stop"
+      "Space snack stop"
     ],
     "objects": [
       "hot dogs"
     ],
     "themes": [
-      "helping"
+      "Helping"
     ],
     "aliases": [
       "goofy dogs",
@@ -3688,7 +3688,7 @@
       "train"
     ],
     "themes": [
-      "adventure"
+      "Adventure"
     ],
     "aliases": [
       "310 to rocky road",
@@ -3737,7 +3737,7 @@
     ],
     "objects": [],
     "themes": [
-      "manners"
+      "Manners"
     ],
     "aliases": [
       "please and thank you",
@@ -3787,8 +3787,8 @@
     ],
     "objects": [],
     "themes": [
-      "culture",
-      "kindness"
+      "Culture",
+      "Kindness"
     ],
     "aliases": [
       "halt tiger",
@@ -3840,7 +3840,7 @@
       "kittens"
     ],
     "themes": [
-      "facing fears"
+      "Facing fears"
     ],
     "aliases": [
       "you gotta be kitten me",
@@ -3892,7 +3892,7 @@
       "crown"
     ],
     "themes": [
-      "rest"
+      "Rest"
     ],
     "aliases": [
       "king ludwigs day off",
@@ -3936,13 +3936,13 @@
       "Funny"
     ],
     "settings": [
-      "stables"
+      "Stables"
     ],
     "objects": [
       "horses"
     ],
     "themes": [
-      "responsibility"
+      "Responsibility"
     ],
     "aliases": [
       "no horsing around",
@@ -3992,7 +3992,7 @@
       "dinosaur eggs"
     ],
     "themes": [
-      "responsibility"
+      "Responsibility"
     ],
     "aliases": [
       "dino safari",
@@ -4046,7 +4046,7 @@
       "volcano"
     ],
     "themes": [
-      "problem solving"
+      "Problem solving"
     ],
     "aliases": [
       "kooky paleontologist",
@@ -4097,7 +4097,7 @@
       "musical instruments"
     ],
     "themes": [
-      "music"
+      "Music"
     ],
     "aliases": [
       "thats my jam",
@@ -4146,7 +4146,7 @@
     ],
     "objects": [],
     "themes": [
-      "sleepovers"
+      "Sleepovers"
     ],
     "aliases": [
       "dino see dino do",
@@ -4191,13 +4191,13 @@
       "Pete the Mighty"
     ],
     "settings": [
-      "fountain of youth"
+      "Fountain of youth"
     ],
     "objects": [
       "fountain"
     ],
     "themes": [
-      "growing up"
+      "Growing up"
     ],
     "aliases": [
       "pete the mighty baby",
@@ -4248,7 +4248,7 @@
       "statue"
     ],
     "themes": [
-      "humility"
+      "Humility"
     ],
     "aliases": [
       "for petes sake",
@@ -4293,14 +4293,14 @@
       "Martian Minnie"
     ],
     "settings": [
-      "mini golf course"
+      "Mini golf course"
     ],
     "objects": [
       "golf club",
       "golf ball"
     ],
     "themes": [
-      "sportsmanship"
+      "Sportsmanship"
     ],
     "aliases": [
       "minnie golf",
@@ -4349,7 +4349,7 @@
     ],
     "objects": [],
     "themes": [
-      "personal space"
+      "Personal space"
     ],
     "aliases": [
       "no bear hugs",
@@ -4397,7 +4397,7 @@
     ],
     "objects": [],
     "themes": [
-      "friendship"
+      "Friendship"
     ],
     "aliases": [
       "wheres funny",
@@ -4444,12 +4444,12 @@
       "Captain Salty Bones"
     ],
     "settings": [
-      "pirate ship"
+      "Pirate ship"
     ],
     "objects": [],
     "themes": [
-      "jealousy",
-      "friendship"
+      "Jealousy",
+      "Friendship"
     ],
     "aliases": [
       "cora the pirate crab",
@@ -4495,7 +4495,7 @@
       "Ludwig Von Drake"
     ],
     "settings": [
-      "laboratory"
+      "Laboratory"
     ],
     "objects": [
       "invention"
@@ -4550,7 +4550,7 @@
     ],
     "objects": [],
     "themes": [
-      "friendship"
+      "Friendship"
     ],
     "aliases": [
       "stink stank stunk",
@@ -4600,8 +4600,8 @@
       "marigolds"
     ],
     "themes": [
-      "family",
-      "culture"
+      "Family",
+      "Culture"
     ],
     "aliases": [
       "dia de los muertos",
@@ -4653,8 +4653,8 @@
     ],
     "objects": [],
     "themes": [
-      "calming down",
-      "feelings"
+      "Calming down",
+      "Feelings"
     ],
     "aliases": [
       "mayor franken pete",
@@ -4705,7 +4705,7 @@
       "party rings"
     ],
     "themes": [
-      "lost and found"
+      "Lost and found"
     ],
     "aliases": [
       "lost party rings",
@@ -4749,14 +4749,14 @@
       "Funny"
     ],
     "settings": [
-      "the sky"
+      "The sky"
     ],
     "objects": [
       "birthday cake",
       "balloons"
     ],
     "themes": [
-      "birthdays"
+      "Birthdays"
     ],
     "aliases": [
       "mickeys sky high birthday",
@@ -4806,8 +4806,8 @@
       "birthday cake"
     ],
     "themes": [
-      "feelings",
-      "birthdays"
+      "Feelings",
+      "Birthdays"
     ],
     "aliases": [
       "what about me birthday",
@@ -4857,7 +4857,7 @@
       "snow"
     ],
     "themes": [
-      "winter"
+      "Winter"
     ],
     "aliases": [
       "minnies snow ball",
@@ -4906,7 +4906,7 @@
       "snow"
     ],
     "themes": [
-      "winter"
+      "Winter"
     ],
     "aliases": [
       "snow princess",
@@ -4960,7 +4960,7 @@
     ],
     "themes": [
       "Christmas",
-      "helping"
+      "Helping"
     ],
     "aliases": [
       "santas crash landing",
@@ -5004,11 +5004,11 @@
       "Teddy"
     ],
     "settings": [
-      "vet"
+      "Vet"
     ],
     "objects": [],
     "themes": [
-      "doctor visits"
+      "Doctor visits"
     ],
     "aliases": [
       "theres something about teddy",
@@ -5055,7 +5055,7 @@
     ],
     "objects": [],
     "themes": [
-      "honesty"
+      "Honesty"
     ],
     "aliases": [
       "finders keepers",
@@ -5105,7 +5105,7 @@
       "lute"
     ],
     "themes": [
-      "feelings"
+      "Feelings"
     ],
     "aliases": [
       "majesticas new troubadour",
@@ -5154,7 +5154,7 @@
       "pod"
     ],
     "themes": [
-      "disappointment"
+      "Disappointment"
     ],
     "aliases": [
       "minnies pod mod",
@@ -5198,11 +5198,11 @@
       "Lukey"
     ],
     "settings": [
-      "forest"
+      "Forest"
     ],
     "objects": [],
     "themes": [
-      "gratitude"
+      "Gratitude"
     ],
     "aliases": [
       "low key coqui",
@@ -5247,14 +5247,14 @@
       "Pinky"
     ],
     "settings": [
-      "tree"
+      "Tree"
     ],
     "objects": [
       "honey",
       "beehive"
     ],
     "themes": [
-      "sharing"
+      "Sharing"
     ],
     "aliases": [
       "pinky and the bees",
@@ -5306,8 +5306,8 @@
       "algae"
     ],
     "themes": [
-      "cleaning up",
-      "nature"
+      "Cleaning up",
+      "Nature"
     ],
     "aliases": [
       "crystal clearwater vs the annoying algae",
@@ -5361,7 +5361,7 @@
       "armor"
     ],
     "themes": [
-      "bravery"
+      "Bravery"
     ],
     "aliases": [
       "trollands big adventure",

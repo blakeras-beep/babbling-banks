@@ -543,11 +543,11 @@
       "party decorations"
     ],
     "themes": [
-      "birthdays",
-      "celebrating friends",
-      "giving gifts",
-      "problem solving",
-      "clue finding"
+      "Birthdays",
+      "Celebrating friends",
+      "Giving gifts",
+      "Problem solving",
+      "Clue finding"
     ],
     "aliases": [
       "blues birthday",
@@ -589,7 +589,7 @@
     ],
     "settings": [
       "Blue's Clues house",
-      "backyard"
+      "Backyard"
     ],
     "objects": [
       "storybooks",
@@ -599,11 +599,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "reading and stories",
-      "nursery rhymes",
-      "fairy tales",
-      "matching",
-      "problem solving"
+      "Reading and stories",
+      "Nursery rhymes",
+      "Fairy tales",
+      "Matching",
+      "Problem solving"
     ],
     "aliases": [
       "story time blue",
@@ -642,7 +642,7 @@
     ],
     "settings": [
       "Blue's Clues house",
-      "laundry area"
+      "Laundry area"
     ],
     "objects": [
       "washing machine",
@@ -652,11 +652,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "superheroes",
-      "using your brain",
-      "solving mysteries",
-      "listening",
-      "teamwork"
+      "Superheroes",
+      "Using your brain",
+      "Solving mysteries",
+      "Listening",
+      "Teamwork"
     ],
     "aliases": [
       "thinking squad",
@@ -704,11 +704,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "science",
-      "experiments",
-      "sink and float",
-      "curiosity",
-      "making predictions"
+      "Science",
+      "Experiments",
+      "Sink and float",
+      "Curiosity",
+      "Making predictions"
     ],
     "aliases": [
       "science with blue",
@@ -755,11 +755,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "colors",
-      "painting and art",
-      "friendship",
-      "including others",
-      "problem solving"
+      "Colors",
+      "Painting and art",
+      "Friendship",
+      "Including others",
+      "Problem solving"
     ],
     "aliases": [
       "colors everywhere",
@@ -806,11 +806,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "nighttime",
-      "why it gets dark",
-      "nocturnal animals",
-      "sleepovers",
-      "first experiences"
+      "Nighttime",
+      "Why it gets dark",
+      "Nocturnal animals",
+      "Sleepovers",
+      "First experiences"
     ],
     "aliases": [
       "pajama party",
@@ -860,11 +860,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "music",
-      "singing",
-      "performing",
-      "festivals",
-      "friendship"
+      "Music",
+      "Singing",
+      "Performing",
+      "Festivals",
+      "Friendship"
     ],
     "aliases": [
       "bluestock",
@@ -909,11 +909,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "music",
-      "musical instruments",
-      "rhythm and beats",
-      "playing together",
-      "problem solving"
+      "Music",
+      "Musical instruments",
+      "Rhythm and beats",
+      "Playing together",
+      "Problem solving"
     ],
     "aliases": [
       "blues big beat band",
@@ -960,11 +960,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "hide and seek",
-      "games",
-      "searching and observing",
-      "friendship",
-      "problem solving"
+      "Hide and seek",
+      "Games",
+      "Searching and observing",
+      "Friendship",
+      "Problem solving"
     ],
     "aliases": [
       "hide and seek",
@@ -1002,7 +1002,7 @@
     ],
     "settings": [
       "Blue's Clues house",
-      "pirate pretend play"
+      "Pirate pretend play"
     ],
     "objects": [
       "buried treasure",
@@ -1012,11 +1012,11 @@
       "Thinking Chair"
     ],
     "themes": [
-      "pirates",
-      "pretend play",
-      "treasure hunting",
-      "following clues",
-      "adventure"
+      "Pirates",
+      "Pretend play",
+      "Treasure hunting",
+      "Following clues",
+      "Adventure"
     ],
     "aliases": [
       "blues treasure hunt",
@@ -1064,10 +1064,10 @@
     ],
     "themes": [
       "Halloween",
-      "dressing up",
-      "imagination",
-      "friendship",
-      "problem solving"
+      "Dressing up",
+      "Imagination",
+      "Friendship",
+      "Problem solving"
     ],
     "aliases": [
       "blue halloween episode",
@@ -1112,10 +1112,10 @@
       "Handy Dandy Notebook"
     ],
     "themes": [
-      "gratitude",
+      "Gratitude",
       "Thanksgiving",
-      "friendship",
-      "sharing feelings"
+      "Friendship",
+      "Sharing feelings"
     ],
     "aliases": [
       "thankful book",
@@ -1162,11 +1162,11 @@
       "Handy Dandy Notebook"
     ],
     "themes": [
-      "food and cooking",
-      "restaurants",
-      "where food comes from",
-      "healthy eating",
-      "problem solving"
+      "Food and cooking",
+      "Restaurants",
+      "Where food comes from",
+      "Healthy eating",
+      "Problem solving"
     ],
     "aliases": [
       "blues bistro",
@@ -1206,7 +1206,7 @@
     ],
     "settings": [
       "Blue's house",
-      "kitchen"
+      "Kitchen"
     ],
     "objects": [
       "bibingka",
@@ -1216,11 +1216,11 @@
       "Handy Dandy Notebook"
     ],
     "themes": [
-      "baking",
+      "Baking",
       "Filipino culture",
-      "family",
-      "grandparents",
-      "giving"
+      "Family",
+      "Grandparents",
+      "Giving"
     ],
     "aliases": [
       "blues big baking show",
@@ -1261,7 +1261,7 @@
     "settings": [
       "Blue's house",
       "Santa's workshop",
-      "snowy North Pole"
+      "Snowy North Pole"
     ],
     "objects": [
       "Christmas tree",
@@ -1272,10 +1272,10 @@
     ],
     "themes": [
       "Christmas",
-      "holiday traditions",
-      "wishes",
-      "friendship",
-      "togetherness"
+      "Holiday traditions",
+      "Wishes",
+      "Friendship",
+      "Togetherness"
     ],
     "aliases": [
       "blue christmas episode",
@@ -1323,10 +1323,10 @@
       "Handy Dandy Notebook"
     ],
     "themes": [
-      "bedtime routine",
-      "sleep",
-      "singing",
-      "calming down"
+      "Bedtime routine",
+      "Sleep",
+      "Singing",
+      "Calming down"
     ],
     "aliases": [
       "sleepy singalong",
@@ -1366,7 +1366,7 @@
     ],
     "settings": [
       "Blue's house",
-      "dance party"
+      "Dance party"
     ],
     "objects": [
       "music",
@@ -1374,11 +1374,11 @@
       "Handy Dandy Notebook"
     ],
     "themes": [
-      "dancing",
-      "music",
-      "movement",
-      "learning new things",
-      "having fun"
+      "Dancing",
+      "Music",
+      "Movement",
+      "Learning new things",
+      "Having fun"
     ],
     "aliases": [
       "blues big dance party",
@@ -1420,7 +1420,7 @@
     ],
     "settings": [
       "Blue's house",
-      "imaginary story world"
+      "Imaginary story world"
     ],
     "objects": [
       "shapes",
@@ -1428,11 +1428,11 @@
       "Handy Dandy Notebook"
     ],
     "themes": [
-      "imagination",
-      "shapes",
-      "storytelling",
-      "helping friends",
-      "creativity"
+      "Imagination",
+      "Shapes",
+      "Storytelling",
+      "Helping friends",
+      "Creativity"
     ],
     "aliases": [
       "blues big imagination",
@@ -1478,10 +1478,10 @@
     ],
     "themes": [
       "Valentine's Day",
-      "love",
-      "friendship",
-      "kindness",
-      "making cards"
+      "Love",
+      "Friendship",
+      "Kindness",
+      "Making cards"
     ],
     "aliases": [
       "love day",
@@ -1518,7 +1518,7 @@
     ],
     "settings": [
       "Blue's school",
-      "classroom"
+      "Classroom"
     ],
     "objects": [
       "Show and Tell surprise",
@@ -1526,11 +1526,11 @@
       "Handy Dandy Notebook"
     ],
     "themes": [
-      "school",
-      "show and tell",
-      "sharing",
-      "surprises",
-      "routines"
+      "School",
+      "Show and tell",
+      "Sharing",
+      "Surprises",
+      "Routines"
     ],
     "aliases": [
       "show and tell",
@@ -2633,7 +2633,7 @@
     "settings": [
       "Blue's Clues house",
       "Clue Lagoon",
-      "ancient walls"
+      "Ancient walls"
     ],
     "objects": [
       "Handy Dandy Map Book",
@@ -2642,11 +2642,11 @@
       "map"
     ],
     "themes": [
-      "map reading",
-      "decoding symbols",
-      "problem solving",
-      "adventure",
-      "helping a friend"
+      "Map reading",
+      "Decoding symbols",
+      "Problem solving",
+      "Adventure",
+      "Helping a friend"
     ],
     "aliases": [
       "the treasure one",
@@ -2696,11 +2696,11 @@
       "costumes"
     ],
     "themes": [
-      "pretend play",
-      "theater and performing",
-      "fairy tales",
-      "teamwork",
-      "deduction"
+      "Pretend play",
+      "Theater and performing",
+      "Fairy tales",
+      "Teamwork",
+      "Deduction"
     ],
     "aliases": [
       "little red riding hood blues clues",
@@ -2749,10 +2749,10 @@
     ],
     "themes": [
       "American Sign Language",
-      "inclusion",
-      "reading and stories",
-      "libraries",
-      "communication"
+      "Inclusion",
+      "Reading and stories",
+      "Libraries",
+      "Communication"
     ],
     "aliases": [
       "the sign language one",
@@ -2799,11 +2799,11 @@
       "clock"
     ],
     "themes": [
-      "morning routines",
-      "music and singing",
-      "telling time",
-      "daily habits",
-      "deduction"
+      "Morning routines",
+      "Music and singing",
+      "Telling time",
+      "Daily habits",
+      "Deduction"
     ],
     "aliases": [
       "tickety morning song",
@@ -2843,17 +2843,17 @@
     ],
     "settings": [
       "Blue's school",
-      "classroom"
+      "Classroom"
     ],
     "objects": [
       "school supplies"
     ],
     "themes": [
-      "trying new things",
-      "handling nervous feelings",
-      "school",
-      "courage",
-      "music and games"
+      "Trying new things",
+      "Handling nervous feelings",
+      "School",
+      "Courage",
+      "Music and games"
     ],
     "aliases": [
       "josh is the teacher",
@@ -2900,11 +2900,11 @@
     ],
     "themes": [
       "Filipino culture",
-      "family traditions",
-      "grandparents",
-      "missing home",
-      "cultural heritage",
-      "kindness"
+      "Family traditions",
+      "Grandparents",
+      "Missing home",
+      "Cultural heritage",
+      "Kindness"
     ],
     "aliases": [
       "the philippines one",
@@ -2943,8 +2943,8 @@
       "Blue the Bat"
     ],
     "settings": [
-      "farm",
-      "pumpkin patch"
+      "Farm",
+      "Pumpkin patch"
     ],
     "objects": [
       "Jack O'Lantern",
@@ -2955,10 +2955,10 @@
     ],
     "themes": [
       "Halloween",
-      "costumes and dress-up",
-      "farm fun",
-      "legends",
-      "deduction"
+      "Costumes and dress-up",
+      "Farm fun",
+      "Legends",
+      "Deduction"
     ],
     "aliases": [
       "the halloween one",
@@ -2998,8 +2998,8 @@
     ],
     "settings": [
       "Blue's Clues house",
-      "the Blueniverse",
-      "outer space"
+      "The Blueniverse",
+      "Outer space"
     ],
     "objects": [
       "toy spaceship",
@@ -3007,11 +3007,11 @@
       "pawprints"
     ],
     "themes": [
-      "space",
-      "searching for lost things",
-      "friendship",
-      "imagination",
-      "deduction"
+      "Space",
+      "Searching for lost things",
+      "Friendship",
+      "Imagination",
+      "Deduction"
     ],
     "aliases": [
       "the space one",
@@ -3054,7 +3054,7 @@
     ],
     "settings": [
       "Blue's Clues house",
-      "kitchen"
+      "Kitchen"
     ],
     "objects": [
       "baby book",
@@ -3064,11 +3064,11 @@
       "pawprints"
     ],
     "themes": [
-      "babies and siblings",
-      "family",
-      "making others laugh",
-      "helping",
-      "deduction"
+      "Babies and siblings",
+      "Family",
+      "Making others laugh",
+      "Helping",
+      "Deduction"
     ],
     "aliases": [
       "the baby twins one",
@@ -3117,11 +3117,11 @@
       "top hat"
     ],
     "themes": [
-      "magic",
-      "performing",
-      "friendship",
-      "imagination",
-      "trying your best"
+      "Magic",
+      "Performing",
+      "Friendship",
+      "Imagination",
+      "Trying your best"
     ],
     "aliases": [
       "the magic show one",
@@ -3169,11 +3169,11 @@
       "tissues"
     ],
     "themes": [
-      "staying healthy",
-      "feeling better when sick",
-      "healthy eating",
-      "caring for others",
-      "problem solving"
+      "Staying healthy",
+      "Feeling better when sick",
+      "Healthy eating",
+      "Caring for others",
+      "Problem solving"
     ],
     "aliases": [
       "the one where josh is sick",
@@ -3224,10 +3224,10 @@
     ],
     "themes": [
       "Christmas",
-      "helping others",
-      "teamwork",
-      "holiday celebration",
-      "giving"
+      "Helping others",
+      "Teamwork",
+      "Holiday celebration",
+      "Giving"
     ],
     "aliases": [
       "blues clues christmas",
@@ -3276,11 +3276,11 @@
       "dandelion"
     ],
     "themes": [
-      "wishes",
-      "magic words",
-      "imagination",
-      "problem solving",
-      "manners"
+      "Wishes",
+      "Magic words",
+      "Imagination",
+      "Problem solving",
+      "Manners"
     ],
     "aliases": [
       "the fairy one",
@@ -3328,11 +3328,11 @@
       "paw prints"
     ],
     "themes": [
-      "gratitude",
-      "saying thank you",
-      "friendship",
-      "thanksgiving",
-      "problem solving"
+      "Gratitude",
+      "Saying thank you",
+      "Friendship",
+      "Thanksgiving",
+      "Problem solving"
     ],
     "aliases": [
       "thank you day",
@@ -3370,7 +3370,7 @@
       "Fiery Truck"
     ],
     "settings": [
-      "fire house"
+      "Fire house"
     ],
     "objects": [
       "fire truck",
@@ -3378,11 +3378,11 @@
       "fire hose"
     ],
     "themes": [
-      "fire safety",
-      "community helpers",
-      "firefighters",
-      "bravery",
-      "helping others"
+      "Fire safety",
+      "Community helpers",
+      "Firefighters",
+      "Bravery",
+      "Helping others"
     ],
     "aliases": [
       "firefighter blue",
@@ -3420,8 +3420,8 @@
       "Blue"
     ],
     "settings": [
-      "the neighborhood",
-      "the snack table"
+      "The neighborhood",
+      "The snack table"
     ],
     "objects": [
       "snack feast",
@@ -3429,11 +3429,11 @@
       "knight costumes"
     ],
     "themes": [
-      "helping others",
-      "kindness",
-      "imaginative play",
-      "snack time",
-      "adventure"
+      "Helping others",
+      "Kindness",
+      "Imaginative play",
+      "Snack time",
+      "Adventure"
     ],
     "aliases": [
       "sir joshalot",
@@ -3470,7 +3470,7 @@
       "Blue"
     ],
     "settings": [
-      "the Blueseum"
+      "The Blueseum"
     ],
     "objects": [
       "Blue's painting",
@@ -3478,11 +3478,11 @@
       "paw prints"
     ],
     "themes": [
-      "art",
-      "mystery solving",
-      "museums",
-      "problem solving",
-      "teamwork"
+      "Art",
+      "Mystery solving",
+      "Museums",
+      "Problem solving",
+      "Teamwork"
     ],
     "aliases": [
       "night at the blueseum",
@@ -3522,17 +3522,17 @@
     ],
     "settings": [
       "Blue's house",
-      "the storybook"
+      "The storybook"
     ],
     "objects": [
       "storybook"
     ],
     "themes": [
-      "friendship",
-      "resolving conflict",
-      "compromise",
-      "storytelling",
-      "communication"
+      "Friendship",
+      "Resolving conflict",
+      "Compromise",
+      "Storytelling",
+      "Communication"
     ],
     "aliases": [
       "shovel and pail fight",
@@ -3579,11 +3579,11 @@
       "detective magnifying glass"
     ],
     "themes": [
-      "mystery solving",
-      "detective work",
-      "problem solving",
-      "teamwork",
-      "friendship"
+      "Mystery solving",
+      "Detective work",
+      "Problem solving",
+      "Teamwork",
+      "Friendship"
     ],
     "aliases": [
       "the thinking chair is missing",
@@ -3631,11 +3631,11 @@
       "handy dandy notebook"
     ],
     "themes": [
-      "superheroes",
-      "teamwork",
-      "problem solving",
-      "bravery",
-      "helping others"
+      "Superheroes",
+      "Teamwork",
+      "Problem solving",
+      "Bravery",
+      "Helping others"
     ],
     "aliases": [
       "thinking squad",
@@ -3920,11 +3920,11 @@
       "paw print clues"
     ],
     "themes": [
-      "coping with a bad day",
-      "frustration and feelings",
-      "friendship and support",
-      "problem solving",
-      "staying positive"
+      "Coping with a bad day",
+      "Frustration and feelings",
+      "Friendship and support",
+      "Problem solving",
+      "Staying positive"
     ],
     "aliases": [
       "josh crummy day",
@@ -3965,7 +3965,7 @@
     ],
     "settings": [
       "Blue's house",
-      "ice cream stand"
+      "Ice cream stand"
     ],
     "objects": [
       "ice cream",
@@ -3974,11 +3974,11 @@
       "paw print clues"
     ],
     "themes": [
-      "how ice cream is made",
-      "hot weather",
-      "helping others",
-      "finding missing friends",
-      "problem solving"
+      "How ice cream is made",
+      "Hot weather",
+      "Helping others",
+      "Finding missing friends",
+      "Problem solving"
     ],
     "aliases": [
       "the ice cream one",
@@ -4025,11 +4025,11 @@
       "paw print clues"
     ],
     "themes": [
-      "the five senses",
-      "sense of smell",
-      "investigating a mystery",
-      "curiosity",
-      "problem solving"
+      "The five senses",
+      "Sense of smell",
+      "Investigating a mystery",
+      "Curiosity",
+      "Problem solving"
     ],
     "aliases": [
       "the smelly smell",
@@ -4078,11 +4078,11 @@
       "concert stage"
     ],
     "themes": [
-      "music and instruments",
-      "problem solving",
-      "listening carefully",
-      "helping friends",
-      "visiting a big city"
+      "Music and instruments",
+      "Problem solving",
+      "Listening carefully",
+      "Helping friends",
+      "Visiting a big city"
     ],
     "aliases": [
       "the one where blue goes to new york",
@@ -4122,7 +4122,7 @@
     ],
     "settings": [
       "Mexico City",
-      "the Tour Bus"
+      "The Tour Bus"
     ],
     "objects": [
       "Tour Bus",
@@ -4131,11 +4131,11 @@
       "clues"
     ],
     "themes": [
-      "learning Spanish words",
-      "exploring a new city and culture",
-      "being flexible when plans go wrong",
-      "music",
-      "problem solving"
+      "Learning Spanish words",
+      "Exploring a new city and culture",
+      "Being flexible when plans go wrong",
+      "Music",
+      "Problem solving"
     ],
     "aliases": [
       "the one in mexico city",
@@ -4181,10 +4181,10 @@
       "lucky seashell"
     ],
     "themes": [
-      "overcoming nervousness",
-      "stage fright",
-      "confidence",
-      "friendship and support",
+      "Overcoming nervousness",
+      "Stage fright",
+      "Confidence",
+      "Friendship and support",
       "Filipino culture and festivals"
     ],
     "aliases": [
@@ -4241,11 +4241,11 @@
       "paw print clues"
     ],
     "themes": [
-      "birthdays",
-      "family celebrations",
-      "problem solving",
-      "twins",
-      "helping each other"
+      "Birthdays",
+      "Family celebrations",
+      "Problem solving",
+      "Twins",
+      "Helping each other"
     ],
     "aliases": [
       "the one where sage and ginger have a birthday",
@@ -4294,11 +4294,11 @@
       "paw print clues"
     ],
     "themes": [
-      "being yourself",
-      "representation",
-      "breaking stereotypes",
-      "believing in yourself",
-      "inclusion"
+      "Being yourself",
+      "Representation",
+      "Breaking stereotypes",
+      "Believing in yourself",
+      "Inclusion"
     ],
     "aliases": [
       "the one where periwinkle wants to be rocket blast",
@@ -4344,11 +4344,11 @@
       "pillows"
     ],
     "themes": [
-      "sleepovers",
-      "feeling nervous",
-      "comfort and reassurance",
-      "hospitality",
-      "friendship"
+      "Sleepovers",
+      "Feeling nervous",
+      "Comfort and reassurance",
+      "Hospitality",
+      "Friendship"
     ],
     "aliases": [
       "the one with the hotel",
@@ -4394,11 +4394,11 @@
       "news desk"
     ],
     "themes": [
-      "pretend play",
-      "reporting and asking questions",
-      "curiosity",
-      "friendship",
-      "finding out what happened"
+      "Pretend play",
+      "Reporting and asking questions",
+      "Curiosity",
+      "Friendship",
+      "Finding out what happened"
     ],
     "aliases": [
       "the news one",
@@ -4441,11 +4441,11 @@
       "countdown list"
     ],
     "themes": [
-      "music",
-      "singing and dancing",
-      "counting down",
-      "celebration",
-      "favorite songs"
+      "Music",
+      "Singing and dancing",
+      "Counting down",
+      "Celebration",
+      "Favorite songs"
     ],
     "aliases": [
       "the song countdown one",

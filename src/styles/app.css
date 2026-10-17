@@ -42,6 +42,27 @@
   gap: 12px;
 }
 
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: var(--bb-radius-sm);
+  background: var(--bb-primary);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+main:focus {
+  outline: none;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -393,6 +414,21 @@
   animation: bb-pulse 1.4s ease-in-out infinite;
 }
 
+.search-sticky {
+  position: sticky;
+  top: 64px;
+  z-index: 50;
+  padding: 12px 0 2px;
+  margin: 0 calc(-1 * var(--bb-gutter));
+  padding-left: var(--bb-gutter);
+  padding-right: var(--bb-gutter);
+  background: var(--bb-bg);
+}
+
+.search-sticky .search-hint:empty {
+  display: none;
+}
+
 .search-hint {
   margin-top: 10px;
   font-size: 0.9rem;
@@ -506,10 +542,42 @@
   animation: bb-slide-up 0.25s ease both;
 }
 
+.episode-card {
+  cursor: pointer;
+}
+
 .episode-card:hover {
   border-color: var(--bb-primary);
   transform: translateY(-2px);
   box-shadow: var(--bb-shadow-lg);
+}
+
+.episode-card--best {
+  border: 2px solid var(--bb-primary);
+  box-shadow:
+    0 0 0 4px var(--bb-primary-muted),
+    var(--bb-shadow-md);
+}
+
+.episode-card--best .episode-card__title {
+  font-size: 1.2rem;
+}
+
+.episode-card__badge {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+  border-radius: var(--bb-radius-pill);
+  background: var(--bb-primary);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.results-group + .results-group {
+  margin-top: 22px;
 }
 
 .episode-card__emoji {
@@ -815,6 +883,27 @@ mark.highlight {
   display: none;
 }
 
+.season-tabs-wrap {
+  position: relative;
+}
+
+.season-tabs-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 8px;
+  width: 56px;
+  pointer-events: none;
+  background: linear-gradient(to right, transparent, var(--bb-bg));
+  opacity: 0;
+  transition: opacity var(--bb-transition);
+}
+
+.season-tabs-wrap.has-more::after {
+  opacity: 1;
+}
+
 .episode-row {
   display: flex;
   align-items: center;
@@ -844,10 +933,30 @@ mark.highlight {
   font-variant-numeric: tabular-nums;
 }
 
+.episode-row__code--wide {
+  min-width: 84px;
+}
+
+.episode-row__main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .episode-row__title {
   flex: 1;
   min-width: 0;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.episode-row__sub {
+  font-size: 0.8rem;
+  color: var(--bb-text-muted);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -929,6 +1038,12 @@ mark.highlight {
   letter-spacing: -0.4px;
   line-height: 1.2;
   margin-bottom: 12px;
+}
+
+.detail-card__alt-title {
+  font-size: 0.85rem;
+  color: var(--bb-text-muted);
+  margin: -6px 0 14px;
 }
 
 .detail-card__synopsis {
@@ -1170,7 +1285,11 @@ a.pill:hover {
   .header__brand-text {
     display: none;
   }
-  .nav-link__label {
+  .nav-link {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+  .nav-link__icon {
     display: none;
   }
   .hero {

@@ -36,9 +36,11 @@ export function ThemeProvider({ children }) {
     writeStorage(STORAGE_KEYS.theme, next);
   }, []);
 
+  // Cycles light → dark → system so the device setting is always reachable.
   const toggleTheme = useCallback(() => {
-    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
-  }, [resolvedTheme, setTheme]);
+    const next = theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light';
+    setTheme(next);
+  }, [theme, setTheme]);
 
   const value = useMemo(
     () => ({ theme, resolvedTheme, setTheme, toggleTheme }),

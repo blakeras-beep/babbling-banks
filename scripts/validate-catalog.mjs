@@ -26,7 +26,15 @@ const REQUIRED_STRING = [
   'source',
 ];
 const ARRAY_OF_STRINGS = ['characters', 'settings', 'objects', 'themes', 'aliases'];
-const OPTIONAL = new Set(['segment', 'platformUrl', 'videoId', 'duration', 'songs', 'imageUrl']);
+const OPTIONAL = new Set([
+  'segment',
+  'shortTitle',
+  'platformUrl',
+  'videoId',
+  'duration',
+  'songs',
+  'imageUrl',
+]);
 const KNOWN_KEYS = new Set([
   ...REQUIRED_STRING,
   ...ARRAY_OF_STRINGS,
