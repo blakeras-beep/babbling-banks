@@ -5,6 +5,7 @@ import App from './App.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 import { AuthProvider } from './lib/AuthContext.jsx';
 import { ThemeProvider } from './lib/ThemeContext.jsx';
+import { CreditProvider } from './lib/CreditContext.jsx';
 import './styles/global.css';
 import './styles/app.css';
 
@@ -14,7 +15,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <ThemeProvider>
           <AuthProvider>
-            <App />
+            <CreditProvider>
+              <App />
+            </CreditProvider>
           </AuthProvider>
         </ThemeProvider>
       </BrowserRouter>

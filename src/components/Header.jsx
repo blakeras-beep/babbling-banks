@@ -1,96 +1,42 @@
-import { useEffect, useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
-import { useAuth } from '../lib/AuthContext.jsx';
+import { Link, useMatch, useNavigate } from 'react-router-dom';
 import { useTheme } from '../lib/ThemeContext.jsx';
+import Icon from './Icon.jsx';
 
+/**
+ * 56 px header on paper: the SVG wordmark (never live text) left, the heart
+ * ("Repeat offenders") right, and a back caret on detail screens.
+ */
 export default function Header() {
-  const { user, favorites, signOut, openAuthModal, authEnabled } = useAuth();
-  const { resolvedTheme, toggleTheme } = useTheme();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => setMenuOpen(false), [location.pathname]);
+  const navigate = useNavigate();
+  const { resolvedTheme } = useTheme();
+  const onEpisode = useMatch('/episode/:id');
+  const onShow = useMatch('/show/:showId');
+  const showBack = Boolean(onEpisode || onShow);
+  const wordmark = resolvedTheme === 'dark' ? '/logo/wordmark-reversed.svg' : '/logo/wordmark.svg';
 
   return (
     <header className="header">
-      <div className="container header__inner">
-        <Link to="/" className="header__brand" aria-label="Babbling Banks home">
-          <img src="/logo.png" alt="" width="44" height="44" />
-          <span className="header__brand-text">Babbling Banks</span>
-        </Link>
-        <nav className="header__nav" aria-label="Main">
-          <NavLink
-            to="/shows"
-            className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`}
-          >
-            <span aria-hidden="true">📺</span>
-            <span className="nav-link__label">Shows</span>
-          </NavLink>
-          <NavLink
-            to="/favorites"
-            className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`}
-          >
-            <span aria-hidden="true">❤️</span>
-            <span className="nav-link__label">Favorites</span>
-            {favorites.length > 0 && <span className="nav-link__badge">{favorites.length}</span>}
-          </NavLink>
+      <div className="header__left">
+        {showBack && (
           <button
             type="button"
-            className="icon-button"
-            onClick={toggleTheme}
-            aria-label={resolvedTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-            title={resolvedTheme === 'dark' ? 'Light mode' : 'Dark mode'}
+            className="tap"
+            onClick={() => (window.history.length > 1 ? navigate(-1) : navigate('/'))}
+            aria-label="Back"
           >
-            <span aria-hidden="true">{resolvedTheme === 'dark' ? '☀️' : '🌙'}</span>
+            <Icon name="caretLeft" />
           </button>
-          {authEnabled &&
-            (user ? (
-              <div className="user-menu">
-                <button
-                  type="button"
-                  className="user-menu__trigger"
-                  onClick={() => setMenuOpen((open) => !open)}
-                  aria-expanded={menuOpen}
-                  aria-haspopup="menu"
-                >
-                  <span aria-hidden="true">👤</span>
-                  <span className="user-menu__name">{user.email?.split('@')[0]}</span>
-                </button>
-                {menuOpen && (
-                  <>
-                    <div className="user-menu__backdrop" onClick={() => setMenuOpen(false)} />
-                    <div className="user-menu__panel" role="menu">
-                      <div className="user-menu__email">{user.email}</div>
-                      <Link to="/favorites" className="user-menu__item" role="menuitem">
-                        <span aria-hidden="true">❤️</span> My favorites
-                      </Link>
-                      <button
-                        type="button"
-                        className="user-menu__item user-menu__item--danger"
-                        role="menuitem"
-                        onClick={() => {
-                          setMenuOpen(false);
-                          signOut();
-                        }}
-                      >
-                        <span aria-hidden="true">🚪</span> Sign out
-                      </button>
-                    </div>
-                  </>
-                )}
-              </div>
-            ) : (
-              <button
-                type="button"
-                className="btn btn--primary"
-                onClick={openAuthModal}
-                style={{ padding: '10px 16px' }}
-              >
-                Sign in
-              </button>
-            ))}
-        </nav>
+        )}
+        <Link
+          to="/"
+          className={`header__wordmark ${showBack ? 'header__wordmark--after-back' : ''}`}
+        >
+          <img src={wordmark} alt="babbling banks" width="136" height="24" />
+        </Link>
       </div>
+      <Link to="/favorites" className="tap" aria-label="Repeat offenders" title="Repeat offenders">
+        <Icon name="heart" />
+      </Link>
     </header>
   );
 }
