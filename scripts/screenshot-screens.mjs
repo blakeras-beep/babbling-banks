@@ -35,6 +35,10 @@ for (const theme of ['light', 'dark']) {
       deviceScaleFactor: width === 375 ? 2 : 1,
       colorScheme: theme,
     });
+    // Light is the standard; "night" is a per-device choice, so set it the way the app stores it.
+    await context.addInitScript((value) => {
+      localStorage.setItem('babbling-banks:theme', JSON.stringify(value));
+    }, theme);
     for (const [name, url] of SCREENS) {
       const page = await context.newPage();
       await page.goto(base + url, { waitUntil: 'networkidle' });

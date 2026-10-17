@@ -99,7 +99,7 @@ The palette is the tape-resist piece: paper, tape white, ink, cobalt and lemon. 
 
 The thin moss and rust lines inside the art stay in the art; they are not UI colors.
 
-**Dark theme ("night")** follows `prefers-color-scheme`. The paper goes near-black; tape strips stay white with ink text, because tape is tape at night too. Every art band switches to `night-01`.
+**Dark theme ("night")** is opt-in: light is the standard on every device, and "night" is chosen from the toggle and remembered on that device. The system color-scheme preference is not read. The paper goes near-black; tape strips stay white with ink text, because tape is tape at night too. Every art band switches to `night-01`.
 
 | Role | Light | Dark | Dark check |
 |---|---|---|---|
@@ -198,7 +198,7 @@ None. Tape sits flat on paper or art; layering comes from overlap and rotation, 
 
 **Credit** · "Art by Banks · <piece title>", `credit` type in `text-muted`, bottom-right of the page content, 16 px from the right and 12 px from the bottom. Once per page. The title is the piece that screen shows, from `assets/art/collection.json` (home "Blue and Yellow", results "Mint and Blue", dark screens "Emerald Texture", and so on); a page showing several pieces uses plain "Art by Banks". It links to the art page (no underline until hover); the art page itself carries no credit, because the whole page is one. Keep the title under 20 characters so the line stays short; every current title fits.
 
-**Theme toggle** · "night" / "day" as a text button at the bottom-left of the credit row, `caption` type in `text-muted`, in a 48 px target flush with the gutter. It overrides `prefers-color-scheme` and is remembered on the device.
+**Theme toggle** · "night" / "day" as a text button at the bottom-left of the credit row, `caption` type in `text-muted`, in a 48 px target flush with the gutter. Light is the standard; the toggle turns "night" on or off and the choice is remembered on the device.
 
 **Season tabs** (show page) · "All", then one tab per season labelled with the code prefix ("S1", "S2"; the accessible name is "Season 1"), `label` type in cobalt, the selected one in ink and underlined, in a single row that scrolls rather than wraps. The page opens on the first season.
 
@@ -321,6 +321,8 @@ Playful and silly, aimed at the grown-up. The joke is the shared chaos of a tiny
 - Rights: show names and platform names appear as link labels ("Open on Disney+", "on Paramount+"); confirm thumbnail, show-name and platform-name use against each platform's terms; confirm COPPA posture before any kid-facing feature. Not legal advice.
 
 ## Changelog
+
+- 2026-10-17: v1.5.2. Light is the standard theme. "night" is opt-in from the toggle, remembered on the device; nothing reads `prefers-color-scheme` any more (tokens, critical CSS, theme provider, `colors_and_type.css`).
 
 - 2026-10-17: v1.5.1, review fixes. Home headline is now "Find it from whatever they said." (title tag and share titles too). The primary button on detail says what the link does ("Open on Disney+" for a platform search). The desktop column is centered. Added the theme toggle, season tabs and pager as components; "n more" on results is a text action, not a second outlined button. Loading keeps one label. Characters, places and themes on detail wrap inline. The result card no longer repeats the quote under the thumbnail. Show copy in `shows.json` follows the banned-word list and the validator checks it; "Ms Rachel (Songs for Littles)" is the show's one name. `screens/*.html` carry the new headline; `examples/*.jpg` still show the old one.
 

@@ -13,7 +13,7 @@ You're implementing the Babbling Banks rebrand on babblingbanks.com, the toddler
 | Path | What |
 |---|---|
 | `DESIGN.md` | The spec: tokens in the front matter, rules and components in the body. Lints clean with `npx @google/design.md lint DESIGN.md`. |
-| `colors_and_type.css` | CSS custom properties for every color, type style, tilt and art URL, with the dark theme under `prefers-color-scheme` and `[data-theme="dark"]`. Generated from DESIGN.md; regenerate rather than hand-edit if the spec changes. |
+| `colors_and_type.css` | CSS custom properties for every color, type style, tilt and art URL, with the dark theme under `[data-theme="dark"]` only (light is the standard; nothing reads `prefers-color-scheme`). Generated from DESIGN.md; regenerate rather than hand-edit if the spec changes. |
 | `brand.tokens.json` | The same tokens in DTCG format, if your build uses a token pipeline. |
 | `assets/fonts/` | Self-hosted woff2: DynaPuff 600, Dela Gothic One 400, Atkinson Hyperlegible Next 400/700, IBM Plex Mono 500. |
 | `assets/logo/` | Outlined SVG wordmark (ink, reversed, one-color) and the app icon. Use the SVGs; never set the wordmark in live type. |
@@ -35,7 +35,7 @@ You're implementing the Babbling Banks rebrand on babblingbanks.com, the toddler
 - [ ] Art page: every piece from `collection.json` shown whole in two columns, each with a wall label (title in DynaPuff 13, medium in 11 px muted). Alt text: "{title}, by Banks".
 - [ ] Translation pair on results: a lemon crayon swipe behind each matched word (max three, alternating the two swipe images), then the crayon arrow and the "found it" label, then the result card.
 - [ ] Screens: home, results, empty results, episode detail, 404, art page, loading, offline, and the share card / OG image (1200 × 630).
-- [ ] Dark theme via `prefers-color-scheme`: tape stays white with ink text, the primary button flips to paper, the crayon arrow inverts.
+- [ ] Dark theme is opt-in via `[data-theme="dark"]` from the toggle, remembered on the device; never from `prefers-color-scheme`. Tape stays white with ink text, the primary button flips to paper, the crayon arrow inverts.
 - [ ] Copy exactly as in the screens and the spec's Voice section. No exclamation marks in UI.
 
 ## Acceptance checks
