@@ -193,5 +193,36 @@
       "trashtruck",
       "truck show"
     ]
+  },
+  "blues_clues": {
+    "id": "blues_clues",
+    "name": "Blue's Clues & You!",
+    "emoji": "🐶",
+    "description": "Josh and Blue solve a puzzle in every episode by finding three paw-print clues",
+    "color": "#0066CC",
+    "accentColor": "#FFB300",
+    "platform": "Paramount+",
+    "platformUrl": "https://www.paramountplus.com/shows/blues-clues-and-you/",
+    "network": "Nick Jr.",
+    "isYouTube": false,
+    "ageRange": "2-5",
+    "episodeLength": "22 min",
+    "mainCharacters": ["Josh", "Blue", "Magenta", "Mailbox", "Tickety Tock"],
+    "keywords": [
+      "blues clues",
+      "blue's clues",
+      "blue clues",
+      "the blue dog",
+      "blue dog",
+      "blue puppy",
+      "josh",
+      "josh and blue",
+      "paw prints",
+      "clues",
+      "handy dandy notebook",
+      "mailbox",
+      "bluesclues",
+      "blues cues"
+    ]
   }
 }

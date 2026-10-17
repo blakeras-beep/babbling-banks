@@ -140,6 +140,20 @@ describe('catalog queries', () => {
     ['bluey builds a dam in the rain', 'bluey-s3e17'],
     ['bluey cousins play charades at nanas', 'bluey-s2e11'],
     ['tango obstacle course elmo', 'sesame_street-s53e11'],
+    ['elmo tango dog', 'sesame_street-s53e11'],
+    // Trash Truck
+    ['garbage truck wants to fly', 'trash_truck-s1e1'],
+    ['trash truck hiccups', 'trash_truck-s2e8'],
+    ['the truck christmas', 'trash_truck-s0e1'],
+    ['the truck gets stinky new shoes', 'trash_truck-s1e6'],
+    ['bear hibernates', 'trash_truck-s1e7'],
+    ['trash truck hibernation', 'trash_truck-s1e7'],
+    // Blue's Clues & You!
+    ['blue dog josh is sick', 'blues_clues-s4e5'],
+    ['blue puppy birthday', 'blues_clues-s1e11'],
+    ['steve comes back blues clues', 'blues_clues-s1e1'],
+    ['blue clues ice cream', 'blues_clues-s4e21'],
+    ['josh mexico city', 'blues_clues-s4e24'],
   ];
   it.each(cases)('"%s" returns %s first', (query, id) => {
     expect(searchEpisodes(query)[0]?.episode.id).toBe(id);

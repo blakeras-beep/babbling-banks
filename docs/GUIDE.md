@@ -164,6 +164,7 @@ Pass `--model=claude-sonnet-5-5` for a cheaper, slightly less careful run.
 | --------------------------------------------- | ----------------------------------------------------------- |
 | `Set ANTHROPIC_API_KEY…`                      | Add the key to `.env` in the project folder                 |
 | `Invalid ANTHROPIC_API_KEY`                   | Copy it again from the console; keys start `sk-ant-`        |
+| `…not scoped to a workspace…`                 | User-level key: also set `ANTHROPIC_WORKSPACE_ID` in `.env` |
 | `Rate limited`                                | Wait a minute and re-run; finished episodes are skipped     |
 | `Response was cut off; try a smaller --batch` | Re-run with `--batch=8`                                     |
 | `Claude declined this request`                | Rare for kids' TV; re-run, or seed titles with `--titles`   |
