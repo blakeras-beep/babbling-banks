@@ -1,11 +1,15 @@
+import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout.jsx';
 import HomePage from './pages/HomePage.jsx';
-import EpisodePage from './pages/EpisodePage.jsx';
-import ShowPage from './pages/ShowPage.jsx';
-import ShowsPage from './pages/ShowsPage.jsx';
-import FavoritesPage from './pages/FavoritesPage.jsx';
-import NotFoundPage from './pages/NotFoundPage.jsx';
+
+// Home ships in the main bundle; the rest load on demand behind the loading screen.
+const EpisodePage = lazy(() => import('./pages/EpisodePage.jsx'));
+const ShowPage = lazy(() => import('./pages/ShowPage.jsx'));
+const ShowsPage = lazy(() => import('./pages/ShowsPage.jsx'));
+const FavoritesPage = lazy(() => import('./pages/FavoritesPage.jsx'));
+const ArtPage = lazy(() => import('./pages/ArtPage.jsx'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage.jsx'));
 
 export default function App() {
   return (
@@ -16,6 +20,7 @@ export default function App() {
         <Route path="/show/:showId" element={<ShowPage />} />
         <Route path="/episode/:id" element={<EpisodePage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
+        <Route path="/art" element={<ArtPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

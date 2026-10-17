@@ -1,22 +1,24 @@
+/** "Which show?" and friends: a playful label with the options as text links. */
 export default function FollowUpQuestions({ questions, onAnswer }) {
   if (!questions || questions.length === 0) return null;
   return (
     <div className="followups" aria-label="Narrow it down">
       {questions.map((question) => (
         <div key={question.type}>
-          <div className="followups__question">{question.text}</div>
-          <div className="chip-row">
+          <h2 className="section-label">{question.text.toLowerCase()}</h2>
+          <ul className="examples">
             {question.options.map((option) => (
-              <button
-                type="button"
-                className="chip chip--small"
-                key={`${question.type}-${option.label}`}
-                onClick={() => onAnswer(question.type, option.value)}
-              >
-                <span aria-hidden="true">{option.emoji}</span> {option.label}
-              </button>
+              <li key={`${question.type}-${option.label}`}>
+                <button
+                  type="button"
+                  className="example-link"
+                  onClick={() => onAnswer(question.type, option.value)}
+                >
+                  {option.label}
+                </button>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       ))}
     </div>

@@ -1,17 +1,21 @@
 import { useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { getEpisode, getEpisodesForShow, getShow } from '../data/index.js';
-import { getRelatedEpisodes } from '../lib/search.js';
-import {
-  formatDuration,
-  formatEpisodeCode,
-  getPlatformColor,
-  getWatchUrl,
-} from '../lib/platforms.js';
+import { getRelatedEpisodes, searchEpisodes } from '../lib/search.js';
+import { getMatchedWords } from '../lib/matchedWords.js';
+import { getWatchUrl } from '../lib/platforms.js';
 import { useDocumentTitle } from '../hooks/useDocumentTitle.js';
+import { useArtCredit } from '../lib/CreditContext.jsx';
+import { pieceFor } from '../lib/art.js';
+import ArtBand from '../components/ArtBand.jsx';
 import FavoriteButton from '../components/FavoriteButton.jsx';
-import EpisodeCard from '../components/EpisodeCard.jsx';
+import QuoteStrip from '../components/QuoteStrip.jsx';
+import { CaptionRow, Thumbnail } from '../components/ResultCard.jsx';
+import { CrayonDivider, ResultRows } from '../components/ResultRow.jsx';
+import Icon from '../components/Icon.jsx';
 import NotFoundPage from './NotFoundPage.jsx';
+
+const PIECE = pieceFor('episode-detail');
 
 const timestampToSeconds = (timestamp) =>
   timestamp
@@ -28,7 +32,7 @@ function ShareButton({ episode }) {
   const [copied, setCopied] = useState(false);
   const share = async () => {
     const url = window.location.href;
-    const text = `${episode.title} — found with Babbling Banks`;
+    const text = `${episode.title}. Decoded with Babbling Banks.`;
     try {
       if (navigator.share) {
         await navigator.share({ title: episode.title, text, url });
@@ -42,25 +46,34 @@ function ShareButton({ episode }) {
     }
   };
   return (
-    <button type="button" className="btn btn--secondary" onClick={share} aria-live="polite">
-      <span aria-hidden="true">{copied ? '✅' : '🔗'}</span> {copied ? 'Link copied' : 'Share'}
+    <button type="button" className="text-action" onClick={share} aria-live="polite">
+      <Icon name="shareNetwork" />
+      {copied ? 'Link copied' : 'Share the decode'}
     </button>
   );
 }
 
 export default function EpisodePage() {
   const { id } = useParams();
-  const navigate = useNavigate();
+  const location = useLocation();
   const episode = getEpisode(id);
   const show = episode ? getShow(episode.show) : null;
   useDocumentTitle(episode ? `${episode.title} · ${show?.name ?? ''}` : 'Episode not found');
+  useArtCredit(episode ? PIECE?.id : null);
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [id]);
 
-  if (!episode) return <NotFoundPage message="We couldn't find that episode." />;
+  if (!episode)
+    return <NotFoundPage message="That episode wandered off. Happens to the best of us." />;
 
+  const saidQuery = location.state?.q ?? '';
+  // Re-run the search so the swipes land on the same words as the results screen.
+  const saidResult = saidQuery
+    ? searchEpisodes(saidQuery, { limit: 24 }).find((r) => r.episode.id === episode.id)
+    : null;
+  const matched = saidResult ? getMatchedWords(saidQuery, saidResult) : [];
   const siblings = getEpisodesForShow(episode.show);
   const position = siblings.findIndex((item) => item.id === episode.id);
   const previous = position > 0 ? siblings[position - 1] : null;
@@ -70,174 +83,159 @@ export default function EpisodePage() {
   const isAiGenerated = /ai generated/i.test(episode.source ?? '');
 
   return (
-    <div className="container" style={{ '--show-color': show?.color ?? 'var(--bb-primary)' }}>
-      <div className="detail-toolbar">
-        <button
-          type="button"
-          className="btn btn--ghost"
-          onClick={() => (window.history.length > 1 ? navigate(-1) : navigate('/'))}
-        >
-          ← Back
-        </button>
-        <div className="detail-toolbar__actions">
-          <ShareButton episode={episode} />
+    <div className="detail">
+      <ArtBand pieceId={PIECE?.id} height={120} />
+      <div className="col">
+        <article className="tape tape--card detail-card">
+          <h1 className="result-card__title">{episode.title}</h1>
+          <CaptionRow episode={episode} showLink />
+          <Thumbnail episode={episode} />
+        </article>
+
+        {watchUrl && (
+          <a
+            href={watchUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary detail__play"
+          >
+            Play this one
+          </a>
+        )}
+
+        <p className="description">{episode.fullSynopsis || episode.shortDescription}</p>
+
+        <div className="actions">
           <FavoriteButton episode={episode} labelled />
+          <ShareButton episode={episode} />
         </div>
-      </div>
 
-      <article className="detail-card">
-        <div className="detail-card__banner">
-          <span className="detail-card__banner-emoji" aria-hidden="true">
-            {show?.emoji}
-          </span>
-          <div>
-            <Link to={`/show/${episode.show}`} className="detail-card__show">
-              {show?.name ?? episode.show}
-            </Link>
-            <div className="detail-card__code">
-              {formatEpisodeCode(episode, { long: true })}
-              {episode.duration ? ` • ${formatDuration(episode.duration)}` : ''}
-            </div>
-          </div>
-        </div>
-        <div className="detail-card__body">
-          <h1 className="detail-card__title">{episode.title}</h1>
-          <p className="detail-card__synopsis">
-            {episode.fullSynopsis || episode.shortDescription}
-          </p>
-
-          {episode.characters?.length > 0 && (
-            <section className="detail-section">
-              <h2 className="section-label">Characters</h2>
-              <div className="pill-row">
-                {episode.characters.map((name) => (
-                  <Link
-                    key={name}
-                    to={`/?q=${encodeURIComponent(name)}`}
-                    className="pill pill--primary"
-                  >
+        {episode.characters?.length > 0 && (
+          <section>
+            <h2 className="section-label">who&apos;s in it</h2>
+            <ul className="examples">
+              {episode.characters.map((name) => (
+                <li key={name}>
+                  <Link to={`/?q=${encodeURIComponent(name)}`} className="example-link">
                     {name}
                   </Link>
-                ))}
-              </div>
-            </section>
-          )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-          {episode.settings?.length > 0 && (
-            <section className="detail-section">
-              <h2 className="section-label">Where it happens</h2>
-              <div className="pill-row">
-                {episode.settings.map((name) => (
-                  <span key={name} className="pill">
-                    📍 {name}
+        {episode.settings?.length > 0 && (
+          <section>
+            <h2 className="section-label">where it happens</h2>
+            <ul className="examples">
+              {episode.settings.map((name) => (
+                <li key={name}>
+                  <span className="example-link" style={{ color: 'var(--color-text)' }}>
+                    {name}
                   </span>
-                ))}
-              </div>
-            </section>
-          )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-          {episode.themes?.length > 0 && (
-            <section className="detail-section">
-              <h2 className="section-label">Themes</h2>
-              <div className="pill-row">
-                {episode.themes.map((name) => (
-                  <Link key={name} to={`/?q=${encodeURIComponent(name)}`} className="pill">
+        {episode.themes?.length > 0 && (
+          <section>
+            <h2 className="section-label">what it&apos;s about</h2>
+            <ul className="examples">
+              {episode.themes.map((name) => (
+                <li key={name}>
+                  <Link to={`/?q=${encodeURIComponent(name)}`} className="example-link">
                     {name}
                   </Link>
-                ))}
-              </div>
-            </section>
-          )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-          {episode.songs?.length > 0 && (
-            <section className="detail-section">
-              <h2 className="section-label">🎵 Songs in this video</h2>
-              <div className="song-list">
-                {episode.songs.map((song) => {
-                  const url = songUrl(episode, song);
-                  const inner = (
-                    <>
-                      <span>{song.title}</span>
-                      <span className="song-list__time">{song.timestamp}</span>
-                    </>
-                  );
-                  return url ? (
-                    <a
-                      key={`${song.title}-${song.timestamp}`}
-                      className="song-list__item"
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {inner}
-                    </a>
-                  ) : (
-                    <div key={`${song.title}-${song.timestamp}`} className="song-list__item">
-                      {inner}
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-          )}
+        {episode.songs?.length > 0 && (
+          <section>
+            <h2 className="section-label">songs in this one</h2>
+            <ol className="songs">
+              {episode.songs.map((song, index) => {
+                const url = songUrl(episode, song);
+                const inner = (
+                  <>
+                    <span className="song__name">{song.title}</span>
+                    {song.timestamp && (
+                      <span className="song__time">
+                        <span className="visually-hidden">at </span>
+                        {song.timestamp}
+                      </span>
+                    )}
+                  </>
+                );
+                const key = `${song.title}-${song.timestamp}`;
+                return (
+                  <li key={key}>
+                    {index > 0 && <CrayonDivider />}
+                    {url ? (
+                      <a className="song" href={url} target="_blank" rel="noopener noreferrer">
+                        {inner}
+                      </a>
+                    ) : (
+                      <div className="song">{inner}</div>
+                    )}
+                  </li>
+                );
+              })}
+            </ol>
+          </section>
+        )}
 
-          {watchUrl && (
-            <a
-              href={watchUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn--watch btn--block"
-              style={{ backgroundColor: getPlatformColor(episode.platform) ?? 'var(--bb-primary)' }}
-            >
-              <span aria-hidden="true">{episode.platform === 'YouTube' ? '▶️' : '📺'}</span> Watch
-              on {episode.platform}
-            </a>
-          )}
+        {saidQuery && (
+          <section>
+            <h2 className="section-label">what they said</h2>
+            <QuoteStrip text={saidQuery} matched={matched} />
+          </section>
+        )}
 
-          <p className="source-note">
-            {isAiGenerated
-              ? 'These episode details were generated with AI from public descriptions and may not be exact. '
-              : `Source: ${episode.source}. `}
-            Spotted a mistake?{' '}
-            <a
-              href="https://github.com/blakeras-beep/babbling-banks/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Let us know
-            </a>
-            .
-          </p>
-        </div>
-      </article>
+        <p className="source-note">
+          {isAiGenerated
+            ? 'These episode details were written with AI from public descriptions and may not be exact. '
+            : `Source: ${episode.source}. `}
+          Spotted a mistake?{' '}
+          <a
+            href="https://github.com/blakeras-beep/babbling-banks/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Let us know
+          </a>
+          .
+        </p>
 
-      {(previous || next) && (
-        <div className="detail-toolbar" style={{ marginTop: 14 }}>
-          {previous ? (
-            <Link to={`/episode/${previous.id}`} className="btn btn--ghost">
-              ← {previous.title}
-            </Link>
-          ) : (
-            <span />
-          )}
-          {next && (
-            <Link to={`/episode/${next.id}`} className="btn btn--ghost">
-              {next.title} →
-            </Link>
-          )}
-        </div>
-      )}
+        {(previous || next) && (
+          <nav className="pager" aria-label="Episode order">
+            {previous && (
+              <Link to={`/episode/${previous.id}`} className="text-action">
+                <Icon name="caretLeft" />
+                {previous.title}
+              </Link>
+            )}
+            {next && (
+              <Link to={`/episode/${next.id}`} className="text-action text-action--next">
+                {next.title}
+                <Icon name="caretRight" />
+              </Link>
+            )}
+          </nav>
+        )}
 
-      {related.length > 0 && (
-        <section className="related">
-          <h2 className="related__title">You might also like</h2>
-          <div className="stack">
-            {related.map((item, index) => (
-              <EpisodeCard key={item.id} episode={item} index={index} />
-            ))}
-          </div>
-        </section>
-      )}
+        {related.length > 0 && (
+          <section>
+            <h2 className="section-label">or maybe…</h2>
+            <ResultRows episodes={related} />
+          </section>
+        )}
+      </div>
     </div>
   );
 }

@@ -18,6 +18,8 @@
     "test:watch": "vitest",
     "validate-catalog": "node scripts/validate-catalog.mjs",
     "generate-catalog": "node scripts/generate-catalog.mjs",
+    "generate-og-image": "node scripts/generate-og-image.mjs",
+    "screenshots": "node scripts/screenshot-screens.mjs",
     "check": "npm run lint && npm run validate-catalog && npm run test && npm run build"
   },
   "dependencies": {
@@ -35,6 +37,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
+    "playwright-core": "^1.49.1",
     "prettier": "^3.4.2",
     "vite": "^5.4.11",
     "vitest": "^2.1.8"

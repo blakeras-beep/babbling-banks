@@ -24,31 +24,23 @@ export function getWatchUrl(episode, show) {
   return null;
 }
 
-export function getPlatformColor(platform) {
-  switch (platform) {
-    case 'YouTube':
-      return '#FF0000';
-    case 'Disney+':
-      return '#113CCF';
-    case 'Hulu':
-      return '#1CE783';
-    case 'Netflix':
-      return '#E50914';
-    case 'Max':
-      return '#002BE7';
-    case 'PBS Kids':
-      return '#00A651';
-    default:
-      return null;
-  }
-}
-
-/** Human-friendly episode code: "S1 E3", "S2 E4b", or "Video" for YouTube. */
-export function formatEpisodeCode(episode, { long = false } = {}) {
+/** Episode code as the brand writes it: "S2E14", "S1E07a", or "Video" for YouTube. */
+export function formatEpisodeCode(episode) {
   if (episode.platform === 'YouTube') return 'Video';
   const segment = episode.segment ? episode.segment.toLowerCase() : '';
-  if (long) return `Season ${episode.season} • Episode ${episode.episode}${segment}`;
-  return `S${episode.season} E${episode.episode}${segment}`;
+  return `S${episode.season}E${String(episode.episode).padStart(2, '0')}${segment}`;
+}
+
+/**
+ * Official thumbnail, 16:9. YouTube publishes one per video; the catalog
+ * carries no images for the streaming shows, so those use the placeholder.
+ */
+export function getThumbnailUrl(episode) {
+  if (episode.thumbnailUrl) return episode.thumbnailUrl;
+  if (episode.platform === 'YouTube' && episode.videoId) {
+    return `https://i.ytimg.com/vi/${episode.videoId}/hqdefault.jpg`;
+  }
+  return null;
 }
 
 export function formatDuration(minutes) {

@@ -3,3 +3,6 @@ dist
 package-lock.json
 src/data/episodes/*.json
 scripts/.cache
+
+# Brand kit: reference files from the designer, kept verbatim
+brand/

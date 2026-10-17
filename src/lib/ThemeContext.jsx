@@ -28,7 +28,7 @@ export function ThemeProvider({ children }) {
   useEffect(() => {
     document.documentElement.dataset.theme = resolvedTheme;
     const meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute('content', resolvedTheme === 'dark' ? '#0F0F0F' : '#2E9B9B');
+    if (meta) meta.setAttribute('content', resolvedTheme === 'dark' ? '#111613' : '#F5F6F2');
   }, [resolvedTheme]);
 
   const setTheme = useCallback((next) => {

@@ -1,27 +1,29 @@
 import { useEffect, useRef, useState } from 'react';
 import { useAuth } from '../lib/AuthContext.jsx';
+import Icon from './Icon.jsx';
 
 const COPY = {
   signin: {
-    icon: '👋',
-    title: 'Welcome back!',
-    subtitle: 'Sign in to sync your favorites across devices',
-    submit: 'Sign In',
+    title: 'Back again.',
+    subtitle: 'Sign in to keep your repeat offenders on every device.',
+    submit: 'Sign in',
   },
   signup: {
-    icon: '✨',
-    title: 'Create account',
-    subtitle: 'Save the episodes your little one loves',
-    submit: 'Create Account',
+    title: 'Make an account.',
+    subtitle: 'Keep the episodes they ask for, on your phone and your laptop.',
+    submit: 'Make it',
   },
   reset: {
-    icon: '🔑',
-    title: 'Reset password',
-    subtitle: "We'll email you a link to choose a new one",
-    submit: 'Send reset link',
+    title: 'Reset password.',
+    subtitle: 'We will email you a link to choose a new one.',
+    submit: 'Send the link',
   },
 };
 
+/**
+ * Sign-in sheet: a full-screen surface with a 40% ink scrim behind, tape-strip
+ * fields and the ink primary button.
+ */
 export default function AuthModal() {
   const { authModalOpen, closeAuthModal, signIn, signUp, resetPassword, favorites } = useAuth();
   const [mode, setMode] = useState('signin');
@@ -72,12 +74,12 @@ export default function AuthModal() {
     setBusy(true);
     try {
       if (mode === 'signup') {
-        if (password !== confirm) return setError('Passwords do not match');
-        if (password.length < 6) return setError('Password must be at least 6 characters');
+        if (password !== confirm) return setError('Those passwords do not match.');
+        if (password.length < 6) return setError('Passwords need at least 6 characters.');
         const { data, error: signUpError } = await signUp(email, password);
         if (signUpError) return setError(signUpError.message);
         if (data?.session) closeAuthModal();
-        else setSuccess('Check your email to confirm your account, then sign in.');
+        else setSuccess('Check your email to confirm the account, then sign in.');
       } else if (mode === 'reset') {
         const { error: resetError } = await resetPassword(email);
         if (resetError) return setError(resetError.message);
@@ -97,24 +99,26 @@ export default function AuthModal() {
 
   return (
     <div
-      className="modal-backdrop"
+      className="sheet-backdrop"
       onClick={(event) => event.target === event.currentTarget && closeAuthModal()}
     >
-      <div className="modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
-        <button type="button" className="modal__close" onClick={closeAuthModal} aria-label="Close">
-          ✕
+      <div className="sheet" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+        <button
+          type="button"
+          className="tap sheet__close"
+          onClick={closeAuthModal}
+          aria-label="Close"
+        >
+          <Icon name="x" />
         </button>
-        <div className="modal__header">
-          <div className="modal__icon" aria-hidden="true">
-            {copy.icon}
+        <div className="col">
+          <div className="tape tape--headline headline-strip headline-strip--plain">
+            <h2 className="headline-strip__text" id="auth-title">
+              {copy.title}
+            </h2>
           </div>
-          <h2 className="modal__title" id="auth-title">
-            {copy.title}
-          </h2>
-          <p className="modal__subtitle">{copy.subtitle}</p>
-        </div>
-        <div className="modal__body">
-          <form onSubmit={handleSubmit}>
+          <p className="lead">{copy.subtitle}</p>
+          <form onSubmit={handleSubmit} className="sheet__form">
             <div className="field">
               <label className="field__label" htmlFor="auth-email">
                 Email address
@@ -142,7 +146,6 @@ export default function AuthModal() {
                   type="password"
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
-                  placeholder="••••••••"
                   autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
                   required
                 />
@@ -159,56 +162,51 @@ export default function AuthModal() {
                   type="password"
                   value={confirm}
                   onChange={(event) => setConfirm(event.target.value)}
-                  placeholder="••••••••"
                   autoComplete="new-password"
                   required
                 />
               </div>
             )}
             {error && (
-              <div className="notice notice--error" role="alert" style={{ marginBottom: 16 }}>
-                <span aria-hidden="true">⚠️</span> {error}
-              </div>
-            )}
-            {success && (
-              <div className="notice notice--success" role="status" style={{ marginBottom: 16 }}>
-                <span aria-hidden="true">✅</span> {success}
-              </div>
-            )}
-            {mode === 'signin' && favorites.length > 0 && !error && !success && (
-              <p style={{ fontSize: '0.85rem', color: 'var(--bb-text-muted)', marginBottom: 16 }}>
-                The {favorites.length} favorite{favorites.length === 1 ? '' : 's'} saved on this
-                device will be added to your account.
+              <p className="note note--error" role="alert">
+                <Icon name="warningCircle" size={16} /> {error}
               </p>
             )}
-            <button type="submit" className="btn btn--primary btn--block" disabled={busy}>
-              {busy ? 'Please wait…' : copy.submit}
-            </button>
+            {success && (
+              <p className="note note--success" role="status">
+                {success}
+              </p>
+            )}
+            {mode === 'signin' && favorites.length > 0 && !error && !success && (
+              <p className="notice notice--muted" style={{ marginTop: 0 }}>
+                The {favorites.length} repeat offender{favorites.length === 1 ? '' : 's'} on this
+                device will join your account.
+              </p>
+            )}
+            <div>
+              <button type="submit" className="btn-primary" disabled={busy}>
+                {busy ? 'One moment…' : copy.submit}
+              </button>
+            </div>
           </form>
-          <div className="modal__footer">
+          <div className="sheet__footer">
             {mode === 'signin' && (
               <>
-                <span>
-                  Don&apos;t have an account?{' '}
-                  <button type="button" className="btn--link" onClick={() => switchMode('signup')}>
-                    Sign up
-                  </button>
-                </span>
-                <button type="button" className="btn--link" onClick={() => switchMode('reset')}>
-                  Forgot your password?
+                <button type="button" className="text-action" onClick={() => switchMode('signup')}>
+                  No account yet? Make one
+                </button>
+                <button type="button" className="text-action" onClick={() => switchMode('reset')}>
+                  Forgot the password?
                 </button>
               </>
             )}
             {mode === 'signup' && (
-              <span>
-                Already have an account?{' '}
-                <button type="button" className="btn--link" onClick={() => switchMode('signin')}>
-                  Sign in
-                </button>
-              </span>
+              <button type="button" className="text-action" onClick={() => switchMode('signin')}>
+                Already have one? Sign in
+              </button>
             )}
             {mode === 'reset' && (
-              <button type="button" className="btn--link" onClick={() => switchMode('signin')}>
+              <button type="button" className="text-action" onClick={() => switchMode('signin')}>
                 Back to sign in
               </button>
             )}

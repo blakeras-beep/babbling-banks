@@ -1,75 +1,8 @@
 /* ==========================================================================
-   Babbling Banks design tokens
-   Colours come from the logo: deep teal text, coral speech bubble, blue sparkle.
+   Babbling Banks: reset and base. Tokens live in tokens.css (from the brand kit).
    ========================================================================== */
-:root {
-  --bb-primary: #2e9b9b;
-  --bb-primary-dark: #247878;
-  --bb-primary-light: #3db3b3;
-  --bb-primary-muted: rgba(46, 155, 155, 0.14);
-  --bb-accent: #e8846b;
-  --bb-accent-dark: #d06a50;
-  --bb-accent-muted: rgba(232, 132, 107, 0.16);
-  --bb-sparkle: #2f80ed;
+@import './tokens.css';
 
-  --bb-bg: #fafbfc;
-  --bb-bg-alt: #f3f4f6;
-  --bb-card: #ffffff;
-  --bb-border: #e5e7eb;
-  --bb-text: #111827;
-  --bb-text-light: #4b5563;
-  --bb-text-muted: #6b7280;
-  --bb-error: #ef4444;
-  --bb-error-bg: #fef2f2;
-  --bb-error-border: #fecaca;
-  --bb-success: #10b981;
-  --bb-success-bg: #f0fdf4;
-  --bb-success-border: #bbf7d0;
-  --bb-overlay: rgba(0, 0, 0, 0.55);
-
-  --bb-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --bb-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.07);
-  --bb-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
-  --bb-shadow-xl: 0 25px 80px rgba(0, 0, 0, 0.28);
-
-  --bb-radius-sm: 10px;
-  --bb-radius-md: 14px;
-  --bb-radius-lg: 20px;
-  --bb-radius-xl: 24px;
-  --bb-radius-pill: 999px;
-
-  --bb-font:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --bb-max-width: 820px;
-  --bb-gutter: 20px;
-  --bb-transition: 0.2s ease;
-
-  color-scheme: light;
-}
-
-:root[data-theme='dark'] {
-  --bb-bg: #0f0f0f;
-  --bb-bg-alt: #1a1a1a;
-  --bb-card: #171717;
-  --bb-border: #2f2f2f;
-  --bb-text: #f3f4f6;
-  --bb-text-light: #b5bac4;
-  --bb-text-muted: #8b919c;
-  --bb-primary-muted: rgba(46, 155, 155, 0.22);
-  --bb-accent-muted: rgba(232, 132, 107, 0.22);
-  --bb-error-bg: rgba(239, 68, 68, 0.12);
-  --bb-error-border: rgba(239, 68, 68, 0.35);
-  --bb-success-bg: rgba(16, 185, 129, 0.12);
-  --bb-success-border: rgba(16, 185, 129, 0.35);
-  --bb-shadow-sm: none;
-  --bb-shadow-md: none;
-  --bb-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-  color-scheme: dark;
-}
-
-/* ==========================================================================
-   Reset & base
-   ========================================================================== */
 *,
 *::before,
 *::after {
@@ -79,22 +12,18 @@
 }
 
 html {
-  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-  font-family: var(--bb-font);
-  background-color: var(--bb-bg);
-  color: var(--bb-text);
-  line-height: 1.5;
+  font: var(--text-body);
+  background-color: var(--color-surface);
+  color: var(--color-text);
   min-height: 100vh;
+  overflow-x: hidden;
   overscroll-behavior-y: contain;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
 }
 
 #root {
@@ -105,8 +34,7 @@ body {
 
 button,
 input {
-  font-family: inherit;
-  font-size: inherit;
+  font: inherit;
   color: inherit;
 }
 
@@ -114,8 +42,9 @@ button {
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
-  border: none;
+  border: 0;
   background: none;
+  border-radius: var(--rounded-none);
 }
 
 button:disabled {
@@ -123,7 +52,7 @@ button:disabled {
 }
 
 a {
-  color: var(--bb-primary);
+  color: inherit;
 }
 
 img {
@@ -131,20 +60,18 @@ img {
   display: block;
 }
 
-button:focus-visible,
-input:focus-visible,
-a:focus-visible,
-[tabindex]:focus-visible {
-  outline: 3px solid var(--bb-primary);
-  outline-offset: 2px;
+ul,
+ol {
+  list-style: none;
 }
 
-::selection {
-  background-color: var(--bb-primary-muted);
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
 }
 
 ::placeholder {
-  color: var(--bb-text-muted);
+  color: var(--color-text-muted);
   opacity: 1;
 }
 
@@ -160,57 +87,12 @@ a:focus-visible,
   border: 0;
 }
 
-@keyframes bb-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes bb-slide-up {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes bb-pulse {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.45;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
-  }
-}
-
-@media (max-width: 480px) {
-  html {
-    font-size: 15px;
-  }
-  :root {
-    --bb-gutter: 16px;
-  }
-}
-
-@media print {
-  body {
-    background: #fff;
   }
 }
 
