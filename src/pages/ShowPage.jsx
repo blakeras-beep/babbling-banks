@@ -14,7 +14,9 @@ import NotFoundPage from './NotFoundPage.jsx';
 export default function ShowPage() {
   const { showId } = useParams();
   const show = getShow(showId);
+  // `filter` is the draft in the field; `applied` is what was last submitted.
   const [filter, setFilter] = useState('');
+  const [applied, setApplied] = useState('');
   useDocumentTitle(show?.name ?? 'Show not found');
   useArtCredit('several');
 
@@ -30,11 +32,12 @@ export default function ShowPage() {
   useEffect(() => {
     setSeason(firstSeason);
     setFilter('');
+    setApplied('');
   }, [showId, firstSeason]);
 
   if (!show) return <NotFoundPage message="That show wandered off. Happens to the best of us." />;
 
-  const trimmedFilter = filter.trim();
+  const trimmedFilter = applied.trim();
   const searchResults = trimmedFilter
     ? searchEpisodes(trimmedFilter, { show: showId, limit: 30 })
     : null;
@@ -64,7 +67,12 @@ export default function ShowPage() {
       <SearchField
         id="show-filter"
         value={filter}
-        onChange={setFilter}
+        onChange={(value) => {
+          setFilter(value);
+          // Clearing the field goes straight back to the episode list.
+          if (!value.trim()) setApplied('');
+        }}
+        onSubmit={setApplied}
         label={`Search within ${show.name}`}
         placeholder={`in ${show.name}`}
       />
