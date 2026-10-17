@@ -3,15 +3,15 @@
 **"What episode is this?"**
 
 A web app that helps parents identify toddler TV episodes from chaotic, vague, or
-hilariously incorrect descriptions. Type (or say) *"the one where the dog freezes dad"*
-and get *Bluey — Magic Xylophone*.
+hilariously incorrect descriptions. Type (or say) _"the one where the dog freezes dad"_
+and get _Bluey — Magic Xylophone_.
 
 Live at **[babblingbanks.com](https://babblingbanks.com)**.
 
 ## Features
 
 - **Toddler-proof search.** Understands toddler-speak ("doggy", "daddy", "choo choo"),
-  misspellings ("xilaphone"), and vague descriptions. Every result says *why* it matched.
+  misspellings ("xilaphone"), and vague descriptions. Every result says _why_ it matched.
 - **Voice input.** Tap the microphone and repeat what your toddler said.
 - **Follow-up questions.** When results are close, the app asks "Which show?" or
   "Who was in it?" to narrow things down.
@@ -28,14 +28,14 @@ Live at **[babblingbanks.com](https://babblingbanks.com)**.
 
 ## Catalog
 
-| Show                       | Episodes | Source           |
-| -------------------------- | -------: | ---------------- |
-| Bluey                      |      154 | Wikipedia        |
-| Curious George             |      216 | Wikipedia / Hulu |
-| Sesame Street              |      325 | AI generated     |
-| Daniel Tiger's Neighborhood|       64 | AI generated     |
-| Mickey Mouse Funhouse      |       26 | AI generated     |
-| Ms Rachel (Songs for Littles) |    20 | YouTube          |
+| Show                          | Episodes | Source           |
+| ----------------------------- | -------: | ---------------- |
+| Bluey                         |      154 | Wikipedia        |
+| Curious George                |      216 | Wikipedia / Hulu |
+| Sesame Street                 |      325 | AI generated     |
+| Daniel Tiger's Neighborhood   |       64 | AI generated     |
+| Mickey Mouse Funhouse         |       26 | AI generated     |
+| Ms Rachel (Songs for Littles) |       20 | YouTube          |
 
 AI-generated entries are flagged on the episode page. Corrections are very welcome:
 open an issue or a pull request that edits the JSON under `src/data/episodes/`.
@@ -67,17 +67,17 @@ The same two variables must be set in Vercel for the production site
 
 ## Scripts
 
-| Command                    | What it does                                               |
-| -------------------------- | ---------------------------------------------------------- |
-| `npm run dev`              | Start the dev server with hot reload                       |
-| `npm run build`            | Production build into `dist/`                              |
-| `npm run preview`          | Serve the production build locally                         |
-| `npm test`                 | Run the unit tests (search engine, catalog)                |
-| `npm run lint`             | ESLint                                                     |
-| `npm run format`           | Prettier (write)                                           |
-| `npm run validate-catalog` | Check every episode file against the catalog schema        |
-| `npm run generate-catalog` | Add a show to the catalog with Claude (needs an API key)   |
-| `npm run check`            | Everything CI runs: lint, validate, test, build            |
+| Command                    | What it does                                             |
+| -------------------------- | -------------------------------------------------------- |
+| `npm run dev`              | Start the dev server with hot reload                     |
+| `npm run build`            | Production build into `dist/`                            |
+| `npm run preview`          | Serve the production build locally                       |
+| `npm test`                 | Run the unit tests (search engine, catalog)              |
+| `npm run lint`             | ESLint                                                   |
+| `npm run format`           | Prettier (write)                                         |
+| `npm run validate-catalog` | Check every episode file against the catalog schema      |
+| `npm run generate-catalog` | Add a show to the catalog with Claude (needs an API key) |
+| `npm run check`            | Everything CI runs: lint, validate, test, build          |
 
 ## Project structure
 
@@ -113,13 +113,13 @@ The same two variables must be set in Vercel for the production site
 
 ### Routes
 
-| Path             | Page                                   |
-| ---------------- | -------------------------------------- |
-| `/`              | Search (query lives in `?q=`)          |
-| `/shows`         | All shows                              |
-| `/show/:showId`  | One show, grouped by season            |
-| `/episode/:id`   | Episode detail                         |
-| `/favorites`     | Saved episodes                         |
+| Path            | Page                          |
+| --------------- | ----------------------------- |
+| `/`             | Search (query lives in `?q=`) |
+| `/shows`        | All shows                     |
+| `/show/:showId` | One show, grouped by season   |
+| `/episode/:id`  | Episode detail                |
+| `/favorites`    | Saved episodes                |
 
 ## Data model
 
@@ -127,25 +127,25 @@ Each file in `src/data/episodes/` is an array of episodes:
 
 ```jsonc
 {
-  "id": "bluey-s1e1",            // unique, stable; used in URLs and favorites
-  "show": "bluey",               // key in shows.json (must match the file name)
+  "id": "bluey-s1e1", // unique, stable; used in URLs and favorites
+  "show": "bluey", // key in shows.json (must match the file name)
   "season": 1,
   "episode": 1,
-  "segment": "A",                // optional, for two-stories-per-episode shows
+  "segment": "A", // optional, for two-stories-per-episode shows
   "title": "Magic Xylophone",
   "platform": "Disney+",
-  "platformUrl": "https://…",    // optional; direct link to watch
-  "videoId": "dv2PkDPu8Zs",      // optional; YouTube only
-  "duration": 119,               // optional; minutes
+  "platformUrl": "https://…", // optional; direct link to watch
+  "videoId": "dv2PkDPu8Zs", // optional; YouTube only
+  "duration": 119, // optional; minutes
   "shortDescription": "…",
   "fullSynopsis": "…",
   "characters": ["Bluey", "Bingo", "Bandit"],
   "settings": ["Home"],
   "objects": ["Xylophone"],
   "themes": ["Sharing"],
-  "aliases": ["freeze dad", "frozen daddy", "xilophone"],  // how parents describe it
+  "aliases": ["freeze dad", "frozen daddy", "xilophone"], // how parents describe it
   "songs": [{ "title": "Hello Song", "timestamp": "0:00" }], // optional
-  "source": "Wikipedia"
+  "source": "Wikipedia",
 }
 ```
 
@@ -177,7 +177,7 @@ options, including seeding from your own list of titles for better accuracy.
    `choo choo → train`), and lightly stemmed.
 2. Fields are scored with different weights: exact title > alias > song > character
    > object > theme/setting > description. Typos are tolerated with an edit-distance
-   check scaled to word length.
+   > check scaled to word length.
 3. A **coverage bonus** rewards results that match every word of the query, and
    results that match only a small slice of a long query are damped.
 4. If the top results are close, **follow-up questions** are generated from the
@@ -193,7 +193,8 @@ Vercel project is connected to this repository. See
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). The quickest wins are catalog fixes and
+See [docs/GUIDE.md](docs/GUIDE.md) for the operator's guide (daily workflow, API keys,
+generating shows, Supabase, Vercel) and [CONTRIBUTING.md](CONTRIBUTING.md). The quickest wins are catalog fixes and
 new aliases, which need no code at all.
 
 ## License
