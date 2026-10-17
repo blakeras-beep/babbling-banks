@@ -4,7 +4,7 @@
  *
  * For every show in the catalog this looks up the series on TMDB, pulls each
  * season's episode stills, matches them to our episodes (by title, then by
- * number) and writes src/data/episode-images.json. Episodes without a still
+ * number; see scripts/lib/match-episodes.mjs) and writes src/data/episode-images.json. Episodes without a still
  * fall back to the show's 16:9 backdrop, so every card has a picture. Episode
  * JSON files are never touched.
  *
@@ -137,13 +137,23 @@ for (const showId of wanted) {
     backdrop: series.backdrop_path ?? null,
   };
 
+  // Every TMDB season, specials included: an episode TMDB files under another
+  // season is still found by its title.
+  const tmdbSeasons = new Map();
+  for (const { season_number: number } of series.seasons ?? []) {
+    const season = await tmdb(`/tv/${series.id}/season/${number}`);
+    tmdbSeasons.set(number, season?.episodes ?? []);
+  }
+
   let stills = 0;
   let fallback = 0;
   const seasons = [...new Set(needing.map((e) => e.season))].sort((a, b) => a - b);
   for (const seasonNumber of seasons) {
     const ours = needing.filter((e) => e.season === seasonNumber);
-    const season = await tmdb(`/tv/${series.id}/season/${seasonNumber}`);
-    const matches = matchSeason(ours, season?.episodes ?? []);
+    const elsewhere = [...tmdbSeasons]
+      .filter(([number]) => number !== seasonNumber)
+      .flatMap(([, episodes]) => episodes);
+    const matches = matchSeason(ours, tmdbSeasons.get(seasonNumber) ?? [], elsewhere);
     for (const { id, still } of matches) {
       if (still) {
         output.episodes[id] = { still };
