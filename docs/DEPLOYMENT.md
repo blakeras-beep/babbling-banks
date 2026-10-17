@@ -21,15 +21,17 @@ from uploads made with the Vercel CLI. To deploy from this repository instead:
 
    `vercel.json` in the repo sets the same values plus the SPA rewrite that
    makes `/episode/...` links work on refresh.
-5. Under **Settings → Environment Variables**, add for *Production* and *Preview*:
 
-   | Name                     | Value                                  |
-   | ------------------------ | -------------------------------------- |
-   | `VITE_SUPABASE_URL`      | Supabase → Project Settings → API      |
-   | `VITE_SUPABASE_ANON_KEY` | the anon / publishable key             |
+5. Under **Settings → Environment Variables**, add for _Production_ and _Preview_:
+
+   | Name                     | Value                             |
+   | ------------------------ | --------------------------------- |
+   | `VITE_SUPABASE_URL`      | Supabase → Project Settings → API |
+   | `VITE_SUPABASE_ANON_KEY` | the anon / publishable key        |
 
    Without these the site still works, but without sign-in. (The CLI deploys
    read them from a local `.env`; GitHub deploys cannot, so they must be set here.)
+
 6. Push to `main` (or click **Redeploy**). Every pull request now gets a preview URL.
 
 The custom domain `babblingbanks.com` is already attached to the project and
