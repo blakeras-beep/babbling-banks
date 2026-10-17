@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>A New Voice</title>
+    <link rel="stylesheet" href="shared.css" />
+    <style>
+      .credit {
+        right: 40px;
+        bottom: 30px;
+        font: 400 22px/1 Atk;
+        color: var(--muted);
+        z-index: 10;
+      }
+      .mark {
+        left: 72px;
+        top: 60px;
+        height: 46px;
+        z-index: 10;
+      }
+      .scene {
+        left: 0;
+        top: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+      }
+
+      /* A: one piece, hung whole */
+      .a-art {
+        left: 560px;
+        top: 150px;
+        width: 800px;
+      }
+      .a-art img {
+        width: 100%;
+        display: block;
+      }
+      .a-head {
+        left: 470px;
+        top: 690px;
+        padding: 26px 40px 30px;
+        font: 400 92px/0.98 Dela;
+        letter-spacing: -0.01em;
+      }
+
+      /* B: the gallery wall */
+      .wall {
+        left: 0;
+        top: 0;
+        height: 1080px;
+      }
+      .piece {
+        position: absolute;
+        top: 230px;
+      }
+      .piece img {
+        height: 560px;
+        display: block;
+      }
+      .label {
+        margin-top: 22px;
+      }
+      .label b {
+        display: block;
+        font: 600 30px/1.1 Puff;
+      }
+      .label span {
+        display: block;
+        margin-top: 8px;
+        font: 400 22px/1.2 Atk;
+        color: var(--muted);
+      }
+
+      /* C: the reviews */
+      .c-art {
+        left: 0;
+        top: 0;
+        width: 1920px;
+        height: 1080px;
+      }
+      .c-art img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 45%;
+        display: block;
+      }
+      .pull {
+        padding: 26px 40px 32px;
+        font: 400 96px/1 Dela;
+        letter-spacing: -0.01em;
+      }
+      .pull small {
+        display: block;
+        margin-top: 14px;
+        font: 700 26px/1 Atk;
+        color: var(--muted);
+        letter-spacing: 0;
+      }
+
+      /* D: the app screens */
+      .mini {
+        top: 240px;
+        width: 340px;
+        height: 700px;
+        border-radius: 30px;
+        overflow: hidden;
+        background: var(--paper);
+        outline: 9px solid var(--ink);
+      }
+      .mini .hd {
+        height: 52px;
+        display: flex;
+        align-items: center;
+        padding: 0 18px;
+      }
+      .mini .hd img {
+        height: 22px;
+      }
+      .mini .band {
+        height: 300px;
+        overflow: hidden;
+      }
+      .mini .band img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .mini .band.whole {
+        height: auto;
+      }
+      .mini .band.whole img {
+        height: auto;
+      }
+      .mini .strip {
+        margin: -50px 14px 0;
+        padding: 14px 16px 16px;
+        transform: rotate(-2.5deg);
+        font: 400 30px/1 Dela;
+      }
+      .mini .rows {
+        margin: 28px 18px 0;
+      }
+      .mini .rows i {
+        display: block;
+        height: 14px;
+        margin-bottom: 18px;
+        background: var(--sunk);
+      }
+      .mini .rows i:nth-child(2) {
+        width: 70%;
+      }
+      .mini .rows i:nth-child(3) {
+        width: 85%;
+      }
+      .cap {
+        top: 975px;
+        width: 340px;
+        text-align: center;
+        font: 700 24px/1.2 Atk;
+        color: var(--muted);
+      }
+      .d-head {
+        left: 172px;
+        top: 120px;
+        font: 600 40px/1.1 Puff;
+      }
+
+      /* E: end card */
+      .e-art {
+        left: 0;
+        top: 0;
+        width: 46%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .e-art img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 35%;
+        display: block;
+      }
+      .e-mark {
+        left: 1010px;
+        top: 200px;
+        width: 640px;
+      }
+      .e-head {
+        left: 980px;
+        top: 400px;
+        width: 880px;
+        padding: 24px 34px 30px;
+        font: 400 68px/1 Dela;
+        letter-spacing: -0.01em;
+      }
+      .e-btn {
+        left: 1010px;
+        top: 800px;
+        padding: 26px 44px;
+        background: var(--ink);
+        color: var(--paper);
+        font: 400 40px/1 Dela;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <!-- A -->
+      <div class="abs scene" id="A">
+        <div class="abs a-art">
+          <img
+            src="../../brand/babbling-banks-brand-v1.5/assets/art/tape-resist-01-1600.jpg"
+            alt=""
+          />
+        </div>
+        <p class="abs tape a-head" id="aHead">A new voice<br />in the art world.</p>
+      </div>
+
+      <!-- B -->
+      <div class="abs scene" id="B"><div class="abs wall" id="wall"></div></div>
+
+      <!-- C -->
+      <div class="abs scene" id="C">
+        <div class="abs c-art">
+          <img src="../../brand/babbling-banks-brand-v1.5/assets/art/smear-01-1600.jpg" alt="" />
+        </div>
+        <p class="abs tape pull" id="p1" style="left: 160px; top: 170px">
+          “Bold.”<small>The critics</small>
+        </p>
+        <p class="abs tape pull" id="p2" style="left: 900px; top: 380px">
+          “Fearless.”<small>Also the critics</small>
+        </p>
+        <p class="abs tape pull" id="p3" style="left: 300px; top: 650px">
+          “Occasionally still wet.”<small>Everyone at breakfast</small>
+        </p>
+      </div>
+
+      <!-- D -->
+      <div class="abs scene" id="D">
+        <p class="abs d-head" id="dHead">hanging on every screen</p>
+        <div id="minis"></div>
+      </div>
+
+      <!-- E -->
+      <div class="abs scene" id="E">
+        <div class="abs e-art">
+          <img src="../../brand/babbling-banks-brand-v1.5/assets/art/night-01-1600.jpg" alt="" />
+        </div>
+        <img
+          class="abs e-mark"
+          id="eMark"
+          src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg"
+          alt="babbling banks"
+        />
+        <p class="abs tape e-head" id="eHead">
+          Powered by a transformational new voice in the art world.
+        </p>
+        <p class="abs e-btn" id="eBtn">See it at babblingbanks.com/art</p>
+      </div>
+
+      <p class="abs credit" id="credit">Art by Banks</p>
+    </div>
+
+    <script type="module">
+      import { prog, lerp, ease, set, boot, $, $$ } from './engine.js';
+
+      const ART = '../../brand/babbling-banks-brand-v1.5/assets/art/';
+      // The gallery, in the order the voiceover names their materials. `at` is when each is centred.
+      const WALL = [
+        {
+          file: 'tape-resist-01-1600.jpg',
+          title: 'Blue and Yellow',
+          medium: 'crayon over masking tape',
+          w: 1600,
+          h: 1203,
+          at: 5.9,
+        },
+        {
+          file: 'swirl-01-1600.jpg',
+          title: 'Mint and Blue',
+          medium: 'finger paint',
+          w: 1600,
+          h: 1600,
+          at: 6.8,
+        },
+        {
+          file: 'leaf-01-1600.jpg',
+          title: 'Green Leaf',
+          medium: 'paint over a tape leaf',
+          w: 1282,
+          h: 1600,
+          at: 7.7,
+        },
+        {
+          file: 'stars-01-1600.jpg',
+          title: 'Purple Starfield',
+          medium: 'finger paint, foil stars',
+          w: 1282,
+          h: 1600,
+          at: 8.7,
+        },
+        {
+          file: 'collage-01-1600.jpg',
+          title: 'Geometric Collage',
+          medium: 'cut paper, paint dots',
+          w: 1282,
+          h: 1600,
+          at: 9.9,
+        },
+        {
+          file: 'scribble-01-1600.jpg',
+          title: 'Black and Blue',
+          medium: 'marker',
+          w: 1600,
+          h: 1203,
+          at: 11.6,
+        },
+        {
+          file: 'cone-01-1600.jpg',
+          title: 'Cone Flat',
+          medium: 'paint and stamps',
+          w: 1282,
+          h: 1600,
+          at: 13.4,
+        },
+      ];
+      const GAP = 170,
+        H = 560;
+      let x = 960;
+      const wall = $('#wall');
+      for (const p of WALL) {
+        p.width = Math.round((p.w / p.h) * H);
+        p.x = x;
+        p.centre = x + p.width / 2;
+        x += p.width + GAP;
+        const el = document.createElement('div');
+        el.className = 'piece';
+        el.style.left = p.x + 'px';
+        el.innerHTML = `<img src="${ART}${p.file}" alt=""><p class="label"><b>${p.title}</b><span>${p.medium}</span></p>`;
+        wall.appendChild(el);
+      }
+      /** Wall offset at time t: ease from one piece's centre to the next. */
+      function pan(t) {
+        const ks = WALL.map((p) => [p.at, 960 - p.centre]);
+        if (t <= ks[0][0]) return ks[0][1] + (ks[0][0] - t) * 300;
+        for (let i = 1; i < ks.length; i++)
+          if (t <= ks[i][0])
+            return lerp(
+              ks[i - 1][1],
+              ks[i][1],
+              ease.inOut((t - ks[i - 1][0]) / (ks[i][0] - ks[i - 1][0]))
+            );
+        return ks[ks.length - 1][1] - (t - ks[ks.length - 1][0]) * 300;
+      }
+
+      const MINIS = [
+        {
+          band: 'tape-resist-01-1600.jpg',
+          whole: true,
+          strip: 'Find it from whatever they said.',
+          piece: 'Blue and Yellow',
+          screen: 'home',
+        },
+        {
+          band: 'swirl-01-1600.jpg',
+          focus: '35% 40%',
+          strip: '“the dog freezes dad”',
+          piece: 'Mint and Blue',
+          screen: 'results',
+        },
+        {
+          band: 'ripple-01-1600.jpg',
+          focus: '40% 15%',
+          strip: 'Magic Xylophone',
+          piece: 'Aqua Wash',
+          screen: 'episode',
+        },
+        {
+          band: 'stars-01-1600.jpg',
+          focus: '50% 30%',
+          strip: 'That one stumped us.',
+          piece: 'Purple Starfield',
+          screen: 'no match',
+        },
+      ];
+      const minis = $('#minis');
+      MINIS.forEach((m, i) => {
+        const left = 172 + i * 420;
+        minis.insertAdjacentHTML(
+          'beforeend',
+          `<div class="abs mini" style="left:${left}px"><div class="hd"><img src="../../brand/babbling-banks-brand-v1.5/assets/logo/wordmark.svg" alt=""></div>
+           <div class="band${m.whole ? ' whole' : ''}"><img src="${ART}${m.band}" style="object-position:${m.focus ?? 'center'}" alt=""></div>
+           <div class="tape strip">${m.strip}</div><div class="rows"><i></i><i></i><i></i></div></div>
+           <p class="abs cap" style="left:${left}px">${m.screen} · ${m.piece}</p>`
+        );
+      });
+
+      // Scene windows, set from the voiceover's word timings.
+      const SC = { A: [0, 5.2], B: [5.0, 14.2], C: [13.9, 19.0], D: [18.8, 24.4], E: [24.2, 36] };
+      const show = (id, t, fade = 0.35) => {
+        const [a, b] = SC[id];
+        const o = Math.min(prog(t, a, a + fade), 1 - prog(t, b - fade, b));
+        $('#' + id).style.opacity = o;
+        return o;
+      };
+
+      function render(t) {
+        show('A', t);
+        const ah = prog(t, 0.9, 1.6, ease.back);
+        set($('#A .a-art'), { s: lerp(1.0, 1.04, prog(t, 0, 5.2, ease.linear)) });
+        set($('#aHead'), { x: lerp(-80, 0, ah), r: -2.5, o: Math.min(1, ah * 2) });
+
+        show('B', t);
+        wall.style.transform = `translateX(${pan(t)}px)`;
+
+        show('C', t);
+        [
+          ['#p1', 14.8, -2],
+          ['#p2', 16.0, 1.5],
+          ['#p3', 17.4, -2.5],
+        ].forEach(([sel, at, r]) => {
+          const p = prog(t, at, at + 0.45, ease.back);
+          set($(sel), { y: lerp(40, 0, p), r: lerp(r * 3, r, p), o: Math.min(1, p * 2) });
+        });
+
+        show('D', t);
+        set($('#dHead'), { o: prog(t, 19.0, 19.5) });
+        $$('#minis .mini').forEach((el, i) => {
+          const p = prog(t, 19.7 + i * 0.45, 20.3 + i * 0.45, ease.back);
+          set(el, { y: lerp(900, 0, p) });
+        });
+        $$('#minis .cap').forEach((el, i) =>
+          set(el, { o: prog(t, 20.2 + i * 0.45, 20.6 + i * 0.45) })
+        );
+
+        show('E', t);
+        const ea = prog(t, 24.2, 25.0, ease.out),
+          em = prog(t, 24.5, 25.1),
+          eh = prog(t, 25.9, 26.6, ease.back),
+          eb = prog(t, 30.9, 31.5, ease.back);
+        set($('#E .e-art'), { x: lerp(-900, 0, ea) });
+        set($('#eMark'), { y: lerp(20, 0, em), o: em });
+        set($('#eHead'), { x: lerp(60, 0, eh), r: -2.5, o: Math.min(1, eh * 2) });
+        set($('#eBtn'), { y: lerp(40, 0, eb), r: 1.5, o: Math.min(1, eb * 2) });
+
+        // Over art the credit sits on a tape strip, never on crayon.
+        $('#credit').style.background = t > SC.C[0] && t < SC.C[1] ? 'var(--tape)' : 'none';
+        $('#credit').style.padding = '8px 12px';
+        $('#credit').textContent =
+          t < SC.A[1]
+            ? 'Art by Banks · Blue and Yellow'
+            : t > SC.C[0] && t < SC.C[1]
+              ? 'Art by Banks · Blue and Umber'
+              : t > SC.E[0]
+                ? 'Art by Banks · Emerald Texture'
+                : 'Art by Banks';
+      }
+
+      boot({
+        width: 1920,
+        height: 1080,
+        duration: 36,
+        render,
+        // Clips live in vo/ and music/ (both gitignored); missing ones are skipped.
+        music: { file: 'music/cant-stop.wav', offset: 2.0 },
+        vo: [
+          { t: 0.5, file: 'vo/art-0.wav' },
+          { t: 5.3, file: 'vo/art-1.wav' },
+          { t: 14.0, file: 'vo/art-2.wav' },
+          { t: 19.0, file: 'vo/art-3.wav' },
+          { t: 24.6, file: 'vo/art-4.wav' },
+          { t: 30.2, file: 'vo/art-5.wav' },
+        ],
+        sfx: [
+          { t: 0.9, kind: 'tape' },
+          { t: 5.0, kind: 'whoosh' },
+          { t: 14.8, kind: 'tape' },
+          { t: 16.0, kind: 'tape' },
+          { t: 17.4, kind: 'tape' },
+          { t: 18.8, kind: 'whoosh' },
+          ...MINIS.map((_, i) => ({ t: 19.9 + i * 0.45, kind: 'pop' })),
+          { t: 24.2, kind: 'whoosh' },
+          { t: 25.9, kind: 'tape' },
+          { t: 30.9, kind: 'tape' },
+        ],
+      });
+    </script>
+  </body>
+</html>
