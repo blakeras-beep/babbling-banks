@@ -14,7 +14,6 @@ function rng(seed) {
 }
 
 export async function writeSoundtrack(file, duration, sfx = [], name = 'x', vo = []) {
-  let musicBus;
   const n = Math.ceil(duration * SR);
   const L = new Float32Array(n),
     R = new Float32Array(n);
@@ -203,7 +202,6 @@ export async function writeSoundtrack(file, duration, sfx = [], name = 'x', vo =
     M[i] *= g;
     MR[i] *= g;
   }
-  musicBus = [M, MR];
 
   // ---- foley ----
   const noise = (
