@@ -54,11 +54,3 @@ export function getEpisodesForShow(showId) {
 export function getShowName(showId) {
   return SHOWS[showId]?.name ?? showId;
 }
-
-export function getShowEmoji(showId) {
-  return SHOWS[showId]?.emoji ?? '📺';
-}
-
-export function getShowColor(showId) {
-  return SHOWS[showId]?.color ?? '#2E9B9B';
-}

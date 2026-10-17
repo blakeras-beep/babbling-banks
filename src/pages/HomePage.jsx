@@ -1,36 +1,43 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { searchEpisodes, generateFollowUps, getHighlightTerms } from '../lib/search.js';
+import { searchEpisodes, generateFollowUps } from '../lib/search.js';
+import { getMatchedWords } from '../lib/matchedWords.js';
 import { getShowName } from '../data/index.js';
 import { addRecentSearch, clearRecentSearches, getRecentSearches } from '../lib/storage.js';
 import { useDocumentTitle } from '../hooks/useDocumentTitle.js';
-import SearchBox from '../components/SearchBox.jsx';
-import EpisodeCard from '../components/EpisodeCard.jsx';
+import { useArtCredit } from '../lib/CreditContext.jsx';
+import { pieceFor } from '../lib/art.js';
+import ArtBand from '../components/ArtBand.jsx';
+import SearchField from '../components/SearchField.jsx';
+import QuoteStrip from '../components/QuoteStrip.jsx';
+import ResultCard from '../components/ResultCard.jsx';
+import { ResultRows } from '../components/ResultRow.jsx';
+import ExampleSearches from '../components/ExampleSearches.jsx';
 import FollowUpQuestions from '../components/FollowUpQuestions.jsx';
 import ShowGrid from '../components/ShowGrid.jsx';
 import EmptyState from '../components/EmptyState.jsx';
+import Icon from '../components/Icon.jsx';
 
-const SUGGESTIONS = [
-  { label: 'freeze dad', emoji: '🧊' },
-  { label: 'wheels on the bus', emoji: '🚌' },
-  { label: 'baby shark', emoji: '🦈' },
-  { label: 'sleepytime', emoji: '💤' },
-  { label: 'potty song', emoji: '🚽' },
-  { label: 'elmo', emoji: '🔴' },
-  { label: 'the one with the balloon', emoji: '🎈' },
-  { label: 'george at the hospital', emoji: '🏥' },
-];
+const HOME_EXAMPLES = ['freeze dad', 'wheels on the bus', 'the one with the balloon'];
+const EMPTY_EXAMPLES = ['baby shark', 'potty song', 'george at the hospital'];
 
+const ROWS = 4;
 const PAGE_SIZE = 8;
 const MAX_RESULTS = 24;
+
+const HOME_PIECE = pieceFor('home');
+const RESULTS_PIECE = pieceFor('results');
+const EMPTY_PIECE = pieceFor('empty-results');
 
 export default function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const urlQuery = searchParams.get('q') ?? '';
   const [query, setQuery] = useState(urlQuery);
   const [filters, setFilters] = useState({});
-  const [visible, setVisible] = useState(PAGE_SIZE);
+  const [visible, setVisible] = useState(ROWS);
   const [recent, setRecent] = useState(getRecentSearches);
+  const [editing, setEditing] = useState(false);
+  const inputRef = useRef(null);
 
   useDocumentTitle(urlQuery ? `“${urlQuery}”` : '');
 
@@ -52,7 +59,8 @@ export default function HomePage() {
 
   useEffect(() => {
     setFilters({});
-    setVisible(PAGE_SIZE);
+    setVisible(ROWS);
+    setEditing(false);
   }, [urlQuery]);
 
   const allResults = useMemo(() => searchEpisodes(query, { limit: MAX_RESULTS }), [query]);
@@ -67,152 +75,199 @@ export default function HomePage() {
     () => (Object.keys(filters).length ? [] : generateFollowUps(allResults)),
     [allResults, filters]
   );
-  const highlightTerms = useMemo(() => getHighlightTerms(query), [query]);
 
   useEffect(() => {
     if (urlQuery.length >= 3 && allResults.length > 0) setRecent(addRecentSearch(urlQuery));
   }, [urlQuery, allResults.length]);
 
   const hasQuery = query.trim().length > 0;
+  const hasResults = hasQuery && results.length > 0;
+  const top = hasResults ? results[0] : null;
+  const rest = hasResults ? results.slice(1) : [];
+  const matched = useMemo(() => getMatchedWords(query, top), [query, top]);
+  const filterCount = Object.keys(filters).length;
+
+  useArtCredit(hasQuery ? (hasResults ? RESULTS_PIECE?.id : EMPTY_PIECE?.id) : HOME_PIECE?.id);
+
+  const submit = (value) => {
+    const trimmed = value.trim();
+    setSearchParams(trimmed ? { q: trimmed } : {}, { replace: true });
+  };
   const answerFollowUp = (type, value) => {
     if (value === null) return;
     setFilters((current) => ({ ...current, [type]: value }));
   };
+  // "Say it another way" / "Not it? Add a clue": swap the quote strip for the field.
+  const sayItAnotherWay = () => {
+    setEditing(true);
+    window.scrollTo({ top: 0 });
+    setTimeout(() => {
+      inputRef.current?.focus();
+      inputRef.current?.select();
+    }, 0);
+  };
 
-  return (
-    <div className="container">
-      <section className="hero">
-        <img className="hero__logo" src="/logo.png" alt="Babbling Banks" width="150" height="150" />
-        <h1 className="hero__title">
-          Find any episode from a<span>toddler&apos;s description</span>
-        </h1>
-        <p className="hero__tagline">“The one where the dog freezes dad” → We&apos;ll find it.</p>
-      </section>
-
-      <SearchBox value={query} onChange={setQuery} autoFocus />
-
-      {!hasQuery && (
-        <div className="stack" style={{ gap: 28, marginTop: 24 }}>
-          <section>
-            <h2 className="section-label">Try searching for…</h2>
-            <div className="chip-row">
-              {SUGGESTIONS.map((item) => (
-                <button
-                  type="button"
-                  className="chip"
-                  key={item.label}
-                  onClick={() => setQuery(item.label)}
-                >
-                  <span aria-hidden="true">{item.emoji}</span> {item.label}
-                </button>
-              ))}
-            </div>
-          </section>
+  if (!hasQuery) {
+    return (
+      <div className="home">
+        <ArtBand pieceId={HOME_PIECE?.id} />
+        <div className="col">
+          <div className="tape tape--headline headline-strip">
+            <h1 className="headline-strip__text">
+              Toddler in.
+              <br />
+              Episode out.
+            </h1>
+          </div>
+          <p className="lead">
+            Say it exactly how they said it. Mumbles, sound effects, all of it.
+          </p>
+          <SearchField
+            value={query}
+            onChange={setQuery}
+            onSubmit={submit}
+            autoFocus
+            inputRef={inputRef}
+            formId="home-search"
+          />
+          <button type="submit" form="home-search" className="btn-primary home__button">
+            Find it
+          </button>
+          <ExampleSearches examples={HOME_EXAMPLES} onPick={setQuery} />
           {recent.length > 0 && (
             <section>
-              <div
-                style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}
-              >
-                <h2 className="section-label">Recent searches</h2>
+              <div className="section-row">
+                <h2 className="section-label">said before</h2>
                 <button
                   type="button"
-                  className="btn--link"
-                  style={{ fontSize: '0.8rem' }}
+                  className="text-action"
                   onClick={() => setRecent(clearRecentSearches())}
                 >
                   Clear
                 </button>
               </div>
-              <div className="chip-row">
+              <ul className="examples">
                 {recent.map((item) => (
-                  <button
-                    type="button"
-                    className="chip chip--small"
-                    key={item}
-                    onClick={() => setQuery(item)}
-                  >
-                    <span aria-hidden="true">🕘</span> {item}
-                  </button>
+                  <li key={item}>
+                    <button type="button" className="example-link" onClick={() => setQuery(item)}>
+                      {'“'}
+                      {item}
+                      {'”'}
+                    </button>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </section>
           )}
           <ShowGrid />
         </div>
-      )}
+      </div>
+    );
+  }
 
-      {hasQuery && (
-        <div className="stack" style={{ gap: 18, marginTop: 20 }}>
-          {Object.keys(filters).length > 0 && (
-            <div className="filter-bar" aria-label="Active filters">
-              <span>Filtered by:</span>
-              {Object.entries(filters).map(([type, value]) => (
-                <button
-                  type="button"
-                  className="chip chip--small chip--filter"
-                  key={type}
-                  onClick={() => setFilters(({ [type]: _removed, ...rest }) => rest)}
-                  aria-label={`Remove filter ${value}`}
-                >
-                  {type === 'show' ? getShowName(value) : value}{' '}
-                  <span className="chip__remove">✕</span>
-                </button>
-              ))}
-              <button type="button" className="btn--link" onClick={() => setFilters({})}>
-                Clear all
-              </button>
+  return (
+    <div className={`results ${hasResults ? '' : 'results--empty'}`.trim()}>
+      <ArtBand
+        pieceId={hasResults ? RESULTS_PIECE?.id : EMPTY_PIECE?.id}
+        height={430}
+        className="results__band"
+      />
+      <div className="col">
+        {editing ? (
+          <SearchField
+            value={query}
+            onChange={setQuery}
+            onSubmit={(value) => {
+              submit(value);
+              setEditing(false);
+            }}
+            inputRef={inputRef}
+          />
+        ) : (
+          <QuoteStrip
+            text={query}
+            matched={hasResults ? matched : []}
+            caption={hasResults ? undefined : 'You searched'}
+          />
+        )}
+
+        {hasResults && (
+          <>
+            <div className="arrow-row" aria-hidden="true">
+              <img className="arrow-row__arrow" src="/art/crayon-arrow-ink.png" alt="" />
+              <p className="found-label">found it</p>
             </div>
-          )}
-
-          <FollowUpQuestions questions={followUps} onAnswer={answerFollowUp} />
-
-          {results.length > 0 && (
             <section aria-live="polite">
-              <div className="results-count">
-                Found {results.length}
-                {results.length >= MAX_RESULTS ? '+' : ''} episode{results.length === 1 ? '' : 's'}
-              </div>
-              <div className="stack">
-                {results.slice(0, visible).map((result, index) => (
-                  <EpisodeCard
-                    key={result.episode.id}
-                    episode={result.episode}
-                    matches={result.matches}
-                    highlightTerms={highlightTerms}
-                    index={index}
-                  />
-                ))}
-              </div>
-              {results.length > visible && (
-                <div style={{ textAlign: 'center', marginTop: 18 }}>
-                  <button
-                    type="button"
-                    className="btn btn--secondary"
-                    onClick={() => setVisible((v) => v + PAGE_SIZE)}
-                  >
-                    Show more results
-                  </button>
-                </div>
-              )}
+              <ResultCard episode={top.episode} matches={top.matches} query={query} />
             </section>
-          )}
+          </>
+        )}
 
-          {results.length === 0 && (
-            <EmptyState title="No episodes found">
-              <p>
-                Try fewer words, a character&apos;s name, or something that happened in the episode.
-              </p>
-              {Object.keys(filters).length > 0 && (
-                <p style={{ marginTop: 8 }}>
-                  <button type="button" className="btn--link" onClick={() => setFilters({})}>
-                    Remove filters
+        {filterCount > 0 && (
+          <div className="filter-row" aria-label="Active filters">
+            <span className="filter-row__label">Narrowed to</span>
+            {Object.entries(filters).map(([type, value]) => (
+              <button
+                type="button"
+                className="btn-secondary"
+                key={type}
+                onClick={() => setFilters(({ [type]: _removed, ...others }) => others)}
+                aria-label={`Remove ${value}`}
+              >
+                {type === 'show' ? getShowName(value) : value}
+                <Icon name="x" size={16} />
+              </button>
+            ))}
+            <button type="button" className="text-action" onClick={() => setFilters({})}>
+              Clear all
+            </button>
+          </div>
+        )}
+
+        <FollowUpQuestions questions={followUps} onAnswer={answerFollowUp} />
+
+        {hasResults && rest.length > 0 && (
+          <section>
+            <h2 className="section-label">or maybe…</h2>
+            <ResultRows episodes={rest.slice(0, visible).map((r) => r.episode)} query={query} />
+          </section>
+        )}
+
+        {hasResults && !editing && (
+          <div className="results__more">
+            {rest.length > visible && (
+              <button
+                type="button"
+                className="btn-secondary"
+                onClick={() => setVisible((v) => v + PAGE_SIZE)}
+              >
+                Show more
+              </button>
+            )}
+            <button type="button" className="btn-secondary" onClick={sayItAnotherWay}>
+              Not it? Add a clue
+            </button>
+          </div>
+        )}
+
+        {!hasResults && (
+          <>
+            <EmptyState title="That one stumped us." examples={EMPTY_EXAMPLES} onPick={setQuery}>
+              <p className="body-text">Try a character, a color, or a song they keep humming.</p>
+              {filterCount > 0 && (
+                <p className="body-text">
+                  <button type="button" className="example-link" onClick={() => setFilters({})}>
+                    Remove the narrowing
                   </button>
                 </p>
               )}
             </EmptyState>
-          )}
-        </div>
-      )}
+            <button type="button" className="btn-secondary" onClick={sayItAnotherWay}>
+              Say it another way
+            </button>
+          </>
+        )}
+      </div>
     </div>
   );
 }
