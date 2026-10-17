@@ -8,7 +8,8 @@
 import { chromium } from 'playwright-core';
 import { createServer } from 'node:http';
 import { readFile, mkdir } from 'node:fs/promises';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { writeSoundtrack } from './audio.mjs';
@@ -47,6 +48,30 @@ const server = createServer(async (req, res) => {
 const port = server.address().port;
 
 await mkdir(out, { recursive: true });
+
+/** Decode any audio file to 44.1 kHz float channels with ffmpeg. */
+function decode(file, channels, pre = [], filter = null) {
+  const args = [
+    '-v',
+    'error',
+    ...pre,
+    '-i',
+    file,
+    ...(filter ? ['-af', filter] : []),
+    '-f',
+    'f32le',
+    '-ac',
+    String(channels),
+    '-ar',
+    '44100',
+    '-',
+  ];
+  const raw = spawnSync('ffmpeg', args, { maxBuffer: 1 << 30 }).stdout;
+  const all = new Float32Array(raw.buffer, raw.byteOffset, raw.length / 4);
+  const chans = Array.from({ length: channels }, () => new Float32Array(all.length / channels));
+  for (let i = 0; i < all.length; i++) chans[i % channels][Math.floor(i / channels)] = all[i];
+  return chans;
+}
 const browser = await chromium.launch({
   executablePath: process.env.CHROMIUM_PATH || '/opt/pw-browsers/chromium',
 });
@@ -60,6 +85,8 @@ const video = await page.evaluate(() => ({
   height: VIDEO.height,
   duration: VIDEO.duration,
   sfx: VIDEO.sfx,
+  vo: VIDEO.vo ?? [],
+  music: VIDEO.music ?? null,
 }));
 await page.setViewportSize({ width: video.width, height: video.height });
 
@@ -71,7 +98,24 @@ if (stills) {
   console.log('stills written to', out);
 } else {
   const wav = path.join(out, `${name}.wav`);
-  await writeSoundtrack(wav, video.duration, video.sfx, name);
+  const vo = video.vo
+    .filter(({ file }) => existsSync(path.join(here, file)))
+    .map(({ t, file }) => ({ t, samples: decode(path.join(here, file), 1)[0] }));
+  console.log(`${name}: ${vo.length}/${video.vo.length} voiceover clips found`);
+  let track = null;
+  if (video.music && existsSync(path.join(here, video.music.file))) {
+    // Cut the song at `offset`, fade in briefly and out over the last 1.5 s.
+    const { file, offset = 0 } = video.music;
+    const fade = `afade=t=in:d=0.3,afade=t=out:st=${video.duration - 1.5}:d=1.5`;
+    track = decode(
+      path.join(here, file),
+      2,
+      ['-ss', String(offset), '-t', String(video.duration)],
+      fade
+    );
+    console.log(`${name}: music from ${file} at ${offset}s`);
+  }
+  await writeSoundtrack(wav, video.duration, video.sfx, name, vo, track);
   const mp4 = path.join(out, `${name}.mp4`);
   const ff = spawn(
     'ffmpeg',

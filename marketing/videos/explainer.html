@@ -772,6 +772,16 @@
         width: 1920,
         height: 1080,
         duration: 52,
+        // Clips live in vo/ and music/ (both gitignored); missing ones are skipped.
+        music: { file: 'music/cant-stop.wav', offset: 2.0 },
+        vo: [
+          { t: 0.6, file: 'vo/explainer-0.wav' },
+          { t: 5.9, file: 'vo/explainer-1.wav' },
+          { t: 16.2, file: 'vo/explainer-2.wav' },
+          { t: 24.9, file: 'vo/explainer-3.wav' },
+          { t: 33.0, file: 'vo/explainer-4.wav' },
+          { t: 45.6, file: 'vo/explainer-5.wav' },
+        ],
         render,
         sfx: [
           { t: 0.6, kind: 'tape' },

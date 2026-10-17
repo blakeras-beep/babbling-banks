@@ -416,7 +416,23 @@
         { t: END + 6, kind: 'tap' }
       );
 
-      boot({ width: 1080, height: 1920, duration: 24, render, sfx });
+      boot({
+        width: 1080,
+        height: 1920,
+        duration: 24,
+        render,
+        sfx,
+        // Clips live in vo/ and music/ (both gitignored); missing ones are skipped.
+        music: { file: 'music/cant-stop.wav', offset: 8.5 },
+        vo: [
+          { t: 0.4, file: 'vo/ad-0.wav' },
+          { t: 6.7, file: 'vo/ad-1.wav' },
+          { t: 9.5, file: 'vo/ad-2.wav' },
+          { t: 13.5, file: 'vo/ad-3.wav' },
+          { t: 16.6, file: 'vo/ad-4.wav' },
+          { t: 20.2, file: 'vo/ad-5.wav' },
+        ],
+      });
     </script>
   </body>
 </html>

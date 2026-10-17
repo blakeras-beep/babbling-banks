@@ -8,7 +8,13 @@ Two animated videos built from brand v1.5 (`brand/babbling-banks-brand-v1.5/`): 
 | `out/ad.mp4`        | Customer ad: four real decodes, then "Find it at babblingbanks.com" | 1080 × 1920 | 24 s   |
 
 Every decode shown is the app's real top result for that query (`src/lib/search.js`).
-The soundtrack (a kalimba bed plus key, tap, crayon and tape sounds) is synthesized in `audio.mjs`, so there is nothing to license.
+
+## Sound
+
+Each page lists its music and voiceover cues (`VIDEO.music`, `VIDEO.vo`). The renderer mixes them with the foley from `audio.mjs` and ducks the music under the voice.
+
+- `music/cant-stop.wav` and `vo/*.wav` are local only (gitignored), and so is `out/`, because the renders contain the song. Missing files are skipped: with no song, `audio.mjs` synthesizes an original funk-rock groove instead.
+- The voiceover is Higgsfield `seed_audio`, voice "Dylan". Trim each clip's long pauses before dropping it in `vo/` (see the cue times in each page).
 
 ## Edit and re-render
 

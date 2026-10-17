@@ -13,7 +13,7 @@ function rng(seed) {
   return () => (s = (s * 1664525 + 1013904223) >>> 0) / 4294967296;
 }
 
-export async function writeSoundtrack(file, duration, sfx = [], name = 'x', vo = []) {
+export async function writeSoundtrack(file, duration, sfx = [], name = 'x', vo = [], track = null) {
   const n = Math.ceil(duration * SR);
   const L = new Float32Array(n),
     R = new Float32Array(n);
@@ -202,6 +202,11 @@ export async function writeSoundtrack(file, duration, sfx = [], name = 'x', vo =
     M[i] *= g;
     MR[i] *= g;
   }
+  // A supplied track (already cut and faded) replaces the synthesized groove.
+  if (track) {
+    M.fill(0).set(track[0].subarray(0, n));
+    MR.fill(0).set(track[1].subarray(0, n));
+  }
 
   // ---- foley ----
   const noise = (
@@ -263,14 +268,14 @@ export async function writeSoundtrack(file, duration, sfx = [], name = 'x', vo =
   // Normalise the music bed to a set level before mixing.
   let mp = 0;
   for (let i = 0; i < n; i++) mp = Math.max(mp, Math.abs(M[i]), Math.abs(MR[i]));
-  const mg = mp ? 0.42 / mp : 1;
+  const mg = mp ? 0.6 / mp : 1;
   let vp = 0;
   for (let i = 0; i < n; i++) vp = Math.max(vp, Math.abs(V[i]));
   const vg = vp ? 0.85 / vp : 1;
   for (let i = 0; i < n; i++) {
     const a = Math.abs(V[i]) > 0.01 ? 1 : 0;
     env += (a - env) * (a > env ? 0.002 : 0.00008); // fast duck, slow release
-    const duck = vo.length ? 1 - 0.55 * env : 1;
+    const duck = vo.length ? 1 - 0.65 * env : 1;
     L[i] += M[i] * mg * duck + V[i] * vg;
     R[i] += MR[i] * mg * duck + V[i] * vg;
   }
