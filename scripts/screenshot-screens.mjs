@@ -26,8 +26,7 @@ const SCREENS = [
   ['offline', '/?preview=offline'],
 ];
 
-const executablePath =
-  process.env.CHROMIUM_PATH ?? '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
+const executablePath = process.env.CHROMIUM_PATH || undefined;
 const browser = await chromium.launch({ executablePath });
 for (const theme of ['light', 'dark']) {
   for (const width of [375, 1440]) {
