@@ -14,6 +14,8 @@ import mickeyMouseFunhouse from './episodes/mickey_mouse_funhouse.json';
 import missRachel from './episodes/miss_rachel.json';
 import peppaPig from './episodes/peppa_pig.json';
 import pawPatrol from './episodes/paw_patrol.json';
+import trashTruck from './episodes/trash_truck.json';
+import bluesClues from './episodes/blues_clues.json';
 
 export const SHOWS = shows;
 
@@ -26,6 +28,8 @@ export const EPISODES = [
   ...missRachel,
   ...peppaPig,
   ...pawPatrol,
+  ...trashTruck,
+  ...bluesClues,
 ];
 
 const EPISODES_BY_ID = new Map(EPISODES.map((episode) => [episode.id, episode]));

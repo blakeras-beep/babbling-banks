@@ -37,9 +37,14 @@ Live at **[babblingbanks.com](https://babblingbanks.com)**.
 | Mickey Mouse Funhouse         |      108 | 1–2     | Titles verified; descriptions AI-written |
 | Peppa Pig                     |      104 | 1–2     | Titles verified; descriptions AI-written |
 | PAW Patrol                    |       96 | 1–2     | Titles verified; descriptions AI-written |
+| Blue's Clues & You!           |       86 | 1–4     | Episode guides; descriptions AI-written  |
+| Trash Truck                   |       29 | 1–2     | Episode guides; descriptions AI-written  |
 | Ms Rachel (Songs for Littles) |       20 | –       | YouTube                                  |
 
-Sesame Street also includes five landmark classic episodes. Counts are stories: shows with
+Sesame Street also includes five landmark classic episodes, and Trash Truck includes its
+Christmas special. For Blue's Clues & You! and Trash Truck, titles, order and plot summaries
+come from Wikipedia, TheTVDB, TVmaze and fan wikis (via web search), and Claude wrote the
+descriptions and aliases from those summaries. Counts are stories: shows with
 two stories per episode (Curious George, Daniel Tiger, Mickey, PAW Patrol) list each one.
 
 AI-generated entries are flagged on the episode page. Corrections are very welcome:

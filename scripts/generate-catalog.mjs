@@ -15,6 +15,9 @@
  *   node scripts/generate-catalog.mjs --show=peppa_pig --dry-run   # print, don't write
  *
  * --titles expects a JSON array of { "season": 1, "episode": 1, "title": "…", "segment": "A"? }.
+ * Each entry may also carry a "summary" taken from a real source (an episode guide);
+ * Claude then writes the description from it instead of from memory. Pass
+ * --source="…" to label the result (default "AI Generated").
  * Existing episode ids are kept and skipped, so re-running only fills gaps.
  *
  * Everything the model writes is marked "source": "AI Generated" and shown with
@@ -236,7 +239,12 @@ if (!process.env.ANTHROPIC_API_KEY && !process.env.ANTHROPIC_AUTH_TOKEN) {
   process.exit(1);
 }
 
-const client = new Anthropic();
+// User-level keys (sk-ant-usr-…) are not tied to a workspace and need its id on every request.
+const client = new Anthropic(
+  process.env.ANTHROPIC_WORKSPACE_ID
+    ? { defaultHeaders: { 'anthropic-workspace-id': process.env.ANTHROPIC_WORKSPACE_ID } }
+    : {}
+);
 
 // ---------------------------------------------------------------------------
 // Structured output schemas
@@ -355,7 +363,11 @@ async function listEpisodes() {
 
 async function describe(batch) {
   const list = batch
-    .map((ep) => `- S${ep.season}E${ep.episode}${ep.segment || ''}: ${ep.title}`)
+    .map(
+      (ep) =>
+        `- S${ep.season}E${ep.episode}${ep.segment || ''}: ${ep.title}` +
+        (ep.summary ? `\n  Known plot (from an episode guide): ${ep.summary}` : '')
+    )
     .join('\n');
   const { episodes } = await ask(
     `For each of these "${show.name}" episodes, write catalog details.\n\n${list}\n\n` +
@@ -364,6 +376,7 @@ async function describe(batch) {
       `- fullSynopsis: 3-5 sentences of what actually happens.\n` +
       `- characters: who appears (main cast first), settings: where it happens, objects: notable things (a balloon, a kite), themes: 3-6 lessons or topics.\n` +
       `- aliases: 15-20 ways a tired parent or a toddler might describe this episode: "the one where…", key objects, nicknames, likely misspellings, what the toddler would shout. Lower-case, no punctuation.\n` +
+      `- Where a known plot is given, base everything on it and do not add events it does not support.\n` +
       `Return the title exactly as given so entries can be matched.`,
     EPISODE_DETAILS_SCHEMA
   );
@@ -412,7 +425,7 @@ async function main() {
         objects: dedupe(detail.objects),
         themes: dedupe(detail.themes),
         aliases: dedupe([...detail.aliases, ep.title.toLowerCase()]),
-        source: 'AI Generated',
+        source: args.source ?? 'AI Generated',
       });
       generated.push(record);
     }
