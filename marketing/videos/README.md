@@ -6,7 +6,7 @@ Two animated videos built from brand v1.5 (`brand/babbling-banks-brand-v1.5/`): 
 | ------------------- | ------------------------------------------------------------------------------------ | ----------- | ------ |
 | `out/explainer.mp4` | How-to: say it, tap Find it, "or maybe…", open and keep it                           | 1920 × 1080 | 52 s   |
 | `out/ad.mp4`        | Customer ad: four real decodes, then "Find it at babblingbanks.com"                  | 1080 × 1920 | 25 s   |
-| `out/art.mp4`       | "A new voice in the art world": a gallery walk, the reviews, his art on every screen | 1920 × 1080 | 36 s   |
+| `out/art.mp4`       | "A new voice in the art world": a gallery walk, the reviews, his art on every screen | 1920 × 1080 | 39 s   |
 
 Every decode shown is the app's real top result for that query (`src/lib/search.js`).
 
@@ -14,7 +14,8 @@ Every decode shown is the app's real top result for that query (`src/lib/search.
 
 Each page lists its music and voiceover cues (`VIDEO.music`, `VIDEO.vo`). The renderer mixes them with the foley from `audio.mjs` and ducks the music under the voice.
 
-- `music/cant-stop.wav` and `vo/*.wav` are local only (gitignored), and so is `out/`, because the renders contain the song. Missing files are skipped: with no song, `audio.mjs` synthesizes an original funk-rock groove instead.
+- `VIDEO.music` takes either `offset` (cut the track from there, fade out at the end) or `segments` (join `[from, to]` pieces of the track with short crossfades, so it keeps its own opening and ending). The art video joins "The Mountain - Art Gallery" at 30.15 s → 76.25 s.
+- `music/*.wav` and `vo/*.wav` are local only (gitignored), and so is `out/`, because the renders contain the song. Missing files are skipped: with no song, `audio.mjs` synthesizes an original funk-rock groove instead.
 - The voiceover is Higgsfield `text2speech_v2` (ElevenLabs), voice "Juno". Drop the clips in `vo/` untouched; each page's cue times are set from the clips' word timings, and the explainer's `WARP` keypoints move each tap to just after the line that describes it.
 
 ## Edit and re-render

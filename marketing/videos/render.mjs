@@ -103,7 +103,34 @@ if (stills) {
     .map(({ t, file }) => ({ t, samples: decode(path.join(here, file), 1)[0] }));
   console.log(`${name}: ${vo.length}/${video.vo.length} voiceover clips found`);
   let track = null;
-  if (video.music && existsSync(path.join(here, video.music.file))) {
+  if (video.music?.segments && existsSync(path.join(here, video.music.file))) {
+    // Join source segments ([from, to] seconds) with short equal-power crossfades,
+    // so a track can keep its own opening and its own ending.
+    const { file, segments, xfade = 0.4 } = video.music;
+    const src = decode(path.join(here, file), 2);
+    const n = Math.ceil(video.duration * 44100),
+      x = Math.round(xfade * 44100);
+    track = [new Float32Array(n), new Float32Array(n)];
+    const h = Math.round(x / 2),
+      last = segments.length - 1;
+    let pos = 0; // where this segment's `from` lands on the timeline
+    segments.forEach(([from, to], s) => {
+      // Each join overlaps by x samples centred on the cut: both sides run h past it.
+      const pre = s ? h : 0,
+        post = s < last ? h : 0,
+        a = Math.round(from * 44100) - pre,
+        len = Math.round((to - from) * 44100) + pre + post;
+      for (let k = 0; k < len; k++) {
+        const i = pos - pre + k;
+        if (i < 0 || i >= n) continue;
+        const fin = s && k < x ? Math.sin(((k / x) * Math.PI) / 2) : 1;
+        const fout = s < last && k >= len - x ? Math.cos((((k - (len - x)) / x) * Math.PI) / 2) : 1;
+        for (const c of [0, 1]) track[c][i] += (src[c][a + k] ?? 0) * fin * fout;
+      }
+      pos += Math.round((to - from) * 44100);
+    });
+    console.log(`${name}: music from ${file}, ${segments.length} segments`);
+  } else if (video.music && existsSync(path.join(here, video.music.file))) {
     // Cut the song at `offset`, fade in briefly and out over the last 1.5 s.
     const { file, offset = 0 } = video.music;
     const fade = `afade=t=in:d=0.3,afade=t=out:st=${video.duration - 1.5}:d=1.5`;

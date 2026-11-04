@@ -399,7 +399,7 @@
       });
 
       // Scene windows, set from the voiceover's word timings.
-      const SC = { A: [0, 5.2], B: [5.0, 14.2], C: [13.9, 19.0], D: [18.8, 24.4], E: [24.2, 36] };
+      const SC = { A: [0, 5.2], B: [5.0, 14.2], C: [13.9, 19.0], D: [18.8, 24.4], E: [24.2, 40] };
       const show = (id, t, fade = 0.35) => {
         const [a, b] = SC[id];
         const o = Math.min(prog(t, a, a + fade), 1 - prog(t, b - fade, b));
@@ -462,10 +462,18 @@
       boot({
         width: 1920,
         height: 1080,
-        duration: 36,
+        duration: 39,
         render,
         // Clips live in vo/ and music/ (both gitignored); missing ones are skipped.
-        music: { file: 'music/cant-stop.wav', offset: 2.0 },
+        // "The Mountain - Art Gallery": its own opening, then a seamless jump at a phrase
+        // break (30.15 s → 76.25 s) into its own ending, which resolves under the end card.
+        music: {
+          file: 'music/art-gallery.wav',
+          segments: [
+            [0, 30.15],
+            [76.25, 85.03],
+          ],
+        },
         vo: [
           { t: 0.5, file: 'vo/art-0.wav' },
           { t: 5.3, file: 'vo/art-1.wav' },
