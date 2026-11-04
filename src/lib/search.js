@@ -42,11 +42,14 @@ const WEIGHTS = {
  * A typo of a word the catalog has never seen ("xilaphone") is read as the
  * nearest word at full credit; a near miss of a word it does know ("bluey" is
  * a real word, so an entry that only has "blue" is probably not it) is worth
- * much less. Toddler pronunciations and clipped words sit in between.
+ * much less; a word that only an alias uses ("achoo", "spase") keeps its
+ * literal match ahead of other readings. Toddler pronunciations and clipped
+ * words sit in between.
  */
 const QUALITY = {
   typo: 1,
   knownFuzzy: 0.4,
+  aliasWordFuzzy: 0.7,
   toddlerSound: 0.85,
   clipped: 0.8,
 };
@@ -131,12 +134,10 @@ function tokenSet(values) {
 function buildEntry(episode) {
   const show = SHOWS[episode.show];
   const showTokens = tokenSet([show?.name ?? '', ...(show?.keywords ?? [])]);
-  // Show words a parent may say before the real description: the show's name
-  // ("bluey...") and its keywords ("the dog..."), except a keyword that names a
-  // character of this episode ("george" for Peppa Pig's George).
-  const characterTokens = tokenSet(episode.characters ?? []);
+  // The show's name, which a parent may say before the real description
+  // ("bluey dads job"). Keywords are not stripped: "blue" is a Bluey keyword
+  // too, and "blue beach" must still find the Blue's Clues episode.
   const showWords = tokenSet([show?.name ?? '']);
-  for (const token of showTokens) if (!characterTokens.has(token)) showWords.add(token);
   return {
     episode,
     showTokens,
@@ -242,11 +243,14 @@ function resolveTerm(token, raw, index) {
   const offer = (word, quality) => {
     if (word !== token && (variants.get(word) ?? 0) < quality) variants.set(word, quality);
   };
-  if (vocabulary.has(token)) variants.set(token, 1);
+  const inVocabulary = vocabulary.has(token);
+  if (inVocabulary) variants.set(token, 1);
   // Numbers ("5411", "123") are only ever themselves.
   if (/\d/.test(token))
     return { token, known, variants, rarity: index.rarity(token) || RARITY.max };
-  const fuzzyQuality = known ? QUALITY.knownFuzzy : QUALITY.typo;
+  let fuzzyQuality = QUALITY.typo;
+  if (known) fuzzyQuality = QUALITY.knownFuzzy;
+  else if (inVocabulary) fuzzyQuality = QUALITY.aliasWordFuzzy;
   for (let length = token.length - 2; length <= token.length + 2; length += 1) {
     for (const word of byLength.get(length) ?? []) {
       if (fuzzyEquals(token, word)) offer(word, fuzzyQuality);
@@ -259,7 +263,7 @@ function resolveTerm(token, raw, index) {
       for (const word of index.surfaceByLength.get(length) ?? []) {
         if (word !== raw && fuzzyEquals(raw, word)) {
           const canonical = index.surface.get(word);
-          if (vocabulary.has(canonical)) offer(canonical, QUALITY.typo);
+          if (vocabulary.has(canonical)) offer(canonical, fuzzyQuality);
         }
       }
     }
@@ -267,14 +271,18 @@ function resolveTerm(token, raw, index) {
     for (const [said, meant] of TODDLER_SOUNDS) {
       for (let at = token.indexOf(said); at !== -1; at = token.indexOf(said, at + 1)) {
         const word = canonicalToken(token.slice(0, at) + meant + token.slice(at + said.length));
-        if (!word.includes(' ') && vocabulary.has(word)) offer(word, QUALITY.toddlerSound);
+        if (!word.includes(' ') && vocabulary.has(word)) {
+          offer(word, Math.min(QUALITY.toddlerSound, fuzzyQuality));
+        }
       }
     }
     // Clipped words: "puter" → computer, "hippo" → hippopotamus.
     if (token.length >= 4) {
       for (let length = token.length + 2; length <= token.length + 5; length += 1) {
         for (const word of byLength.get(length) ?? []) {
-          if (word.endsWith(token) || word.startsWith(token)) offer(word, QUALITY.clipped);
+          if (word.endsWith(token) || word.startsWith(token)) {
+            offer(word, Math.min(QUALITY.clipped, fuzzyQuality));
+          }
         }
       }
     }
