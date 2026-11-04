@@ -192,7 +192,8 @@ Keep each file sorted by season and episode, then run
 Search behaviour itself lives in `src/lib/search.js` (scoring) and
 `src/lib/text.js` (toddler synonyms such as `doggy → dog`, plus the stemmer). Adding a
 synonym is a one-line change in the `SYNONYMS` table: map the word to any spelling of
-its target, and both sides are stemmed so they meet. Add a test in
+its target, and both sides are stemmed so they meet. When a word is only a kind of
+something broader, keep it and add the broad word (`kindy: 'kindy school'`). Add a test in
 `src/lib/search.test.js` for the query you improved.
 
 ---

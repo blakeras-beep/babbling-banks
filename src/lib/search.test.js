@@ -41,8 +41,8 @@ describe('text helpers', () => {
 
   it('stems plurals and verb endings to the same token', () => {
     expect(tokenize('cakes smiled smiling')).toEqual(['cake', 'smile', 'smile']);
-    // Stemmed forms still go through the synonym table: bake → cook.
-    expect(tokenize('baked baking')).toEqual([canonicalToken('bake'), canonicalToken('bake')]);
+    // Stemmed forms still go through the synonym table: baked → bake (+ cook).
+    expect(new Set(tokenize('baked baking'))).toEqual(new Set(tokenize('bake')));
     expect(tokenize('takes taking saved')).toEqual(['take', 'take', 'save']);
     expect(tokenize('movies onesies babies stories')).toEqual(['movie', 'onesie', 'baby', 'story']);
     expect(tokenize('surprised teasing weddings hopping')).toEqual([
@@ -62,12 +62,26 @@ describe('text helpers', () => {
   it('lets every spelling of a synonym meet its target', () => {
     expect(canonicalToken('sharing')).toBe(canonicalToken('share'));
     expect(canonicalToken('scary')).toBe(canonicalToken('scared'));
-    expect(canonicalToken('swimming')).toBe(canonicalToken('pool'));
-    expect(canonicalToken('trampolines')).toBe(canonicalToken('trampoline'));
+    expect(canonicalToken('swimming')).toBe(canonicalToken('swim'));
+    expect(tokenize('trampolines')).toEqual(tokenize('trampoline'));
     for (const [word, target] of Object.entries(SYNONYMS)) {
-      if (target.includes(' ')) continue;
-      expect(canonicalToken(word), `${word} → ${target}`).toBe(canonicalToken(target));
+      expect(new Set(tokenize(word)), `${word} → ${target}`).toEqual(new Set(tokenize(target)));
     }
+  });
+
+  it('drops accents so "chloe" finds Chloé', () => {
+    expect(tokenize('Chloé Café Piñata')).toEqual(['chloe', 'cafe', 'pinata']);
+  });
+
+  it('ignores the filler a parent adds', () => {
+    expect(tokenize('remember the one where they went camping')).toEqual(['camp']);
+    expect(tokenize('its your birthday')).toEqual(['your', 'birthday']); // title words stay
+  });
+
+  it('keeps a specific word next to its broader synonym', () => {
+    expect(tokenize('trampoline')).toEqual(['trampoline', 'bounce']);
+    expect(tokenize('pool')).toContain('swim');
+    expect(tokenize('fire truck')).toEqual(tokenize('firetruck'));
   });
 });
 
@@ -159,6 +173,62 @@ describe('searchEpisodes', () => {
 
   it('matches a title made only of stopwords', () => {
     expect(titleOf(searchEpisodes('the show'))).toBe('The Show');
+    expect(titleOf(searchEpisodes('bluey the show'))).toBe('The Show');
+    expect(titleOf(searchEpisodes('curious george what goes up'))).toBe('What Goes Up');
+  });
+
+  it('finds an episode from a season and episode reference', () => {
+    expect(searchEpisodes('bluey s2e5')[0].episode.id).toBe('bluey-s2e5');
+    expect(searchEpisodes('bluey season 2 episode 5')[0].episode.id).toBe('bluey-s2e5');
+    expect(searchEpisodes('peppa 1x02')[0].episode.id).toBe('peppa_pig-s1e2');
+    expect(searchEpisodes('curious george s1e6a')[0].episode.id).toBe('cg-s1e6a');
+    expect(searchEpisodes('s1e31').some((r) => r.episode.id === 'bluey-s1e31')).toBe(true);
+    // A title that only looks like a reference still matches.
+    expect(titleOf(searchEpisodes('episode 847'))).toBe('Episode 847');
+  });
+
+  it('reads toddler pronunciations of words the catalog does not know', () => {
+    expect(titleOf(searchEpisodes('wabbit'))).toMatch(/Bunny|Rabbit/);
+    expect(searchEpisodes('tat')[0].matches.some((m) => /cat|kitt/i.test(m.text))).toBe(true);
+    expect(searchEpisodes('bluey birfday')[0].episode.aliases.join(' ')).toMatch(/birthday/);
+  });
+
+  it('reads clipped words', () => {
+    expect(searchEpisodes('puter')[0].matches.some((m) => /computer/i.test(m.text))).toBe(true);
+  });
+
+  it('recovers typos, including of spellings the catalog rewrites', () => {
+    expect(titleOf(searchEpisodes('htoel'))).toBe('Hotel');
+    expect(titleOf(searchEpisodes('garnnies'))).toBe('Grannies');
+    expect(titleOf(searchEpisodes('blue muontains'))).toBe('Blue Mountains');
+    expect(titleOf(searchEpisodes('bluey ice ceram'))).toBe('Ice Cream');
+  });
+
+  it('never fuzzy-matches numbers', () => {
+    expect(searchEpisodes('sesame street 5411')[0].episode.id).toBe('sesame_street-s54e11');
+    expect(searchEpisodes('sesame street episode 5511')[0].episode.id).toBe('sesame_street-s55e11');
+  });
+
+  it('matches an exact title ahead of a longer title with the same alias', () => {
+    expect(titleOf(searchEpisodes('flying a kite'))).toBe('Flying a Kite');
+  });
+
+  it('keeps the specific word when a synonym broadens it', () => {
+    expect(titleOf(searchEpisodes('trampoline'))).toBe('Trampoline');
+    expect(
+      searchEpisodes('bouncing', { limit: 3 }).some((r) => r.episode.title === 'Trampoline')
+    ).toBe(true);
+    expect(titleOf(searchEpisodes('bluey crick'))).toBe('The Creek');
+  });
+
+  it('weights rare words over common ones', () => {
+    // "drainpipe" belongs to one episode; "bluey" and "bingo" to most of them.
+    expect(titleOf(searchEpisodes('bluey bingo drainpipe'))).toBe('Work');
+  });
+
+  it('finds accented names from plain spellings', () => {
+    expect(titleOf(searchEpisodes('chloes puppet show'))).toBe("Chloé's Puppet Show");
+    expect(titleOf(searchEpisodes('bluey cafe'))).toBe('Café');
   });
 
   it('prefers results that cover the whole query', () => {
@@ -236,6 +306,15 @@ describe('catalog queries', () => {
     ['grandad phones', 'bluey-s3e16'],
     ['bluey chess', 'bluey-s3e11'],
     ['bandit farts family meeting', 'bluey-s3e22'],
+    // Full upgrade: references, typos, toddler sounds, rarity, show words.
+    ['the one where the dog freezes dad', 'bluey-s1e1'],
+    ['bluey dads job', 'bluey-s1e31'],
+    ['sesame street episode 5511', 'sesame_street-s55e11'],
+    ['bluey the show', 'bluey-s1e49'],
+    ['bluey crick', 'bluey-s1e29'],
+    ['the dcotor bluey', 'bluey-s1e18'],
+    ['peppa george has a cold', 'peppa_pig-s2e24'],
+    ['bluey s1e31', 'bluey-s1e31'],
   ];
   it.each(cases)('"%s" returns %s first', (query, id) => {
     expect(searchEpisodes(query)[0]?.episode.id).toBe(id);

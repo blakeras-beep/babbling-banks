@@ -202,21 +202,29 @@ options, including seeding from your own list of titles for better accuracy.
 
 `src/lib/search.js` scores every episode against the query:
 
-1. The query and all catalog text are **canonicalised**: lower-cased, punctuation
-   stripped, stopwords removed, toddler synonyms applied (`daddy → dad`,
-   `choo choo → train`, `job → work`), and lightly stemmed (`smiles`, `smiled` and
-   `smiling` all become `smile`).
-2. Each query word is resolved against the catalog's vocabulary once. Typos are
-   tolerated with an edit-distance check scaled to word length, but a near miss of a
-   word the catalog already knows (`bluey` ~ `blue`) counts for much less than a typo
-   of a word it has never seen (`xilaphone`).
-3. Fields are scored with different weights: exact title > alias > song > character
-   > object > theme/setting > description. A query that names the show first
-   > (`bluey dads job`) is also compared without the show's name, so `dads job` can
-   > match an alias exactly.
-4. A **coverage factor** rewards results that match every word of the query and
-   shrinks results that only matched some of them.
-5. If the top results are close, **follow-up questions** are generated from the
+1. The query and all catalog text are **canonicalised**: accents dropped
+   (`Chloé → chloe`), lower-cased, punctuation stripped, stopwords and parent filler
+   removed, toddler synonyms applied (`daddy → dad`, `choo choo → train`,
+   `job → work`), and lightly stemmed (`smiles`, `smiled` and `smiling` all become
+   `smile`). A synonym that only broadens a word keeps it as well
+   (`trampoline → trampoline bounce`), so the specific episode still wins.
+2. Each query word is **resolved against the catalog's vocabulary** once. Typos are
+   tolerated with an edit-distance check scaled to word length, also against the
+   catalog's original spellings (`garnnies → grannies → nana`); a near miss of a
+   word the catalog already knows (`bluey` ~ `blue`) counts for much less than a
+   typo of one it has never seen (`xilaphone`). Words it has never seen are also
+   read as toddler pronunciations (`wabbit`, `toof`, `tat`) and as clipped words
+   (`puter`, `hippo`). Numbers only ever match themselves.
+3. **Season and episode references** (`s2e5`, `2x05`, `season 2 episode 5`) go
+   straight to that episode of the show named.
+4. Fields are scored with different weights: exact title > alias > song > character
+   > object > theme/setting > description. The title doubles as an alias, a query
+   > that names the show first (`bluey dads job`) is also compared without the show's
+   > words, and a title or alias said whole with a typo scores nearly as an exact
+   > match. Rare words (`drainpipe`) count for more than common ones (`play`).
+5. A **coverage factor** rewards results that match every word of the query and
+   shrinks results that only matched some of them, weighted by how rare each word is.
+6. If the top results are close, **follow-up questions** are generated from the
    shows, characters and settings that would separate them.
 
 Tests in `src/lib/search.test.js` pin the behaviour for well-known queries.
