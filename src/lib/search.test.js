@@ -5,7 +5,14 @@ import {
   getRelatedEpisodes,
   getHighlightTerms,
 } from './search.js';
-import { tokenize, editDistance, fuzzyEquals, canonicalPhrase } from './text.js';
+import {
+  tokenize,
+  editDistance,
+  fuzzyEquals,
+  canonicalPhrase,
+  canonicalToken,
+  SYNONYMS,
+} from './text.js';
 import { EPISODES, SHOWS } from '../data/index.js';
 
 const titleOf = (results, index = 0) => results[index]?.episode.title;
@@ -30,6 +37,37 @@ describe('text helpers', () => {
     expect(fuzzyEquals('cat', 'cot')).toBe(false);
     expect(fuzzyEquals('balloon', 'baloon')).toBe(true);
     expect(fuzzyEquals('xylophone', 'xylaphone')).toBe(true);
+  });
+
+  it('stems plurals and verb endings to the same token', () => {
+    expect(tokenize('cakes smiled smiling')).toEqual(['cake', 'smile', 'smile']);
+    // Stemmed forms still go through the synonym table: bake → cook.
+    expect(tokenize('baked baking')).toEqual([canonicalToken('bake'), canonicalToken('bake')]);
+    expect(tokenize('takes taking saved')).toEqual(['take', 'take', 'save']);
+    expect(tokenize('movies onesies babies stories')).toEqual(['movie', 'onesie', 'baby', 'story']);
+    expect(tokenize('surprised teasing weddings hopping')).toEqual([
+      'surprise',
+      'tease',
+      'wed',
+      'hop',
+    ]);
+    expect(tokenize('string spring need falling')).toEqual(['string', 'spring', 'need', 'fall']);
+  });
+
+  it('treats a job as work', () => {
+    expect(tokenize("bandit's job")).toEqual(['bandit', 'work']);
+    expect(tokenize('jobs day')).toEqual(['work', 'day']);
+  });
+
+  it('lets every spelling of a synonym meet its target', () => {
+    expect(canonicalToken('sharing')).toBe(canonicalToken('share'));
+    expect(canonicalToken('scary')).toBe(canonicalToken('scared'));
+    expect(canonicalToken('swimming')).toBe(canonicalToken('pool'));
+    expect(canonicalToken('trampolines')).toBe(canonicalToken('trampoline'));
+    for (const [word, target] of Object.entries(SYNONYMS)) {
+      if (target.includes(' ')) continue;
+      expect(canonicalToken(word), `${word} → ${target}`).toBe(canonicalToken(target));
+    }
   });
 });
 
@@ -95,6 +133,34 @@ describe('searchEpisodes', () => {
     ).toBe(true);
   });
 
+  it('finds Work from "bandits job"', () => {
+    expect(titleOf(searchEpisodes('bandits job'))).toBe('Work');
+    expect(titleOf(searchEpisodes("bluey dad's job"))).toBe('Work');
+    expect(titleOf(searchEpisodes('working for dad'))).toBe('Work');
+  });
+
+  it('does not let a near miss of a known word pull in another show', () => {
+    // "bluey" is a word the catalog knows, so it must not read as Blue's Clues' "blue".
+    expect(searchEpisodes('bluey hotel')[0].episode.id).toBe('bluey-s1e10');
+    expect(searchEpisodes('ice cream bluey')[0].episode.id).toBe('bluey-s2e45');
+    expect(searchEpisodes('blue birthday')[0].episode.id).toBe('blues_clues-s1e11');
+  });
+
+  it('ranks results that cover the whole query above partial matches', () => {
+    expect(titleOf(searchEpisodes('tooth fairy markets'))).toBe('Markets');
+    expect(titleOf(searchEpisodes('unicorn bedtime story'))).toBe('Unicorse');
+  });
+
+  it('matches an exact title or alias said after the show name', () => {
+    expect(searchEpisodes('bluey keepy uppy')[0].episode.id).toBe('bluey-s1e3');
+    expect(searchEpisodes('bluey dads job')[0].episode.id).toBe('bluey-s1e31');
+    expect(searchEpisodes('peppa george has a cold')[0].episode.id).toBe('peppa_pig-s2e24');
+  });
+
+  it('matches a title made only of stopwords', () => {
+    expect(titleOf(searchEpisodes('the show'))).toBe('The Show');
+  });
+
   it('prefers results that cover the whole query', () => {
     const results = searchEpisodes('bandit magic xylophone');
     expect(titleOf(results)).toBe('Magic Xylophone');
@@ -154,6 +220,22 @@ describe('catalog queries', () => {
     ['steve comes back blues clues', 'blues_clues-s1e1'],
     ['blue clues ice cream', 'blues_clues-s4e21'],
     ['josh mexico city', 'blues_clues-s4e24'],
+    // Search improvements: synonyms, stemming, known-word fuzzy discount, coverage.
+    ['bandits job', 'bluey-s1e31'],
+    ['bluey dads job', 'bluey-s1e31'],
+    ['jobs day', 'sesame_street-s53e5'],
+    ['george dinosaur lost', 'peppa_pig-s1e2'],
+    ['bluey new house moving', 'bluey-s3e49'],
+    ['duck cakes', 'bluey-s2e42'],
+    ['pups saved the turtles', 'paw_patrol-s1e2a'],
+    ['bluey onesie', 'bluey-s3e30'],
+    ['bandit pretends to be a baby', 'bluey-s3e6'],
+    ['bluey takes dads chair', 'bluey-s1e16'],
+    ['bluey real estate agent', 'bluey-s3e48'],
+    ['chilli obstacle course', 'bluey-s3e3'],
+    ['grandad phones', 'bluey-s3e16'],
+    ['bluey chess', 'bluey-s3e11'],
+    ['bandit farts family meeting', 'bluey-s3e22'],
   ];
   it.each(cases)('"%s" returns %s first', (query, id) => {
     expect(searchEpisodes(query)[0]?.episode.id).toBe(id);

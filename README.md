@@ -204,13 +204,19 @@ options, including seeding from your own list of titles for better accuracy.
 
 1. The query and all catalog text are **canonicalised**: lower-cased, punctuation
    stripped, stopwords removed, toddler synonyms applied (`daddy → dad`,
-   `choo choo → train`), and lightly stemmed.
-2. Fields are scored with different weights: exact title > alias > song > character
-   > object > theme/setting > description. Typos are tolerated with an edit-distance
-   > check scaled to word length.
-3. A **coverage bonus** rewards results that match every word of the query, and
-   results that match only a small slice of a long query are damped.
-4. If the top results are close, **follow-up questions** are generated from the
+   `choo choo → train`, `job → work`), and lightly stemmed (`smiles`, `smiled` and
+   `smiling` all become `smile`).
+2. Each query word is resolved against the catalog's vocabulary once. Typos are
+   tolerated with an edit-distance check scaled to word length, but a near miss of a
+   word the catalog already knows (`bluey` ~ `blue`) counts for much less than a typo
+   of a word it has never seen (`xilaphone`).
+3. Fields are scored with different weights: exact title > alias > song > character
+   > object > theme/setting > description. A query that names the show first
+   > (`bluey dads job`) is also compared without the show's name, so `dads job` can
+   > match an alias exactly.
+4. A **coverage factor** rewards results that match every word of the query and
+   shrinks results that only matched some of them.
+5. If the top results are close, **follow-up questions** are generated from the
    shows, characters and settings that would separate them.
 
 Tests in `src/lib/search.test.js` pin the behaviour for well-known queries.

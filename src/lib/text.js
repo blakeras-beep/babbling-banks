@@ -145,10 +145,11 @@ export const SYNONYMS = {
   bath: 'bath',
   bathtime: 'bath',
   tub: 'bath',
-  scary: 'scared',
-  afraid: 'scared',
-  frightened: 'scared',
-  spooky: 'scared',
+  scary: 'scare',
+  scared: 'scare',
+  afraid: 'scare',
+  frightened: 'scare',
+  spooky: 'scare',
   sad: 'sad',
   crying: 'cry',
   cried: 'cry',
@@ -217,9 +218,8 @@ export const SYNONYMS = {
   icecream: 'ice cream',
   playground: 'park',
   swings: 'park',
-  swim: 'swimming',
-  swims: 'swimming',
-  pool: 'swimming',
+  swimming: 'swim',
+  pool: 'swim',
   beach: 'beach',
   sand: 'beach',
   sandcastle: 'beach',
@@ -294,6 +294,7 @@ export const SYNONYMS = {
   bro: 'brother',
   cousins: 'cousin',
   neighbours: 'neighbor',
+  neighbour: 'neighbor',
   neighbor: 'neighbor',
   neighbours: 'neighbor',
   neighbors: 'neighbor',
@@ -351,9 +352,6 @@ export const SYNONYMS = {
   abcs: 'alphabet',
   abc: 'alphabet',
   shapes: 'shape',
-  share: 'sharing',
-  shares: 'sharing',
-  shared: 'sharing',
   turns: 'turn',
   angry: 'mad',
   grumpy: 'mad',
@@ -449,6 +447,61 @@ export const SYNONYMS = {
   tortoise: 'turtle',
   sharks: 'shark',
   wheels: 'wheel',
+  job: 'work',
+  jobs: 'work',
+  worker: 'work',
+  bossy: 'boss',
+  dunny: 'toilet',
+  loo: 'toilet',
+  cuddle: 'hug',
+  injured: 'hurt',
+  injury: 'hurt',
+  owie: 'hurt',
+  ouch: 'hurt',
+  booboo: 'hurt',
+  married: 'wedding',
+  marry: 'wedding',
+  marriage: 'wedding',
+  aunty: 'aunt',
+  auntie: 'aunt',
+  nanna: 'nana',
+  grampa: 'grandad',
+  gramps: 'grandad',
+  dadda: 'dad',
+  mumma: 'mum',
+  momma: 'mum',
+  doggo: 'dog',
+  woof: 'dog',
+  meow: 'cat',
+  miaow: 'cat',
+  quack: 'duck',
+  oink: 'pig',
+  baa: 'sheep',
+  lamb: 'sheep',
+  bikkie: 'cookie',
+  bikky: 'cookie',
+  sweets: 'candy',
+  lolly: 'candy',
+  tummy: 'tummy',
+  belly: 'tummy',
+  stomach: 'tummy',
+  muddy: 'mud',
+  lorry: 'truck',
+  chopper: 'helicopter',
+  xmas: 'christmas',
+  cinema: 'movie',
+  film: 'movie',
+  haircut: 'hairdresser',
+  barber: 'hairdresser',
+  pyjamas: 'pajama',
+  pyjama: 'pajama',
+  pjs: 'pajama',
+  jammies: 'pajama',
+  ipad: 'tablet',
+  vacation: 'holiday',
+  takeout: 'takeaway',
+  footy: 'ball',
+  favourite: 'favorite',
 };
 
 const PUNCTUATION = /[^a-z0-9\s]/g;
@@ -465,24 +518,136 @@ export function normalizeText(text) {
     .trim();
 }
 
-/** Very light stemmer: plurals and common verb endings. */
-export function stem(word) {
+/** Words that end in "-ie", whose plural must not become "-y": "movies" → "movie". */
+const IE_WORDS = new Set([
+  'movie',
+  'cookie',
+  'onesie',
+  'zombie',
+  'selfie',
+  'hoodie',
+  'smoothie',
+  'birdie',
+  'doggie',
+  'auntie',
+  'genie',
+  'brownie',
+  'pixie',
+  'veggie',
+  'cutie',
+  'sweetie',
+  'kiddie',
+  'nightie',
+  'undie',
+  'bikkie',
+  'horsie',
+  'budgie',
+  'magpie',
+  'goalie',
+  'bootie',
+  'footie',
+  'walkie',
+  'talkie',
+  'boogie',
+  'lassie',
+  'beanie',
+  'blankie',
+  'stuffie',
+]);
+
+/** Porter-style letter classes: "y" counts as a vowel after a consonant ("bluey"). */
+function isVowel(word, i) {
+  const letter = word[i];
+  if ('aeiou'.includes(letter)) return true;
+  return letter === 'y' && i > 0 && !isVowel(word, i - 1);
+}
+
+/** Porter's measure: how many vowel-consonant sequences the word has. */
+function measure(word) {
+  let m = 0;
+  let previousVowel = false;
+  for (let i = 0; i < word.length; i += 1) {
+    const vowel = isVowel(word, i);
+    if (!vowel && previousVowel) m += 1;
+    previousVowel = vowel;
+  }
+  return m;
+}
+
+/** Ends consonant-vowel-consonant, the last not w, x or y: "bak", "driv" (short stems that need an e). */
+function endsCvc(word) {
+  const n = word.length;
+  if (n < 3) return false;
+  return (
+    !isVowel(word, n - 3) &&
+    isVowel(word, n - 2) &&
+    !isVowel(word, n - 1) &&
+    !'wxy'.includes(word[n - 1])
+  );
+}
+
+/** "babies" → "baby", "movies" → "movie", "boxes" → "box", "cakes" → "cake". */
+function stripPlural(word) {
   if (word.length <= 3) return word;
-  if (word.endsWith('ies') && word.length > 4) return word.slice(0, -3) + 'y';
+  if (word.endsWith('ies') && word.length > 4) {
+    return IE_WORDS.has(word.slice(0, -1)) ? word.slice(0, -1) : word.slice(0, -3) + 'y';
+  }
   if (word.endsWith('sses')) return word.slice(0, -2);
-  if (word.endsWith('ing') && word.length > 5) return word.slice(0, -3);
-  if (word.endsWith('ed') && word.length > 4) return word.slice(0, -2);
-  if (word.endsWith('es') && word.length > 4) return word.slice(0, -2);
-  if (word.endsWith('s') && !word.endsWith('ss') && word.length > 3) return word.slice(0, -1);
+  if (/(?:ch|sh|x|z)es$/.test(word) && word.length > 4) return word.slice(0, -2);
+  if (word.endsWith('s') && !word.endsWith('ss')) return word.slice(0, -1);
   return word;
 }
 
-/** Map a single normalised token to its canonical form. */
+/**
+ * Put back what stripping "-ed" / "-ing" took away: "hopp" → "hop" (while
+ * "fall", "kiss" and "buzz" keep their double letter) and "bak" → "bake".
+ */
+function restoreStem(base) {
+  const last = base[base.length - 1];
+  if (base.length > 2 && last === base[base.length - 2] && !'aeioulsz'.includes(last)) {
+    return base.slice(0, -1);
+  }
+  if (measure(base) === 1 && endsCvc(base)) return base + 'e';
+  // English words do not end in "v" or a soft "c", and a vowel + s/z usually
+  // had an e too: "leav" → "leave", "danc" → "dance", "teas" → "tease".
+  if (/(?:[vc]|[aeiou][sz])$/.test(base)) return base + 'e';
+  return base;
+}
+
+/** "jumping" → "jump", "carried" → "carry", "baked" → "bake"; "string" and "need" stay. */
+function stripVerbEnding(word) {
+  if (word.endsWith('ing') && word.length > 5) {
+    const base = word.slice(0, -3);
+    return measure(base) > 0 ? restoreStem(base) : word;
+  }
+  if (word.endsWith('ied') && word.length > 4) return word.slice(0, -3) + 'y';
+  if (word.endsWith('ed') && !word.endsWith('eed') && word.length > 4) {
+    const base = word.slice(0, -2);
+    return measure(base) > 0 ? restoreStem(base) : word;
+  }
+  return word;
+}
+
+/**
+ * Very light stemmer: plurals, then common verb endings, so that "cakes",
+ * "baked" and "baking" all land on "bake" and "weddings" lands on "wed".
+ */
+export function stem(word) {
+  if (word.length <= 3) return word;
+  return stripVerbEnding(stripPlural(word));
+}
+
+/**
+ * Map a single normalised token to its canonical form. The table is checked
+ * for the word as typed, its singular and its stem ("trampolines" finds
+ * "trampoline"), and the target is stemmed as well, so every spelling of a
+ * word meets at the same token whatever form the table happens to use.
+ */
 export function canonicalToken(word) {
-  const synonym = SYNONYMS[word];
-  if (synonym) return synonym;
   const stemmed = stem(word);
-  return SYNONYMS[stemmed] ?? stemmed;
+  const target = SYNONYMS[word] ?? SYNONYMS[stripPlural(word)] ?? SYNONYMS[stemmed];
+  if (!target) return stemmed;
+  return target.includes(' ') ? target : stem(target);
 }
 
 /**

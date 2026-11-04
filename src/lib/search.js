@@ -2,19 +2,21 @@
  * Babbling Banks search engine.
  *
  * Pure functions over the episode catalog. The engine builds a small index
- * once (canonicalised tokens for every searchable field) and scores each
- * episode against the query with a mix of phrase matches, fuzzy token matches
- * and a coverage bonus so multi-word descriptions rank sensibly.
+ * once (canonicalised tokens for every searchable field, plus the vocabulary
+ * of every word the catalog knows) and scores each episode against the query
+ * with a mix of phrase matches, fuzzy token matches and a coverage factor so
+ * multi-word descriptions rank sensibly.
  *
  * Nothing in here touches the DOM, so it is unit-tested directly.
  */
 import { EPISODES, SHOWS } from '../data/index.js';
-import { tokenize, canonicalPhrase, fuzzyEquals, normalizeText, STOPWORDS } from './text.js';
+import { tokenize, fuzzyEquals, normalizeText, STOPWORDS } from './text.js';
 
 const WEIGHTS = {
   titleExact: 200,
   titleCompact: 190,
   titlePhrase: 110,
+  titleContained: 90,
   titleToken: 40,
   titleFuzzyToken: 24,
   aliasExact: 180,
@@ -33,11 +35,33 @@ const WEIGHTS = {
   fullCoverageBonus: 30,
 };
 
+/**
+ * What a typo-tolerant match is worth when the catalog already knows the
+ * query word exactly. "bluey" is a real word in the catalog, so an entry that
+ * only has "blue" probably is not what the parent meant; "xilaphone" is not,
+ * so its fuzzy match on "xylophone" is the best reading and earns full credit.
+ */
+const KNOWN_FUZZY_QUALITY = 0.4;
+
+/**
+ * Below full coverage the score shrinks towards this fraction as fewer of
+ * the query words match: a two-word query that matched one word keeps 75%.
+ */
+const COVERAGE_FLOOR = 0.5;
+
 const compact = (text) => normalizeText(text).replace(/\s/g, '');
 
 /** Whole-word phrase containment: "freeze dad" is in "magic freeze dad game". */
 const containsPhrase = (haystack, needle) =>
   needle.length > 0 && ` ${haystack} `.includes(` ${needle} `);
+
+/** A searchable text field: its tokens in order, and as a set for lookups. */
+function field(text) {
+  // A title made only of stopwords ("The Show") keeps them, or it could never match.
+  let tokens = tokenize(text);
+  if (tokens.length === 0) tokens = tokenize(text, { keepStopwords: true });
+  return { text, phrase: tokens.join(' '), compact: compact(text), tokens, set: new Set(tokens) };
+}
 
 function tokenSet(values) {
   const set = new Set();
@@ -50,26 +74,11 @@ function buildEntry(episode) {
   return {
     episode,
     showTokens: tokenSet([show?.name ?? '', ...(show?.keywords ?? [])]),
-    titlePhrase: canonicalPhrase(episode.title),
-    titleCompact: compact(episode.title),
-    titleTokens: tokenize(episode.title),
-    aliases: (episode.aliases ?? []).map((alias) => ({
-      text: alias,
-      phrase: canonicalPhrase(alias),
-      compact: compact(alias),
-      tokens: tokenize(alias),
-    })),
-    songs: (episode.songs ?? []).map((song) => ({
-      text: song.title,
-      phrase: canonicalPhrase(song.title),
-      compact: compact(song.title),
-      tokens: tokenize(song.title),
-    })),
-    characters: (episode.characters ?? []).map((name) => ({
-      text: name,
-      phrase: canonicalPhrase(name),
-      tokens: tokenize(name),
-    })),
+    showName: tokenSet([show?.name ?? '']),
+    title: field(episode.title),
+    aliases: (episode.aliases ?? []).map(field),
+    songs: (episode.songs ?? []).map((song) => field(song.title)),
+    characters: (episode.characters ?? []).map(field),
     objects: tokenSet(episode.objects ?? []),
     themes: tokenSet(episode.themes ?? []),
     settings: tokenSet(episode.settings ?? []),
@@ -79,63 +88,148 @@ function buildEntry(episode) {
 
 let INDEX = null;
 function getIndex() {
-  if (!INDEX) INDEX = EPISODES.map(buildEntry);
+  if (INDEX) return INDEX;
+  const entries = EPISODES.map(buildEntry);
+  // Every word the catalog knows, bucketed by length so fuzzy lookups only
+  // compare words that could be within typo tolerance.
+  const vocabulary = new Set();
+  for (const entry of entries) {
+    const sets = [
+      entry.showTokens,
+      entry.title.set,
+      ...entry.aliases.map((f) => f.set),
+      ...entry.songs.map((f) => f.set),
+      ...entry.characters.map((f) => f.set),
+      entry.objects,
+      entry.themes,
+      entry.settings,
+      entry.description,
+    ];
+    for (const set of sets) for (const token of set) vocabulary.add(token);
+  }
+  const byLength = new Map();
+  for (const word of vocabulary) {
+    if (!byLength.has(word.length)) byLength.set(word.length, []);
+    byLength.get(word.length).push(word);
+  }
+  INDEX = { entries, vocabulary, byLength };
   return INDEX;
 }
 
-/** Does any token in `tokens` fuzzily match `token`? */
-function hasFuzzy(tokens, token) {
-  for (const candidate of tokens) if (fuzzyEquals(candidate, token)) return true;
-  return false;
+/**
+ * Resolve one query token against the catalog vocabulary once, instead of
+ * fuzzy-comparing it with every field of every episode. The result maps each
+ * catalog word it can stand for to a match quality (1 = exact or a typo of a
+ * word the catalog does not know; less for a near-miss of a known word).
+ */
+function resolveTerm(token, { vocabulary, byLength }) {
+  const known = vocabulary.has(token);
+  const variants = new Map();
+  if (known) variants.set(token, 1);
+  const fuzzyQuality = known ? KNOWN_FUZZY_QUALITY : 1;
+  for (let length = token.length - 2; length <= token.length + 2; length += 1) {
+    for (const word of byLength.get(length) ?? []) {
+      if (word !== token && fuzzyEquals(token, word)) variants.set(word, fuzzyQuality);
+    }
+  }
+  return { token, known, variants };
 }
 
-function scoreTokenOverlap(queryTokens, fieldTokens, maxScore) {
-  if (queryTokens.length === 0 || fieldTokens.length === 0) return { score: 0, matched: 0 };
+/**
+ * Was this character named in the query? The whole name counts, and so does a
+ * first name of four or more letters ("daniel" for Daniel Tiger, but not "big"
+ * for Big Bird or "dad" for Dad Tiger, which are ordinary words).
+ */
+function isNamed(phrase, character) {
+  if (containsPhrase(phrase, character.phrase)) return true;
+  const first = character.tokens[0];
+  return character.tokens.length > 1 && first.length >= 4 && containsPhrase(phrase, first);
+}
+
+/** Best match quality of a query term inside a set of field tokens (0 = none). */
+function qualityIn(set, term) {
+  let best = 0;
+  for (const [word, quality] of term.variants) {
+    if (quality > best && set.has(word)) {
+      best = quality;
+      if (best === 1) break;
+    }
+  }
+  return best;
+}
+
+function scoreTokenOverlap(terms, fieldSet, maxScore) {
+  if (terms.length === 0 || fieldSet.size === 0) return { score: 0, matched: 0 };
   let matched = 0;
-  for (const token of queryTokens) if (hasFuzzy(fieldTokens, token)) matched += 1;
+  for (const term of terms) matched += qualityIn(fieldSet, term);
   if (matched === 0) return { score: 0, matched: 0 };
   // Reward both how much of the query matched and how much of the field matched.
-  const queryCoverage = matched / queryTokens.length;
-  const fieldCoverage = matched / fieldTokens.length;
+  const queryCoverage = matched / terms.length;
+  const fieldCoverage = Math.min(1, matched / fieldSet.size);
   return { score: Math.round(maxScore * (0.65 * queryCoverage + 0.35 * fieldCoverage)), matched };
 }
 
 /**
- * Score a single index entry. Returns { score, matches, covered } where
- * `covered` is the set of query tokens that matched anywhere.
+ * Score a single index entry. Returns { score, matches, coverage } where
+ * `coverage` is how much of the query matched somewhere (0–1).
  */
 function scoreEntry(entry, query) {
-  const { phrase, compactQuery, tokens } = query;
+  const { phrase, compactQuery, terms } = query;
+  // Parents often name the show first: "bluey dads job". With the entry's own
+  // show name taken out, what is left is compared with titles and aliases too.
+  const withoutShow = query.tokens.filter((token) => !entry.showName.has(token));
+  const reducedPhrase =
+    withoutShow.length > 0 && withoutShow.length < query.tokens.length ? withoutShow.join(' ') : '';
+  const reducedCompact = reducedPhrase ? withoutShow.join('') : '';
+  const saidExactly = (target) =>
+    Boolean(phrase) &&
+    (phrase === target.phrase ||
+      compactQuery === target.compact ||
+      (reducedPhrase !== '' &&
+        (reducedPhrase === target.phrase || reducedCompact === target.compact)));
   let score = 0;
   const matches = [];
-  const covered = new Set();
-  const cover = (fieldTokens) => {
-    for (const token of tokens) if (hasFuzzy(fieldTokens, token)) covered.add(token);
+  const covered = new Map();
+  const cover = (fieldSet) => {
+    for (const term of terms) {
+      const quality = qualityIn(fieldSet, term);
+      if (quality > (covered.get(term.token) ?? 0)) covered.set(term.token, quality);
+    }
   };
 
   // --- Title ---
-  if (phrase && phrase === entry.titlePhrase) {
+  const { title } = entry;
+  if (phrase && (phrase === title.phrase || (reducedPhrase && reducedPhrase === title.phrase))) {
     score += WEIGHTS.titleExact;
-    matches.push({ field: 'title', text: entry.episode.title });
-    cover(entry.titleTokens);
-  } else if (compactQuery && compactQuery === entry.titleCompact) {
+    matches.push({ field: 'title', text: title.text });
+    cover(title.set);
+  } else if (saidExactly(title)) {
     score += WEIGHTS.titleCompact;
-    matches.push({ field: 'title', text: entry.episode.title });
-    cover(entry.titleTokens);
-  } else if (phrase.length > 2 && containsPhrase(entry.titlePhrase, phrase)) {
+    matches.push({ field: 'title', text: title.text });
+    cover(title.set);
+  } else if (phrase.length > 2 && containsPhrase(title.phrase, phrase)) {
     score += WEIGHTS.titlePhrase;
-    matches.push({ field: 'title', text: entry.episode.title });
-    cover(entry.titleTokens);
+    matches.push({ field: 'title', text: title.text });
+    cover(title.set);
+  } else if (title.tokens.length > 1 && containsPhrase(phrase, title.phrase)) {
+    // A whole multi-word title was said inside a longer query: "bluey duck cake" → Duck Cake.
+    // (A one-word title is just a word; it scores as a token below.)
+    score += WEIGHTS.titleContained;
+    matches.push({ field: 'title', text: title.text });
+    cover(title.set);
   } else {
     let titleScore = 0;
-    for (const token of tokens) {
-      if (entry.titleTokens.includes(token)) titleScore += WEIGHTS.titleToken;
-      else if (hasFuzzy(entry.titleTokens, token)) titleScore += WEIGHTS.titleFuzzyToken;
+    for (const term of terms) {
+      if (title.set.has(term.token)) titleScore += WEIGHTS.titleToken;
+      else {
+        const quality = qualityIn(title.set, term);
+        if (quality > 0) titleScore += Math.round(WEIGHTS.titleFuzzyToken * quality);
+      }
     }
     if (titleScore > 0) {
       score += Math.min(titleScore, WEIGHTS.titlePhrase - 10);
-      matches.push({ field: 'title', text: entry.episode.title });
-      cover(entry.titleTokens);
+      matches.push({ field: 'title', text: title.text });
+      cover(title.set);
     }
   }
 
@@ -145,7 +239,7 @@ function scoreEntry(entry, query) {
   let aliasHits = 0;
   for (const alias of entry.aliases) {
     let aliasScore = 0;
-    if (phrase && (phrase === alias.phrase || compactQuery === alias.compact)) {
+    if (saidExactly(alias)) {
       aliasScore = WEIGHTS.aliasExact;
     } else if (
       phrase.length > 3 &&
@@ -154,11 +248,11 @@ function scoreEntry(entry, query) {
     ) {
       aliasScore = WEIGHTS.aliasPhrase;
     } else {
-      aliasScore = scoreTokenOverlap(tokens, alias.tokens, WEIGHTS.aliasTokenMax).score;
+      aliasScore = scoreTokenOverlap(terms, alias.set, WEIGHTS.aliasTokenMax).score;
     }
     if (aliasScore > 0) {
       aliasHits += 1;
-      cover(alias.tokens);
+      cover(alias.set);
       if (aliasScore > bestAlias) {
         bestAlias = aliasScore;
         bestAliasText = alias.text;
@@ -175,17 +269,17 @@ function scoreEntry(entry, query) {
   let bestSongText = null;
   for (const song of entry.songs) {
     let songScore = 0;
-    if (phrase && (phrase === song.phrase || compactQuery === song.compact)) {
+    if (saidExactly(song)) {
       songScore = WEIGHTS.songExact;
     } else if (phrase.length > 3 && containsPhrase(song.phrase, phrase)) {
       songScore = WEIGHTS.songPhrase;
     } else if (song.phrase.length > 3 && containsPhrase(phrase, song.phrase)) {
       songScore = WEIGHTS.songPhrase - 20;
     } else {
-      songScore = scoreTokenOverlap(tokens, song.tokens, WEIGHTS.songTokenMax).score;
+      songScore = scoreTokenOverlap(terms, song.set, WEIGHTS.songTokenMax).score;
     }
     if (songScore > 0) {
-      cover(song.tokens);
+      cover(song.set);
       if (songScore > bestSong) {
         bestSong = songScore;
         bestSongText = song.text;
@@ -200,35 +294,37 @@ function scoreEntry(entry, query) {
   // --- Characters ---
   let characterScore = 0;
   for (const character of entry.characters) {
-    if (phrase && phrase === character.phrase) {
+    // The name was said: "bandit", "cookie monster", or just "george" for George Pig.
+    if (phrase && character.phrase && isNamed(phrase, character)) {
       characterScore += WEIGHTS.characterExact;
-      cover(character.tokens);
+      cover(character.set);
       matches.push({ field: 'character', text: character.text });
       continue;
     }
-    const overlap = scoreTokenOverlap(tokens, character.tokens, WEIGHTS.characterToken);
+    const overlap = scoreTokenOverlap(terms, character.set, WEIGHTS.characterToken);
     if (overlap.matched > 0) {
       characterScore += overlap.score;
-      cover(character.tokens);
+      cover(character.set);
       matches.push({ field: 'character', text: character.text });
     }
   }
   score += Math.min(characterScore, WEIGHTS.characterExact + WEIGHTS.characterToken);
 
   // --- Objects / themes / settings / description ---
-  const bag = (set, weight, cap, field) => {
+  const bag = (set, weight, cap, fieldName) => {
     let total = 0;
     let first = null;
-    for (const token of tokens) {
-      if (hasFuzzy(set, token)) {
-        total += weight;
-        covered.add(token);
-        if (!first) first = token;
+    for (const term of terms) {
+      const quality = qualityIn(set, term);
+      if (quality > 0) {
+        total += weight * quality;
+        if (quality > (covered.get(term.token) ?? 0)) covered.set(term.token, quality);
+        if (!first) first = term.token;
       }
     }
     if (total > 0) {
-      score += Math.min(total, cap);
-      if (field) matches.push({ field, text: first });
+      score += Math.round(Math.min(total, cap));
+      if (fieldName) matches.push({ field: fieldName, text: first });
     }
   };
   bag(entry.showTokens, WEIGHTS.showToken, WEIGHTS.showToken * 2, null);
@@ -238,17 +334,22 @@ function scoreEntry(entry, query) {
   bag(entry.description, WEIGHTS.descriptionToken, WEIGHTS.descriptionToken * 5, null);
 
   // --- Coverage: reward queries whose words all matched somewhere, and
-  // damp results that only matched a small slice of a long description.
-  if (tokens.length > 0 && score > 0) {
-    const coverage = covered.size / tokens.length;
-    if (coverage === 1 && tokens.length > 1) score += WEIGHTS.fullCoverageBonus;
-    else if (coverage < 0.5 && tokens.length >= 3) score = Math.round(score * 0.6);
+  // shrink results that only matched some of what the parent said.
+  let coverage = 0;
+  if (terms.length > 0) {
+    let sum = 0;
+    for (const term of terms) sum += covered.get(term.token) ?? 0;
+    coverage = sum / terms.length;
+  }
+  if (terms.length > 1 && score > 0) {
+    if (coverage >= 1) score += WEIGHTS.fullCoverageBonus;
+    else score = Math.round(score * (COVERAGE_FLOOR + (1 - COVERAGE_FLOOR) * coverage));
   }
 
-  return { score, matches, coverage: tokens.length ? covered.size / tokens.length : 0 };
+  return { score, matches, coverage };
 }
 
-function parseQuery(rawQuery) {
+function parseQuery(rawQuery, index) {
   let tokens = tokenize(rawQuery);
   if (tokens.length === 0) tokens = tokenize(rawQuery, { keepStopwords: true });
   tokens = [...new Set(tokens)];
@@ -257,6 +358,7 @@ function parseQuery(rawQuery) {
     phrase: tokens.join(' '),
     compactQuery: compact(rawQuery),
     tokens,
+    terms: tokens.map((token) => resolveTerm(token, index)),
   };
 }
 
@@ -269,16 +371,17 @@ function parseQuery(rawQuery) {
  * @param {string} [options.show]       Restrict to a show id.
  * @param {string} [options.character]  Require this character.
  * @param {string} [options.setting]    Require this setting.
- * @returns {Array<{episode: object, score: number, matches: Array<{field: string, text: string}>}>}
+ * @returns {Array<{episode: object, score: number, matches: Array<{field: string, text: string}>, coverage: number}>}
  */
 export function searchEpisodes(rawQuery, options = {}) {
   const { limit = 20, show, character, setting } = options;
   if (!rawQuery || !rawQuery.trim()) return [];
-  const query = parseQuery(rawQuery);
+  const index = getIndex();
+  const query = parseQuery(rawQuery, index);
   if (query.tokens.length === 0) return [];
 
   const results = [];
-  for (const entry of getIndex()) {
+  for (const entry of index.entries) {
     const { episode } = entry;
     if (show && episode.show !== show) continue;
     if (character && !(episode.characters ?? []).includes(character)) continue;
@@ -315,10 +418,10 @@ export function generateFollowUps(results) {
     });
   }
 
-  const countBy = (field) => {
+  const countBy = (fieldName) => {
     const counts = {};
     for (const r of top)
-      for (const value of r.episode[field] ?? []) counts[value] = (counts[value] ?? 0) + 1;
+      for (const value of r.episode[fieldName] ?? []) counts[value] = (counts[value] ?? 0) + 1;
     return Object.entries(counts)
       .filter(([, count]) => count >= 2 && count < top.length)
       .sort((a, b) => b[1] - a[1])

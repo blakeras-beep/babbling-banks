@@ -190,8 +190,9 @@ Keep each file sorted by season and episode, then run
 `npm run validate-catalog`. The README's "Data model" section lists every field.
 
 Search behaviour itself lives in `src/lib/search.js` (scoring) and
-`src/lib/text.js` (toddler synonyms such as `doggy → dog`). Adding a synonym is
-a one-line change in the `SYNONYMS` table; add a test in
+`src/lib/text.js` (toddler synonyms such as `doggy → dog`, plus the stemmer). Adding a
+synonym is a one-line change in the `SYNONYMS` table: map the word to any spelling of
+its target, and both sides are stemmed so they meet. Add a test in
 `src/lib/search.test.js` for the query you improved.
 
 ---
